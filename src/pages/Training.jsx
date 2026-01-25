@@ -9,10 +9,12 @@ import { useIsMobile } from "../Hooks/useIsMobile";
 // Assets
 import ShortHair from "../assets/shortHair.png";
 import Beard from "../assets/beard.png";
-import Model1 from "../assets/models/model1.jpg";
-import Model2 from "../assets/models/model2.jpg";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
+import HeadcometLogo from "../assets/logos/HEDCOMET_logo_black.png";
+import Panel3Image from "../assets/courses/panel3.jpg";
+import Panel4Image from "../assets/courses/panel4.jpg";
+import Panel5Image from "../assets/courses/panel5.jpg";
 
 const Training = () => {
   const isMobile = useIsMobile();
@@ -185,7 +187,7 @@ const Training = () => {
       ),
     },
     {
-      photo: Beard,
+      photo: Panel3Image,
       title: "Brody krótke i długie",
       description:
         "Idealnie przycięta broda to nie tylko estetyka, ale i komfort klienta. W tym panelu nauczysz się cieniowania brody, jej konturowania i odpowiedniego skracania, by dopasować kształt do rysów twarzy. Skupimy się także na tonowaniu i pielęgnacji zarostu, aby uzyskać naturalny, zdrowy wygląd. Podczas praktycznej części dowiesz się, jak pracować maszynka , trymerem, brzytwą i nożyczkami, by broda wyglądała perfekcyjnie i była dopasowana do stylu klienta.",
@@ -230,7 +232,7 @@ const Training = () => {
       ),
     },
     {
-      photo: Model1,
+      photo: Panel4Image,
       title: "Krótkie formy + fade + więcej praktyki (2 dni)",
       description:
         "Podczas tego dwudniowego szkolenia skupimy się na technice cieniowania od zera, precyzyjnym przejściu tonalnym oraz odpowiednim doborze długości do kształtu głowy. Omówimy i przećwiczymy pracę z maszynką, trymerem oraz shaverem, kładąc duży nacisk na czyste wykończenie i spójność formy. Program szkolenia oparty jest na panelu Krótkie Formy + Fade, jednak w tej edycji rozszerzamy część praktyczną. Uczestnicy wykonają aż trzy pełne fryzury w ciągu dwóch dni, pracując na trzech modelach, co pozwala na realne przećwiczenie technik, powtarzalność ruchów i dopracowanie detali. Szkolenie łączy krótką, konkretną teorię z intensywną pracą warsztatową, dzięki czemu każdy etap – od budowania formy po finalne wykończenie – jest dokładnie przepracowany przy fotelu.",
@@ -306,7 +308,7 @@ const Training = () => {
       ),
     },
     {
-      photo: Model2,
+      photo: Panel5Image,
       title: "Szkolenia wyjazdowe",
       description:
         "W 2026 roku możemy również odwiedzić Twój salon! Oferujemy elastyczne formy szkoleń dopasowane do Twoich potrzeb – możemy przyjechać do Ciebie na miejscu i przeszkolić cały zespół, lub zorganizować szkolenie w formie zamkniętej grupy w naszej lokalizacji. Dopasowujemy program szkolenia, poziom zaawansowania oraz zakres tematyczny (włosy, broda, combo) do indywidualnych potrzeb Twojego salonu lub zespołu.",
@@ -423,12 +425,26 @@ const Training = () => {
                   className="h-[75vh] w-[66%] bg-[#171D1F] flex flex-col"
                   style={{ boxShadow: "0px 8px 10px #00000099" }}
                 >
-                  <div className=" bg-white m-[32px] mb-[20px] rounded-[6px] overflow-hidden">
+                  <div className="relative bg-white m-[32px] mb-[20px] rounded-[6px] overflow-hidden">
                     <img
                       src={data[activePanel].photo}
                       alt="photo"
                       className="w-full h-full object-cover"
+                      style={{
+                        objectPosition:
+                          activePanel === 3 ? "center 30%" : "center center",
+                      }}
                     />
+                    <div className="absolute bottom-[12px] right-[12px] bg-white/90 backdrop-blur-sm rounded-[6px] px-[12px] py-[8px] flex items-center gap-[8px]">
+                      <img
+                        src={HeadcometLogo}
+                        alt="Hedcomet Logo"
+                        className="h-[20px] w-auto"
+                      />
+                      <p className="text-[#171D1F] text-[11px] font-medium">
+                        Partner w szkoleniu
+                      </p>
+                    </div>
                   </div>
                   <p className="title text-prime mx-[32px] text-[20px]">
                     {data[activePanel].title}
@@ -568,12 +584,22 @@ const Training = () => {
                 key={index}
                 className="bg-[#171D1F] rounded-lg shadow-lg p-4 flex flex-col z-10"
               >
-                <div className="bg-white rounded-[6px] overflow-hidden mb-4">
+                <div className="relative bg-white rounded-[6px] overflow-hidden mb-4">
                   <img
                     src={panel.photo}
                     alt="panel"
                     className="w-full h-auto object-cover"
                   />
+                  <div className="absolute bottom-[10px] right-[10px] bg-white/90 backdrop-blur-sm rounded-[6px] px-[10px] py-[6px] flex items-center gap-[6px]">
+                    <img
+                      src={HeadcometLogo}
+                      alt="Hedcomet Logo"
+                      className="h-[18px] w-auto"
+                    />
+                    <p className="text-[#171D1F] text-[10px] font-medium">
+                      Partner w szkoleniu
+                    </p>
+                  </div>
                 </div>
                 <p className="text-prime text-[18px] font-semibold mb-2">
                   {panel.title}
