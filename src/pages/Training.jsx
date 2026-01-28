@@ -12,8 +12,8 @@ import Beard from "../assets/beard.png";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import HeadcometLogo from "../assets/logos/HEDCOMET_logo_black.png";
-import Panel3Image from "../assets/courses/panel3.jpg";
-import Panel4Image from "../assets/courses/panel4.jpg";
+import Panel3Image from "../assets/courses/panel3.png";
+import Panel4Image from "../assets/courses/panel4.png";
 import Panel5Image from "../assets/courses/panel5.jpg";
 
 const Training = () => {
@@ -432,7 +432,11 @@ const Training = () => {
                       className="w-full h-full object-cover"
                       style={{
                         objectPosition:
-                          activePanel === 3 ? "center 30%" : "center center",
+                          activePanel === 2
+                            ? "center 20%"
+                            : activePanel === 3
+                              ? "center 35%"
+                              : "center center",
                       }}
                     />
                     <div className="absolute bottom-[12px] right-[12px] bg-white/90 backdrop-blur-sm rounded-[6px] px-[12px] py-[8px] flex items-center gap-[8px]">
