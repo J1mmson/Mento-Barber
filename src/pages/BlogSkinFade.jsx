@@ -1,9 +1,9 @@
 // Project imports
 import Navbar from "../components/Navbar";
-import Texture from "../assets/texture.png";
+import Texture from "../assets/texture.webp";
 import Gradient from "../assets/gradient.svg";
 import { useIsMobile } from "../Hooks/useIsMobile";
-import Blog5 from "../assets/haircut2.png";
+import Blog5 from "../assets/haircut2.webp";
 
 const BlogSkinFade = () => {
   const isMobile = useIsMobile();

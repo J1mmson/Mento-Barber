@@ -2,12 +2,12 @@ import { useState } from "react";
 
 // Project imports
 import Navbar from "../components/Navbar";
-import Texture from "../assets/texture.png";
+import Texture from "../assets/texture.webp";
 import Gradient from "../assets/gradient.svg";
 import { useIsMobile } from "../Hooks/useIsMobile";
 
 // Assets
-import ShortHair from "../assets/shortHair.png";
+import ShortHair from "../assets/shortHair.webp";
 import Beard from "../assets/beard.png";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";

@@ -15,9 +15,6 @@ import Blog4 from "../assets/blog4.webp";
 import Blog5 from "../assets/haircut2.webp";
 import Blog6 from "../assets/blog6.webp";
 import Blog7 from "../assets/blog7.webp";
-// import BuzzCut from "../assets/8_buzzcut.png";
-// import Hairline from "../assets/9_zakolexd.png";
-
 const Blog = () => {
   const navigate = useNavigate();
   const isMobile = useIsMobile();
