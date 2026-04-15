@@ -415,22 +415,23 @@ const HomePage = () => {
               variants={fadeInFromLeft}
             >
               {[
-                { name: "STRZYŻENIE MĘSKIE", price: "85 PLN", time: "45 min" },
-                { name: "WŁOSY + BRODA", price: "140 PLN", time: "60 min" },
-                { name: "STRZYŻENIE BRODY", price: "75 PLN", time: "30 min" },
+                { name: "STRZYŻENIE MĘSKIE", price: "90 PLN", time: "45 min" },
+                { name: "WŁOSY + BRODA", price: "150 PLN", time: "60 min" },
+                { name: "STRZYŻENIE BRODY", price: "80 PLN", time: "30 min" },
+                { name: "STRZYŻENIE DŁUGIE WŁOSY", price: "120* PLN", time: "60* min" },
                 {
                   name: "BRODA + ODSIWIANIE",
-                  price: "150 PLN",
+                  price: "160 PLN",
                   time: "60 min",
                 },
                 {
                   name: "COMBO + ODSIWIANIE",
-                  price: "220 PLN",
+                  price: "230 PLN",
                   time: "90 min",
                 },
                 {
                   name: "COMBO (WŁOSY + BRODA)",
-                  price: "140 PLN",
+                  price: "150 PLN",
                   time: "90 min",
                 },
                 {
@@ -439,8 +440,8 @@ const HomePage = () => {
                   time: "45 min",
                 },
                 { name: "ODSIWIANIE WŁOSÓW", price: "80 PLN", time: "30 min" },
-                { name: "PREMIUM BRODA", price: "130 PLN", time: "45 min" },
-                { name: "PREMIUM COMBO", price: "220 PLN", time: "90 min" },
+                { name: "PREMIUM BRODA", price: "140 PLN", time: "45 min" },
+                { name: "PREMIUM COMBO", price: "230 PLN", time: "90 min" },
               ].map((item, index) => (
                 <div
                   key={index}
@@ -503,22 +504,23 @@ const HomePage = () => {
               variants={fadeInFromLeft}
             >
               {[
-                { name: "STRZYŻENIE MĘSKIE", price: "85 PLN", time: "45 min" },
-                { name: "WŁOSY + BRODA", price: "140 PLN", time: "60 min" },
-                { name: "STRZYŻENIE BRODY", price: "75 PLN", time: "30 min" },
+                { name: "STRZYŻENIE MĘSKIE", price: "90 PLN", time: "45 min" },
+                { name: "WŁOSY + BRODA", price: "150 PLN", time: "60 min" },
+                { name: "STRZYŻENIE BRODY", price: "80 PLN", time: "30 min" },
+                { name: "STRZYŻENIE DŁUGIE WŁOSY", price: "120* PLN", time: "60* min" },
                 {
                   name: "BRODA + ODSIWIANIE",
-                  price: "150 PLN",
+                  price: "160 PLN",
                   time: "60 min",
                 },
                 {
                   name: "COMBO + ODSIWIANIE",
-                  price: "220 PLN",
+                  price: "230 PLN",
                   time: "90 min",
                 },
                 {
                   name: "COMBO (WŁOSY + BRODA)",
-                  price: "140 PLN",
+                  price: "150 PLN",
                   time: "90 min",
                 },
                 {
@@ -527,8 +529,8 @@ const HomePage = () => {
                   time: "45 min",
                 },
                 { name: "ODSIWIANIE WŁOSÓW", price: "80 PLN", time: "30 min" },
-                { name: "PREMIUM BRODA", price: "130 PLN", time: "45 min" },
-                { name: "PREMIUM COMBO", price: "220 PLN", time: "90 min" },
+                { name: "PREMIUM BRODA", price: "140 PLN", time: "45 min" },
+                { name: "PREMIUM COMBO", price: "230 PLN", time: "90 min" },
               ].map((item, index) => (
                 <div
                   key={index}
