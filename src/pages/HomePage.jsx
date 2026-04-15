@@ -21,8 +21,8 @@ import Barber8 from "../components/Barber8";
 import FacebookLogo from "../assets/facebook_logo.svg";
 import InstagramLogo from "../assets/instagram_logo.svg";
 import TikTokLogo from "../assets/tiktok_logo.svg";
-import Photo1 from "../assets/page1photo.png";
-import Photo2 from "../assets/page2photo.png";
+import Photo1 from "../assets/page1photo.webp";
+import Photo2 from "../assets/page2photo.webp";
 import Gradient from "../assets/gradient.svg";
 
 // Gallery
@@ -41,10 +41,10 @@ import galeria12 from "../assets/gallery/galeria12.jpg";
 import galeria13 from "../assets/gallery/galeria13.jpg";
 
 // Barbers
-import PhotoJimmy from "../assets/page3jimmy.png";
+import PhotoJimmy from "../assets/page3jimmy.webp";
 
 // Texture
-import Texture from "../assets/texture.png";
+import Texture from "../assets/texture.webp";
 
 const HomePage = () => {
   const isMobile = useIsMobile();
