@@ -8,7 +8,7 @@ import { useIsMobile } from "../Hooks/useIsMobile";
 
 // Assets
 import ShortHair from "../assets/shortHair.webp";
-import Beard from "../assets/beard.png";
+import Beard from "../assets/beard.webp";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import HeadcometLogo from "../assets/logos/HEDCOMET_logo_black.png";

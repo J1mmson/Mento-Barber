@@ -4,13 +4,13 @@ import Texture from "../assets/texture.webp";
 import Gradient from "../assets/gradient.svg";
 import { useIsMobile } from "../Hooks/useIsMobile";
 import recedingHairline from "../assets/zakola.png";
-import hairstyle1 from "../assets/hairstyle/hairstyle1.webp";
-import hairstyle2 from "../assets/hairstyle/hairstyle2.webp";
-import hairstyle3 from "../assets/hairstyle/hairstyle3.webp";
-import hairstyle4 from "../assets/hairstyle/hairstyle4.webp";
-import hairstyle5 from "../assets/hairstyle/hairstyle5.webp";
-import hairstyle6 from "../assets/hairstyle/hairstyle6.webp";
-import hairstyle7 from "../assets/hairstyle/hairstyle7.webp";
+import hairstyle1 from "../assets/hairstyle/hairstyle1.jpg";
+import hairstyle2 from "../assets/hairstyle/hairstyle2.jpg";
+import hairstyle3 from "../assets/hairstyle/hairstyle3.jpg";
+import hairstyle4 from "../assets/hairstyle/hairstyle4.jpg";
+import hairstyle5 from "../assets/hairstyle/hairstyle5.jpg";
+import hairstyle6 from "../assets/hairstyle/hairstyle6.jpg";
+import hairstyle7 from "../assets/hairstyle/hairstyle7.jpg";
 
 const BlogRecedingHairlineHairstyle = () => {
 	const isMobile = useIsMobile();
