@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai"; // Import ikony
-import Logo from "../assets/mento_logo.png";
+import Logo from "../assets/mento_logo.webp";
 import BurgerMenu from "../assets/burgerMenu.svg";
 
 const Navbar = () => {
