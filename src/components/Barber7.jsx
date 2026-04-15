@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
 import Gradient from "../assets/gradient.svg";
-import Barber from "../assets/barber7.png";
-import Texture from "../assets/texture.png";
+import Barber from "../assets/barber7.webp";
+import Texture from "../assets/texture.webp";
 import { motion } from "framer-motion";
 
 import { useIsMobile } from "../Hooks/useIsMobile";
