@@ -181,7 +181,7 @@ const HomePage = () => {
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
                 style={{ lineHeight: 2 }}
               >
-                MENTO Barber Bochnia Shop to znakomite miejsce, gdzie rzemiosło
+                MENTO BARBERSHOP Bochnia to znakomite miejsce, gdzie rzemiosło
                 spotyka się z pasją i profesjonalizmem. Nasza oferta skupia się
                 na perfekcyjnych męskich fryzurach, precyzyjnym strzyżeniu brody
                 oraz zadbanym zarostem.
@@ -416,29 +416,12 @@ const HomePage = () => {
             >
               {[
                 { name: "STRZYŻENIE MĘSKIE", price: "90 PLN", time: "45 min" },
-                { name: "WŁOSY + BRODA", price: "150 PLN", time: "60 min" },
                 { name: "STRZYŻENIE BRODY", price: "80 PLN", time: "30 min" },
-                { name: "STRZYŻENIE DŁUGIE WŁOSY", price: "120* PLN", time: "60* min" },
-                {
-                  name: "BRODA + ODSIWIANIE",
-                  price: "160 PLN",
-                  time: "60 min",
-                },
-                {
-                  name: "COMBO + ODSIWIANIE",
-                  price: "230 PLN",
-                  time: "90 min",
-                },
-                {
-                  name: "COMBO (WŁOSY + BRODA)",
-                  price: "150 PLN",
-                  time: "90 min",
-                },
-                {
-                  name: "GŁOWA ZERO + BRODA",
-                  price: "110 PLN",
-                  time: "45 min",
-                },
+                { name: "COMBO (WŁOSY + BRODA)", price: "150 PLN", time: "90 min" },
+                { name: "STRZYŻENIE DŁUGIE WŁOSY", price: ">120 PLN", time: ">60 min" },
+                { name: "BRODA + ODSIWIANIE", price: "160 PLN", time: "60 min" },
+                { name: "COMBO + ODSIWIANIE", price: "230 PLN", time: "90 min" },
+                { name: "GŁOWA ZERO + BRODA", price: "110 PLN", time: "45 min" },
                 { name: "ODSIWIANIE WŁOSÓW", price: "80 PLN", time: "30 min" },
                 { name: "PREMIUM BRODA", price: "140 PLN", time: "45 min" },
                 { name: "PREMIUM COMBO", price: "230 PLN", time: "90 min" },
@@ -505,29 +488,12 @@ const HomePage = () => {
             >
               {[
                 { name: "STRZYŻENIE MĘSKIE", price: "90 PLN", time: "45 min" },
-                { name: "WŁOSY + BRODA", price: "150 PLN", time: "60 min" },
                 { name: "STRZYŻENIE BRODY", price: "80 PLN", time: "30 min" },
-                { name: "STRZYŻENIE DŁUGIE WŁOSY", price: "120* PLN", time: "60* min" },
-                {
-                  name: "BRODA + ODSIWIANIE",
-                  price: "160 PLN",
-                  time: "60 min",
-                },
-                {
-                  name: "COMBO + ODSIWIANIE",
-                  price: "230 PLN",
-                  time: "90 min",
-                },
-                {
-                  name: "COMBO (WŁOSY + BRODA)",
-                  price: "150 PLN",
-                  time: "90 min",
-                },
-                {
-                  name: "GŁOWA ZERO + BRODA",
-                  price: "110 PLN",
-                  time: "45 min",
-                },
+                { name: "COMBO (WŁOSY + BRODA)", price: "150 PLN", time: "90 min" },
+                { name: "STRZYŻENIE DŁUGIE WŁOSY", price: ">120 PLN", time: ">60 min" },
+                { name: "BRODA + ODSIWIANIE", price: "160 PLN", time: "60 min" },
+                { name: "COMBO + ODSIWIANIE", price: "230 PLN", time: "90 min" },
+                { name: "GŁOWA ZERO + BRODA", price: "110 PLN", time: "45 min" },
                 { name: "ODSIWIANIE WŁOSÓW", price: "80 PLN", time: "30 min" },
                 { name: "PREMIUM BRODA", price: "140 PLN", time: "45 min" },
                 { name: "PREMIUM COMBO", price: "230 PLN", time: "90 min" },
