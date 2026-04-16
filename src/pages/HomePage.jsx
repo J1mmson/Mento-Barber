@@ -137,7 +137,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
+   <main className="h-screen overflow-y-scroll snap-y snap-mandatory">
       <Navbar />
       {/* Pierwszy ekran */}
       {!isMobile ? (
@@ -206,6 +206,7 @@ const HomePage = () => {
               <div className="flex space-x-4 text-textPrimary items-center">
                 <a
                   href="https://www.facebook.com/MentoBarberShop"
+                  aria-label="Nasz profil na Facebooku"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -217,6 +218,7 @@ const HomePage = () => {
                 </a>
                 <a
                   href="https://www.instagram.com/mento.barbershop/"
+                  aria-label="Nasz profil na Instagramie"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -228,12 +230,13 @@ const HomePage = () => {
                 </a>
                 <a
                   href="https://www.tiktok.com/@mento_barbershop"
+                  aria-label="Nasz profil na TikToku"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
                     src={TikTokLogo}
-                    alt="instagram_logo"
+                    alt="tiktok_logo"
                     style={{ height: "38px" }}
                   />
                 </a>
@@ -241,7 +244,7 @@ const HomePage = () => {
             </motion.div>
             <motion.img
               src={Photo1}
-              alt="Background"
+              alt=" Tło z barberem z MENTO BARBER Bochnia, prezentujące jego umiejętności fryzjerskie"
               className="absolute bottom-0 right-0 w-[40%] h-auto pointer-events-none z-10"
               style={{ bottom: -60 }}
               initial="hidden"
@@ -251,7 +254,8 @@ const HomePage = () => {
             />
             <img
               src={Gradient}
-              alt="Gradient"
+              alt=""            
+              aria-hidden="true"
               className="absolute top-0 right-0 w-1/1 h-auto pointer-events-none z-0"
               style={{ top: -700, right: -650 }}
             />
@@ -288,6 +292,7 @@ const HomePage = () => {
               >
                 <a
                   href="https://www.facebook.com/MentoBarberShop"
+                  aria-label="Nasz profil na Facebooku"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -299,6 +304,7 @@ const HomePage = () => {
                 </a>
                 <a
                   href="https://www.instagram.com/mento.barbershop/"
+                  aria-label="Nasz profil na Instagramie"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -310,12 +316,13 @@ const HomePage = () => {
                 </a>
                 <a
                   href="https://www.tiktok.com/@mento_barbershop"
+                  aria-label="Nasz profil na TikToku"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
                     src={TikTokLogo}
-                    alt="instagram_logo"
+                    alt="tiktok_logo"
                     style={{ height: "38px" }}
                   />
                 </a>
@@ -369,7 +376,7 @@ const HomePage = () => {
             </div>
             <motion.img
               src={Photo1}
-              alt="Background"
+              alt=" Tło z barberem z MENTO BARBER Bochnia"
               className="absolute inset-0 mx-auto w-[150%] h-auto object-contain pointer-events-none z-10"
               style={{ top: useWindowSize().height < 700 ? 40 : 80 }}
               initial="hidden"
@@ -379,7 +386,8 @@ const HomePage = () => {
             />
             <img
               src={Gradient}
-              alt="Gradient"
+              alt=""
+              aria-hidden="true"
               className="absolute top-0 z-0 w-[800px] max-w-none"
               style={{ right: "-200px", top: "-200px" }}
             />
@@ -437,7 +445,7 @@ const HomePage = () => {
                       opacity: 1,
                     }}
                   >
-                    <h3 className="font-bold">{item.name}</h3>
+                    <h2 className="font-bold">{item.name}</h2>
                     <p className="text-gray-300">
                       {item.price} | {item.time}
                     </p>
@@ -454,13 +462,14 @@ const HomePage = () => {
 
             <img
               src={Gradient}
-              alt="Gradient"
+              alt=""
+              aria-hidden="true"
               className="absolute top-0 left-0 w-1/1 h-auto pointer-events-none z-0"
               style={{ top: -300, left: -600 }}
             />
             <img
               src={Photo2}
-              alt="Background"
+              alt=" Tło z barberem z MENTO BARBER Bochnia"
               className="absolute bottom-0 left-0 top-10 w-1/3 h-auto pointer-events-none"
             />
           </div>
@@ -507,9 +516,9 @@ const HomePage = () => {
                     opacity: 1,
                   }}
                 >
-                  <h3 className="font-bold" style={{ fontSize: "12px" }}>
+                  <h2 className="font-bold" style={{ fontSize: "12px" }}>
                     {item.name}
-                  </h3>
+                  </h2>
                   <p className="text-gray-300" style={{ fontSize: "10px" }}>
                     {item.price} | {item.time}
                   </p>
@@ -518,9 +527,10 @@ const HomePage = () => {
             </motion.div>
             <img
               src={Gradient}
-              alt="Gradient"
-              className="absolute top-0 z-0 w-[800px] max-w-none"
-              style={{ right: "-125px", top: "-100px" }}
+              alt=""
+              aria-hidden="true"
+              className="absolute top-0 right-0 w-1/2 h-auto pointer-events-none z-0"
+              style={{ top: -350, right: -350 }}
             />
           </div>
         </Section>
@@ -546,7 +556,7 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={fadeInFromLeft}
             >
-              <h1
+              <h2
                 className="text-9xl font-bold text-orange-500"
                 style={{
                   fontSize: "7.85rem",
@@ -559,7 +569,7 @@ const HomePage = () => {
                 }}
               >
                 JIMMY
-              </h1>
+              </h2>
               <p className="mt-4 max-w-[430px] text-[15px] font-light">
                 Profesjonalizm to dla mnie podstawa – zawsze staram się zapewnić
                 najwyższą jakość usług, dzieląc się swoją wiedzą o pielęgnacji i
@@ -576,7 +586,7 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={slideInFromRight}
             >
-              <h1
+              <h2
                 className="font-bold uppercase text-center"
                 style={{
                   fontSize: "30vw",
@@ -588,17 +598,19 @@ const HomePage = () => {
                 }}
               >
                 JIMMY
-              </h1>
+              </h2>
             </motion.div>
             <img
               src={Gradient}
-              alt="Gradient"
+              alt=""
+              aria-hidden="true"
               className="absolute top-0 right-0 w-1/2 h-auto pointer-events-none z-0"
               style={{ top: -350, right: -350 }}
             />
             <img
               src={PhotoJimmy}
-              alt="Background"
+              alt="Barber Jimmy z Mento BAREBERSHOP Bochnia"
+              loading="lazy"
               className="absolute bottom-0 right-0 w-1/2 h-auto pointer-events-none"
               style={{ bottom: -240, right: -95, zIndex: 1 }}
             />
@@ -618,7 +630,7 @@ const HomePage = () => {
             }}
           >
             <div className="flex flex-col items-center  mt-[10%] leading-none z-20 ">
-              <h1
+              <h2
                 className="font-bold uppercase text-center"
                 style={{
                   fontSize: "25vw",
@@ -630,7 +642,7 @@ const HomePage = () => {
                 }}
               >
                 JIMMY
-              </h1>
+              </h2>
               <p className="mt-4 mb-[25%] max-w-[430px] text-[14px] font-light text-white text-center">
                 Profesjonalizm to dla mnie podstawa – zawsze staram się zapewnić
                 najwyższą jakość usług, dzieląc się swoją wiedzą o pielęgnacji i
@@ -642,7 +654,8 @@ const HomePage = () => {
             </div>
             <motion.img
               src={PhotoJimmy}
-              alt="Background"
+              alt="Barber Jimmy z Mento BAREBERSHOP Bochnia"
+              loading="lazy"
               className="absolute top-0 w-[700px] max-w-none z-10" // Added maxWidth constraint
               style={{ right: "-125px", top: "-200px" }}
               initial="hidden"
@@ -652,7 +665,8 @@ const HomePage = () => {
             />
             <img
               src={Gradient}
-              alt="Gradient"
+              alt=""
+              aria-hidden="true"
               className="absolute top-0 z-0 w-[800px] max-w-none"
               style={{ right: "-200px", top: "-200px" }}
             />
@@ -788,14 +802,15 @@ const HomePage = () => {
             </Slider>{" "}
             <img
               src={Gradient}
-              alt="Gradient"
+              alt=""
+              aria-hidden="true"  
               className="absolute w-1/1 h-auto pointer-events-none z-0 opacity-70"
               style={{ top: isMobile ? "-30%" : "-50%" }}
             />
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

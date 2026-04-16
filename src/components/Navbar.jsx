@@ -59,7 +59,7 @@ const Navbar = () => {
 					<a href='/#about'>
 						<img
 							src={Logo}
-							alt='Logo'
+							alt='Mento Barber Bochnia - Strona Główna'
 							className='logo cursor-pointer h-[60px] md:h-[80px] md:mt-[-20px]'
 						/>
 					</a>
@@ -131,11 +131,12 @@ const Navbar = () => {
 				<div className='md:hidden z-20'>
 					<button
 						onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-						className='text-3xl text-prime focus:outline-none'>
+						className='text-3xl text-prime focus:outline-none'
+						aria-label={isMobileMenuOpen ? "Zamknij menu" : "Otwórz menu nawigacji"}>
 						{isMobileMenuOpen ? (
-							<AiOutlineClose style={{ color: "#FFFFFF" }} />
+							<AiOutlineClose style={{ color: "#FFFFFF" }} aria-hidden="true" />
 						) : (
-							<img src={BurgerMenu} style={{ height: "20px" }} />
+							<img src={BurgerMenu} style={{ height: "20px" }} alt="Menu" aria-hidden="true" />
 						)}
 					</button>
 				</div>

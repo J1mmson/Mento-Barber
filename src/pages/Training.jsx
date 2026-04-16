@@ -406,7 +406,7 @@ const Training = () => {
   return (
     <>
       {!isMobile ? (
-        <div className="h-screen ">
+        <main className="h-screen ">
           <Navbar />
           <div
             className="relative min-h-screen h-screen overflow-hidden"
@@ -433,7 +433,7 @@ const Training = () => {
                   <div className="relative bg-white m-[32px] mb-[20px] rounded-[6px] overflow-hidden">
                     <img
                       src={data[activePanel].photo}
-                      alt="photo"
+                      alt={data[activePanel].alt}
                       className="w-full h-full object-cover"
                       style={{
                         objectPosition:
@@ -447,7 +447,7 @@ const Training = () => {
                     <div className="absolute bottom-[12px] right-[12px] bg-white/90 backdrop-blur-sm rounded-[6px] px-[12px] py-[8px] flex items-center gap-[8px]">
                       <img
                         src={HeadcometLogo}
-                        alt="Hedcomet Logo"
+                        alt="Headcomet - partner szkolenia Mento Barber"
                         className="h-[20px] w-auto"
                       />
                       <p className="text-[#171D1F] text-[11px] font-medium">
@@ -485,7 +485,7 @@ const Training = () => {
             </div>
             <img
               src={Gradient}
-              alt="Gradient"
+              alt="" aria-hidden="true"
               className="absolute w-full h-auto pointer-events-none z-[1] opacity-70"
               style={{ top: "-50%" }}
             />
@@ -574,10 +574,9 @@ const Training = () => {
 					}
 				}
 			`}</style>
-        </div>
+        </main>
       ) : (
-        <div
-          className="relative w-full py-6 px-4 overflow-hidden"
+        <main className="relative w-full py-6 px-4 overflow-hidden"
           style={{
             background: `linear-gradient(90deg, #090909, #091E23), url(${Texture})`,
             backgroundSize: "cover",
@@ -596,13 +595,13 @@ const Training = () => {
                 <div className="relative bg-white rounded-[6px] overflow-hidden mb-4">
                   <img
                     src={panel.photo}
-                    alt="panel"
+                    alt={panel.alt}
                     className="w-full h-auto object-cover"
                   />
                   <div className="absolute bottom-[10px] right-[10px] bg-white/90 backdrop-blur-sm rounded-[6px] px-[10px] py-[6px] flex items-center gap-[6px]">
                     <img
                       src={HeadcometLogo}
-                      alt="Hedcomet Logo"
+                      alt="Headcomet - partner szkolenia Mento Barber"
                       className="h-[18px] w-auto"
                     />
                     <p className="text-[#171D1F] text-[10px] font-medium">
@@ -619,6 +618,7 @@ const Training = () => {
                 <button
                   onClick={() => openDialog(index)}
                   className="border-2 border-prime text-prime rounded-[12px] py-[16px] mb-2 flex justify-center items-center gap-2 "
+                  aria-label="Zamknij okno"
                 >
                   <IoInformationCircleOutline style={{ marginTop: "2px" }} />{" "}
                   Plan szkolenia
@@ -626,6 +626,7 @@ const Training = () => {
                 <button
                   onClick={() => openReservationDialog(index)}
                   className="bg-prime text-white rounded-[12px] py-[16px] mb-2"
+                  aria-label="Zamknij okno"
                 >
                   Umów szkolenie
                 </button>
@@ -634,7 +635,7 @@ const Training = () => {
           </div>
           <img
             src={Gradient}
-            alt="Gradient"
+            alt="" aria-hidden="true"
             className="absolute top-0 z-0 w-[800px] max-w-none"
             style={{ right: "-200px", top: "-200px" }}
           />
@@ -652,7 +653,7 @@ const Training = () => {
                   <p className="text-[20px] font-bold text-prime">
                     {dialogText}
                   </p>
-                  <button onClick={closeDialog} className="text-prime">
+                  <button onClick={closeDialog} className="text-prime" aria-label="Zamknij okno">
                     <IoClose size={30} />
                   </button>
                 </div>
@@ -683,6 +684,7 @@ const Training = () => {
                   <button
                     onClick={closeReservationDialog}
                     className="text-prime"
+                    aria-label="Zamknij okno"
                   >
                     <IoClose size={30} />
                   </button>
@@ -709,7 +711,7 @@ const Training = () => {
               </div>
             </div>
           )}
-        </div>
+        </main>
       )}
     </>
   );
