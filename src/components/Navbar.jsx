@@ -60,8 +60,9 @@ const Navbar = () => {
 						<img
 							src={Logo}
 							alt='Mento Barber Bochnia - Strona Główna'
-							width={80}
-							className='logo cursor-pointer h-[60px] md:h-[80px] md:mt-[-20px]'
+							width="300"
+							height="280"
+							className='logo cursor-pointer h-[60px] md:h-[80px] md:mt-[-20px] object-contain'
 						/>
 					</a>
 				</div>
