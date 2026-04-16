@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Texture from "../assets/texture.webp";
 import Gradient from "../assets/gradient.svg";
 import { useIsMobile } from "../Hooks/useIsMobile";
-import recedingHairline from "../assets/zakola.png";
+import recedingHairline from "../assets/zakola.webp";
 import hairstyle1 from "../assets/hairstyle/hairstyle1.jpg";
 import hairstyle2 from "../assets/hairstyle/hairstyle2.jpg";
 import hairstyle3 from "../assets/hairstyle/hairstyle3.jpg";

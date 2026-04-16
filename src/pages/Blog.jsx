@@ -29,6 +29,7 @@ const Blog = () => {
         "To jedno z najczęstszych pytań, które słyszymy w barbershopie. Odpowiedź nie jest jednak taka sama dla każdego – wszystko zależy od tego, jak szybko rosną Twoje włosy, jaką fryzurę nosisz i jak chcesz wyglądać na co dzień.",
       image: Blog1,
       path: "boy-haircut",
+      alt: "Mężczyzna podczas profesjonalnego strzyżenia włosów w Mento Barber Bochnia",
     },
     {
       id: 2,
@@ -37,6 +38,7 @@ const Blog = () => {
         "Broda to symbol męskości, ale tylko wtedy, gdy jest odpowiednio zadbana. Zaniedbana potrafi postarzać, dodać niechlujności i sprawiać, że cała stylizacja wygląda mniej atrakcyjnie. Dobra wiadomość jest taka, że gęsta i zdrowa broda to nie tylko geny – ogromną rolę odgrywa właściwa pielęgnacja.",
       image: Blog2,
       path: "slick-back",
+      alt: "Zadbana, gęsta broda po pielęgnacji olejkami w MENTO BARBER Bochnia",
     },
     {
       id: 3,
@@ -45,6 +47,7 @@ const Blog = () => {
         "Ślub to wyjątkowe wydarzenie – wszystko musi być dopięte na ostatni guzik. Garnitur, buty, dodatki… ale równie ważny jest wizerunek pana młodego. Odpowiednia fryzura, zadbana broda i zdrowa skóra twarzy sprawią, że w tym dniu będziesz wyglądał pewnie i świeżo. Jak to zaplanować?",
       image: Blog3,
       path: "new-haircuts",
+      alt: "Mężczyzna z nową fryzurą przygotowujący się do ważnego wydarzenia",
     },
     {
       id: 4,
@@ -53,6 +56,7 @@ const Blog = () => {
         "Każdy z nas traci włosy – to naturalny proces. Średnio wypada nam od 50 do 100 włosów dziennie i nie ma w tym nic niepokojącego. Problem pojawia się wtedy, gdy włosów wypada coraz więcej, fryzura traci gęstość, a zakola czy przerzedzenia zaczynają być coraz bardziej widoczne. Na szczęście istnieją sposoby, by ten proces spowolnić i zadbać o zdrowie skóry głowy.",
       image: Blog4,
       path: "bangs",
+      alt: "Frzyzura typu courtains z zakrytymi zakolami, stworzona w MENTO BARBER Bochnia",
     },
     {
       id: 5,
@@ -61,6 +65,7 @@ const Blog = () => {
         "Łysienie to częsty problem u mężczyzn. Jeśli w Twojej rodzinie tata, dziadek czy wujkowie wcześnie tracili włosy, istnieje duże prawdopodobieństwo, że u Ciebie będzie podobnie. Ale to wcale nie oznacza, że musisz pogodzić się z losem. Dzięki nowoczesnym zabiegom możesz działać prewencyjnie i zatrzymać włosy na dłużej.",
       image: Blog5,
       path: "skin-fade",
+      alt: "Zabiegi nowoczesne w MENTO BARBER Bochnia",
     },
     {
       id: 6,
@@ -69,6 +74,7 @@ const Blog = () => {
         "Dobra fryzura to połowa sukcesu, ale bez odpowiedniej stylizacji nawet najlepsze cięcie nie pokaże swojego potencjału. Wielu facetów uważa, że to skomplikowane i czasochłonne, a prawda jest taka, że wystarczy 5 minut rano, żeby włosy wyglądały świetnie przez cały dzień.",
       image: Blog6,
       path: "beard-dandruff",
+      alt: "Mężczyzna podczas układania fryzury w MENTO BARBER Bochnia",
     },
     {
       id: 7,

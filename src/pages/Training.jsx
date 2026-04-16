@@ -11,10 +11,10 @@ import ShortHair from "../assets/shortHair.webp";
 import Beard from "../assets/beard.webp";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
-import HeadcometLogo from "../assets/logos/HEDCOMET_logo_black.png";
-import Panel3Image from "../assets/courses/panel3.png";
-import Panel4Image from "../assets/courses/panel4.png";
-import Panel5Image from "../assets/courses/panel5.jpg";
+import HeadcometLogo from "../assets/logos/HEDCOMET_logo_black.webp";
+import Panel3Image from "../assets/courses/panel3.webp";
+import Panel4Image from "../assets/courses/panel4.webp";
+import Panel5Image from "../assets/courses/panel5.webp";
 
 const Training = () => {
   const isMobile = useIsMobile();
@@ -50,6 +50,7 @@ const Training = () => {
   const data = [
     {
       photo: ShortHair,
+      alt: "Mężczyzna z krótką fryzurą typu fade, stworzony w MENTO BARBER Bochnia",
       title: "Krótkie włosy + cieniowanie od zera (fade)",
       description:
         "Perfekcyjny fade to podstawa nowoczesnego barberingu. W tym panelu skupimy się na technice cieniowania od zera, precyzyjnym przejściu tonalnym i odpowiednim doborze długości do kształtu głowy. Pokażemy, jak pracować z maszynką, trymerem i shaverem, by uzyskać idealne wykończenie. Szkolenie obejmuje zarówno teorię, jak i praktykę na modelach, abyś mógł doszlifować swoje umiejętności i zyskać pewność w pracy z krótkimi fryzurami.",
@@ -100,6 +101,7 @@ const Training = () => {
     },
     {
       photo: Beard,
+      alt: "Mężczyzna z zadbaną brodą, obciętą w MENTO BARBER Bochnia",
       title: "COMBO włosy + broda (2 dni)",
       description:
         "Dwudniowe szkolenie COMBO włosy + broda to kompleksowy program dla barberów, którzy chcą pracować świadomie, technicznie i pewnie zarówno przy strzyżeniu włosów, jak i przy wykonywaniu brody. Podczas szkolenia uczestnicy poznają pełny proces pracy z klientem – od analizy głowy, proporcji i kształtu fryzury, po dobór odpowiedniej formy brody dopasowanej do twarzy i stylu klienta. Program łączy teorię, wykład oraz intensywną praktykę, dzięki czemu wiedza od razu przekładana jest na realną pracę przy fotelu.",
@@ -188,6 +190,7 @@ const Training = () => {
     },
     {
       photo: Panel3Image,
+      alt: "Mężczyzna z elgecanką fryzurą i zadbaną brodą, obciętą w MENTO BARBER Bochnia",
       title: "Brody krótke i długie",
       description:
         "Idealnie przycięta broda to nie tylko estetyka, ale i komfort klienta. W tym panelu nauczysz się cieniowania brody, jej konturowania i odpowiedniego skracania, by dopasować kształt do rysów twarzy. Skupimy się także na tonowaniu i pielęgnacji zarostu, aby uzyskać naturalny, zdrowy wygląd. Podczas praktycznej części dowiesz się, jak pracować maszynka , trymerem, brzytwą i nożyczkami, by broda wyglądała perfekcyjnie i była dopasowana do stylu klienta.",
@@ -233,6 +236,7 @@ const Training = () => {
     },
     {
       photo: Panel4Image,
+      alt: "Mężczyzna z krótką fryzurą typu fade, stworzony w MENTO BARBER Bochnia",
       title: "Krótkie formy + fade + więcej praktyki (2 dni)",
       description:
         "Podczas tego dwudniowego szkolenia skupimy się na technice cieniowania od zera, precyzyjnym przejściu tonalnym oraz odpowiednim doborze długości do kształtu głowy. Omówimy i przećwiczymy pracę z maszynką, trymerem oraz shaverem, kładąc duży nacisk na czyste wykończenie i spójność formy. Program szkolenia oparty jest na panelu Krótkie Formy + Fade, jednak w tej edycji rozszerzamy część praktyczną. Uczestnicy wykonają aż trzy pełne fryzury w ciągu dwóch dni, pracując na trzech modelach, co pozwala na realne przećwiczenie technik, powtarzalność ruchów i dopracowanie detali. Szkolenie łączy krótką, konkretną teorię z intensywną pracą warsztatową, dzięki czemu każdy etap – od budowania formy po finalne wykończenie – jest dokładnie przepracowany przy fotelu.",
@@ -309,6 +313,7 @@ const Training = () => {
     },
     {
       photo: Panel5Image,
+      alt: "Salon MENTO BARBER Bochnia w czasie szkolenia, z uczestnikami pracującymi przy fotelach",
       title: "Szkolenia wyjazdowe",
       description:
         "W 2026 roku możemy również odwiedzić Twój salon! Oferujemy elastyczne formy szkoleń dopasowane do Twoich potrzeb – możemy przyjechać do Ciebie na miejscu i przeszkolić cały zespół, lub zorganizować szkolenie w formie zamkniętej grupy w naszej lokalizacji. Dopasowujemy program szkolenia, poziom zaawansowania oraz zakres tematyczny (włosy, broda, combo) do indywidualnych potrzeb Twojego salonu lub zespołu.",

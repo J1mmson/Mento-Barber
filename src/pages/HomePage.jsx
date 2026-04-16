@@ -26,19 +26,19 @@ import Photo2 from "../assets/page2photo.webp";
 import Gradient from "../assets/gradient.svg";
 
 // Gallery
-import galeria1 from "../assets/gallery/galeria1.jpg";
-import galeria2 from "../assets/gallery/galeria2.jpg";
-import galeria3 from "../assets/gallery/galeria3.jpg";
-import galeria4 from "../assets/gallery/galeria4.jpg";
-import galeria5 from "../assets/gallery/galeria5.jpg";
-import galeria6 from "../assets/gallery/galeria6.jpg";
-import galeria7 from "../assets/gallery/galeria7.jpg";
-import galeria8 from "../assets/gallery/galeria8.jpg";
-import galeria9 from "../assets/gallery/galeria9.jpg";
-import galeria10 from "../assets/gallery/galeria10.jpg";
-import galeria11 from "../assets/gallery/galeria11.jpg";
-import galeria12 from "../assets/gallery/galeria12.jpg";
-import galeria13 from "../assets/gallery/galeria13.jpg";
+import galeria1 from "../assets/gallery/galeria1.webp";
+import galeria2 from "../assets/gallery/galeria2.webp";
+import galeria3 from "../assets/gallery/galeria3.webp";
+import galeria4 from "../assets/gallery/galeria4.webp";
+import galeria5 from "../assets/gallery/galeria5.webp";
+import galeria6 from "../assets/gallery/galeria6.webp";
+import galeria7 from "../assets/gallery/galeria7.webp";
+import galeria8 from "../assets/gallery/galeria8.webp";
+import galeria9 from "../assets/gallery/galeria9.webp";
+import galeria10 from "../assets/gallery/galeria10.webp";
+import galeria11 from "../assets/gallery/galeria11.webp";
+import galeria12 from "../assets/gallery/galeria12.webp";
+import galeria13 from "../assets/gallery/galeria13.webp";
 
 // Barbers
 import PhotoJimmy from "../assets/page3jimmy.webp";
