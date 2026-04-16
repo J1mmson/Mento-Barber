@@ -243,7 +243,7 @@ const HomePage = () => {
                 </a>
               </div>
             </motion.div>
-            <motion.img
+            <img
               src={Photo1}
               alt=" Tło z barberem z MENTO BARBER Bochnia"
               fetchPriority="high"
@@ -376,7 +376,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <motion.img
+            <img
               src={Photo1}
               alt=" Tło z barberem z MENTO BARBER Bochnia"
               fetchPriority="high"
