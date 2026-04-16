@@ -70,13 +70,16 @@ const Barber2 = ({ slideInFromRight, fadeInFromLeft }) => {
 					</motion.div>
 					<img
 						src={Gradient}
-						alt='Gradient'
+						 alt=""  
+    					aria-hidden="true"
+  						loading="lazy"
 						className='absolute top-0 right-0 w-1/2 h-auto pointer-events-none z-0'
 						style={{ top: -350, right: -350 }}
 					/>
 					<img
 						src={Barber}
-						alt='Background'
+						alt='Barber Kacper - Mento Barber Bochnia'
+						loading="lazy"
 						className='absolute bottom-0 right-0 w-1/2 h-auto pointer-events-none'
 						style={{ bottom: -320, right: 100, zIndex: 1 }}
 					/>
@@ -115,13 +118,15 @@ const Barber2 = ({ slideInFromRight, fadeInFromLeft }) => {
 					</div>
 					<img
 						src={Barber}
-						alt='Background'
+						alt="Barber Kacper - Mento Barber Bochnia" 
+  						loading="lazy"
 						className='absolute top-0 w-[700px] max-w-none z-10' // Added maxWidth constraint
 						style={{ right: "-125px", top: "-100px" }}
 					/>
 					<img
 						src={Gradient}
-						alt='Gradient'
+						alt=""
+						aria-hidden="true"
 						className='absolute top-0 z-0 w-[800px] max-w-none'
 						style={{ right: "-200px", top: "-200px" }}
 					/>
