@@ -21,7 +21,6 @@ import Barber8 from "../components/Barber8";
 import FacebookLogo from "../assets/facebook_logo.svg";
 import InstagramLogo from "../assets/instagram_logo.svg";
 import TikTokLogo from "../assets/tiktok_logo.svg";
-import Photo1 from "../assets/page1photo.webp";
 import Photo2 from "../assets/page2photo.webp";
 import Gradient from "../assets/gradient.svg";
 
@@ -244,9 +243,11 @@ const HomePage = () => {
               </div>
             </motion.div>
             <img
-              src={Photo1}
+              src="/page1photo.webp"
               alt=" Tło z barberem z MENTO BARBER Bochnia"
               fetchPriority="high"
+              width="897"   
+              height="983"
               className="absolute bottom-0 right-0 w-[40%] h-auto pointer-events-none z-10"
               style={{ bottom: -60 }}
               initial="hidden"
@@ -377,9 +378,11 @@ const HomePage = () => {
               </div>
             </div>
             <img
-              src={Photo1}
+              src="/page1photo.webp"
               alt=" Tło z barberem z MENTO BARBER Bochnia"
               fetchPriority="high"
+              width="897"   
+              height="983"
               className="absolute inset-0 mx-auto w-[150%] h-auto object-contain pointer-events-none z-10"
               style={{ top: useWindowSize().height < 700 ? 40 : 80 }}
               initial="hidden"
