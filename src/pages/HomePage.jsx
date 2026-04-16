@@ -83,6 +83,7 @@ const HomePage = () => {
     cssEase: "linear",
     arrows: false,
     pauseOnHover: false,
+    lazyLoad: "ondemand"
   };
 
   const reverseSettings = {
@@ -213,7 +214,7 @@ const HomePage = () => {
                   <img
                     src={FacebookLogo}
                     alt="facebook_logo"
-                    style={{ height: "48px" }}
+                    style={{ height: "38px", width: "auto" }}
                   />
                 </a>
                 <a
@@ -225,7 +226,7 @@ const HomePage = () => {
                   <img
                     src={InstagramLogo}
                     alt="instagram_logo"
-                    style={{ height: "38px" }}
+                    style={{ height: "38px", width: "auto" }}
                   />
                 </a>
                 <a
@@ -237,14 +238,15 @@ const HomePage = () => {
                   <img
                     src={TikTokLogo}
                     alt="tiktok_logo"
-                    style={{ height: "38px" }}
+                    style={{ height: "38px", width: "auto" }}
                   />
                 </a>
               </div>
             </motion.div>
             <motion.img
               src={Photo1}
-              alt=" Tło z barberem z MENTO BARBER Bochnia, prezentujące jego umiejętności fryzjerskie"
+              alt=" Tło z barberem z MENTO BARBER Bochnia"
+              fetchPriority="high"
               className="absolute bottom-0 right-0 w-[40%] h-auto pointer-events-none z-10"
               style={{ bottom: -60 }}
               initial="hidden"
@@ -299,7 +301,7 @@ const HomePage = () => {
                   <img
                     src={FacebookLogo}
                     alt="facebook_logo"
-                    style={{ height: "48px" }}
+                    style={{ height: "48px", width: "auto" }}
                   />
                 </a>
                 <a
@@ -311,7 +313,7 @@ const HomePage = () => {
                   <img
                     src={InstagramLogo}
                     alt="instagram_logo"
-                    style={{ height: "38px" }}
+                    style={{ height: "38px", width: "auto" }}
                   />
                 </a>
                 <a
@@ -323,7 +325,7 @@ const HomePage = () => {
                   <img
                     src={TikTokLogo}
                     alt="tiktok_logo"
-                    style={{ height: "38px" }}
+                    style={{ height: "38px", width: "auto" }}
                   />
                 </a>
               </div>
@@ -377,6 +379,7 @@ const HomePage = () => {
             <motion.img
               src={Photo1}
               alt=" Tło z barberem z MENTO BARBER Bochnia"
+              fetchPriority="high"
               className="absolute inset-0 mx-auto w-[150%] h-auto object-contain pointer-events-none z-10"
               style={{ top: useWindowSize().height < 700 ? 40 : 80 }}
               initial="hidden"
