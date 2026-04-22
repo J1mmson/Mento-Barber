@@ -76,15 +76,14 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 						style={{ top: -350, right: -350 }}
 					/>
 					<img
-                    src={Barber}
-                    alt="Barber Natalia - Mento Barber Bochnia"
-                    loading="lazy"
-                    className="absolute bottom-0 right-0 w-[45%] h-auto pointer-events-none"
-                    style={{ 
-                    bottom: -20, 
-                    right: 50, 
-                    zIndex: 1 
-                    }}
+    src={Barber}
+    alt="Barber Natalia - Mento Barber Bochnia"
+    loading="lazy"
+    className="absolute bottom-0 right-0 w-[45%] h-auto object-contain pointer-events-none z-10"
+    style={{
+        bottom: -20,
+        right: 50,
+    }}
 />
 				</div>
 			) : (
@@ -128,12 +127,16 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
                         }}
 />
 					<img
-						src={Gradient}
-						alt=""
-						aria-hidden="true"
-						className='absolute top-0 z-0 w-[800px] max-w-none'
-						style={{ right: "-200px", top: "-200px" }}
-					/>
+    src={Barber}
+    alt="Barber Natalia - Mento Barber Bochnia"
+    loading="lazy"
+    className="absolute top-0 w-[600px] max-w-none z-10"
+    style={{
+        
+        top: "-150px",
+        left: 100
+    }}
+/>
 					<div
 						className='absolute bottom-0 left-0 w-full h-[60%] pointer-events-none z-10'
 						style={{
