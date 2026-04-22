@@ -79,7 +79,7 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 						src={Barber}
 						alt='Barber Natalia - Mento Barber Bochnia'
 						loading="lazy"
-						className="absolute bottom-0 right-0 pointer-events-none"
+						className="absolute bottom-0 right-0 w-[50%] h-auto pointer-events-none"
                         style={{
                         bottom: "-28vh",
                         right: "3vw",
