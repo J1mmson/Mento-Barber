@@ -123,7 +123,7 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
                     loading="lazy"
                     
                     className="absolute w-[800px] max-w-none z-10"
-            style={{ right: "-50px", top: "100px" }}
+            style={{ right: "-50px", top: "200px" }}
 />
 					<img
 						src={Gradient}
