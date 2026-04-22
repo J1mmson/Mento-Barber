@@ -133,7 +133,7 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 						alt=""
 						aria-hidden="true"
 						className='absolute top-0 z-0 w-[800px] max-w-none'
-						style={{ right: "-200px", top: "-200px" }}
+						style={{ right: "-400px", top: "-200px" }}
 					/>
 					<div
 						className='absolute bottom-0 left-0 w-full h-[60%] pointer-events-none z-10'
