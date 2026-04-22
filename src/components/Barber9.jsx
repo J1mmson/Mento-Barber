@@ -39,14 +39,13 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 								textShadow:
 									"0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
 							}}>
-							KACPER
+							NATALIA
 						</h1>
 						<p className='mt-4 max-w-[430px] text-[15px] font-light'>
-							Siema! Jestem Kacper – młody barber z pasją do cięcia. Uwielbiam
-							fryzury typu crop i ciągle rozwijam swoje umiejętności, byś zawsze
-							wychodził z fotela zadowolony. Sport to moja zajawka, a humor
-							nigdy mnie nie opuszcza. Wpadnij, ogarniemy Twój look i przy
-							okazji się pośmiejemy!
+							Cześć! Tu Natalia – barberka z okiem do detali i wielką zajawką do męskich cięć.
+                            Uwielbiam klasyczne formy, więc z mojego fotela zejdziesz dopracowany w każdym calu.
+                            Poza pracą kręci mnie historia oraz podróże, a uśmiech to mój znak rozpoznawczy.
+                            Wpadaj na fotel, ogarniemy świeży look i przy okazji świetnie pogadamy!
 						</p>
 					</motion.div>
 					<motion.div
@@ -80,8 +79,13 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 						src={Barber}
 						alt='Barber Natalia - Mento Barber Bochnia'
 						loading="lazy"
-						className='absolute bottom-0 right-0 w-1/2 h-auto pointer-events-none'
-						style={{ bottom: -320, right: 100, zIndex: 1 }}
+						className="absolute bottom-0 right-0 pointer-events-none"
+                        style={{
+                        bottom: "-28vh",
+                        right: "3vw",
+                        zIndex: 1,
+                        width: "37.5vw",
+                        height: "auto",}}
 					/>
 				</div>
 			) : (
@@ -106,7 +110,7 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 								width: "100%",
 								whiteSpace: "nowrap",
 							}}>
-							KACPER
+							Natalia
 						</h1>
 						<p className='mt-4 mb-[25%] max-w-[430px] text-[14px] font-light text-white text-center'>
 							Cześć! Tu Natalia – barberka z okiem do detali i wielką zajawką do męskich cięć.
