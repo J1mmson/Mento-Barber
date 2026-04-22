@@ -118,12 +118,15 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
                         </p>        
 					</div>
 					<img
-                    src={Barber}
-                    alt="Barber Natalia - Mento Barber Bochnia"
-                    loading="lazy"
-                    
-                    className="absolute w-[800px] max-w-none z-10"
-            style={{ right: "-120px", top: "300px" }}
+    src={Barber}
+    alt="Barber Natalia - Mento Barber Bochnia"
+    loading="lazy"
+    className="absolute max-w-none z-10 pointer-events-none"
+    style={{ 
+        top: "0px",       
+        right: "-100px",  
+        width: "650px"    
+    }}
 />
 					<img
 						src={Gradient}
