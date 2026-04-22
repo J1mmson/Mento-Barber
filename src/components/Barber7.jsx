@@ -114,11 +114,10 @@ const Barber7 = ({ slideInFromRight, fadeInFromLeft }) => {
               GABI
             </h1>
             <p className="mt-4 mb-[25%] max-w-[430px] text-[14px] font-light text-white text-center">
-              Lubię pracować nad fryzurami modernistycznymi, z teksturą, tak by
-              finalny efekt wyglądał świeżo i ciekawie. Tak by fryzura mogła
-              wyglądać dobrze z układaniem jak i bez. Bardzo dobrze czuję się
-              przy fryzurach typu french crop, ale klasykę w postaci side part
-              również często i chętnie ścinam.
+              Hej, jestem Gabi! Lubię pracować nad fryzurami modernistycznymi z teksturą,
+              tak aby fryzura mogła wyglądać dobrze z układaniem jak i bez.
+              Bardzo dobrze czuję się przy fryzurach typu french crop,
+              ale klasykę w postaci side part również często i chętnie ścinam.
             </p>
           </div>
           <img

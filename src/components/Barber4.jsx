@@ -107,7 +107,7 @@ const Barber4 = ({ slideInFromRight, fadeInFromLeft }) => {
 							ANNA
 						</h1>
 						<p className='mt-4 mb-[25%] max-w-[430px] text-[14px] font-light text-white text-center'>
-							Uwielbiam klasyczne strzyżenia, które łączą elegancję z
+							Hej, jestem Ania, uwielbiam klasyczne strzyżenia, które łączą elegancję z
 							nowoczesnym stylem. Stale rozwijam się, biorąc udział w zawodach,
 							a energia do pracy płynie od ludzi, którzy mnie otaczają. Jeśli
 							cenisz precyzję i dobry klimat – zapraszam na fotel!

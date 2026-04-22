@@ -17,6 +17,7 @@ import Barber5 from "../components/Barber5";
 import Barber6 from "../components/Barber6";
 import Barber7 from "../components/Barber7";
 import Barber8 from "../components/Barber8";
+import Barber9 from "../components/Barber9";
 
 import FacebookLogo from "../assets/facebook_logo.svg";
 import InstagramLogo from "../assets/instagram_logo.svg";
@@ -713,8 +714,14 @@ const HomePage = () => {
           fadeInFromLeft={fadeInFromLeft}
         />
       </div>
-      <div id="barbers-end">
+      <div>
         <Barber8
+          slideInFromRight={slideInFromRight}
+          fadeInFromLeft={fadeInFromLeft}
+        />
+      </div>
+      <div id="barbers-end"> 
+        <Barber9
           slideInFromRight={slideInFromRight}
           fadeInFromLeft={fadeInFromLeft}
         />

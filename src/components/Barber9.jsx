@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 
 import Gradient from "../assets/gradient.svg";
-import Barber from "../assets/barber6.webp";
+import Barber from "../assets/barber9.webp";
 import Texture from "../assets/texture.webp";
 import { motion } from "framer-motion";
 
 import { useIsMobile } from "../Hooks/useIsMobile";
 
-const Barber6 = ({ slideInFromRight, fadeInFromLeft }) => {
+const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 	const isMobile = useIsMobile();
 
 	return (
@@ -39,14 +39,14 @@ const Barber6 = ({ slideInFromRight, fadeInFromLeft }) => {
 								textShadow:
 									"0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
 							}}>
-							JULIA
+							KACPER
 						</h1>
 						<p className='mt-4 max-w-[430px] text-[15px] font-light'>
-							Bardzo dobrze czuje sie w długich formach, pozwalaja na kreatywne
-							stylizacje, wymagające precyzyjnego cięcia i dopasowania do
-							indywidualnych potrzeb klienta. Uwielbiam tworzyc efekt
-							&quot;messy look&quot;, który nadaje strzyżeniu swobody i
-							naturalności.
+							Siema! Jestem Kacper – młody barber z pasją do cięcia. Uwielbiam
+							fryzury typu crop i ciągle rozwijam swoje umiejętności, byś zawsze
+							wychodził z fotela zadowolony. Sport to moja zajawka, a humor
+							nigdy mnie nie opuszcza. Wpadnij, ogarniemy Twój look i przy
+							okazji się pośmiejemy!
 						</p>
 					</motion.div>
 					<motion.div
@@ -58,29 +58,30 @@ const Barber6 = ({ slideInFromRight, fadeInFromLeft }) => {
 						<h1
 							className='font-bold uppercase text-center'
 							style={{
-								fontSize: "30vw",
+								fontSize: "26vw",
 								fontWeight: "bold",
 								color: "transparent",
 								WebkitTextStroke: "4px #ff6600",
 								width: "100%",
 								whiteSpace: "nowrap",
 							}}>
-							JULIA
+							NATALIA
 						</h1>
 					</motion.div>
 					<img
 						src={Gradient}
-						alt=""
-						aria-hidden="true"
+						 alt=""  
+    					aria-hidden="true"
+  						loading="lazy"
 						className='absolute top-0 right-0 w-1/2 h-auto pointer-events-none z-0'
 						style={{ top: -350, right: -350 }}
 					/>
 					<img
 						src={Barber}
-						alt="Barber Julia - Mento Barber Bochnia"
+						alt='Barber Natalia - Mento Barber Bochnia'
 						loading="lazy"
 						className='absolute bottom-0 right-0 w-1/2 h-auto pointer-events-none'
-						style={{ bottom: -320, right: -80, zIndex: 1 }}
+						style={{ bottom: -320, right: 100, zIndex: 1 }}
 					/>
 				</div>
 			) : (
@@ -98,28 +99,28 @@ const Barber6 = ({ slideInFromRight, fadeInFromLeft }) => {
 						<h1
 							className='font-bold uppercase text-center'
 							style={{
-								fontSize: "25vw", // Zmieniono na jednostkę vw, aby dopasować do szerokości ekranu
+								fontSize: "23vw", // Zmieniono na jednostkę vw, aby dopasować do szerokości ekranu
 								fontWeight: "bold",
 								color: "transparent",
 								WebkitTextStroke: "2px #ff6600",
 								width: "100%",
 								whiteSpace: "nowrap",
 							}}>
-							JULIA
+							KACPER
 						</h1>
 						<p className='mt-4 mb-[25%] max-w-[430px] text-[14px] font-light text-white text-center'>
-							Cześć, nazywam się Julia, uwielbiam klasyczne strzyżenia, które łączą elegancję z
-							nowoczesnym stylem. Stale rozwijam się, biorąc udział w zawodach,
-							a energia do pracy płynie od ludzi, którzy mnie otaczają. Jeśli
-							cenisz precyzję i dobry klimat – zapraszam na fotel!
-						</p>
+							Cześć! Tu Natalia – barberka z okiem do detali i wielką zajawką do męskich cięć.
+                            Uwielbiam klasyczne formy, więc z mojego fotela zejdziesz dopracowany w każdym calu.
+                            Poza pracą kręci mnie historia oraz podróże, a uśmiech to mój znak rozpoznawczy.
+                            Wpadaj na fotel, ogarniemy świeży look i przy okazji świetnie pogadamy!
+                        </p>        
 					</div>
 					<img
 						src={Barber}
-						alt='Barber Julia - Mento Barber Bochnia'
-						loading="lazy"
+						alt="Barber Natalia - Mento Barber Bochnia" 
+  						loading="lazy"
 						className='absolute top-0 w-[700px] max-w-none z-10' // Added maxWidth constraint
-						style={{ right: "-125px", top: "-150px" }}
+						style={{ right: "-125px", top: "-100px" }}
 					/>
 					<img
 						src={Gradient}
@@ -140,9 +141,9 @@ const Barber6 = ({ slideInFromRight, fadeInFromLeft }) => {
 	);
 };
 
-export default Barber6;
+export default Barber9;
 
-Barber6.propTypes = {
+Barber9.propTypes = {
 	slideInFromRight: PropTypes.object,
 	fadeInFromLeft: PropTypes.object,
 };
