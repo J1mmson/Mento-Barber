@@ -122,7 +122,7 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
                     alt="Barber Natalia - Mento Barber Bochnia"
                     loading="lazy"
                     
-                    className="absolute top-0 w-[600px] max-w-none z-10"
+                    className="absolute top-300 w-[500px] max-w-none z-10"
             style={{ right: "-70px", top: "50px" }}
 />
 					<img
