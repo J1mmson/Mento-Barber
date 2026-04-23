@@ -360,13 +360,14 @@ const HomePage = () => {
                 w której każdy buduje świetną atmosferę. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
               <div className="flex flex-col items-center space-y-[12px] w-full text-[12px]">
-                <div className="border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center ">
+                <div className="border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center">
                   Nad Babicą 2, Bochnia
                 </div>
-                 <a 
-                href="tel:+48798144399" 
-                className="flex flex-col items-center space-y-[12px] w-full text-[12px] hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
-                +48 798 144 399
+                <a 
+                  href="tel:+48798144399" 
+                  className="border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 block"
+                >
+                  +48 798 144 399
                 </a>
               </div>
             </div>

@@ -112,7 +112,7 @@ const Barber8 = ({ slideInFromRight, fadeInFromLeft }) => {
               className="font-bold uppercase text-center"
               style={{
              fontFamily: '"Arial", "Helvetica", sans-serif',
-								fontSize: "20vw", // Zmieniono na jednostkę vw, aby dopasować do szerokości ekranu
+								fontSize: "18vw", // Zmieniono na jednostkę vw, aby dopasować do szerokości ekranu
 								fontWeight: "bold",
 								textTransform: "uppercase",
 								color: "transparent",
