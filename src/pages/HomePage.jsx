@@ -206,7 +206,7 @@ const HomePage = () => {
                 +48 798 144 399
                 </a>
               </div>
-              <div className="flex space-x-4 text-textPrimary items-center">
+              <div className="flex space-x-4 text-textPrimary items-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
                 <a
                   href="https://www.facebook.com/MentoBarberShop"
                   aria-label="Nasz profil na Facebooku"
@@ -216,7 +216,7 @@ const HomePage = () => {
                   <img
                     src={FacebookLogo}
                     alt="facebook_logo"
-                    style={{ height: "38px", width: "auto" }}
+                    style={{ height: "40px", width: "auto" }}
                   />
                 </a>
                 <a
