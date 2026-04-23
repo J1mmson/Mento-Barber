@@ -6,7 +6,7 @@ import BlogHaircut from "./pages/BlogHaircut";
 import BlogBeardCondition from "./pages/BlogBeardCondition";
 import BlogWeddingDay from "./pages/BlogWeddingDay";
 import BlogBangs from "./pages/BlogBangs";
-import BlogFreqency from "./pages/BlogFrequency";
+import BlogFrequency from "./pages/BlogFrequency";
 import BlogBalding from "./pages/BlogBalding";
 import BlogRecedingHairlineHairstyle from "./pages/BlogRecedingHairlineHairstyle";
 import BlogHairStyling from "./pages/BlogHairstyling";
@@ -21,7 +21,7 @@ function App() {
         <Route path="/blog/Frequency" element={<BlogFrequency />} />
         <Route path="/blog/BeardCondition" element={<BlogBeardCondition />} />
         <Route path="/blog/WeddingDay" element={<BlogWeddingDay />} />
-        <Route path="/blog/bangs" element={<BlogBangs />} />
+        <Route path="/blog/Bangs" element={<BlogBangs />} />
         <Route path="/blog/Haircut" element={<BlogHaircut />} />
         <Route path="/blog/HairStyling" element={<BlogHairStyling />} />
         <Route path="/blog/Balding" element={<BlogBalding />} />
