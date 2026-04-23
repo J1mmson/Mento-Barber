@@ -104,8 +104,10 @@ const Barber2 = ({ slideInFromRight, fadeInFromLeft }) => {
 								fontFamily: '"Arial", "Helvetica", sans-serif',
 								fontSize: "23vw", // Zmieniono na jednostkę vw, aby dopasować do szerokości ekranu
 								fontWeight: "bold",
+								textTransform: "uppercase",
 								color: "transparent",
 								WebkitTextStroke: "2px #ff6600",
+								textShadow: "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
 								width: "100%",
 								whiteSpace: "nowrap",
 							}}>
