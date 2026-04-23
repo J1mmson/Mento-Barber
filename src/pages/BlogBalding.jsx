@@ -27,24 +27,26 @@ const BlogBalding = () => {
       <div className="relative h-screen overflow-auto">
         <div className="flex items-center justify-center mt-[10%] mb-[5%]">
           <div
-            className="w-[70%] bg-[#171D1F] flex flex-col p-[40px] rounded-[10px]"
+            className="w-[75%] max-w-[1200px] bg-[#171D1F] flex flex-col p-[40px] rounded-[10px]"
             style={{ boxShadow: "0px 8px 10px #00000099" }}
           >
             
-            {/* --- NOWY UKŁAD DESKTOP (Zdjęcie po lewej, tekst po prawej) --- */}
-            <div className="flex flex-row gap-[40px] mb-[32px]">
+            {/* --- UKŁAD DWUKOLUMNOWY DLA CAŁOŚCI --- */}
+            <div className="flex flex-row gap-[50px] relative">
               
-              {/* Kolumna lewa: Pionowe Zdjęcie 9:16 */}
-              <div className="w-[35%] shrink-0 rounded-[6px] overflow-hidden aspect-[9/16] shadow-lg">
-                <img
-                  src={Blog5}
-                  alt="panel"
-                  className="w-full h-full object-cover"
-                />
+              {/* KOLUMNA LEWA: Zdjęcie (Sticky - podąża za scrollem) */}
+              <div className="w-[35%] shrink-0 self-start sticky top-[40px]">
+                <div className="rounded-[6px] overflow-hidden aspect-[9/16] shadow-lg">
+                  <img
+                    src={Blog5}
+                    alt="panel"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
               </div>
 
-              {/* Kolumna prawa: Tytuł i Wstęp */}
-              <div className="w-[65%] flex flex-col justify-center">
+              {/* KOLUMNA PRAWA: Cały tekst artykułu */}
+              <div className="w-[65%] flex flex-col">
                 <p className="text-[12px] text-gray-400 font-light">
                   Dodano: 09.09.2025
                 </p>
@@ -58,98 +60,94 @@ const BlogBalding = () => {
                   oznacza, że musisz pogodzić się z losem. Dzięki nowoczesnym
                   zabiegom możesz działać prewencyjnie i zatrzymać włosy na dłużej.
                 </p>
-              </div>
-            </div>
-            {/* ----------------------------------------------------------- */}
 
-            <hr className="border-[white] opacity-10 my-[16px]" />
+                <hr className="border-[white] opacity-10 my-[32px]" />
 
-            {/* Reszta artykułu na pełną szerokość */}
-            <div className="max-w-[85%] mx-auto">
-              <h1 className="text-[28px] text-prime font-bold mt-[32px]">
-                Mezoterapia igłowa Dr.CYJ – co to właściwie jest?
-              </h1>
-              <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
-                Brzmi skomplikowanie, ale zasada jest prosta:
-              </p>
-              <ul className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-disc leading-relaxed">
-                <li>
-                  za pomocą bardzo cienkiej igły podaje się w skórę głowy
-                  specjalny <b className="text-prime">koktajl peptydów i składników odżywczych</b>,
-                </li>
-                <li>
-                  zabieg pobudza krążenie, odżywia cebulki i stymuluje wzrost
-                  włosów,
-                </li>
-                <li>
-                  działa tam, gdzie żadne szampony czy odżywki nie są w stanie
-                  dotrzeć – bezpośrednio do mieszka włosowego.
-                </li>
-              </ul>
-              <p className="text-[16px] text-gray-300 mt-[16px] font-light italic border-l-2 border-prime pl-4">
-                - To jak &quot;doping&quot; dla włosów – dostają energię do
-                wzrostu i dłużej utrzymują swoją siłę.
-              </p>
-
-              <h1 className="text-[28px] text-prime font-bold mt-[40px]">
-                Mikronakłuwanie z egzosomami – regeneracja na poziomie komórkowym
-              </h1>
-              <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
-                Tutaj zamiast wstrzykiwania używa się specjalnego urządzenia z
-                mikroigiełkami, które robią w skórze bardzo drobne nakłucia.
-                Dzięki temu:
-              </p>
-              <ul className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-disc leading-relaxed">
-                <li>skóra dostaje sygnał, żeby się regenerować,</li>
-                <li>
-                  mieszki włosowe lepiej wchłaniają podawane w trakcie zabiegu
-                  <b className="text-prime"> egzosomy</b> – nowoczesne cząsteczki, które wspierają
-                  odbudowę i wzrost włosów,
-                </li>
-                <li>poprawia się ukrwienie i dotlenienie skóry głowy.</li>
-              </ul>
-              <p className="text-[16px] text-gray-300 mt-[16px] font-light italic border-l-2 border-prime pl-4">
-                - Można to porównać do &quot;resetu&quot; dla skóry – pobudzasz
-                ją, a ona zaczyna pracować lepiej.
-              </p>
-
-              <h1 className="text-[28px] text-prime font-bold mt-[40px]">
-                Dlaczego warto zacząć wcześniej?
-              </h1>
-              <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
-                Jeśli wiesz, że masz &quot;gen do łysienia&quot;, nie czekaj, aż
-                włosy zaczną wypadać garściami. Profilaktyka działa tylko wtedy,
-                gdy w porę zadbasz o mieszki włosowe.
-              </p>
-              <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
-                Łatwiej jest <b className="text-prime">utrzymać to, co masz</b>, niż odzyskać włosy,
-                które już wypadły.
-              </p>
-              <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
-                Regularne zabiegi + pielęgnacja = włosy pozostają gęste i mocne na
-                dłużej.
-              </p>
-
-              <div className="bg-[#1f2629] p-[24px] rounded-[8px] mt-[40px] border border-gray-700">
-                <h1 className="text-[24px] text-prime font-bold flex items-center gap-2">
-                  <span>💡</span> Pro Tip:
+                <h1 className="text-[28px] text-prime font-bold mt-[10px]">
+                  Mezoterapia igłowa Dr.CYJ – co to właściwie jest?
                 </h1>
-                <p className="text-[16px] text-white font-light mt-2">
-                  Im szybciej zaczniesz działać, tym większe masz
-                  szanse, żeby zachować gęste włosy na długie lata. To inwestycja w
-                  Twój wygląd i pewność siebie.
+                <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
+                  Brzmi skomplikowanie, ale zasada jest prosta:
                 </p>
-                <p className="text-[16px] text-white mt-[16px] font-medium">
-                  Umów się na konsultację do Mento Care aby dowiedzieć się więcej:{" "}
-                  <a
-                    href="http://mentocare.booksy.com"
-                    className="text-orange-500 hover:text-white transition-colors duration-300 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    mentocare.booksy.com
-                  </a>
+                <ul className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-disc leading-relaxed">
+                  <li>
+                    za pomocą bardzo cienkiej igły podaje się w skórę głowy
+                    specjalny <b className="text-prime">koktajl peptydów i składników odżywczych</b>,
+                  </li>
+                  <li>
+                    zabieg pobudza krążenie, odżywia cebulki i stymuluje wzrost
+                    włosów,
+                  </li>
+                  <li>
+                    działa tam, gdzie żadne szampony czy odżywki nie są w stanie
+                    dotrzeć – bezpośrednio do mieszka włosowego.
+                  </li>
+                </ul>
+                <p className="text-[16px] text-gray-300 mt-[16px] font-light italic border-l-2 border-prime pl-4">
+                  - To jak &quot;doping&quot; dla włosów – dostają energię do
+                  wzrostu i dłużej utrzymują swoją siłę.
                 </p>
+
+                <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+                  Mikronakłuwanie z egzosomami – regeneracja na poziomie komórkowym
+                </h1>
+                <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
+                  Tutaj zamiast wstrzykiwania używa się specjalnego urządzenia z
+                  mikroigiełkami, które robią w skórze bardzo drobne nakłucia.
+                  Dzięki temu:
+                </p>
+                <ul className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-disc leading-relaxed">
+                  <li>skóra dostaje sygnał, żeby się regenerować,</li>
+                  <li>
+                    mieszki włosowe lepiej wchłaniają podawane w trakcie zabiegu
+                    <b className="text-prime"> egzosomy</b> – nowoczesne cząsteczki, które wspierają
+                    odbudowę i wzrost włosów,
+                  </li>
+                  <li>poprawia się ukrwienie i dotlenienie skóry głowy.</li>
+                </ul>
+                <p className="text-[16px] text-gray-300 mt-[16px] font-light italic border-l-2 border-prime pl-4">
+                  - Można to porównać do &quot;resetu&quot; dla skóry – pobudzasz
+                  ją, a ona zaczyna pracować lepiej.
+                </p>
+
+                <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+                  Dlaczego warto zacząć wcześniej?
+                </h1>
+                <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
+                  Jeśli wiesz, że masz &quot;gen do łysienia&quot;, nie czekaj, aż
+                  włosy zaczną wypadać garściami. Profilaktyka działa tylko wtedy,
+                  gdy w porę zadbasz o mieszki włosowe.
+                </p>
+                <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
+                  Łatwiej jest <b className="text-prime">utrzymać to, co masz</b>, niż odzyskać włosy,
+                  które już wypadły.
+                </p>
+                <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
+                  Regularne zabiegi + pielęgnacja = włosy pozostają gęste i mocne na
+                  dłużej.
+                </p>
+
+                <div className="bg-[#1f2629] p-[24px] rounded-[8px] mt-[40px] mb-[20px] border border-gray-700">
+                  <h1 className="text-[24px] text-prime font-bold flex items-center gap-2">
+                    <span>💡</span> Pro Tip:
+                  </h1>
+                  <p className="text-[16px] text-white font-light mt-2">
+                    Im szybciej zaczniesz działać, tym większe masz
+                    szanse, żeby zachować gęste włosy na długie lata. To inwestycja w
+                    Twój wygląd i pewność siebie.
+                  </p>
+                  <p className="text-[16px] text-white mt-[16px] font-medium">
+                    Umów się na konsultację do Mento Care aby dowiedzieć się więcej:{" "}
+                    <a
+                      href="http://mentocare.booksy.com"
+                      className="text-orange-500 hover:text-white transition-colors duration-300 underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      mentocare.booksy.com
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -178,14 +176,14 @@ const BlogBalding = () => {
         }}
       />
 
-      {/* Kontener z przewijaną treścią */}
+      {/* Kontener z przewijaną treścią dla mobile */}
       <div className="relative h-screen overflow-auto">
         <div className="flex items-center justify-center mt-[100px] mb-[5%]">
           <div
             className="w-full bg-[#171D1F] flex flex-col p-[24px] m-[16px] rounded-[10px] z-10"
             style={{ boxShadow: "0px 8px 10px #00000099" }}
           >
-            {/* ZMIANA MOBILE: Zdjęcie 9:16 z maksymalną wysokością, żeby nie zajęło 100% ekranu */}
+            {/* Zdjęcie 9:16 dla urządzeń mobilnych */}
             <div className="rounded-[6px] overflow-hidden aspect-[9/16] max-h-[60vh] w-full mb-[24px]">
               <img
                 src={Blog5}
