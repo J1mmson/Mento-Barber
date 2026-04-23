@@ -5,7 +5,7 @@ import Gradient from "../assets/gradient.svg";
 import { useIsMobile } from "../Hooks/useIsMobile";
 import Blog1 from "../assets/blog1.webp";
 
-const BlogBoyHaircut = () => {
+const BlogFrequency = () => {
   const isMobile = useIsMobile();
 
   return !isMobile ? (
@@ -49,33 +49,7 @@ const BlogBoyHaircut = () => {
               chcesz wyglądać na co dzień.
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
-            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[16px] mt-[12px] mb-[24px]">
-              {[
-                boy1,
-                boy2,
-                boy3,
-                boy4,
-                boy5,
-                boy6,
-                boy7,
-                boy8,
-                boy9,
-                boy10,
-                boy11,
-                boy12,
-              ].map((boy, index) => (
-                <div
-                  key={index}
-                  className="w-full h-[500px] bg-gray-300 rounded-[6px] overflow-hidden"
-                >
-                  <img
-                    src={boy}
-                    alt={`boy${index + 1}`}
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-              ))}
-            </div> */}
+       
             <h1 className="text-[32px] text-prime font-bold">
               1. Krótkie fryzury (fade, buzz cut, crew cut)
             </h1>
@@ -84,7 +58,7 @@ const BlogBoyHaircut = () => {
               zera, to włosy zaczynają tracić kształt już po 2 tygodniach.
               <br />
               <span>
-                👉 Optymalna częstotliwość: <b>co 2–3 tygodnie.</b>
+                - Optymalna częstotliwość: <b>co 2–3 tygodnie.</b>
               </span>
             </p>
 
@@ -96,7 +70,7 @@ const BlogBoyHaircut = () => {
               Możesz chodzić rzadziej, ale wciąż warto dbać o linie i kontury.
               <br />
               <span>
-                👉 Optymalna częstotliwość: <b>co 3–4 tygodnie.</b>
+                - Optymalna częstotliwość: <b>co 3–4 tygodnie.</b>
               </span>
             </p>
 
@@ -108,7 +82,7 @@ const BlogBoyHaircut = () => {
               regularnie podcinać, aby zachować zdrowe końcówki i kształt.
               <br />
               <span>
-                👉 Optymalna częstotliwość: <b>co 6–8 tygodni.</b>
+                - Optymalna częstotliwość: <b>co 6–8 tygodni.</b>
               </span>
             </p>
 
@@ -120,7 +94,7 @@ const BlogBoyHaircut = () => {
               korygowania. Nierówne linie psują cały efekt.
               <br />
               <span>
-                👉 Optymalna częstotliwość: <b>co 2–3 tygodnie</b> (w zależności
+                - Optymalna częstotliwość: <b>co 2–3 tygodnie</b> (w zależności
                 od tempa wzrostu).
               </span>
             </p>
@@ -139,7 +113,7 @@ const BlogBoyHaircut = () => {
             </ul>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <h1 className="text-[32px] text-prime font-bold">
-              💈 Podsumowanie:
+              - Podsumowanie:
             </h1>
             <p className="text-[16px] text-white mt-[12px] mb-[42px] font-light">
               Nie ma jednej złotej zasady dla wszystkich. Najprościej
@@ -206,33 +180,7 @@ const BlogBoyHaircut = () => {
               chcesz wyglądać na co dzień.
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
-            {/* <div className="grid grid-cols-2 gap-[16px] mt-[12px] mb-[24px]">
-              {[
-                boy1,
-                boy2,
-                boy3,
-                boy4,
-                boy5,
-                boy6,
-                boy7,
-                boy8,
-                boy9,
-                boy10,
-                boy11,
-                boy12,
-              ].map((boy, index) => (
-                <div
-                  key={index}
-                  className="w-full h-[350px] bg-gray-300 rounded-[6px] overflow-hidden"
-                >
-                  <img
-                    src={boy}
-                    alt={`boy${index + 1}`}
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-              ))}
-            </div> */}
+
             <h1 className="text-[24px] text-prime font-bold">
               1. Krótkie fryzury (fade, buzz cut, crew cut)
             </h1>
@@ -241,7 +189,7 @@ const BlogBoyHaircut = () => {
               zera, to włosy zaczynają tracić kształt już po 2 tygodniach.
               <br />
               <span>
-                👉 Optymalna częstotliwość: <b>co 2–3 tygodnie.</b>
+                - Optymalna częstotliwość: <b>co 2–3 tygodnie.</b>
               </span>
             </p>
 
@@ -253,7 +201,7 @@ const BlogBoyHaircut = () => {
               Możesz chodzić rzadziej, ale wciąż warto dbać o linie i kontury.
               <br />
               <span>
-                👉 Optymalna częstotliwość: <b>co 3–4 tygodnie.</b>
+                - Optymalna częstotliwość: <b>co 3–4 tygodnie.</b>
               </span>
             </p>
 
@@ -265,7 +213,7 @@ const BlogBoyHaircut = () => {
               regularnie podcinać, aby zachować zdrowe końcówki i kształt.
               <br />
               <span>
-                👉 Optymalna częstotliwość: <b>co 6–8 tygodni.</b>
+                - Optymalna częstotliwość: <b>co 6–8 tygodni.</b>
               </span>
             </p>
 
@@ -277,7 +225,7 @@ const BlogBoyHaircut = () => {
               korygowania. Nierówne linie psują cały efekt.
               <br />
               <span>
-                👉 Optymalna częstotliwość: <b>co 2–3 tygodnie</b> (w zależności
+                - Optymalna częstotliwość: <b>co 2–3 tygodnie</b> (w zależności
                 od tempa wzrostu).
               </span>
             </p>
@@ -296,7 +244,7 @@ const BlogBoyHaircut = () => {
             </ul>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <h1 className="text-[24px] text-prime font-bold">
-              💈 Podsumowanie:
+              - Podsumowanie:
             </h1>
             <p className="text-[14px] text-white mt-[12px] mb-[42px] font-light">
               Nie ma jednej złotej zasady dla wszystkich. Najprościej
@@ -324,4 +272,4 @@ const BlogBoyHaircut = () => {
   );
 };
 
-export default BlogBoyHaircut;
+export default BlogFrequency;

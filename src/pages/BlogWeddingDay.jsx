@@ -5,7 +5,7 @@ import Gradient from "../assets/gradient.svg";
 import { useIsMobile } from "../Hooks/useIsMobile";
 import Blog3 from "../assets/haircut3.webp";
 
-const BlogNewHaircuts = () => {
+const BlogWeddingDay = () => {
   const isMobile = useIsMobile();
 
   return !isMobile ? (
@@ -52,13 +52,13 @@ const BlogNewHaircuts = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <h1 className="text-[32px] text-prime font-bold">
-              Minimum 6 tygodni przed ślubem – pierwsza wizyta w Mento
+              Minimum 6 tygodni przed ślubem – pierwsza wizyta w Mento Barbershop Bochnia
             </h1>
             <p className="text-[16px] text-white mt-[12px] font-light">
               Nie odkładaj przygotowań na ostatnią chwilę.{" "}
               <b>
                 Najpóźniej 6 tygodni przed weselem umów się na strzyżenie w
-                Mento Barber Shop.
+                Mento Barbershop w Bochni.
               </b>
             </p>
             <p className="text-[16px] text-white mt-[12px] font-light">
@@ -74,11 +74,11 @@ const BlogNewHaircuts = () => {
               dzień ślubu.
             </p>
             <h1 className="text-[32px] text-prime font-bold mt-[32px]">
-              Zadbaj o skórę – Mento Care
+              Zadbaj o skórę – Mento Care w Bochni
             </h1>
             <p className="text-[16px] text-white mt-[12px] font-light">
               Twój wygląd to nie tylko fryzura i broda. Skóra również potrzebuje
-              uwagi. Dlatego polecamy wizytę w <b>Mento Care</b>, gdzie Faustyna
+              uwagi. Dlatego polecamy wizytę w <b>Mento Care Bochnia</b>, gdzie Faustyna
               zadba o cerę:
             </p>
             <ul className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-disc">
@@ -93,7 +93,7 @@ const BlogNewHaircuts = () => {
               Dzień przed weselem – finałowe przygotowania
             </h1>
             <p className="text-[16px] text-white mt-[12px] font-light">
-              Na dzień przed tym wielkim wydarzeniem zaplanuj wizytę w Mento:
+              Na dzień przed tym wielkim wydarzeniem zaplanuj wizytę w Mento Barber Shop Bochnia:
             </p>
             <ul className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-disc">
               <li>
@@ -134,7 +134,7 @@ const BlogNewHaircuts = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <h1 className="text-[32px] text-prime font-bold">
-              💈 Podsumowanie:
+              - Podsumowanie:
             </h1>
             <p className="text-[16px] text-white mt-[12px] font-light mb-[42px]">
               Przygotowania pana młodego do ślubu to nie tylko garnitur i spinki
@@ -198,13 +198,13 @@ const BlogNewHaircuts = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <h1 className="text-[24px] text-prime font-bold">
-              Minimum 6 tygodni przed ślubem – pierwsza wizyta w Mento
+              Minimum 6 tygodni przed ślubem – pierwsza wizyta w Mento Barbershop Bochnia
             </h1>
             <p className="text-[14px] text-white mt-[12px] font-light">
               Nie odkładaj przygotowań na ostatnią chwilę.{" "}
               <b>
                 Najpóźniej 6 tygodni przed weselem umów się na strzyżenie w
-                Mento Barber Shop.
+                Mento Barbershop Bochnia.
               </b>
             </p>
             <p className="text-[14px] text-white mt-[12px] font-light">
@@ -220,11 +220,11 @@ const BlogNewHaircuts = () => {
               dzień ślubu.
             </p>
             <h1 className="text-[24px] text-prime font-bold mt-[32px]">
-              Zadbaj o skórę – Mento Care
+              Zadbaj o skórę – Mento Care w Bochni
             </h1>
             <p className="text-[14px] text-white mt-[12px] font-light">
               Twój wygląd to nie tylko fryzura i broda. Skóra również potrzebuje
-              uwagi. Dlatego polecamy wizytę w <b>Mento Care</b>, gdzie Faustyna
+              uwagi. Dlatego polecamy wizytę w <b>Mento Care Bochnia</b>, gdzie Faustyna
               zadba o cerę:
             </p>
             <ul className="text-[14px] text-white mt-[12px] font-light ml-[24px] list-disc">
@@ -239,7 +239,7 @@ const BlogNewHaircuts = () => {
               Dzień przed weselem – finałowe przygotowania
             </h1>
             <p className="text-[14px] text-white mt-[12px] font-light">
-              Na dzień przed tym wielkim wydarzeniem zaplanuj wizytę w Mento:
+              Na dzień przed tym wielkim wydarzeniem zaplanuj wizytę w Mento Barbershop Bochnia:
             </p>
             <ul className="text-[14px] text-white mt-[12px] font-light ml-[24px] list-disc">
               <li>
@@ -280,7 +280,7 @@ const BlogNewHaircuts = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <h1 className="text-[24px] text-prime font-bold">
-              💈 Podsumowanie:
+              - Podsumowanie:
             </h1>
             <p className="text-[14px] text-white mt-[12px] font-light mb-[42px]">
               Przygotowania pana młodego do ślubu to nie tylko garnitur i spinki
@@ -302,4 +302,4 @@ const BlogNewHaircuts = () => {
   );
 };
 
-export default BlogNewHaircuts;
+export default BlogWeddingDay;

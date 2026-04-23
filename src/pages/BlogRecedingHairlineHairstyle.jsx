@@ -44,7 +44,7 @@ const BlogRecedingHairlineHairstyle = () => {
 							/>
 						</div>
 						<p className='text-[12px] text-white mt-[32px] font-light'>
-							Dodano: 24.03.2025
+							Dodano: 23.04.2026
 						</p>
 						<h1 className='text-[32px] text-prime font-bold mt-[6px]'>
 							Najlepsze fryzury na zakola
@@ -76,16 +76,16 @@ const BlogRecedingHairlineHairstyle = () => {
 							<div className='w-[50%] bg-gray-300 rounded-[6px] overflow-hidden'>
 								<img
 									src={hairstyle1}
-									alt='hairstyle1'
+									alt='fryzura typu Quiff'
 									className='w-full h-full object-cover object-top'
 								/>
 							</div>
 						</div>
 						<h1 className='text-[32px] text-prime font-bold'>
-							2. Fringe (Koński ogon)
+							2. French Crop
 						</h1>
 						<p className='text-[16px] text-white mt-[12px] font-light'>
-							<b>Fringe</b>, znany również jako koński ogon, to klasyczna i
+							<b>French Crop</b>, to modernistyczna i
 							uniwersalna fryzura, która działa świetnie na zakola. Włosy z
 							przodu są dłuższe i opadają na czoło, co pomaga ukryć obszary
 							zakoli. To doskonała opcja dla tych, którzy chcą zachować
@@ -94,17 +94,17 @@ const BlogRecedingHairlineHairstyle = () => {
 						<div className='flex flex-row items-center justify-center gap-[16px] mt-[24px] mb-[42px]'>
 							<div className='w-[50%] bg-gray-300 rounded-[6px] overflow-hidden'>
 								<img
-									src={hairstyle2}
-									alt='hairstyle2'
+									src={hairstyle6}
+									alt='fryzura typu French Crop'
 									className='w-full h-full object-cover object-top'
 								/>
 							</div>
 						</div>
 						<h1 className='text-[32px] text-prime font-bold'>
-							3. Middle Part (Przedziałek na środku)
+							3. Middle Part
 						</h1>
 						<p className='text-[16px] text-white mt-[12px] font-light'>
-							Fryzura z <b>przedziałkiem na środku</b> to kolejna opcja, która
+							<b>Middle Part</b> to kolejna opcja, która
 							może pomóc ukryć zakola. Włosy są równomiernie rozdzielone na dwie
 							części, co skupia uwagę na centralnej części twarzy, a nie na
 							obszarach zakoli.
@@ -113,16 +113,16 @@ const BlogRecedingHairlineHairstyle = () => {
 							<div className='w-[50%] bg-gray-300 rounded-[6px] overflow-hidden'>
 								<img
 									src={hairstyle3}
-									alt='hairstyle3'
+									alt='fryzura typu Middle Part'
 									className='w-full h-full object-cover object-top'
 								/>
 							</div>
 						</div>
 						<h1 className='text-[32px] text-prime font-bold'>
-							4. Side Swept (Włosy zaczesane na bok)
+							4. Side Part
 						</h1>
 						<p className='text-[16px] text-white mt-[12px] font-light'>
-							<b>Side Swept</b> to fryzura, w której włosy są starannie
+							<b>Side Part</b> to klasyczna fryzura, w której włosy są starannie
 							zaczesane na bok. Ten wygląd jest nie tylko modny, ale także
 							skupia uwagę na innych obszarach twarzy, nie pozostawiając zakoli
 							w pierwszym planie.
@@ -131,7 +131,7 @@ const BlogRecedingHairlineHairstyle = () => {
 							<div className='w-[50%] bg-gray-300 rounded-[6px] overflow-hidden'>
 								<img
 									src={hairstyle4}
-									alt='hairstyle4'
+									alt='fryzura typu Side Part'
 									className='w-full h-full object-cover object-top'
 								/>
 							</div>
@@ -149,25 +149,7 @@ const BlogRecedingHairlineHairstyle = () => {
 							<div className='w-[50%] bg-gray-300 rounded-[6px] overflow-hidden'>
 								<img
 									src={hairstyle5}
-									alt='hairstyle5'
-									className='w-full h-full object-cover object-top'
-								/>
-							</div>
-						</div>
-						<h1 className='text-[32px] text-prime font-bold'>
-							6. French Crop – Fryzura na zakola
-						</h1>
-						<p className='text-[16px] text-white mt-[12px] font-light'>
-							Jeśli preferujesz nieco dłuższe włosy, <b>French Crop</b> może być
-							doskonałym wyborem. Ta fryzura charakteryzuje się krótkimi bokami
-							i nieco dłuższym wierzchem. To świetna opcja, która pozwala ukryć
-							zakola, jednocześnie nadając eleganckiego wyglądu.
-						</p>
-						<div className='flex flex-row items-center justify-center gap-[16px] mt-[24px] mb-[42px]'>
-							<div className='w-[50%] bg-gray-300 rounded-[6px] overflow-hidden'>
-								<img
-									src={hairstyle6}
-									alt='hairstyle6}'
+									alt='fryzura typu Buzz Cut'
 									className='w-full h-full object-cover object-top'
 								/>
 							</div>
@@ -185,7 +167,7 @@ const BlogRecedingHairlineHairstyle = () => {
 							<div className='w-[50%] bg-gray-300 rounded-[6px] overflow-hidden'>
 								<img
 									src={hairstyle7}
-									alt='hairstyle7}'
+									alt='fryzura typu Bald'
 									className='w-full h-full object-cover object-top'
 								/>
 							</div>
@@ -296,16 +278,16 @@ const BlogRecedingHairlineHairstyle = () => {
 							<div className='w-full bg-gray-300 rounded-[6px] overflow-hidden'>
 								<img
 									src={hairstyle1}
-									alt='hairstyle1'
+									alt='fryzura typu Quiff'
 									className='w-full h-full object-cover object-top'
 								/>
 							</div>
 						</div>
 						<h1 className='text-[24px] text-prime font-bold'>
-							2. Fringe (Koński ogon)
+							2. French Crop
 						</h1>
 						<p className='text-[14px] text-white mt-[12px] font-light'>
-							<b>Fringe</b>, znany również jako koński ogon, to klasyczna i
+							<b>French Crop</b>, to modernistyczna i
 							uniwersalna fryzura, która działa świetnie na zakola. Włosy z
 							przodu są dłuższe i opadają na czoło, co pomaga ukryć obszary
 							zakoli. To doskonała opcja dla tych, którzy chcą zachować
@@ -314,17 +296,17 @@ const BlogRecedingHairlineHairstyle = () => {
 						<div className='flex flex-row items-center justify-center gap-[16px] mt-[24px] mb-[42px]'>
 							<div className='w-full bg-gray-300 rounded-[6px] overflow-hidden'>
 								<img
-									src={hairstyle2}
-									alt='hairstyle2'
+									src={hairstyle6}
+									alt='fryzura typu French Crop'
 									className='w-full h-full object-cover object-top'
 								/>
 							</div>
 						</div>
 						<h1 className='text-[24px] text-prime font-bold'>
-							3. Middle Part (Przedziałek na środku)
+							3. Middle Part
 						</h1>
 						<p className='text-[14px] text-white mt-[12px] font-light'>
-							Fryzura z <b>przedziałkiem na środku</b> to kolejna opcja, która
+							<b>Middle Part</b> to kolejna opcja, która
 							może pomóc ukryć zakola. Włosy są równomiernie rozdzielone na dwie
 							części, co skupia uwagę na centralnej części twarzy, a nie na
 							obszarach zakoli.
@@ -333,16 +315,16 @@ const BlogRecedingHairlineHairstyle = () => {
 							<div className='w-full bg-gray-300 rounded-[6px] overflow-hidden'>
 								<img
 									src={hairstyle3}
-									alt='hairstyle3'
+									alt='fryzura typu Middle Part'
 									className='w-full h-full object-cover object-top'
 								/>
 							</div>
 						</div>
 						<h1 className='text-[24px] text-prime font-bold'>
-							4. Side Swept (Włosy zaczesane na bok)
+							4. Side Part
 						</h1>
 						<p className='text-[14px] text-white mt-[12px] font-light'>
-							<b>Side Swept</b> to fryzura, w której włosy są starannie
+							<b>Side Part</b> to klasyczna fryzura, w której włosy są starannie
 							zaczesane na bok. Ten wygląd jest nie tylko modny, ale także
 							skupia uwagę na innych obszarach twarzy, nie pozostawiając zakoli
 							w pierwszym planie.
@@ -351,7 +333,7 @@ const BlogRecedingHairlineHairstyle = () => {
 							<div className='w-full bg-gray-300 rounded-[6px] overflow-hidden'>
 								<img
 									src={hairstyle4}
-									alt='hairstyle4'
+									alt='fryzura typu Side Part'
 									className='w-full h-full object-cover object-top'
 								/>
 							</div>
@@ -369,25 +351,7 @@ const BlogRecedingHairlineHairstyle = () => {
 							<div className='w-full bg-gray-300 rounded-[6px] overflow-hidden'>
 								<img
 									src={hairstyle5}
-									alt='hairstyle5'
-									className='w-full h-full object-cover object-top'
-								/>
-							</div>
-						</div>
-						<h1 className='text-[24px] text-prime font-bold'>
-							6. French Crop – Fryzura na zakola
-						</h1>
-						<p className='text-[14px] text-white mt-[12px] font-light'>
-							Jeśli preferujesz nieco dłuższe włosy, <b>French Crop</b> może być
-							doskonałym wyborem. Ta fryzura charakteryzuje się krótkimi bokami
-							i nieco dłuższym wierzchem. To świetna opcja, która pozwala ukryć
-							zakola, jednocześnie nadając eleganckiego wyglądu.
-						</p>
-						<div className='flex flex-row items-center justify-center gap-[16px] mt-[24px] mb-[42px]'>
-							<div className='w-full bg-gray-300 rounded-[6px] overflow-hidden'>
-								<img
-									src={hairstyle6}
-									alt='hairstyle6}'
+									alt='fryzura typu Buzz Cut'
 									className='w-full h-full object-cover object-top'
 								/>
 							</div>

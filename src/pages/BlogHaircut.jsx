@@ -5,7 +5,7 @@ import Gradient from "../assets/gradient.svg";
 import { useIsMobile } from "../Hooks/useIsMobile";
 import Blog7 from "../assets/blog7.webp";
 
-const BlogBarberPole = () => {
+const BlogHaircut = () => {
   const isMobile = useIsMobile();
 
   return !isMobile ? (
@@ -87,7 +87,7 @@ const BlogBarberPole = () => {
               kogoś do siebie, jeśli wyglądasz na osobę zadbaną.
             </p>
             <p className="text-[16px] text-white mt-[12px] font-light">
-              <span className="text-[20px]">👉</span> To sygnał, że dbasz o
+              <span className="text-[20px]">-</span> To sygnał, że dbasz o
               siebie – a skoro potrafisz zadbać o siebie, potrafisz też zadbać o
               inne sprawy.
             </p>
@@ -103,7 +103,7 @@ const BlogBarberPole = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <div className="text-[16px] text-white font-light mb-[42px]">
-              <span className="text-[20px]">💈</span> <b>Podsumowanie:</b>
+              <span className="text-[20px]">-</span> <b>Podsumowanie:</b>
               <br />
               Dobra fryzura to nie tylko kwestia wyglądu. To narzędzie, które
               pomaga Ci budować wizerunek, dodaje pewności siebie i sprawia, że
@@ -199,7 +199,7 @@ const BlogBarberPole = () => {
               kogoś do siebie, jeśli wyglądasz na osobę zadbaną.
             </p>
             <p className="text-[14px] text-white mt-[12px] font-light">
-              <span className="text-[18px]">👉</span> To sygnał, że dbasz o
+              <span className="text-[18px]">-</span> To sygnał, że dbasz o
               siebie – a skoro potrafisz zadbać o siebie, potrafisz też zadbać o
               inne sprawy.
             </p>
@@ -215,7 +215,7 @@ const BlogBarberPole = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <div className="text-[14px] text-white font-light mb-[42px]">
-              <span className="text-[18px]">💈</span> <b>Podsumowanie:</b>
+              <span className="text-[18px]">-</span> <b>Podsumowanie:</b>
               <br />
               Dobra fryzura to nie tylko kwestia wyglądu. To narzędzie, które
               pomaga Ci budować wizerunek, dodaje pewności siebie i sprawia, że
@@ -235,4 +235,4 @@ const BlogBarberPole = () => {
   );
 };
 
-export default BlogBarberPole;
+export default BlogHaircut;

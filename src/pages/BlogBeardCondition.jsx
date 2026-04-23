@@ -5,7 +5,7 @@ import Gradient from "../assets/gradient.svg";
 import { useIsMobile } from "../Hooks/useIsMobile";
 import Blog2 from "../assets/haircut8.webp";
 
-const BlogSlickBack = () => {
+const BlogBeardCondition = () => {
   const isMobile = useIsMobile();
 
   return !isMobile ? (
@@ -51,29 +51,7 @@ const BlogSlickBack = () => {
               ogromną rolę odgrywa właściwa pielęgnacja.
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
-            {/* <div className="flex flex-row items-center justify-center gap-[16px]">
-              <div className="w-full h-[500px] bg-gray-300 rounded-[6px] overflow-hidden">
-                <img
-                  src={slickback1}
-                  alt="slickback1"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="w-full h-[500px] bg-gray-300 rounded-[6px] overflow-hidden">
-                <img
-                  src={slickback2}
-                  alt="slickback2"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="w-full h-[500px] bg-gray-300 rounded-[6px] overflow-hidden">
-                <img
-                  src={slickback3}
-                  alt="slickback3"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-            </div> */}
+            
             <h1 className="text-[32px] text-prime font-bold">
               1. Mycie – podstawa pielęgnacji
             </h1>
@@ -81,7 +59,7 @@ const BlogSlickBack = () => {
               Wielu mężczyzn wciąż myje brodę zwykłym szamponem do włosów lub,
               co gorsza, żelem pod prysznic. To błąd! Skóra pod brodą jest
               delikatna, a włos twardszy niż na głowie – wymaga innej
-              pielęgnacji. <br /> 👉 Używaj{" "}
+              pielęgnacji. <br /> - Używaj{" "}
               <b>specjalnych szamponów do brody</b> lub delikatnych produktów do
               twarzy, które oczyszczą, ale nie przesuszą.
             </p>
@@ -89,7 +67,7 @@ const BlogSlickBack = () => {
               2. Nawilżanie i odżywianie
             </h1>
             <p className="text-[16px] text-white mt-[12px] font-light">
-              Sucha broda = łupież, swędzenie i nieestetyczny wygląd. 👉
+              Sucha broda = łupież, swędzenie i nieestetyczny wygląd. -
               Codziennie stosuj <b>olejek do brody</b>, który:
               <ul className="text-[16px] text-white font-light list-disc list-inside">
                 <li>zmiękcza włosy, </li>
@@ -106,7 +84,7 @@ const BlogSlickBack = () => {
             <p className="text-[16px] text-white my-[12px] font-light">
               Broda rośnie nierówno – dlatego tak ważne są wizyty u barbera. To
               właśnie on wyrówna kształt, nada jej formę i zadba o linie, które
-              samemu trudno utrzymać. <br /> 👉 Odwiedzaj barbera <b>co 2–3</b>
+              samemu trudno utrzymać. <br /> - Odwiedzaj barbera <b>co 2–3</b>
               tygodnie, żeby utrzymać schludny wygląd.
             </p>
             <h1 className="text-[32px] text-prime font-bold mt-[32px]">
@@ -127,7 +105,7 @@ const BlogSlickBack = () => {
             </h1>
             <p className="text-[16px] text-white mt-[12px] font-light">
               Gęsta broda to także efekt tego, co dzieje się w środku organizmu.
-              👉 Zadbaj o:
+              - Zadbaj o:
               <ul className="text-[16px] text-white font-light list-disc list-inside">
                 <li>
                   <b>dietę bogatą w białko, cynk, witaminy z grupy B,</b>
@@ -144,7 +122,7 @@ const BlogSlickBack = () => {
               Często zapominamy, że pod brodą też jest skóra, która potrzebuje
               oczyszczenia. Resztki kosmetyków, martwy naskórek i sebum mogą
               blokować mieszki włosowe i prowadzić do podrażnień czy
-              wrastających włosków. <br /> 👉 Raz w tygodniu wykonaj
+              wrastających włosków. <br /> - Raz w tygodniu wykonaj
               <b> peeling enzymatyczny</b>, który:
               <ul className="text-[16px] text-white font-light list-disc list-inside">
                 <li>delikatnie złuszcza zrogowaciały naskórek,</li>
@@ -210,12 +188,12 @@ const BlogSlickBack = () => {
               Jak pielęgnować brodę, żeby była gęsta i zadbana?
             </h1>
             <p className="text-[14px] text-white mt-[12px] font-light">
-              W świecie męskich fryzur jednym z najbardziej klasycznych i
-              eleganckich stylów jest bez wątpienia „slick back” – czyli fryzura
-              męska zaczesana do tyłu. Ten ponadczasowy look zdobi głowy
-              mężczyzn od dziesięcioleci, nadając im pewności siebie i stylowego
-              wyrazu. Czym właściwie jest ta fryzura, dla kogo jest idealna i
-              jak ewoluowała na przestrzeni lat?
+              Broda to symbol męskości, ale tylko wtedy, gdy jest odpowiednio
+              pielęgnowana.
+              Zaniedbana potrafi postarzać, dodać niechlujności i sprawiać, że
+              cała stylizacja wygląda mniej atrakcyjnie. Dobra wiadomość jest taka,
+              że gęsta i zdrowa broda to nie tylko geny – ogromną rolę odgrywa
+              właściwa pielęgnacja.
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <h1 className="text-[24px] text-prime font-bold">
@@ -225,7 +203,7 @@ const BlogSlickBack = () => {
               Wielu mężczyzn wciąż myje brodę zwykłym szamponem do włosów lub,
               co gorsza, żelem pod prysznic. To błąd! Skóra pod brodą jest
               delikatna, a włos twardszy niż na głowie – wymaga innej
-              pielęgnacji. <br /> 👉 Używaj{" "}
+              pielęgnacji. <br /> - Używaj{" "}
               <b>specjalnych szamponów do brody</b> lub delikatnych produktów do
               twarzy, które oczyszczą, ale nie przesuszą.
             </p>
@@ -233,7 +211,7 @@ const BlogSlickBack = () => {
               2. Nawilżanie i odżywianie
             </h1>
             <p className="text-[14px] text-white mt-[12px] font-light">
-              Sucha broda = łupież, swędzenie i nieestetyczny wygląd. 👉
+              Sucha broda = łupież, swędzenie i nieestetyczny wygląd. -
               Codziennie stosuj <b>olejek do brody</b>, który:
               <ul className="text-[14px] text-white font-light list-disc list-inside">
                 <li>zmiękcza włosy, </li>
@@ -250,7 +228,7 @@ const BlogSlickBack = () => {
             <p className="text-[14px] text-white mt-[12px] font-light">
               Broda rośnie nierówno – dlatego tak ważne są wizyty u barbera. To
               właśnie on wyrówna kształt, nada jej formę i zadba o linie, które
-              samemu trudno utrzymać. <br /> 👉 Odwiedzaj barbera <b>co 2–3</b>
+              samemu trudno utrzymać. <br /> - Odwiedzaj barbera <b>co 2–3</b>
               tygodnie, żeby utrzymać schludny wygląd.
             </p>
             <h1 className="text-[24px] text-prime font-bold mt-[32px]">
@@ -271,7 +249,7 @@ const BlogSlickBack = () => {
             </h1>
             <p className="text-[14px] text-white mt-[12px] font-light">
               Gęsta broda to także efekt tego, co dzieje się w środku organizmu.
-              👉 Zadbaj o:
+              - Zadbaj o:
               <ul className="text-[14px] text-white font-light list-disc list-inside">
                 <li>
                   <b>dietę bogatą w białko, cynk, witaminy z grupy B,</b>
@@ -288,7 +266,7 @@ const BlogSlickBack = () => {
               Często zapominamy, że pod brodą też jest skóra, która potrzebuje
               oczyszczenia. Resztki kosmetyków, martwy naskórek i sebum mogą
               blokować mieszki włosowe i prowadzić do podrażnień czy
-              wrastających włosków. <br /> 👉 Raz w tygodniu wykonaj
+              wrastających włosków. <br /> - Raz w tygodniu wykonaj
               <b> peeling enzymatyczny</b>, który:
               <ul className="text-[14px] text-white font-light list-disc list-inside">
                 <li>delikatnie złuszcza zrogowaciały naskórek,</li>
@@ -320,4 +298,4 @@ const BlogSlickBack = () => {
   );
 };
 
-export default BlogSlickBack;
+export default BlogBeardCondition;

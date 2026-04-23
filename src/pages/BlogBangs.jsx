@@ -60,7 +60,7 @@ const BlogBangs = () => {
               głowy.
             </p>
             <p className="text-[16px] text-white mt-[12px] font-light">
-              👉 Regularne oczyszczanie i peeling pozwala:
+              - Regularne oczyszczanie i peeling pozwala:
             </p>
             <ul className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-disc">
               <li>usunąć martwy naskórek,</li>
@@ -79,7 +79,7 @@ const BlogBangs = () => {
               przesuszać skórę lub zatykać mieszki włosowe.
             </p>
             <p className="text-[16px] text-white mt-[12px] font-light">
-              👉 Warto postawić na szampony i toniki pobudzające krążenie oraz
+              - Warto postawić na szampony i toniki pobudzające krążenie oraz
               wzmacniające cebulki włosów.
             </p>
             <h1 className="text-[32px] text-prime font-bold mt-[32px]">
@@ -89,7 +89,7 @@ const BlogBangs = () => {
               Włosy to odbicie tego, co dzieje się w organizmie.
             </p>
             <p className="text-[16px] text-white mt-[12px] font-light">
-              👉 Postaw na dietę bogatą w:
+              - Postaw na dietę bogatą w:
             </p>
             <ul className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-disc">
               <li>białko (mięso, ryby, jajka, rośliny strączkowe),</li>
@@ -108,7 +108,7 @@ const BlogBangs = () => {
               rękę.
             </p>
             <p className="text-[16px] text-white mt-[12px] font-light">
-              👉 W Mento Care zapraszamy na konsultację kosmetologiczną –
+              - W Mento Care zapraszamy na konsultację kosmetologiczną –
               ocenimy stan skóry głowy i dobierzemy indywidualną terapię. W
               niektórych przypadkach pomożemy Ci również znaleźć specjalistę,
               jeśli problem wymaga szerszej diagnostyki.
@@ -123,7 +123,7 @@ const BlogBangs = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <h1 className="text-[32px] text-prime font-bold">
-              💈 Podsumowanie:
+             Podsumowanie:
             </h1>
             <p className="text-[16px] text-white mt-[12px] font-light mb-[42px]">
               Wypadanie włosów to problem, któremu można zapobiegać, jeśli
@@ -196,7 +196,7 @@ const BlogBangs = () => {
               głowy.
             </p>
             <p className="text-[14px] text-white mt-[12px] font-light">
-              👉 Regularne oczyszczanie i peeling pozwala:
+              - Regularne oczyszczanie i peeling pozwala:
             </p>
             <ul className="text-[14px] text-white mt-[12px] font-light ml-[24px] list-disc">
               <li>usunąć martwy naskórek,</li>
@@ -215,7 +215,7 @@ const BlogBangs = () => {
               przesuszać skórę lub zatykać mieszki włosowe.
             </p>
             <p className="text-[14px] text-white mt-[12px] font-light">
-              👉 Warto postawić na szampony i toniki pobudzające krążenie oraz
+              - Warto postawić na szampony i toniki pobudzające krążenie oraz
               wzmacniające cebulki włosów.
             </p>
             <h1 className="text-[24px] text-prime font-bold mt-[32px]">
@@ -225,7 +225,7 @@ const BlogBangs = () => {
               Włosy to odbicie tego, co dzieje się w organizmie.
             </p>
             <p className="text-[14px] text-white mt-[12px] font-light">
-              👉 Postaw na dietę bogatą w:
+              - Postaw na dietę bogatą w:
             </p>
             <ul className="text-[14px] text-white mt-[12px] font-light ml-[24px] list-disc">
               <li>białko (mięso, ryby, jajka, rośliny strączkowe),</li>
@@ -244,7 +244,7 @@ const BlogBangs = () => {
               rękę.
             </p>
             <p className="text-[14px] text-white mt-[12px] font-light">
-              👉 W Mento Care zapraszamy na konsultację kosmetologiczną –
+              - W Mento Care zapraszamy na konsultację kosmetologiczną –
               ocenimy stan skóry głowy i dobierzemy indywidualną terapię. W
               niektórych przypadkach pomożemy Ci również znaleźć specjalistę,
               jeśli problem wymaga szerszej diagnostyki.
@@ -259,7 +259,7 @@ const BlogBangs = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <h1 className="text-[24px] text-prime font-bold">
-              💈 Podsumowanie:
+               Podsumowanie:
             </h1>
             <p className="text-[14px] text-white mt-[12px] font-light mb-[42px]">
               Wypadanie włosów to problem, któremu można zapobiegać, jeśli

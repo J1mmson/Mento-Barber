@@ -55,7 +55,7 @@ const Training = () => {
       description:
         "Perfekcyjny fade to podstawa nowoczesnego barberingu. W tym panelu skupimy się na technice cieniowania od zera, precyzyjnym przejściu tonalnym i odpowiednim doborze długości do kształtu głowy. Pokażemy, jak pracować z maszynką, trymerem i shaverem, by uzyskać idealne wykończenie. Szkolenie obejmuje zarówno teorię, jak i praktykę na modelach, abyś mógł doszlifować swoje umiejętności i zyskać pewność w pracy z krótkimi fryzurami.",
       tutorial: "KRÓTKIE FORMY + FADE - PLAN DNIA",
-      data: "25 stycznia 2025 oraz 12 lipca 2025",
+      data: "25 stycznia 2026",
       plan: (
         <>
           <div className="mb-[32px]">
@@ -106,7 +106,7 @@ const Training = () => {
       description:
         "Dwudniowe szkolenie COMBO włosy + broda to kompleksowy program dla barberów, którzy chcą pracować świadomie, technicznie i pewnie zarówno przy strzyżeniu włosów, jak i przy wykonywaniu brody. Podczas szkolenia uczestnicy poznają pełny proces pracy z klientem – od analizy głowy, proporcji i kształtu fryzury, po dobór odpowiedniej formy brody dopasowanej do twarzy i stylu klienta. Program łączy teorię, wykład oraz intensywną praktykę, dzięki czemu wiedza od razu przekładana jest na realną pracę przy fotelu.",
       tutorial: "COMBO WŁOSY + BRODA - PLAN SZKOLENIA",
-      data: "14/15 marca 2025 oraz 22/23 sierpnia 2025",
+      data: "14/15 marca 2026",
       plan: (
         <>
           <p className="text-[20px] font-bold text-prime mb-[16px]">
@@ -241,7 +241,7 @@ const Training = () => {
       description:
         "Podczas tego dwudniowego szkolenia skupimy się na technice cieniowania od zera, precyzyjnym przejściu tonalnym oraz odpowiednim doborze długości do kształtu głowy. Omówimy i przećwiczymy pracę z maszynką, trymerem oraz shaverem, kładąc duży nacisk na czyste wykończenie i spójność formy. Program szkolenia oparty jest na panelu Krótkie Formy + Fade, jednak w tej edycji rozszerzamy część praktyczną. Uczestnicy wykonają aż trzy pełne fryzury w ciągu dwóch dni, pracując na trzech modelach, co pozwala na realne przećwiczenie technik, powtarzalność ruchów i dopracowanie detali. Szkolenie łączy krótką, konkretną teorię z intensywną pracą warsztatową, dzięki czemu każdy etap – od budowania formy po finalne wykończenie – jest dokładnie przepracowany przy fotelu.",
       tutorial: "KRÓTKIE FORMY + FADE + WIĘCEJ PRAKTYKI - PLAN SZKOLENIA",
-      data: "16/17 maja 2025",
+      data: "16/17 maja 2026",
       plan: (
         <>
           <p className="text-[20px] font-bold text-prime mb-[16px]">DZIEŃ 1</p>
@@ -351,7 +351,7 @@ const Training = () => {
               Skontaktuj się z nami:
             </p>
             <p>
-              <span className="font-bold">Telefon: </span>+48 798 144 399
+              <span className="font-bold">Telefon: </span> +48 798 144 399
             </p>
             <p>
               <span className="font-bold">Instagram: </span>

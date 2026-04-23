@@ -5,7 +5,7 @@ import Gradient from "../assets/gradient.svg";
 import { useIsMobile } from "../Hooks/useIsMobile";
 import Blog5 from "../assets/haircut2.webp";
 
-const BlogSkinFade = () => {
+const BlogBalding = () => {
   const isMobile = useIsMobile();
 
   return !isMobile ? (
@@ -72,7 +72,7 @@ const BlogSkinFade = () => {
               </li>
             </ul>
             <p className="text-[16px] text-white mt-[12px] font-light">
-              👉 To jak &quot;doping&quot; dla włosów – dostają energię do
+              - To jak &quot;doping&quot; dla włosów – dostają energię do
               wzrostu i dłużej utrzymują swoją siłę.
             </p>
             <h1 className="text-[32px] text-prime font-bold mt-[32px]">
@@ -93,7 +93,7 @@ const BlogSkinFade = () => {
               <li>poprawia się ukrwienie i dotlenienie skóry głowy.</li>
             </ul>
             <p className="text-[16px] text-white mt-[12px] font-light">
-              👉 Można to porównać do &quot;resetu&quot; dla skóry – pobudzasz
+              - Można to porównać do &quot;resetu&quot; dla skóry – pobudzasz
               ją, a ona zaczyna pracować lepiej.
             </p>
             <h1 className="text-[32px] text-prime font-bold mt-[32px]">
@@ -204,7 +204,7 @@ const BlogSkinFade = () => {
               </li>
             </ul>
             <p className="text-[14px] text-white mt-[12px] font-light">
-              👉 To jak &quot;doping&quot; dla włosów – dostają energię do
+              - To jak &quot;doping&quot; dla włosów – dostają energię do
               wzrostu i dłużej utrzymują swoją siłę.
             </p>
             <h1 className="text-[24px] text-prime font-bold mt-[32px]">
@@ -225,7 +225,7 @@ const BlogSkinFade = () => {
               <li>poprawia się ukrwienie i dotlenienie skóry głowy.</li>
             </ul>
             <p className="text-[14px] text-white mt-[12px] font-light">
-              👉 Można to porównać do &quot;resetu&quot; dla skóry – pobudzasz
+              - Można to porównać do &quot;resetu&quot; dla skóry – pobudzasz
               ją, a ona zaczyna pracować lepiej.
             </p>
             <h1 className="text-[24px] text-prime font-bold mt-[32px]">
@@ -274,4 +274,4 @@ const BlogSkinFade = () => {
   );
 };
 
-export default BlogSkinFade;
+export default BlogBalding;

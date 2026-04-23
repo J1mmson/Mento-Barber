@@ -5,7 +5,7 @@ import Gradient from "../assets/gradient.svg";
 import { useIsMobile } from "../Hooks/useIsMobile";
 import Blog6 from "../assets/blog6.webp";
 
-const BlogBeardDandruff = () => {
+const BlogHairStyling = () => {
   const isMobile = useIsMobile();
 
   return !isMobile ? (
@@ -112,7 +112,7 @@ const BlogBeardDandruff = () => {
             </ul>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <div className="text-[16px] text-white font-light mb-[42px]">
-              <span className="text-[20px]">💈</span> <b>Podsumowanie:</b>
+              <span className="text-[20px]">-</span> <b>Podsumowanie:</b>
               <br />
               Stylizacja włosów to nie magia ani strata czasu. Wystarczy{" "}
               <b>tonik, suszarka i dobrze dobrana pomada albo puder</b>, żeby w
@@ -235,7 +235,7 @@ const BlogBeardDandruff = () => {
             </ul>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <div className="text-[14px] text-white font-light mb-[42px]">
-              <span className="text-[18px]">💈</span> <b>Podsumowanie:</b>
+              <span className="text-[18px]">-</span> <b>Podsumowanie:</b>
               <br />
               Stylizacja włosów to nie magia ani strata czasu. Wystarczy{" "}
               <b>tonik, suszarka i dobrze dobrana pomada albo puder</b>, żeby w
@@ -256,4 +256,4 @@ const BlogBeardDandruff = () => {
   );
 };
 
-export default BlogBeardDandruff;
+export default BlogHairStyling;
