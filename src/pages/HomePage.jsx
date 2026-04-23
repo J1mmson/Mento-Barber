@@ -201,7 +201,11 @@ const HomePage = () => {
                   Nad Babicą 2, Bochnia
                 </div>
                 <div className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary">
-                  +48 798 144 399
+                <a 
+                href="tel:+48798144399" 
+                className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
+                +48 798 144 399
+                </a>
                 </div>
               </div>
               <div className="flex space-x-4 text-textPrimary items-center">
