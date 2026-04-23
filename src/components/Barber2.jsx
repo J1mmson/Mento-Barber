@@ -31,6 +31,7 @@ const Barber2 = ({ slideInFromRight, fadeInFromLeft }) => {
 						<h1
 							className='text-9xl font-bold text-orange-500'
 							style={{
+								fontFamily: '"Arial", "Helvetica", sans-serif',
 								fontSize: "7.85rem",
 								fontWeight: "bold",
 								textTransform: "uppercase",
@@ -58,6 +59,7 @@ const Barber2 = ({ slideInFromRight, fadeInFromLeft }) => {
 						<h1
 							className='font-bold uppercase text-center'
 							style={{
+								fontFamily: '"Arial", "Helvetica", sans-serif',
 								fontSize: "26vw",
 								fontWeight: "bold",
 								color: "transparent",
@@ -99,6 +101,7 @@ const Barber2 = ({ slideInFromRight, fadeInFromLeft }) => {
 						<h1
 							className='font-bold uppercase text-center'
 							style={{
+								fontFamily: '"Arial", "Helvetica", sans-serif',
 								fontSize: "23vw", // Zmieniono na jednostkę vw, aby dopasować do szerokości ekranu
 								fontWeight: "bold",
 								color: "transparent",

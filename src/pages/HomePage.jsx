@@ -173,10 +173,8 @@ const HomePage = () => {
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
                 style={{ lineHeight: 2 }}
               >
-                MENTO BARBERSHOP Bochnia to znakomite miejsce, gdzie rzemiosło
-                spotyka się z pasją i profesjonalizmem. Nasza oferta skupia się
-                na perfekcyjnych męskich fryzurach, precyzyjnym strzyżeniu brody
-                oraz zadbanym zarostem.
+                MENTO BARBERSHOP Bochnia to miejsce, gdzie rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier, 
+                w której każdy buduje świetną atmosferę. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
             </motion.div>
 
@@ -358,10 +356,8 @@ const HomePage = () => {
                   marginBottom: useWindowSize().height < 700 ? "24px" : "48px",
                 }}
               >
-                MENTO Barber Bochnia Shop to znakomite miejsce, gdzie rzemiosło
-                spotyka się z pasją i profesjonalizmem. Nasza oferta skupia się
-                na perfekcyjnych męskich fryzurach, precyzyjnym strzyżeniu brody
-                oraz zadbanym zarostem.
+                MENTO BARBERSHOP Bochnia to miejsce, gdzie rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier, 
+                w której każdy buduje świetną atmosferę. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
               <div className="flex flex-col items-center space-y-[12px] w-full text-[12px]">
                 <div className="border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center ">
