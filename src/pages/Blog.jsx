@@ -86,7 +86,7 @@ const Blog = () => {
       path: "Haircut",
       alt: "Mężczyzna podczas profesjonalnego strzyżenia włosów w MENTO BARBER Bochnia",
     },
-    {
+    /*{
       id: 8,
       title: "Jak dobrać fryzurę do recesji i zakoli?",
       description:
@@ -94,7 +94,7 @@ const Blog = () => {
       image: Blog8,
       path: "RecedingHairlineHairstyle",
       alt: "Mężczyzna podczas profesjonalnego strzyżenia włosów w MENTO BARBER Bochnia",
-    },
+    }*/
   ];
 
   const handleScroll = (event) => {

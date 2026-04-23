@@ -113,8 +113,11 @@ const BlogBalding = () => {
               dłużej.
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
+            <h1 className="text-[32px] text-prime font-bold mt-[32px]">
+              💡 <b>Pro Tip:</b>
+            </h1>
             <p className="text-[16px] text-white font-light">
-              💡 <b>Pro Tip:</b> Im szybciej zaczniesz działać, tym większe masz
+              Im szybciej zaczniesz działać, tym większe masz
               szanse, żeby zachować gęste włosy na długie lata. To inwestycja w
               Twój wygląd i pewność siebie.
             </p>
@@ -245,8 +248,11 @@ const BlogBalding = () => {
               dłużej.
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
-            <p className="text-[14px] text-white font-light">
-              💡 <b>Pro Tip:</b> Im szybciej zaczniesz działać, tym większe masz
+             <h1 className="text-[32px] text-prime font-bold mt-[32px]">
+              💡 <b>Pro Tip:</b>
+            </h1>
+            <p className="text-[16px] text-white font-light">
+              Im szybciej zaczniesz działać, tym większe masz
               szanse, żeby zachować gęste włosy na długie lata. To inwestycja w
               Twój wygląd i pewność siebie.
             </p>

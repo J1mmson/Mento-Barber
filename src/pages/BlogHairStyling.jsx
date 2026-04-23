@@ -112,7 +112,6 @@ const BlogHairStyling = () => {
             </ul>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <div className="text-[16px] text-white font-light mb-[42px]">
-              <span className="text-[20px]">-</span> 
             <h1 className="text-[32px] text-prime font-bold mt-[32px]">
               Podsumowanie
             </h1>
@@ -236,9 +235,8 @@ const BlogHairStyling = () => {
               <li>dobrze dobrany produkt chroni włosy przed wysuszeniem,</li>
               <li>wyglądasz po prostu lepiej i bardziej pewnie.</li>
             </ul>
-            <hr className="border-[white] opacity-5 my-[32px]" />
             <div className="text-[14px] text-white font-light mb-[42px]">
-              <span className="text-[18px]">-</span> 
+            
               <h1 className="text-[24px] text-prime font-bold mt-[32px]">
               Podsumowanie:
             </h1>
