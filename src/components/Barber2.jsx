@@ -107,7 +107,6 @@ const Barber2 = ({ slideInFromRight, fadeInFromLeft }) => {
 								textTransform: "uppercase",
 								color: "transparent",
 								WebkitTextStroke: "2px #ff6600",
-								textShadow: "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
 								whiteSpace: "nowrap",
 							}}>
 							KACPER
