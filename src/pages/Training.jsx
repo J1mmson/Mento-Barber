@@ -547,7 +547,13 @@ const Training = () => {
                 </p>
                 <hr className="border-[white] opacity-5 mt-[16px] mb-[24px]" />
                 <p>
-                  <span className="font-bold">Telefon: </span>+48 798 144 399
+                  <span className="font-bold">Telefon: </span>
+                  <a 
+                    href="tel:+48798144399" 
+                    className="hover:text-orange-500 transition-colors duration-300"
+                  >
+                    +48 798 144 399
+                  </a>
                 </p>
                 <p>
                   <span className="font-bold">Instagram: </span>
@@ -697,7 +703,13 @@ const Training = () => {
                 </p>
                 <hr className="border-[white] opacity-5 mt-[16px] mb-[24px]" />
                 <p>
-                  <span className="font-bold">Telefon: </span>+48 798 144 399
+                  <span className="font-bold">Telefon: </span>
+                  <a 
+                    href="tel:+48798144399" 
+                    className="hover:text-orange-500 transition-colors duration-300"
+                  >
+                    +48 798 144 399
+                  </a>
                 </p>
                 <p>
                   <span className="font-bold">Instagram: </span>
