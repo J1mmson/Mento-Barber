@@ -9,7 +9,7 @@ import BlogBangs from "./pages/BlogBangs";
 import BlogFrequency from "./pages/BlogFrequency";
 import BlogBalding from "./pages/BlogBalding";
 import BlogRecedingHairlineHairstyle from "./pages/BlogRecedingHairlineHairstyle";
-import BlogHairStyling from "./pages/BlogHairstyling";
+import BlogHairStyling from "./pages/BlogHairStyling";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Route path="/blog/Haircut" element={<BlogHaircut />} />
         <Route path="/blog/HairStyling" element={<BlogHairStyling />} />
         <Route path="/blog/Balding" element={<BlogBalding />} />
-        <Route path="/blog/receding-hairline-hairstyle" element={<BlogRecedingHairlineHairstyle />} />
+        <Route path="/blog/RecedingHairlineHairstyle" element={<BlogRecedingHairlineHairstyle />} />
       </Routes>
     </BrowserRouter>
   );
