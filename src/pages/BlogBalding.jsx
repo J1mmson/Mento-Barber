@@ -11,7 +11,6 @@ const BlogBalding = () => {
   return !isMobile ? (
     <div className="h-screen overflow-hidden">
       <Navbar />
-      {/* Stałe tło */}
       <div
         className="fixed top-0 left-0 w-full h-full z-[-1]"
         style={{
@@ -23,18 +22,18 @@ const BlogBalding = () => {
         }}
       />
 
-      {/* Kontener z przewijaną treścią */}
       <div className="relative h-screen overflow-auto">
         <div className="flex items-center justify-center mt-[10%] mb-[5%]">
           <div
-            className="w-[65%] bg-[#171D1F] flex flex-col p-[32px]  rounded-[10px]"
+            className="w-[65%] bg-[#171D1F] flex flex-col p-[32px] rounded-[10px]"
             style={{ boxShadow: "0px 8px 10px #00000099" }}
           >
-            <div className="rounded-[6px] overflow-hidden h-[400px] flex justify-center items-center">
+            {/* ZMIANA: Dodano aspect-video i w-full, usunięto h-[400px] */}
+            <div className="rounded-[6px] overflow-hidden aspect-video w-full">
               <img
                 src={Blog5}
                 alt="panel"
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
             <p className="text-[12px] text-white mt-[32px] font-light">
@@ -146,7 +145,6 @@ const BlogBalding = () => {
   ) : (
     <div className="relative h-screen overflow-hidden">
       <Navbar />
-      {/* Stałe tło */}
       <div
         className="fixed top-0 left-0 w-full h-full z-[-1]"
         style={{
@@ -158,18 +156,17 @@ const BlogBalding = () => {
         }}
       />
 
-      {/* Kontener z przewijaną treścią */}
       <div className="relative h-screen overflow-auto">
         <div className="flex items-center justify-center mt-[100px] mb-[5%]">
           <div
             className="w-full bg-[#171D1F] flex flex-col p-[32px] m-[16px] rounded-[10px] z-10"
             style={{ boxShadow: "0px 8px 10px #00000099" }}
           >
-            <div className="h-[200px] rounded-[6px] overflow-hidden flex justify-center items-center">
+            <div className="rounded-[6px] overflow-hidden aspect-video w-full">
               <img
                 src={Blog5}
                 alt="panel"
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
             <p className="text-[12px] text-white mt-[32px] font-light">
