@@ -351,15 +351,21 @@ const Training = () => {
               Skontaktuj się z nami:
             </p>
             <p>
-              <span className="font-bold">Telefon: </span> +48 798 144 399
+              <span className="font-bold">Telefon: </span> 
+              <a 
+                href="tel:+48798144399" 
+                className="hover:text-orange-500 transition-colors duration-300"
+              >
+                +48 798 144 399
+              </a>
             </p>
             <p>
               <span className="font-bold">Instagram: </span>
               <a
                 href="https://www.instagram.com/mento.barbershop/"
+                className="text-prime underline hover:text-orange-500 transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-prime underline"
               >
                 mento.barbershop
               </a>
@@ -559,6 +565,7 @@ const Training = () => {
                   <span className="font-bold">Instagram: </span>
                   <a
                     href="https://www.instagram.com/mento.barbershop/"
+                    className="hover:text-orange-500 transition-colors duration-300"
                     target="_blank"
                   >
                     mento.barbershop
