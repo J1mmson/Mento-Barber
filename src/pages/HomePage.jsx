@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion"; // Import framer-motion
+import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -113,11 +113,6 @@ const HomePage = () => {
 
   // eslint-disable-next-line react/prop-types
   const Section = ({ children, index }) => {
-    // const variants = {
-    // 	hidden: { opacity: 0, rotateX: 90, x: 0 },
-    // 	visible: { opacity: 1, rotateX: 0, x: 0, transition: { duration: 1 } },
-    // };
-
     const variantsSecond = {
       hidden: { opacity: 0, rotateY: 90, x: -50 },
       visible: { opacity: 1, rotateY: 0, x: 0, transition: { duration: 1 } },
@@ -164,20 +159,32 @@ const HomePage = () => {
               <h1 className="text-textPrimary uppercase text-titleOne font-bold text-7xl  mb-[-20px]">
                 mento barber
               </h1>
-              <h1
-                className="uppercase font-bold text-9xl ml-[-4px]"
-                style={{
-                  fontSize: "7.85rem",
-                  fontWeight: "bold",
-                  textTransform: "uppercase",
-                  color: "transparent",
-                  WebkitTextStroke: "2px #ff6600", // Obramowanie w WebKit
-                  textShadow:
-                    "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543", // Efekt neonowy
-                }}
-              >
-                bochnia
-              </h1>
+              
+              {/* SVG zamiast nagłówka dla tekstu BOCHNIA - Desktop */}
+              <div className="ml-[-4px]" style={{ height: "7.85rem", width: "100%", position: "relative" }}>
+                <svg
+                  width="100%"
+                  height="100%"
+                  style={{ overflow: "visible", position: "absolute", top: 0, left: 0 }}
+                >
+                  <text
+                    x="0"
+                    y="50%"
+                    dominantBaseline="central"
+                    fill="transparent"
+                    stroke="#ff6600"
+                    strokeWidth="2"
+                    className="font-bold uppercase"
+                    style={{
+                      fontSize: "7.85rem",
+                      textShadow: "0 0 10px #E67543",
+                    }}
+                  >
+                    bochnia
+                  </text>
+                </svg>
+              </div>
+
               <p
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
                 style={{ lineHeight: 2 }}
@@ -342,20 +349,33 @@ const HomePage = () => {
               >
                 mento barber
               </h1>
-              <h1
-                className="uppercase font-bold text-center"
-                style={{
-                  fontSize: useWindowSize().height < 700 ? "4.5rem" : "5rem",
-                  fontWeight: "bold",
-                  textTransform: "uppercase",
-                  color: "transparent",
-                  WebkitTextStroke: "2px #ff6600",
-                  textShadow:
-                    "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
-                }}
-              >
-                bochnia
-              </h1>
+
+              {/* SVG zamiast nagłówka dla tekstu BOCHNIA - Mobile */}
+              <div style={{ height: useWindowSize().height < 700 ? "4.5rem" : "5rem", width: "100%", position: "relative" }}>
+                <svg
+                  width="100%"
+                  height="100%"
+                  style={{ overflow: "visible", position: "absolute", top: 0, left: 0 }}
+                >
+                  <text
+                    x="50%"
+                    y="50%"
+                    dominantBaseline="central"
+                    textAnchor="middle"
+                    fill="transparent"
+                    stroke="#ff6600"
+                    strokeWidth="2"
+                    className="font-bold uppercase"
+                    style={{
+                      fontSize: useWindowSize().height < 700 ? "4.5rem" : "5rem",
+                      textShadow: "0 0 10px #E67543",
+                    }}
+                  >
+                    bochnia
+                  </text>
+                </svg>
+              </div>
+
               <p
                 className="text-center text-[14px] text-gray-300"
                 style={{
@@ -567,20 +587,31 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={fadeInFromLeft}
             >
-              <h2
-                className="text-9xl font-bold text-orange-500"
-                style={{
-                  fontSize: "7.85rem",
-                  fontWeight: "bold",
-                  textTransform: "uppercase",
-                  color: "transparent",
-                  WebkitTextStroke: "2px #ff6600",
-                  textShadow:
-                    "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
-                }}
-              >
-                JIMMY
-              </h2>
+              {/* SVG zamiast nagłówka dla tekstu JIMMY - Desktop */}
+              <div style={{ height: "7.85rem", width: "100%", position: "relative" }}>
+                <svg
+                  width="100%"
+                  height="100%"
+                  style={{ overflow: "visible", position: "absolute", top: 0, left: 0 }}
+                >
+                  <text
+                    x="0"
+                    y="50%"
+                    dominantBaseline="central"
+                    fill="transparent"
+                    stroke="#ff6600"
+                    strokeWidth="2"
+                    className="font-bold uppercase"
+                    style={{
+                      fontSize: "7.85rem",
+                      textShadow: "0 0 10px #E67543",
+                    }}
+                  >
+                    JIMMY
+                  </text>
+                </svg>
+              </div>
+
               <p className="mt-4 max-w-[430px] text-[15px] font-light">
                 Profesjonalizm to dla mnie podstawa – zawsze staram się zapewnić
                 najwyższą jakość usług, dzieląc się swoją wiedzą o pielęgnacji i
@@ -597,19 +628,29 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={slideInFromRight}
             >
-              <h2
-                className="font-bold uppercase text-center"
-                style={{
-                  fontSize: "30vw",
-                  fontWeight: "bold",
-                  color: "transparent",
-                  WebkitTextStroke: "4px #ff6600",
-                  width: "100%",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                JIMMY
-              </h2>
+              {/* SVG zamiast nagłówka tła dla tekstu JIMMY - Desktop */}
+              <div style={{ height: "30vw", width: "100%", position: "relative" }}>
+                <svg
+                  width="100%"
+                  height="100%"
+                  style={{ overflow: "visible", position: "absolute", top: 0, left: 0 }}
+                >
+                  <text
+                    x="50%"
+                    y="50%"
+                    dominantBaseline="central"
+                    textAnchor="middle"
+                    fill="transparent"
+                    stroke="#ff6600"
+                    strokeWidth="4"
+                    className="font-bold uppercase"
+                    style={{ fontSize: "30vw" }}
+                  >
+                    JIMMY
+                  </text>
+                </svg>
+              </div>
+
             </motion.div>
             <img
               src={Gradient}
@@ -641,19 +682,30 @@ const HomePage = () => {
             }}
           >
             <div className="flex flex-col items-center  mt-[10%] leading-none z-20 ">
-              <h2
-                className="font-bold uppercase text-center"
-                style={{
-                  fontSize: "25vw",
-                  fontWeight: "bold",
-                  color: "transparent",
-                  WebkitTextStroke: "2px #ff6600",
-                  width: "100%",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                JIMMY
-              </h2>
+              
+              {/* SVG zamiast nagłówka dla tekstu JIMMY - Mobile */}
+              <div style={{ height: "25vw", width: "100%", position: "relative" }}>
+                <svg
+                  width="100%"
+                  height="100%"
+                  style={{ overflow: "visible", position: "absolute", top: 0, left: 0 }}
+                >
+                  <text
+                    x="50%"
+                    y="50%"
+                    dominantBaseline="central"
+                    textAnchor="middle"
+                    fill="transparent"
+                    stroke="#ff6600"
+                    strokeWidth="2"
+                    className="font-bold uppercase"
+                    style={{ fontSize: "25vw" }}
+                  >
+                    JIMMY
+                  </text>
+                </svg>
+              </div>
+
               <p className="mt-4 mb-[25%] max-w-[430px] text-[14px] font-light text-white text-center">
                 Profesjonalizm to dla mnie podstawa – zawsze staram się zapewnić
                 najwyższą jakość usług, dzieląc się swoją wiedzą o pielęgnacji i
@@ -667,7 +719,7 @@ const HomePage = () => {
               src={PhotoJimmy}
               alt="Barber Jimmy z Mento BAREBERSHOP Bochnia"
               loading="lazy"
-              className="absolute top-0 w-[700px] max-w-none z-10" // Added maxWidth constraint
+              className="absolute top-0 w-[700px] max-w-none z-10" 
               style={{ right: "-125px", top: "-200px" }}
               initial="hidden"
               whileInView="visible"
