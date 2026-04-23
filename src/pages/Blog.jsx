@@ -15,6 +15,7 @@ import Blog4 from "../assets/blog4.webp";
 import Blog5 from "../assets/haircut2.webp";
 import Blog6 from "../assets/blog6.webp";
 import Blog7 from "../assets/blog7.webp";
+import Blog8 from "../assets/shortHair.webp";
 const Blog = () => {
   const navigate = useNavigate();
   const isMobile = useIsMobile();
