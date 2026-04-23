@@ -103,12 +103,18 @@ const BlogHaircut = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <div className="text-[16px] text-white font-light mb-[42px]">
-              <span className="text-[20px]">-</span> <b>Podsumowanie:</b>
-              <br />
+              <span className="text-[20px]">-</span> 
+
+              <h1 className="text-[32px] text-prime font-bold mt-[32px]">
+                Podsumowanie:
+              </h1>
+              
+              <p className="text-[16px] text-white mt-[12px] font-light">
               Dobra fryzura to nie tylko kwestia wyglądu. To narzędzie, które
               pomaga Ci budować wizerunek, dodaje pewności siebie i sprawia, że
               inni postrzegają Cię lepiej. Dlatego warto o nią zadbać – bo
               pierwsze wrażenie możesz zrobić tylko raz.
+              </p>
             </div>
           </div>
         </div>
@@ -215,7 +221,10 @@ const BlogHaircut = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <div className="text-[14px] text-white font-light mb-[42px]">
-              <span className="text-[18px]">-</span> <b>Podsumowanie:</b>
+              <span className="text-[18px]">-</span> 
+              <h1 className="text-[24px] text-prime font-bold mt-[32px]">
+              Podsumowanie:
+            </h1>
               <br />
               Dobra fryzura to nie tylko kwestia wyglądu. To narzędzie, które
               pomaga Ci budować wizerunek, dodaje pewności siebie i sprawia, że

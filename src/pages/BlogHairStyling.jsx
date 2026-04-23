@@ -112,7 +112,10 @@ const BlogHairStyling = () => {
             </ul>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <div className="text-[16px] text-white font-light mb-[42px]">
-              <span className="text-[20px]">-</span> <b>Podsumowanie:</b>
+              <span className="text-[20px]">-</span> 
+            <h1 className="text-[32px] text-prime font-bold mt-[32px]">
+              Podsumowanie
+            </h1>
               <br />
               Stylizacja włosów to nie magia ani strata czasu. Wystarczy{" "}
               <b>tonik, suszarka i dobrze dobrana pomada albo puder</b>, żeby w
@@ -235,7 +238,10 @@ const BlogHairStyling = () => {
             </ul>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <div className="text-[14px] text-white font-light mb-[42px]">
-              <span className="text-[18px]">-</span> <b>Podsumowanie:</b>
+              <span className="text-[18px]">-</span> 
+              <h1 className="text-[24px] text-prime font-bold mt-[32px]">
+              Podsumowanie:
+            </h1>
               <br />
               Stylizacja włosów to nie magia ani strata czasu. Wystarczy{" "}
               <b>tonik, suszarka i dobrze dobrana pomada albo puder</b>, żeby w

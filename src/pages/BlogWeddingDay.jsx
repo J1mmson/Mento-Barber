@@ -134,7 +134,7 @@ const BlogWeddingDay = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <h1 className="text-[32px] text-prime font-bold">
-              - Podsumowanie:
+              Podsumowanie:
             </h1>
             <p className="text-[16px] text-white mt-[12px] font-light mb-[42px]">
               Przygotowania pana młodego do ślubu to nie tylko garnitur i spinki
@@ -280,7 +280,7 @@ const BlogWeddingDay = () => {
             </p>
             <hr className="border-[white] opacity-5 my-[32px]" />
             <h1 className="text-[24px] text-prime font-bold">
-              - Podsumowanie:
+              Podsumowanie:
             </h1>
             <p className="text-[14px] text-white mt-[12px] font-light mb-[42px]">
               Przygotowania pana młodego do ślubu to nie tylko garnitur i spinki

@@ -85,6 +85,15 @@ const Blog = () => {
       path: "Haircut",
       alt: "Mężczyzna podczas profesjonalnego strzyżenia włosów w MENTO BARBER Bochnia",
     },
+    {
+      id: 8,
+      title: "Jak dobrać fryzurę do recesji i zakoli?",
+      description:
+        "Dobór odpowiedniej fryzury do recesji i zakoli to klucz do stworzenia kompletnego stylu. Warto zwrócić uwagę na kształt głowy, typ włosów i preferencje personalne.",
+      image: Blog8,
+      path: "RecedingHairlineHairstyle",
+      alt: "Mężczyzna podczas profesjonalnego strzyżenia włosów w MENTO BARBER Bochnia",
+    },
   ];
 
   const handleScroll = (event) => {
