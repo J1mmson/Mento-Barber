@@ -50,7 +50,7 @@ const Navbar = () => {
     }, [menus, location.pathname]);
 
     return (
-        <nav className='fixed top-0 left-0 w-full z-50 px-4 md:px-[98px] py-5 md:py-6 bg-black/85 backdrop-blur-md shadow-lg'>
+        <nav className='fixed top-0 left-0 w-full md:w-[calc(100%-10px)] z-50 px-4 md:px-[98px] py-5 md:py-6 bg-black/85 backdrop-blur-md shadow-lg'>
             <div className='flex justify-between items-center relative w-full'>
                 
                 <div className='hidden md:flex space-x-[32px] uppercase text-lg font-light'>
