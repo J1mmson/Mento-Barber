@@ -39,6 +39,17 @@ import galeria10 from "../assets/gallery/galeria10.webp";
 import galeria11 from "../assets/gallery/galeria11.webp";
 import galeria12 from "../assets/gallery/galeria12.webp";
 import galeria13 from "../assets/gallery/galeria13.webp";
+import galeria14 from "../assets/gallery/galeria14.webp";
+import galeria17 from "../assets/gallery/galeria17.webp";
+import galeria18 from "../assets/gallery/galeria18.webp";
+import galeria19 from "../assets/gallery/galeria19.webp";
+import galeria20 from "../assets/gallery/galeria20.webp";
+import galeria21 from "../assets/gallery/galeria21.webp";
+import galeria22 from "../assets/gallery/galeria22.webp";
+import galeria23 from "../assets/gallery/galeria23.webp";
+import galeria24 from "../assets/gallery/galeria24.webp";
+import galeria25 from "../assets/gallery/galeria25.webp";
+import galeria26 from "../assets/gallery/galeria26.webp";
 
 // Barbers
 import PhotoJimmy from "../assets/page3jimmy.webp";
@@ -766,6 +777,17 @@ const HomePage = () => {
                 galeria11,
                 galeria12,
                 galeria13,
+                galeria14,
+                galeria17,
+                galeria18,
+                galeria19,
+                galeria20,
+                galeria21,
+                galeria22,
+                galeria23,
+                galeria24,
+                galeria25,
+                galeria26,
               ].map((photo, index) => (
                 <div key={index} className="p-3">
                   <div className="p-2 border-[3px] border-prime rounded-md shadow-[0_0_7px_rgba(255,120,0,0.8),inset_0_0_7px_rgba(255,120,0,0.8)]">
@@ -796,6 +818,17 @@ const HomePage = () => {
                 galeria11,
                 galeria12,
                 galeria13,
+                galeria14,
+                galeria17,
+                galeria18,
+                galeria19,
+                galeria20,
+                galeria21,
+                galeria22,
+                galeria23,
+                galeria24,
+                galeria25,
+                galeria26,
               ].map((photo, index) => (
                 <div key={index} className="p-3">
                   <div className="p-2 border-[3px] border-prime rounded-md shadow-[0_0_7px_rgba(255,120,0,0.8),inset_0_0_7px_rgba(255,120,0,0.8)]">
