@@ -19,6 +19,7 @@ html {
 
 ::-webkit-scrollbar-track {
   background: #0B0C0F; 
+  margin-top: 85px;
 }
 
 ::-webkit-scrollbar-thumb {
