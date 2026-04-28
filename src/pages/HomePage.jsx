@@ -190,33 +190,37 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={fadeInFromBottom}
             >
-              <a 
-                href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-              >
-                Nad Babicą 2, Bochnia
-              </a>
+              <div className="flex gap-4">
+                <a 
+                  href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
+                >
+                  Nad Babicą 2, Bochnia
+                </a>
 
-              <a 
-                href="tel:+48798144399" 
-                className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-              >
-                +48 798 144 399
-              </a>
+                <a 
+                  href="tel:+48798144399" 
+                  className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
+                >
+                  +48 798 144 399
+                </a>
+              </div>
+
+              <div className="flex space-x-4 text-textPrimary items-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
+                <a href="https://www.facebook.com/MentoBarberShop" aria-label="Nasz profil na Facebooku" target="_blank" rel="noopener noreferrer">
+                  <img src={FacebookLogo} alt="facebook_logo" style={{ height: "40px", width: "auto" }} />
+                </a>
+                <a href="https://www.instagram.com/mento.barbershop/" aria-label="Nasz profil na Instagramie" target="_blank" rel="noopener noreferrer">
+                  <img src={InstagramLogo} alt="instagram_logo" style={{ height: "38px", width: "auto" }} />
+                </a>
+                <a href="https://www.tiktok.com/@mento_barbershop" aria-label="Nasz profil na TikToku" target="_blank" rel="noopener noreferrer">
+                  <img src={TikTokLogo} alt="tiktok_logo" style={{ height: "38px", width: "auto" }} />
+                </a>
+              </div>
             </motion.div>
-            <div className="flex space-x-4 text-textPrimary items-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
-              <a href="https://www.facebook.com/MentoBarberShop" aria-label="Nasz profil na Facebooku" target="_blank" rel="noopener noreferrer">
-                <img src={FacebookLogo} alt="facebook_logo" style={{ height: "40px", width: "auto" }} />
-              </a>
-              <a href="https://www.instagram.com/mento.barbershop/" aria-label="Nasz profil na Instagramie" target="_blank" rel="noopener noreferrer">
-                <img src={InstagramLogo} alt="instagram_logo" style={{ height: "38px", width: "auto" }} />
-              </a>
-              <a href="https://www.tiktok.com/@mento_barbershop" aria-label="Nasz profil na TikToku" target="_blank" rel="noopener noreferrer">
-                <img src={TikTokLogo} alt="tiktok_logo" style={{ height: "38px", width: "auto" }} />
-              </a>
-            </div>
+            
             <motion.img
               src="/page1photo.webp"
               alt="Tło z barberem z MENTO BARBER Bochnia"
