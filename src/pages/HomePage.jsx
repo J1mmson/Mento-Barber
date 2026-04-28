@@ -191,7 +191,7 @@ const HomePage = () => {
               variants={fadeInFromBottom}
             >
               <a 
-                href="https://www.google.com/maps/search/?api=1&query=Nad+Babicą+2,+Bochnia"
+                href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
@@ -310,7 +310,7 @@ const HomePage = () => {
               </p>
               <div className="flex flex-col items-center space-y-[12px] w-full text-[12px]">
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Nad+Babicą+2,+Bochnia"
+                  href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
