@@ -5,11 +5,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Project imports
 import Navbar from "../components/Navbar";
 import { useIsMobile } from "../Hooks/useIsMobile";
 
-// Assets
 import Barber2 from "../components/Barber2";
 import Barber3 from "../components/Barber3";
 import Barber4 from "../components/Barber4";
@@ -25,7 +23,6 @@ import TikTokLogo from "../assets/tiktok_logo.svg";
 import Photo2 from "../assets/page2photo.webp";
 import Gradient from "../assets/gradient.svg";
 
-// Gallery
 import galeria1 from "../assets/gallery/galeria1.webp";
 import galeria2 from "../assets/gallery/galeria2.webp";
 import galeria3 from "../assets/gallery/galeria3.webp";
@@ -51,10 +48,7 @@ import galeria24 from "../assets/gallery/galeria24.webp";
 import galeria25 from "../assets/gallery/galeria25.webp";
 import galeria26 from "../assets/gallery/galeria26.webp";
 
-// Barbers
 import PhotoJimmy from "../assets/page3jimmy.webp";
-
-// Texture
 import Texture from "../assets/texture.webp";
 
 const HomePage = () => {
@@ -140,9 +134,9 @@ const HomePage = () => {
   };
 
   return (
-   <main className="h-screen overflow-y-scroll snap-y snap-mandatory">
+    <main className="h-screen overflow-y-scroll snap-y snap-mandatory">
       <Navbar />
-      {/* Pierwszy ekran */}
+      
       {!isMobile ? (
         <Section index={1}>
           <div
@@ -163,13 +157,13 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={fadeInFromLeft}
             >
-              <h1 className="text-textPrimary uppercase text-titleOne font-bold text-7xl  mb-[-20px]">
+              <h1 className="text-textPrimary uppercase text-titleOne font-bold text-7xl mb-[-20px]">
                 mento barber
               </h1>
               <h1
                 className="uppercase font-bold text-9xl ml-[-4px]"
                 style={{
-                  fontFamily: '"Arial", "Helvetica", sans-serif', // FIX - Wymusza czcionkę bez błędów Apple
+                  fontFamily: '"Arial", "Helvetica", sans-serif',
                   fontSize: "7.85rem",
                   fontWeight: "bold",
                   textTransform: "uppercase",
@@ -196,58 +190,36 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={fadeInFromBottom}
             >
-              <div className="flex space-x-4">
-                <div className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary">
-                  Nad Babicą 2, Bochnia
-                </div>
-                <a 
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=Nad+Babicą+2,+Bochnia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
+              >
+                Nad Babicą 2, Bochnia
+              </a>
+
+              <a 
                 href="tel:+48798144399" 
-                className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
+                className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
+              >
                 +48 798 144 399
-                </a>
-              </div>
-              <div className="flex space-x-4 text-textPrimary items-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
-                <a
-                  href="https://www.facebook.com/MentoBarberShop"
-                  aria-label="Nasz profil na Facebooku"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={FacebookLogo}
-                    alt="facebook_logo"
-                    style={{ height: "40px", width: "auto" }}
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com/mento.barbershop/"
-                  aria-label="Nasz profil na Instagramie"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={InstagramLogo}
-                    alt="instagram_logo"
-                    style={{ height: "38px", width: "auto" }}
-                  />
-                </a>
-                <a
-                  href="https://www.tiktok.com/@mento_barbershop"
-                  aria-label="Nasz profil na TikToku"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={TikTokLogo}
-                    alt="tiktok_logo"
-                    style={{ height: "38px", width: "auto" }}
-                  />
-                </a>
-              </div>
+              </a>
             </motion.div>
-            <img
+            <div className="flex space-x-4 text-textPrimary items-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
+              <a href="https://www.facebook.com/MentoBarberShop" aria-label="Nasz profil na Facebooku" target="_blank" rel="noopener noreferrer">
+                <img src={FacebookLogo} alt="facebook_logo" style={{ height: "40px", width: "auto" }} />
+              </a>
+              <a href="https://www.instagram.com/mento.barbershop/" aria-label="Nasz profil na Instagramie" target="_blank" rel="noopener noreferrer">
+                <img src={InstagramLogo} alt="instagram_logo" style={{ height: "38px", width: "auto" }} />
+              </a>
+              <a href="https://www.tiktok.com/@mento_barbershop" aria-label="Nasz profil na TikToku" target="_blank" rel="noopener noreferrer">
+                <img src={TikTokLogo} alt="tiktok_logo" style={{ height: "38px", width: "auto" }} />
+              </a>
+            </div>
+            <motion.img
               src="/page1photo.webp"
-              alt=" Tło z barberem z MENTO BARBER Bochnia"
+              alt="Tło z barberem z MENTO BARBER Bochnia"
               fetchPriority="high"
               width="897"   
               height="983"
@@ -268,8 +240,7 @@ const HomePage = () => {
             <div
               className="absolute bottom-0 left-0 w-full h-[30%] pointer-events-none z-10"
               style={{
-                background:
-                  "linear-gradient(180deg, #0B0C0F00 0%, #0B0C0F80 24%, #0B0C0FBF 35%, #0B0C0F 100%)",
+                background: "linear-gradient(180deg, #0B0C0F00 0%, #0B0C0F80 24%, #0B0C0FBF 35%, #0B0C0F 100%)",
               }}
             ></div>
           </div>
@@ -289,70 +260,37 @@ const HomePage = () => {
               backgroundBlendMode: "multiply",
             }}
           >
-            <div className="flex flex-col items-center  mt-[10%] leading-none z-20 ">
+            <div className="flex flex-col items-center mt-[10%] leading-none z-20">
               <div
                 className="flex space-x-4 items-center gap-[32px]"
-                style={{
-                  marginBottom: useWindowSize().height < 700 ? "12px" : "24px",
-                }}
+                style={{ marginBottom: useWindowSize().height < 700 ? "12px" : "24px" }}
               >
-                <a
-                  href="https://www.facebook.com/MentoBarberShop"
-                  aria-label="Nasz profil na Facebooku"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={FacebookLogo}
-                    alt="facebook_logo"
-                    style={{ height: "48px", width: "auto" }}
-                  />
+                <a href="https://www.facebook.com/MentoBarberShop" aria-label="Nasz profil na Facebooku" target="_blank" rel="noopener noreferrer">
+                  <img src={FacebookLogo} alt="facebook_logo" style={{ height: "48px", width: "auto" }} />
                 </a>
-                <a
-                  href="https://www.instagram.com/mento.barbershop/"
-                  aria-label="Nasz profil na Instagramie"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={InstagramLogo}
-                    alt="instagram_logo"
-                    style={{ height: "38px", width: "auto" }}
-                  />
+                <a href="https://www.instagram.com/mento.barbershop/" aria-label="Nasz profil na Instagramie" target="_blank" rel="noopener noreferrer">
+                  <img src={InstagramLogo} alt="instagram_logo" style={{ height: "38px", width: "auto" }} />
                 </a>
-                <a
-                  href="https://www.tiktok.com/@mento_barbershop"
-                  aria-label="Nasz profil na TikToku"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={TikTokLogo}
-                    alt="tiktok_logo"
-                    style={{ height: "38px", width: "auto" }}
-                  />
+                <a href="https://www.tiktok.com/@mento_barbershop" aria-label="Nasz profil na TikToku" target="_blank" rel="noopener noreferrer">
+                  <img src={TikTokLogo} alt="tiktok_logo" style={{ height: "38px", width: "auto" }} />
                 </a>
               </div>
               <h1
                 className="text-textPrimary uppercase text-titleOne font-bold text-center"
-                style={{
-                  fontSize:
-                    useWindowSize().height < 700 ? "2.65rem" : "2.95rem",
-                }}
+                style={{ fontSize: useWindowSize().height < 700 ? "2.65rem" : "2.95rem" }}
               >
                 mento barber
               </h1>
               <h1
                 className="uppercase font-bold text-center"
                 style={{
-                  fontFamily: '"Arial", "Helvetica", sans-serif', // FIX
+                  fontFamily: '"Arial", "Helvetica", sans-serif',
                   fontSize: useWindowSize().height < 700 ? "4.5rem" : "5rem",
                   fontWeight: "bold",
                   textTransform: "uppercase",
                   color: "transparent",
                   WebkitTextStroke: "2px #ff6600",
-                  textShadow:
-                    "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
+                  textShadow: "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
                 }}
               >
                 bochnia
@@ -371,9 +309,14 @@ const HomePage = () => {
                 w której każdy buduje świetną atmosferę. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
               <div className="flex flex-col items-center space-y-[12px] w-full text-[12px]">
-                <div className="border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center">
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Nad+Babicą+2,+Bochnia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
+                >
                   Nad Babicą 2, Bochnia
-                </div>
+                </a>
                 <a 
                   href="tel:+48798144399" 
                   className="border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 block"
@@ -382,9 +325,9 @@ const HomePage = () => {
                 </a>
               </div>
             </div>
-            <img
+            <motion.img
               src="/page1photo.webp"
-              alt=" Tło z barberem z MENTO BARBER Bochnia"
+              alt="Tło z barberem z MENTO BARBER Bochnia"
               fetchPriority="high"
               width="897"   
               height="983"
@@ -404,20 +347,17 @@ const HomePage = () => {
             />
             <div
               className="absolute bottom-0 left-0 w-full h-[60%] pointer-events-none z-10"
-              style={{
-                background:
-                  "linear-gradient(180deg, #0B0C0F00 0%, #0B0C0F80 24%, #0B0C0FBF 35%, #0B0C0F 100%)",
-              }}
+              style={{ background: "linear-gradient(180deg, #0B0C0F00 0%, #0B0C0F80 24%, #0B0C0FBF 35%, #0B0C0F 100%)" }}
             ></div>
           </div>
         </Section>
       )}
-      {/* Drugi ekran - cennik */}
+
       {!isMobile ? (
         <Section index={2}>
           <div
             id="pricing"
-            className="relative h-screen flex  items-center justify-end pt-[50px] text-prime snap-start overflow-hidden"
+            className="relative h-screen flex items-center justify-end pt-[50px] text-prime snap-start overflow-hidden"
             style={{
               background: `linear-gradient(90deg, #091E23, #090909), url(${Texture})`,
               backgroundSize: "cover",
@@ -445,16 +385,10 @@ const HomePage = () => {
                 { name: "PREMIUM BRODA", price: "140 PLN", time: "45 min" },
                 { name: "PREMIUM COMBO", price: "230 PLN", time: "90 min" },
               ].map((item, index) => (
-                <div
-                  key={index}
-                  style={{ boxShadow: "0px 8px 10px #00000066" }}
-                >
+                <div key={index} style={{ boxShadow: "0px 8px 10px #00000066" }}>
                   <div
-                    className="p-4 text-start w-96 text-prime  rounded-md transition-all duration-300 hover:border-prime hover:shadow-[0_0_7px_rgba(255,120,0,1),inset_0_0_5px_rgba(255,120,0,1)] cursor-pointer"
-                    style={{
-                      backgroundColor: "#171D1F",
-                      opacity: 1,
-                    }}
+                    className="p-4 text-start w-96 text-prime rounded-md transition-all duration-300 hover:border-prime hover:shadow-[0_0_7px_rgba(255,120,0,1),inset_0_0_5px_rgba(255,120,0,1)] cursor-pointer"
+                    style={{ backgroundColor: "#171D1F", opacity: 1 }}
                   >
                     <h2 className="font-bold">{item.name}</h2>
                     <p className="text-gray-300">
@@ -466,11 +400,9 @@ const HomePage = () => {
             </motion.div>
             <div className="absolute bottom-0 right-0 pr-[98px] pb-[60px] text-[10px] text-center">
               <p className="text-textPrimary">
-                Podane ceny tyczą się barberów zaawansowanych, ceny szczegółowe
-                rozpisane są na booksy.
+                Podane ceny tyczą się barberów zaawansowanych, ceny szczegółowe rozpisane są na booksy.
               </p>
             </div>
-
             <img
               src={Gradient}
               alt=""
@@ -480,7 +412,7 @@ const HomePage = () => {
             />
             <img
               src={Photo2}
-              alt=" Tło z barberem z MENTO BARBER Bochnia"
+              alt="Tło z barberem z MENTO BARBER Bochnia"
               className="absolute bottom-0 left-0 top-10 w-1/3 h-auto pointer-events-none"
             />
           </div>
@@ -546,7 +478,7 @@ const HomePage = () => {
           </div>
         </Section>
       )}
-      {/* Trzeci ekran - barberzy */}
+
       {!isMobile ? (
         <Section index={3}>
           <div
@@ -570,14 +502,13 @@ const HomePage = () => {
               <h2
                 className="text-9xl font-bold text-orange-500"
                 style={{
-                  fontFamily: '"Arial", "Helvetica", sans-serif', // FIX
+                  fontFamily: '"Arial", "Helvetica", sans-serif',
                   fontSize: "7.85rem",
                   fontWeight: "bold",
                   textTransform: "uppercase",
                   color: "transparent",
                   WebkitTextStroke: "2px #ff6600",
-                  textShadow:
-                    "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
+                  textShadow: "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
                 }}
               >
                 JIMMY
@@ -601,7 +532,7 @@ const HomePage = () => {
               <h2
                 className="font-bold uppercase text-center"
                 style={{
-                  fontFamily: '"Arial", "Helvetica", sans-serif', // FIX
+                  fontFamily: '"Arial", "Helvetica", sans-serif',
                   fontSize: "30vw",
                   fontWeight: "bold",
                   color: "transparent",
@@ -642,11 +573,11 @@ const HomePage = () => {
               backgroundBlendMode: "multiply",
             }}
           >
-            <div className="flex flex-col items-center  mt-[10%] leading-none z-20 ">
+            <div className="flex flex-col items-center mt-[10%] leading-none z-20">
               <h2
                 className="font-bold uppercase text-center"
                 style={{
-                  fontFamily: '"Arial", "Helvetica", sans-serif', // FIX
+                  fontFamily: '"Arial", "Helvetica", sans-serif',
                   fontSize: "25vw",
                   fontWeight: "bold",
                   color: "transparent",
@@ -670,7 +601,7 @@ const HomePage = () => {
               src={PhotoJimmy}
               alt="Barber Jimmy z Mento BAREBERSHOP Bochnia"
               loading="lazy"
-              className="absolute top-0 w-[700px] max-w-none z-10" // Added maxWidth constraint
+              className="absolute top-0 w-[700px] max-w-none z-10"
               style={{ right: "-125px", top: "-200px" }}
               initial="hidden"
               whileInView="visible"
@@ -686,54 +617,27 @@ const HomePage = () => {
             />
             <div
               className="absolute bottom-0 left-0 w-full h-[60%] pointer-events-none z-10"
-              style={{
-                background:
-                  "linear-gradient(180deg, #0B0C0F00 0%, #0B0C0F80 24%, #0B0C0FBF 35%, #0B0C0F 100%)",
-              }}
+              style={{ background: "linear-gradient(180deg, #0B0C0F00 0%, #0B0C0F80 24%, #0B0C0FBF 35%, #0B0C0F 100%)" }}
             ></div>
           </div>
         </Section>
       )}
-      {/* Barbers */}
-      <Barber2
-        slideInFromRight={slideInFromRight}
-        fadeInFromLeft={fadeInFromLeft}
-      />
-      <Barber3
-        slideInFromRight={slideInFromRight}
-        fadeInFromLeft={fadeInFromLeft}
-      />
-      <Barber4
-        slideInFromRight={slideInFromRight}
-        fadeInFromLeft={fadeInFromLeft}
-      />
-      <Barber5
-        slideInFromRight={slideInFromRight}
-        fadeInFromLeft={fadeInFromLeft}
-      />
-      <Barber6
-        slideInFromRight={slideInFromRight}
-        fadeInFromLeft={fadeInFromLeft}
-      />
+
+      <Barber2 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
+      <Barber3 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
+      <Barber4 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
+      <Barber5 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
+      <Barber6 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
       <div>
-        <Barber7
-          slideInFromRight={slideInFromRight}
-          fadeInFromLeft={fadeInFromLeft}
-        />
+        <Barber7 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
       </div>
       <div>
-        <Barber8
-          slideInFromRight={slideInFromRight}
-          fadeInFromLeft={fadeInFromLeft}
-        />
+        <Barber8 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
       </div>
       <div id="barbers-end"> 
-        <Barber9
-          slideInFromRight={slideInFromRight}
-          fadeInFromLeft={fadeInFromLeft}
-        />
+        <Barber9 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
       </div>
-      {/* Czwarty ekran - nasze prace */}
+
       <div
         id="works"
         className="relative h-screen flex items-center justify-center text-white snap-start overflow-hidden z-10"
@@ -753,29 +657,16 @@ const HomePage = () => {
         }}
         onWheel={(e) => {
           if (e.deltaY > 0) {
-            document
-              .getElementById("about")
-              ?.scrollIntoView({ behavior: "smooth" });
+            document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
           }
         }}
       >
-        {" "}
         <div className={`w-full ${isMobile ? "pt-[60px]" : "pt-[120px]"}`}>
           <div className="w-full">
             <Slider {...settings} className="space-x-4">
               {[
-                galeria4,
-                galeria18,
-                galeria7,
-                galeria21,
-                galeria1,
-                galeria13,
-                galeria25,
-                galeria9,
-                galeria20,
-                galeria3,
-                galeria11,
-                galeria24,
+                galeria4, galeria18, galeria7, galeria21, galeria1, galeria13,
+                galeria25, galeria9, galeria20, galeria3, galeria11, galeria24,
               ].map((photo, index) => (
                 <div key={index} className="p-3">
                   <div className="p-2 border-[3px] border-prime rounded-md shadow-[0_0_7px_rgba(255,120,0,0.8),inset_0_0_7px_rgba(255,120,0,0.8)]">
@@ -793,18 +684,8 @@ const HomePage = () => {
           <div className={`w-full ${isMobile ? "mt-[0px]" : "mt-[-5px]"}`}>
             <Slider {...reverseSettings} className="space-x-4">
               {[  
-              galeria8,
-              galeria23,
-              galeria2,
-              galeria19,
-              galeria10,
-              galeria26,
-              galeria5,
-              galeria14,
-              galeria17,
-              galeria6,
-              galeria22,
-              galeria12,
+                galeria8, galeria23, galeria2, galeria19, galeria10, galeria26,
+                galeria5, galeria14, galeria17, galeria6, galeria22, galeria12,
               ].map((photo, index) => (
                 <div key={index} className="p-3">
                   <div className="p-2 border-[3px] border-prime rounded-md shadow-[0_0_7px_rgba(255,120,0,0.8),inset_0_0_7px_rgba(255,120,0,0.8)]">
@@ -817,7 +698,7 @@ const HomePage = () => {
                   </div>
                 </div>
               ))}
-            </Slider>{" "}
+            </Slider>
             <img
               src={Gradient}
               alt=""
