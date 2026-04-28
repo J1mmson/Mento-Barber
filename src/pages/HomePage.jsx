@@ -764,30 +764,18 @@ const HomePage = () => {
           <div className="w-full">
             <Slider {...settings} className="space-x-4">
               {[
-                galeria1,
-                galeria2,
-                galeria3,
                 galeria4,
-                galeria5,
-                galeria6,
-                galeria7,
-                galeria8,
-                galeria9,
-                galeria10,
-                galeria11,
-                galeria12,
-                galeria13,
-                galeria14,
-                galeria17,
                 galeria18,
-                galeria19,
-                galeria20,
+                galeria7,
                 galeria21,
-                galeria22,
-                galeria23,
-                galeria24,
+                galeria1,
+                galeria13,
                 galeria25,
-                galeria26,
+                galeria9,
+                galeria20,
+                galeria3,
+                galeria11,
+                galeria24,
               ].map((photo, index) => (
                 <div key={index} className="p-3">
                   <div className="p-2 border-[3px] border-prime rounded-md shadow-[0_0_7px_rgba(255,120,0,0.8),inset_0_0_7px_rgba(255,120,0,0.8)]">
@@ -804,31 +792,19 @@ const HomePage = () => {
           </div>
           <div className={`w-full ${isMobile ? "mt-[0px]" : "mt-[-5px]"}`}>
             <Slider {...reverseSettings} className="space-x-4">
-              {[
-                galeria1,
-                galeria2,
-                galeria3,
-                galeria4,
-                galeria5,
-                galeria6,
-                galeria7,
-                galeria8,
-                galeria9,
-                galeria10,
-                galeria11,
-                galeria12,
-                galeria13,
-                galeria14,
-                galeria17,
-                galeria18,
-                galeria19,
-                galeria20,
-                galeria21,
-                galeria22,
-                galeria23,
-                galeria24,
-                galeria25,
-                galeria26,
+              {[  
+              galeria8,
+              galeria23,
+              galeria2,
+              galeria19,
+              galeria10,
+              galeria26,
+              galeria5,
+              galeria14,
+              galeria17,
+              galeria6,
+              galeria22,
+              galeria12,
               ].map((photo, index) => (
                 <div key={index} className="p-3">
                   <div className="p-2 border-[3px] border-prime rounded-md shadow-[0_0_7px_rgba(255,120,0,0.8),inset_0_0_7px_rgba(255,120,0,0.8)]">
