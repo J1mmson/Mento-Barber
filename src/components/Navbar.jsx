@@ -50,7 +50,7 @@ const Navbar = () => {
     }, [menus, location.pathname]);
 
     return (
-        <nav className='fixed top-0 left-0 w-full z-50 px-4 md:px-[98px] py-3 md:py-4 bg-[#0B0C0F] border-b border-gray-800/60 shadow-lg'>
+        <nav className='fixed top-0 left-0 w-full z-50 px-4 md:px-[98px] py-5 md:py-6 bg-black/85 backdrop-blur-md shadow-lg'>
             <div className='flex justify-between items-center relative w-full'>
                 
                 <div className='hidden md:flex space-x-[32px] uppercase text-lg font-light'>
@@ -140,7 +140,7 @@ const Navbar = () => {
             </div>
 
             {isMobileMenuOpen && (
-                <div className='fixed inset-0 bg-black bg-opacity-90 backdrop-blur-md flex flex-col justify-center items-center text-lg font-light uppercase z-10'>
+                <div className='fixed inset-0 bg-black bg-opacity-85 backdrop-blur-md flex flex-col justify-center items-center text-lg font-light uppercase z-10'>
                     <ul className='flex flex-col gap-8 text-center text-white text-[18px]'>
                         <li
                             onClick={() => {
