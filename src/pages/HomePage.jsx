@@ -175,7 +175,7 @@ const HomePage = () => {
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
                 style={{ lineHeight: 2 }}
               >
-                MENTO BARBERSHOP Bochnia to miejsce, gdzie rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier, 
+                MENTO BARBER SHOP Bochnia to profesjonalny salon fryzjerski w Bochni, w którym rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier, 
                 w której każdy buduje świetną atmosferę. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
             </motion.div>
@@ -220,7 +220,7 @@ const HomePage = () => {
             
             <motion.img
               src="/page1photo.webp"
-              alt="Tło z barberem z MENTO BARBER Bochnia"
+              alt="Tło z barberem po Strzyżenie Męskie w Mento Barber Shop Bochnia - Salon Fryzjerski Bochnia"
               fetchPriority="high"
               width="897"   
               height="983"
@@ -306,7 +306,7 @@ const HomePage = () => {
                   marginBottom: windowSize.height < 700 ? "24px" : "48px",
                 }}
               >
-                MENTO BARBERSHOP Bochnia to miejsce, gdzie rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier, 
+                MENTO BARBER SHOP Bochnia to profesjonalny salon fryzjerski w Bochni, w którym rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier, 
                 w której każdy buduje świetną atmosferę. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
               <div className="flex flex-col items-center space-y-[12px] w-full text-[12px]">
@@ -328,7 +328,7 @@ const HomePage = () => {
             </div>
             <motion.img
               src="/page1photo.webp"
-              alt="Tło z barberem z MENTO BARBER Bochnia"
+              alt="Tło z barberem po Strzyżenie Męskie w Mento Barber Shop Bochnia - Salon Fryzjerski Bochnia"
               fetchPriority="high"
               width="897"   
               height="983"
@@ -413,7 +413,7 @@ const HomePage = () => {
             />
             <img
               src={Photo2}
-              alt="Tło z barberem z MENTO BARBER Bochnia"
+              alt="Tło z barberem po Strzyżenie Męskie w Mento Barber Shop Bochnia - Salon Fryzjerski Bochnia"
               className="absolute bottom-0 left-0 top-10 w-1/3 h-auto pointer-events-none"
             />
           </div>
@@ -554,7 +554,7 @@ const HomePage = () => {
             />
             <img
               src={PhotoJimmy}
-              alt="Barber Jimmy z Mento BAREBERSHOP Bochnia"
+              alt="Barber Jimmy z Mento Barber Shop Bochnia - Fryzjer Męski Bochnia"
               loading="lazy"
               className="absolute bottom-0 right-0 w-1/2 h-auto pointer-events-none"
               style={{ bottom: -240, right: -95, zIndex: 1 }}
@@ -600,7 +600,7 @@ const HomePage = () => {
             </div>
             <motion.img
               src={PhotoJimmy}
-              alt="Barber Jimmy z Mento BAREBERSHOP Bochnia"
+              alt="Barber Jimmy z Mento Barber Shop Bochnia - Fryzjer Męski Bochnia"
               loading="lazy"
               className="absolute top-0 w-[700px] max-w-none z-10"
               style={{ right: "-125px", top: "-200px" }}
@@ -666,33 +666,54 @@ const HomePage = () => {
           <div className="w-full">
             <Slider {...settings} className="space-x-4">
               {[
-                galeria4, galeria18, galeria7, galeria21, galeria1, galeria13,
-                galeria25, galeria9, galeria20, galeria3, galeria11, galeria24,
-              ].map((photo, index) => (
-                <div key={index} className="p-3">
-                  <div className="p-2 border-[3px] border-prime rounded-md shadow-[0_0_7px_rgba(255,120,0,0.8),inset_0_0_7px_rgba(255,120,0,0.8)]">
-                    <img
-                      src={photo}
-                      alt="Haircut"
-                      className="w-full h-full object-cover rounded-md"
-                      style={{ height: isMobile ? "31vh" : "35vh" }}
-                    />
-                  </div>
-                </div>
-              ))}
+                { src: galeria4, alt: "Klasyczne strzyżenie męskie z cieniowaniem - fryzjer Bochnia" },
+                { src: galeria18, alt: "Nowoczesna fryzura męska skin fade - barber Bochnia" },
+                { src: galeria7, alt: "Profesjonalne strzyżenie i trymowanie brody - Mento Barber Shop" },
+                { src: galeria21, alt: "Krótkie strzyżenie męskie układane do tyłu - najlepszy fryzjer Bochnia" },
+                { src: galeria1, alt: "Modna fryzura młodzieżowa - zakład fryzjerski Bochnia" },
+                { src: galeria13, alt: "Usługa combo strzyżenie włosów i konturowanie zarostu - barber Bochnia" },
+                { src: galeria25, alt: "Stylowa fryzura dla chłopca - Mento Barber Shop Bochnia" },
+                { src: galeria9, alt: "Precyzyjne strzyżenie męskie - fryzjer Nowy Wiśnicz i Bochnia" },
+                { src: galeria20, alt: "Pielęgnacja i odsiwianie brody - profesjonalny barber" },
+                { src: galeria3, alt: "Wystylizowane włosy w tył bez zarostu - fryzjer męski Bochnia" },
+                { src: galeria11, alt: "Klasyczny pompadour z idealnym przejściem - Mento Barber" },
+                { src: galeria24, alt: "Ostre linie i konturowanie zarostu brzytwą - barber shop Bochnia" },
+              ].map((item, index) => (
+  <div key={index} className="p-3">
+    <div className="p-2 border-[3px] border-prime rounded-md shadow-[0_0_7px_rgba(255,120,0,0.8),inset_0_0_7px_rgba(255,120,0,0.8)]">
+      <img
+        src={item.src} 
+        alt={item.alt} 
+        className="w-full h-full object-cover rounded-md"
+        style={{ height: isMobile ? "31vh" : "35vh" }}
+      />
+    </div>
+  </div>
+))}
             </Slider>
           </div>
           <div className={`w-full ${isMobile ? "mt-[0px]" : "mt-[-5px]"}`}>
             <Slider {...reverseSettings} className="space-x-4">
-              {[  
-                galeria8, galeria23, galeria2, galeria19, galeria10, galeria26,
-                galeria5, galeria14, galeria17, galeria6, galeria22, galeria12,
-              ].map((photo, index) => (
+              {[
+                { src: galeria8, alt: "Cieniowanie typu taper fade - polecany barber Bochnia" },
+                { src: galeria23, alt: "Męska stylizacja włosów na gładko - Mento Barber" },
+                { src: galeria2, alt: "Strzyżenie maszynką i nożyczkami - dobry fryzjer Bochnia" },
+                { src: galeria19, alt: "Długa broda i krótkie włosy - profesjonalny barber shop Bochnia" },
+                { src: galeria10, alt: "Precyzyjne wykończenie fryzury męskiej - fryzjer z Bochni" },
+                { src: galeria26, alt: "Zadbany zarost i modne cięcie - Mento Barber Bochnia i Nowy Wiśnicz" },
+                { src: galeria5, alt: "Idealnie ułożony french crop - fryzjer męski Bochnia" },
+                { src: galeria14, alt: "Strzyżenie męskie z wygolonymi bokami - Bochnia Fryzjer" },
+                { src: galeria17, alt: "Klasyczna męska elegancja na fotelu barberskim - Mento" },
+                { src: galeria6, alt: "Trymowanie i modelowanie długiej brody - barber Bochnia" },
+                { src: galeria22, alt: "Stylizacja włosów pudrem i pomadą - fryzjer Bochnia opinie" },
+                { src: galeria12, alt: "Wizyta u profesjonalnego barbera - zakład fryzjerski Bochnia" },
+              ].map((item, index) => (
+
                 <div key={index} className="p-3">
                   <div className="p-2 border-[3px] border-prime rounded-md shadow-[0_0_7px_rgba(255,120,0,0.8),inset_0_0_7px_rgba(255,120,0,0.8)]">
                     <img
-                      src={photo}
-                      alt="Haircut"
+                      src={item.src}
+                      alt={item.alt}
                       className="w-full h-full object-cover rounded-md"
                       style={{ height: isMobile ? "31vh" : "35vh" }}
                     />
