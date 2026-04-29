@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-
 import Gradient from "../assets/gradient.svg";
 import Barber from "../assets/barber8.webp";
 import Texture from "../assets/texture.webp";
@@ -88,10 +87,10 @@ const Barber8 = ({ slideInFromRight, fadeInFromLeft }) => {
             loading="lazy"
             className="absolute bottom-0 right-0 pointer-events-none"
             style={{
-              bottom: "-28vh",
+              bottom: "-20vh",
               right: "3vw",
               zIndex: 1,
-              width: "37.5vw",
+              width: "30vw",
               height: "auto",
             }}
           />
@@ -111,13 +110,13 @@ const Barber8 = ({ slideInFromRight, fadeInFromLeft }) => {
             <h1
               className="font-bold uppercase text-center"
               style={{
-             fontFamily: '"Arial", "Helvetica", sans-serif',
-								fontSize: "18vw", // Zmieniono na jednostkę vw, aby dopasować do szerokości ekranu
-								fontWeight: "bold",
-								textTransform: "uppercase",
-								color: "transparent",
-								WebkitTextStroke: "2px #ff6600",
-								whiteSpace: "nowrap",
+                fontFamily: '"Arial", "Helvetica", sans-serif',
+                fontSize: "18vw",
+                fontWeight: "bold",
+                textTransform: "uppercase",
+                color: "transparent",
+                WebkitTextStroke: "2px #ff6600",
+                whiteSpace: "nowrap",
               }}
             >
               KRYSTIAN
@@ -134,8 +133,8 @@ const Barber8 = ({ slideInFromRight, fadeInFromLeft }) => {
             src={Barber}
             alt="Barber Krystian - Mento Barber Bochnia"
             loading="lazy"
-            className="absolute top-0 w-[450px] max-w-none z-10"
-            style={{ right: "-70px", top: "50px" }}
+            className="absolute top-0 w-[350px] max-w-none z-10"
+            style={{ right: "-40px", top: "80px" }}
           />
           <img
             src={Gradient}
