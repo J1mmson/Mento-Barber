@@ -51,10 +51,10 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='fixed top-0 left-0 w-full md:w-[calc(100%-15px)] z-[60] px-4 md:px-[98px] py-5 md:py-6 bg-black/85 backdrop-blur-md shadow-lg'>
+            <nav className='fixed top-0 left-0 w-full md:w-[calc(100%-15px)] z-[60] px-4 lg:px-[40px] xl:px-[98px] py-5 md:py-6 bg-black/85 backdrop-blur-md shadow-lg'>
                 <div className='flex justify-between items-center relative w-full'>
                     
-                    <div className='hidden md:flex space-x-[32px] uppercase text-lg font-light'>
+                    <div className='hidden lg:flex space-x-[20px] xl:space-x-[32px] uppercase text-[16px] xl:text-lg font-light'>
                         {menus.map((menu, i) => (
                             <a
                                 key={i}
@@ -80,12 +80,12 @@ const Navbar = () => {
                                 alt='Mento Barber Bochnia - Strona Główna'
                                 width="300"
                                 height="280"
-                                className='logo cursor-pointer h-[55px] md:h-[75px] object-contain invert'
+                                className='logo cursor-pointer h-[55px] md:h-[75px] object-contain invert transition-all duration-300'
                             />
                         </a>
                     </div>
 
-                    <div className='hidden md:flex space-x-[32px] uppercase text-lg font-light'>
+                    <div className='hidden lg:flex space-x-[20px] xl:space-x-[32px] uppercase text-[16px] xl:text-lg font-light'>
                         <Link to='/blog'>
                             <p
                                 className={`cursor-pointer flex items-center transition-colors duration-300 hover:text-prime ${
@@ -126,7 +126,7 @@ const Navbar = () => {
                         </p>
                     </div>
 
-                    <div className='md:hidden z-20 ml-auto'>
+                    <div className='lg:hidden z-20 ml-auto'>
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                             className='text-3xl text-prime focus:outline-none'
