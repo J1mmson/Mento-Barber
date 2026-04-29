@@ -74,25 +74,22 @@ const Section = ({ children, index }) => {
 const HomePage = () => {
   const isMobile = useIsMobile();
 
-  const useWindowSize = () => {
-    const [windowSize, setWindowSize] = useState({
-      width: typeof window !== "undefined" ? window.innerWidth : undefined,
-      height: typeof window !== "undefined" ? window.innerHeight : undefined,
-    });
+  const [windowSize, setWindowSize] = useState({
+    width: typeof window !== "undefined" ? window.innerWidth : undefined,
+    height: typeof window !== "undefined" ? window.innerHeight : undefined,
+  });
 
-    useEffect(() => {
-      function handleResize() {
-        setWindowSize({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        });
-      }
-      window.addEventListener("resize", handleResize);
-      handleResize();
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
-    return windowSize;
-  };
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const settings = {
     dots: false,
@@ -105,7 +102,7 @@ const HomePage = () => {
     cssEase: "linear",
     arrows: false,
     pauseOnHover: false,
-    lazyLoad: "ondemand",
+    lazyLoad: "ondemand"
   };
 
   const reverseSettings = {
@@ -136,9 +133,9 @@ const HomePage = () => {
   return (
     <main className="h-screen overflow-y-scroll snap-y snap-mandatory">
       <Navbar />
-
+      
       {!isMobile ? (
-        <Section key="desktop-about" index="desktop-about">
+        <Section index={1}>
           <div
             id="about"
             className="relative flex flex-col min-h-screen px-20 snap-start z-10 overflow-hidden"
@@ -178,7 +175,7 @@ const HomePage = () => {
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
                 style={{ lineHeight: 2 }}
               >
-                MENTO BARBERSHOP Bochnia to miejsce, gdzie rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier,
+                MENTO BARBERSHOP Bochnia to miejsce, gdzie rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier, 
                 w której każdy buduje świetną atmosferę. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
             </motion.div>
@@ -191,7 +188,7 @@ const HomePage = () => {
               variants={fadeInFromBottom}
             >
               <div className="flex gap-4">
-                <a
+                <a 
                   href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -200,8 +197,8 @@ const HomePage = () => {
                   Nad Babicą 2, Bochnia
                 </a>
 
-                <a
-                  href="tel:+48798144399"
+                <a 
+                  href="tel:+48798144399" 
                   className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
                 >
                   +48 798 144 399
@@ -220,12 +217,12 @@ const HomePage = () => {
                 </a>
               </div>
             </motion.div>
-
+            
             <motion.img
               src="/page1photo.webp"
               alt="Tło z barberem z MENTO BARBER Bochnia"
               fetchPriority="high"
-              width="897"
+              width="897"   
               height="983"
               className="absolute bottom-0 right-0 w-[40%] h-auto pointer-events-none z-10"
               style={{ bottom: -60 }}
@@ -236,7 +233,7 @@ const HomePage = () => {
             />
             <img
               src={Gradient}
-              alt=""
+              alt=""            
               aria-hidden="true"
               className="absolute top-0 right-0 w-1/1 h-auto pointer-events-none z-0"
               style={{ top: -700, right: -650 }}
@@ -250,7 +247,7 @@ const HomePage = () => {
           </div>
         </Section>
       ) : (
-        <Section key="mobile-about" index="mobile-about">
+        <Section index={1}>
           <div
             id="about"
             className="relative flex flex-col justify-end px-6 pb-5 snap-start z-10 overflow-hidden"
@@ -267,7 +264,7 @@ const HomePage = () => {
             <div className="flex flex-col items-center mt-[10%] leading-none z-20">
               <div
                 className="flex space-x-4 items-center gap-[32px]"
-                style={{ marginBottom: useWindowSize().height < 700 ? "12px" : "24px" }}
+                style={{ marginBottom: windowSize.height < 700 ? "12px" : "24px" }}
               >
                 <a href="https://www.facebook.com/MentoBarberShop" aria-label="Nasz profil na Facebooku" target="_blank" rel="noopener noreferrer">
                   <img src={FacebookLogo} alt="facebook_logo" style={{ height: "48px", width: "auto" }} />
@@ -281,7 +278,7 @@ const HomePage = () => {
               </div>
               <h1
                 className="text-textPrimary uppercase text-titleOne font-bold text-center"
-                style={{ fontSize: useWindowSize().height < 700 ? "2.65rem" : "2.95rem" }}
+                style={{ fontSize: windowSize.height < 700 ? "2.65rem" : "2.95rem" }}
               >
                 mento barber
               </h1>
@@ -289,7 +286,7 @@ const HomePage = () => {
                 className="uppercase font-bold text-center"
                 style={{
                   fontFamily: '"Arial", "Helvetica", sans-serif',
-                  fontSize: useWindowSize().height < 700 ? "4.5rem" : "5rem",
+                  fontSize: windowSize.height < 700 ? "4.5rem" : "5rem",
                   fontWeight: "bold",
                   textTransform: "uppercase",
                   color: "transparent",
@@ -306,14 +303,14 @@ const HomePage = () => {
                   width: "100%",
                   maxWidth: "500px",
                   margin: "0 auto",
-                  marginBottom: useWindowSize().height < 700 ? "24px" : "48px",
+                  marginBottom: windowSize.height < 700 ? "24px" : "48px",
                 }}
               >
-                MENTO BARBERSHOP Bochnia to miejsce, gdzie rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier,
+                MENTO BARBERSHOP Bochnia to miejsce, gdzie rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier, 
                 w której każdy buduje świetną atmosferę. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
               <div className="flex flex-col items-center space-y-[12px] w-full text-[12px]">
-                <a
+                <a 
                   href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -321,8 +318,8 @@ const HomePage = () => {
                 >
                   Nad Babicą 2, Bochnia
                 </a>
-                <a
-                  href="tel:+48798144399"
+                <a 
+                  href="tel:+48798144399" 
                   className="border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 block"
                 >
                   +48 798 144 399
@@ -333,10 +330,10 @@ const HomePage = () => {
               src="/page1photo.webp"
               alt="Tło z barberem z MENTO BARBER Bochnia"
               fetchPriority="high"
-              width="897"
+              width="897"   
               height="983"
               className="absolute inset-0 mx-auto w-[150%] h-auto object-contain pointer-events-none z-10"
-              style={{ top: useWindowSize().height < 700 ? 40 : 80 }}
+              style={{ top: windowSize.height < 700 ? 40 : 80 }}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -358,7 +355,7 @@ const HomePage = () => {
       )}
 
       {!isMobile ? (
-        <Section key="desktop-pricing" index="desktop-pricing">
+        <Section index={2}>
           <div
             id="pricing"
             className="relative h-screen flex items-center justify-end pt-[50px] text-prime snap-start overflow-hidden"
@@ -422,7 +419,7 @@ const HomePage = () => {
           </div>
         </Section>
       ) : (
-        <Section key="mobile-pricing" index="mobile-pricing">
+        <Section index={2}>
           <div
             id="pricing"
             className="relative h-[100dvh] flex flex-col items-center justify-end pt-[20px] text-prime snap-start overflow-hidden"
@@ -484,7 +481,7 @@ const HomePage = () => {
       )}
 
       {!isMobile ? (
-        <Section key="desktop-jimmy" index="desktop-jimmy">
+        <Section index={3}>
           <div
             id="barbers"
             className="relative h-screen flex items-center justify-start p-10 text-white snap-start overflow-hidden"
@@ -565,7 +562,7 @@ const HomePage = () => {
           </div>
         </Section>
       ) : (
-        <Section key="mobile-jimmy" index="mobile-jimmy">
+        <Section index={1}>
           <div
             id="barbers"
             className="relative flex flex-col justify-end min-h-screen px-6 pb-5 snap-start z-10 overflow-hidden"
@@ -638,7 +635,7 @@ const HomePage = () => {
       <div>
         <Barber8 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
       </div>
-      <div id="barbers-end">
+      <div id="barbers-end"> 
         <Barber9 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
       </div>
 
@@ -687,7 +684,7 @@ const HomePage = () => {
           </div>
           <div className={`w-full ${isMobile ? "mt-[0px]" : "mt-[-5px]"}`}>
             <Slider {...reverseSettings} className="space-x-4">
-              {[
+              {[  
                 galeria8, galeria23, galeria2, galeria19, galeria10, galeria26,
                 galeria5, galeria14, galeria17, galeria6, galeria22, galeria12,
               ].map((photo, index) => (
@@ -706,7 +703,7 @@ const HomePage = () => {
             <img
               src={Gradient}
               alt=""
-              aria-hidden="true"
+              aria-hidden="true"  
               className="absolute w-1/1 h-auto pointer-events-none z-0 opacity-70"
               style={{ top: isMobile ? "-30%" : "-50%" }}
             />
