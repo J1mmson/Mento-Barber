@@ -134,7 +134,7 @@ const Barber8 = ({ slideInFromRight, fadeInFromLeft }) => {
             src={Barber}
             alt="Barber Krystian - Mento Barber Bochnia"
             loading="lazy"
-            className="absolute top-0 w-[500px] max-w-none z-10"
+            className="absolute top-0 w-[450px] max-w-none z-10"
             style={{ right: "-70px", top: "50px" }}
           />
           <img

@@ -80,8 +80,8 @@ const Navbar = () => {
                                 alt='Mento Barber Bochnia - Strona Główna'
                                 width="300"
                                 height="280"
-                                className='logo cursor-pointer h-[55px] md:h-[75px] object-contain invert transition-all duration-300'
-                            />
+                                className='logo cursor-pointer h-[80px] lg:h-[115px] object-contain invert transition-all duration-300'
+/>
                         </a>
                     </div>
 
