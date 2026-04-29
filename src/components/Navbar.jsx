@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
-import Logo from "../assets/mento_logo.webp";
+import Logo from "../assets/mento_logo.svg";
 import BurgerMenu from "../assets/burgerMenu.svg";
 
 const Navbar = () => {
@@ -80,7 +80,7 @@ const Navbar = () => {
                                 alt='Mento Barber Bochnia - Strona Główna'
                                 width="300"
                                 height="280"
-                                className='logo cursor-pointer h-[45px] md:h-[65px] object-contain'
+                                className='logo cursor-pointer h-[45px] md:h-[65px] object-contain invert'
                             />
                         </a>
                     </div>
