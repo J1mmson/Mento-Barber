@@ -51,6 +51,27 @@ import galeria26 from "../assets/gallery/galeria26.webp";
 import PhotoJimmy from "../assets/page3jimmy.webp";
 import Texture from "../assets/texture.webp";
 
+const Section = ({ children, index }) => {
+    const variantsSecond = {
+      hidden: { opacity: 0, rotateY: 90, x: -50 },
+      visible: { opacity: 1, rotateY: 0, x: 0, transition: { duration: 1 } },
+    };
+
+    return (
+      <motion.div
+        key={index}
+        className="section"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.05 }}
+        variants={variantsSecond}
+      >
+        {children}
+      </motion.div>
+    );
+  };
+
+
 const HomePage = () => {
   const isMobile = useIsMobile();
 
@@ -111,26 +132,6 @@ const HomePage = () => {
   const slideInFromRight = {
     hidden: { opacity: 0, x: "100%" },
     visible: { opacity: 0.05, x: 0, transition: { duration: 1.5 } },
-  };
-
-  const Section = ({ children, index }) => {
-    const variantsSecond = {
-      hidden: { opacity: 0, rotateY: 90, x: -50 },
-      visible: { opacity: 1, rotateY: 0, x: 0, transition: { duration: 1 } },
-    };
-
-    return (
-      <motion.div
-        key={index}
-        className="section"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={variantsSecond}
-      >
-        {children}
-      </motion.div>
-    );
   };
 
   return (
