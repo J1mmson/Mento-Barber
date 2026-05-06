@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import Shop from "./pages/Shop";
 import Training from "./pages/Training";
 import Blog from "./pages/Blog";
 import BlogHaircut from "./pages/BlogHaircut";
@@ -16,6 +17,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/Shop" element={<Shop />} />
         <Route path="/training" element={<Training />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/Frequency" element={<BlogFrequency />} />
