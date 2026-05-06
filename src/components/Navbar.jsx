@@ -93,7 +93,7 @@ const Navbar = () => {
                                         ? "text-prime"
                                         : "text-textPrimary"
                                 }`}>
-                                {location.pathname.includes("/Cosmetics") && (
+                                {location.pathname.includes("/cosmetics") && (
                                     <span className='w-2 h-2 bg-prime rounded-full mr-2'></span>
                                 )}
                                 kosmetyki
@@ -194,7 +194,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <Link to='/Cosmetics' onClick={() => setIsMobileMenuOpen(false)}>
+                            <Link to='/cosmetics' onClick={() => setIsMobileMenuOpen(false)}>
                                 kosmetyki
                             </Link>
                         </li>
