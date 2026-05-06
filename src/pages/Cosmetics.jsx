@@ -15,7 +15,6 @@ const Cosmetics = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // TUTAJ JEST BRAKUJĄCA LOGIKA:
   const [activeTab, setActiveTab] = useState("wszystko");
 
   const products = [
@@ -24,10 +23,10 @@ const Cosmetics = () => {
       name: "ByElementum Aquatic",
       category: "Olejek do brody",
       type: "broda",
-      description: "Intensywnie nawilżający olejek, który wnika głęboko w strukturę włosa, zmiękczając twardy zarost. Doskonale radzi sobie z podrażnieniami i swędzeniem skóry pod brodą, pozostawiając ją odżywioną i elastyczną na cały dzień.",
-      scent: "Nuty drzewne, bergamotka, mech dębowy",
-      ingredients: "Olej ze słodkich migdałów, olej jojoba, olej arganowy, witamina E",
-      price: "79 PLN",
+      description: "Olejek do brody By Elementum Aquatic to wyjątkowy produkt, który łączy w sobie naturalne, roślinne oleje, aby zapewnić kompleksową opiekę zarówno nad zarostem, jak i skórą pod nim. Regularne stosowanie zaledwie kilku kropli tego olejku pozwala uzyskać zdrowy i zadbany wygląd brody.",
+      scent: "Nuty cytrusowe, kwiatowe, drzewne i piżmowe",
+      ingredients: "Olej z orzechów makadamia, olej z awokado,  olej ze słodkich migdałów oraz olej ryżowy",
+      price: "80 PLN",
       capacity: "30 ml",
       image: olejekAquatic,
     },
@@ -36,10 +35,10 @@ const Cosmetics = () => {
       name: "ByElementum Astrum",
       category: "Olejek do brody",
       type: "broda",
-      description: "Olejek o działaniu silnie regenerującym. Idealny dla przesuszonych i matowych bród. Formuła oparta na naturalnych ekstraktach tworzy barierę ochronną przed czynnikami zewnętrznymi i nadaje zarostowi zdrowy, naturalny połysk.",
-      scent: "Ziemiste nuty, wetyweria, czarny pieprz",
-      ingredients: "Olej rycynowy, olej z pestek winogron, olej makadamia",
-      price: "79 PLN",
+      description: "Wejdź na wyższy poziom męskiej pielęgnacji z olejkiem Astrum – luksusową mieszanką natury i zmysłowego aromatu. Ten olejek do brody nie tylko odżywia i nawilża, ale także otula niepowtarzalnym zapachem, który podkreśli Twój charakter. Dzięki starannie dobranym naturalnym olejom, Twoja broda stanie się miękka, gładka i zadbana, a skóra pod nią – ukojona i zregenerowana.",
+      scent: "Nuty Szafranu, limonki, paczuli, drzewa cedrowego oraz ambry",
+      ingredients: "Olej z orzechów makadamia, olej z awokado, olejek cytrusowy, olej ze słodkich migdałów oraz Witamina E",
+      price: "80 PLN",
       capacity: "30 ml",
       image: olejekAstrum,
     },
@@ -48,10 +47,10 @@ const Cosmetics = () => {
       name: "ByElementum Flaming",
       category: "Olejek do brody",
       type: "broda",
-      description: "Lekka formuła, która błyskawicznie się wchłania, nie pozostawiając tłustego filmu. Ignis to olejek stworzony do codziennej rutyny – ułatwia rozczesywanie, dyscyplinuje niesforne kosmyki i pobudza zmysły swoim zapachem.",
-      scent: "Owoce cytrusowe, kardamon, różowy pieprz",
-      ingredients: "Olej z pestek moreli, olej z baobabu, esencje cytrusowe",
-      price: "79 PLN",
+      description: "Poznaj Flaming, olejek do brody, który odmieni Twoją codzienną pielęgnację. Przebadany dermatologicznie i stworzony z myślą o najbardziej wymagających brodach, Mollis Flaming oferuje coś więcej niż tylko pielęgnację – obiecuje kompletną transformację. Już po dwóch tygodniach regularnego stosowania, Twoja broda stanie się niesamowicie miękka, gładka i zadbana.",
+      scent: "Nuty fasoli tonka, wanilii, skóry oraz mchu dębowego",
+      ingredients: "Olej arganowy, olej jojoba oraz olej z ze słodkich migdałów",
+      price: "80 PLN",
       capacity: "30 ml",
       image: olejekFlaming,
     },
@@ -60,10 +59,10 @@ const Cosmetics = () => {
       name: "ByElementum Woody",
       category: "Olejek do brody",
       type: "broda",
-      description: "Mocne odświeżenie i nawilżenie. Olejek Aqua został skomponowany tak, aby łagodzić stany zapalne skóry i dostarczać witamin cebulkom włosów. Świetny wybór dla osób o wrażliwej cerze, szukających ukojenia po trymowaniu.",
-      scent: "Nuty morskie, mięta pieprzowa, eukaliptus",
-      ingredients: "Olej z nasion ogórecznika, olej jojoba, ekstrakt z aloesu",
-      price: "79 PLN",
+      description: "Odkryj Woody, olejek do brody, który przenosi codzienną pielęgnację na nowy poziom luksusu i komfortu. Przebadany dermatologicznie i opracowany z myślą o najbardziej wymagających brodach, Mollis Woody to wyjątkowa mieszanka sześciu olejów roślinnych, które zapewniają intensywne odżywienie, miękkość oraz zdrowy wygląd Twojej brody już po dwóch tygodniach regularnego stosowania.",
+      scent: "Nuty drzewa Amyrisowego, palisandru oraz drzewo sandałowego",
+      ingredients: "Olej z orzechów makadamia, olej z awokado, olej ryżowy, olej z zarodków pszenicy, olej arganowy oraz olej z ogórecznika",
+      price: "80 PLN",
       capacity: "30 ml",
       image: olejekWoody,
     },
@@ -72,16 +71,15 @@ const Cosmetics = () => {
       name: "ByElementum Floral",
       category: "Olejek do brody",
       type: "broda",
-      description: "Niezwykle lekki olejek o działaniu odświeżającym i tonizującym. Aer to powiew świeżości dla Twojej brody. Odżywia zarost bez jego obciążania, zapewniając mu miękkość i ochronę przed utratą wilgoci w ciągu dnia.",
-      scent: "Lawenda, szałwia, ozon, cedr",
-      ingredients: "Olej lniany, olej z wiesiołka, olej arganowy",
-      price: "79 PLN",
+      description: "Poznaj Floral, olejek do brody, który przenosi pielęgnację na wyższy poziom. Przebadany dermatologicznie i stworzony z myślą o wymagających brodach, Mollis Floral oferuje intensywne nawilżenie i odżywienie, które widocznie poprawia kondycję włosów już po dwóch tygodniach stosowania. Odkryj, jak miękka i zdrowa może być Twoja broda dzięki mocy starannie wyselekcjonowanych sześciu olejów roślinnych.",
+      scent: "Nuty mango czewonej porzeczki, dojrzałych jeżyn oraz jaśminu",
+      ingredients: "Olej z orzechów makadamia, olej z awokado, olej ryżowy, olej z zarodków pszenicy, olej arganowy oraz olej z ogórecznika",
+      price: "80 PLN",
       capacity: "30 ml",
       image: olejekFloral,
     },
   ];
 
-  // I TUTAJ JEST BRAKUJĄCE FILTROWANIE:
   const filteredProducts = products.filter((product) => {
     if (activeTab === "wszystko") return true;
     return product.type === activeTab;
@@ -136,11 +134,11 @@ const Cosmetics = () => {
           </h1>
           <p className="text-gray-300 mt-4 max-w-2xl text-[15px] leading-relaxed mx-auto md:mx-0">
             Pracujemy wyłącznie na sprawdzonych markach premium. Poznaj produkty,
-            których używamy podczas wizyt w Mento Barber Shop i dowiedz się, 
-            jak mogą zadbać o Twój zarost w domowym zaciszu.
+            których używamy w Mento Barber Shop i dowiedz się, 
+            jak mogą zadbać o Twój wygląd w domowym zaciszu.
             <br />
             <span className="text-prime font-bold mt-2 block">
-              Wszystkie kosmetyki z naszej półki możesz nabyć stacjonarnie w salonie.
+              Wszystkie kosmetyki możesz nabyć stacjonarnie w naszym salonie Mento Barber Shop Bochnia.
             </span>
           </p>
         </motion.div>
