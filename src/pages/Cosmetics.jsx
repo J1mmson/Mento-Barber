@@ -15,6 +15,9 @@ const Cosmetics = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // TUTAJ JEST BRAKUJĄCA LOGIKA:
+  const [activeTab, setActiveTab] = useState("wszystko");
+
   const products = [
     {
       id: 1,
@@ -78,6 +81,12 @@ const Cosmetics = () => {
     },
   ];
 
+  // I TUTAJ JEST BRAKUJĄCE FILTROWANIE:
+  const filteredProducts = products.filter((product) => {
+    if (activeTab === "wszystko") return true;
+    return product.type === activeTab;
+  });
+
   const fadeInFromBottom = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -135,6 +144,7 @@ const Cosmetics = () => {
             </span>
           </p>
         </motion.div>
+        
         <div className="flex justify-center gap-4 md:gap-8 mb-16 relative z-10">
           <button
             onClick={() => setActiveTab("wszystko")}
