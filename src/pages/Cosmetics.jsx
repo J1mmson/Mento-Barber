@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Texture from "../assets/texture.webp";
@@ -20,6 +20,7 @@ const Cosmetics = () => {
       id: 1,
       name: "ByElementum Aquatic",
       category: "Olejek do brody",
+      type: "broda",
       description: "Intensywnie nawilżający olejek, który wnika głęboko w strukturę włosa, zmiękczając twardy zarost. Doskonale radzi sobie z podrażnieniami i swędzeniem skóry pod brodą, pozostawiając ją odżywioną i elastyczną na cały dzień.",
       scent: "Nuty drzewne, bergamotka, mech dębowy",
       ingredients: "Olej ze słodkich migdałów, olej jojoba, olej arganowy, witamina E",
@@ -31,6 +32,7 @@ const Cosmetics = () => {
       id: 2,
       name: "ByElementum Astrum",
       category: "Olejek do brody",
+      type: "broda",
       description: "Olejek o działaniu silnie regenerującym. Idealny dla przesuszonych i matowych bród. Formuła oparta na naturalnych ekstraktach tworzy barierę ochronną przed czynnikami zewnętrznymi i nadaje zarostowi zdrowy, naturalny połysk.",
       scent: "Ziemiste nuty, wetyweria, czarny pieprz",
       ingredients: "Olej rycynowy, olej z pestek winogron, olej makadamia",
@@ -42,6 +44,7 @@ const Cosmetics = () => {
       id: 3,
       name: "ByElementum Flaming",
       category: "Olejek do brody",
+      type: "broda",
       description: "Lekka formuła, która błyskawicznie się wchłania, nie pozostawiając tłustego filmu. Ignis to olejek stworzony do codziennej rutyny – ułatwia rozczesywanie, dyscyplinuje niesforne kosmyki i pobudza zmysły swoim zapachem.",
       scent: "Owoce cytrusowe, kardamon, różowy pieprz",
       ingredients: "Olej z pestek moreli, olej z baobabu, esencje cytrusowe",
@@ -53,6 +56,7 @@ const Cosmetics = () => {
       id: 4,
       name: "ByElementum Woody",
       category: "Olejek do brody",
+      type: "broda",
       description: "Mocne odświeżenie i nawilżenie. Olejek Aqua został skomponowany tak, aby łagodzić stany zapalne skóry i dostarczać witamin cebulkom włosów. Świetny wybór dla osób o wrażliwej cerze, szukających ukojenia po trymowaniu.",
       scent: "Nuty morskie, mięta pieprzowa, eukaliptus",
       ingredients: "Olej z nasion ogórecznika, olej jojoba, ekstrakt z aloesu",
@@ -64,6 +68,7 @@ const Cosmetics = () => {
       id: 5,
       name: "ByElementum Floral",
       category: "Olejek do brody",
+      type: "broda",
       description: "Niezwykle lekki olejek o działaniu odświeżającym i tonizującym. Aer to powiew świeżości dla Twojej brody. Odżywia zarost bez jego obciążania, zapewniając mu miękkość i ochronę przed utratą wilgoci w ciągu dnia.",
       scent: "Lawenda, szałwia, ozon, cedr",
       ingredients: "Olej lniany, olej z wiesiołka, olej arganowy",
@@ -130,9 +135,41 @@ const Cosmetics = () => {
             </span>
           </p>
         </motion.div>
+        <div className="flex justify-center gap-4 md:gap-8 mb-16 relative z-10">
+          <button
+            onClick={() => setActiveTab("wszystko")}
+            className={`uppercase tracking-widest text-sm font-bold pb-2 transition-all duration-300 border-b-2 ${
+              activeTab === "wszystko"
+                ? "border-prime text-prime"
+                : "border-transparent text-gray-500 hover:text-white"
+            }`}
+          >
+            Wszystkie
+          </button>
+          <button
+            onClick={() => setActiveTab("broda")}
+            className={`uppercase tracking-widest text-sm font-bold pb-2 transition-all duration-300 border-b-2 ${
+              activeTab === "broda"
+                ? "border-prime text-prime"
+                : "border-transparent text-gray-500 hover:text-white"
+            }`}
+          >
+            Do Brody
+          </button>
+          <button
+            onClick={() => setActiveTab("wlosy")}
+            className={`uppercase tracking-widest text-sm font-bold pb-2 transition-all duration-300 border-b-2 ${
+              activeTab === "wlosy"
+                ? "border-prime text-prime"
+                : "border-transparent text-gray-500 hover:text-white"
+            }`}
+          >
+            Do Włosów
+          </button>
+        </div>
 
         <div className="flex flex-col gap-16 md:gap-24">
-          {products.map((product, index) => (
+        {filteredProducts.map((product, index) => (
             <motion.div
               key={product.id}
               initial="hidden"
