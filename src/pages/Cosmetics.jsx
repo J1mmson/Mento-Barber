@@ -20,7 +20,7 @@ const Cosmetics = () => {
   const products = [
     {
       id: 1,
-      name: "ByElementum Aquatic",
+      name: "By Elementum Aquatic",
       category: "Olejek do brody",
       type: "broda",
       description: "Olejek do brody By Elementum Aquatic to wyjątkowy produkt, który łączy w sobie naturalne, roślinne oleje, aby zapewnić kompleksową opiekę zarówno nad zarostem, jak i skórą pod nim. Regularne stosowanie zaledwie kilku kropli tego olejku pozwala uzyskać zdrowy i zadbany wygląd brody.",
@@ -32,7 +32,7 @@ const Cosmetics = () => {
     },
     {
       id: 2,
-      name: "ByElementum Astrum",
+      name: "By Elementum Astrum",
       category: "Olejek do brody",
       type: "broda",
       description: "Wejdź na wyższy poziom męskiej pielęgnacji z olejkiem Astrum – luksusową mieszanką natury i zmysłowego aromatu. Ten olejek do brody nie tylko odżywia i nawilża, ale także otula niepowtarzalnym zapachem, który podkreśli Twój charakter. Dzięki starannie dobranym naturalnym olejom, Twoja broda stanie się miękka, gładka i zadbana, a skóra pod nią – ukojona i zregenerowana.",
@@ -44,7 +44,7 @@ const Cosmetics = () => {
     },
     {
       id: 3,
-      name: "ByElementum Flaming",
+      name: "By Elementum Flaming",
       category: "Olejek do brody",
       type: "broda",
       description: "Poznaj Flaming, olejek do brody, który odmieni Twoją codzienną pielęgnację. Przebadany dermatologicznie i stworzony z myślą o najbardziej wymagających brodach, Mollis Flaming oferuje coś więcej niż tylko pielęgnację – obiecuje kompletną transformację. Już po dwóch tygodniach regularnego stosowania, Twoja broda stanie się niesamowicie miękka, gładka i zadbana.",
@@ -56,7 +56,7 @@ const Cosmetics = () => {
     },
     {
       id: 4,
-      name: "ByElementum Woody",
+      name: "By Elementum Woody",
       category: "Olejek do brody",
       type: "broda",
       description: "Odkryj Woody, olejek do brody, który przenosi codzienną pielęgnację na nowy poziom luksusu i komfortu. Przebadany dermatologicznie i opracowany z myślą o najbardziej wymagających brodach, Mollis Woody to wyjątkowa mieszanka sześciu olejów roślinnych, które zapewniają intensywne odżywienie, miękkość oraz zdrowy wygląd Twojej brody już po dwóch tygodniach regularnego stosowania.",
@@ -68,7 +68,7 @@ const Cosmetics = () => {
     },
     {
       id: 5,
-      name: "ByElementum Floral",
+      name: "By Elementum Floral",
       category: "Olejek do brody",
       type: "broda",
       description: "Poznaj Floral, olejek do brody, który przenosi pielęgnację na wyższy poziom. Przebadany dermatologicznie i stworzony z myślą o wymagających brodach, Mollis Floral oferuje intensywne nawilżenie i odżywienie, które widocznie poprawia kondycję włosów już po dwóch tygodniach stosowania. Odkryj, jak miękka i zdrowa może być Twoja broda dzięki mocy starannie wyselekcjonowanych sześciu olejów roślinnych.",
