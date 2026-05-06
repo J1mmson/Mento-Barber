@@ -524,7 +524,7 @@ const Cosmetics = () => {
                   {product.description}
                 </p>
 
-                <<div className="flex flex-col gap-4 mb-8">
+                <div className="flex flex-col gap-4 mb-8">
   {product.scent && (
     <div>
       <span className="text-white font-bold text-sm uppercase">Zapach: </span>
