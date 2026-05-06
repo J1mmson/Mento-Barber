@@ -6,11 +6,11 @@ import Gradient from "../assets/gradient.svg";
 
 import olejekAquatic from "../assets/cosmetics/olejek-do-brody-aquatic.webp";
 import olejekAstrum from "../assets/cosmetics/olejek-do-brody-astrum.webp";
-import olejekfloral from "../assets/cosmetics/olejek-do-brody-floral.webp";
+import olejekFloral from "../assets/cosmetics/olejek-do-brody-floral.webp";
 import olejekFlaming from "../assets/cosmetics/olejek-do-brody-flaming.webp";
 import olejekWoody from "../assets/cosmetics/olejek-do-brody-woody.webp";
 
-const Shop = () => {
+const Cosmetics = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -69,7 +69,7 @@ const Shop = () => {
       ingredients: "Olej lniany, olej z wiesiołka, olej arganowy",
       price: "79 PLN",
       capacity: "30 ml",
-      image: olejekfloral,
+      image: olejekFloral,
     },
   ];
 
