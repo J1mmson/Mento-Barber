@@ -86,10 +86,10 @@ const Navbar = () => {
                     </div>
 
                     <div className='hidden lg:flex space-x-[20px] xl:space-x-[32px] uppercase text-[16px] xl:text-lg font-light'>
-                        <Link to='/Cosmetics'>
+                        <Link to='/cosmetics'>
                             <p
                                 className={`cursor-pointer flex items-center transition-colors duration-300 hover:text-prime ${
-                                    location.pathname.includes("/Cosmetics")
+                                    location.pathname.includes("/cosmetics")
                                         ? "text-prime"
                                         : "text-textPrimary"
                                 }`}>
