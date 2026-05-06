@@ -4,11 +4,11 @@ import Navbar from "../components/Navbar";
 import Texture from "../assets/texture.webp";
 import Gradient from "../assets/gradient.svg";
 
-import olejekAquatic from "../assets/Shop/olejek-do-brody-aquatic.webp";
-import olejekAstrum from "../assets/Shop/olejek-do-brody-astrum.webp";
-import olejekfloral from "../assets/Shop/olejek-do-brody-floral.webp";
-import olejekFlaming from "../assets/Shop/olejek-do-brody-flaming.webp";
-import olejekWoody from "../assets/Shop/olejek-do-brody-woody.webp";
+import olejekAquatic from "../assets/cosmetics/olejek-do-brody-aquatic.webp";
+import olejekAstrum from "../assets/cosmetics/olejek-do-brody-astrum.webp";
+import olejekfloral from "../assets/cosmetics/olejek-do-brody-floral.webp";
+import olejekFlaming from "../assets/cosmetics/olejek-do-brody-flaming.webp";
+import olejekWoody from "../assets/cosmetics/olejek-do-brody-woody.webp";
 
 const Shop = () => {
   useEffect(() => {

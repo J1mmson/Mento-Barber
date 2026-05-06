@@ -86,14 +86,14 @@ const Navbar = () => {
                     </div>
 
                     <div className='hidden lg:flex space-x-[20px] xl:space-x-[32px] uppercase text-[16px] xl:text-lg font-light'>
-                        <Link to='/kosmetyki'>
+                        <Link to='/Cosmetics'>
                             <p
                                 className={`cursor-pointer flex items-center transition-colors duration-300 hover:text-prime ${
-                                    location.pathname.includes("/kosmetyki")
+                                    location.pathname.includes("/Cosmetics")
                                         ? "text-prime"
                                         : "text-textPrimary"
                                 }`}>
-                                {location.pathname.includes("/kosmetyki") && (
+                                {location.pathname.includes("/Cosmetics") && (
                                     <span className='w-2 h-2 bg-prime rounded-full mr-2'></span>
                                 )}
                                 kosmetyki
@@ -193,9 +193,8 @@ const Navbar = () => {
                                 nasze prace
                             </a>
                         </li>
-                        {/* NOWA ZAKŁADKA SKLEP MOBILE */}
                         <li>
-                            <Link to='/kosmetyki' onClick={() => setIsMobileMenuOpen(false)}>
+                            <Link to='/Cosmetics' onClick={() => setIsMobileMenuOpen(false)}>
                                 kosmetyki
                             </Link>
                         </li>
