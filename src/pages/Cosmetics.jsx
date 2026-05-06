@@ -204,4 +204,4 @@ const Cosmetics = () => {
   );
 };
 
-export default Shop;
+export default Cosmetics;
