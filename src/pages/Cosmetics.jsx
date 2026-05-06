@@ -11,7 +11,7 @@ import olejekFlaming from "../assets/cosmetics/olejek-do-brody-flaming.webp";
 import olejekWoody from "../assets/cosmetics/olejek-do-brody-woody.webp";
 import balsamAgnostico from "../assets/cosmetics/balsam-do-brody-agnostico.webp";
 import balsamBelladonna from "../assets/cosmetics/balsam-do-brody-belladonna.webp";
-import balsamCrocodile from "../assets/cosmetics/balsam-do-brody-crocodile.webp";
+import balsamCrocodile from "../assets/cosmetics/balsam-do-brody-crocodile-tears.webp";
 import balsamRebel from "../assets/cosmetics/balsam-do-brody-rebel.webp";
 import balsamMontibello from "../assets/cosmetics/balsam-wygladzajacy-montibello.webp";
 import kremComposer from "../assets/cosmetics/krem-do-lokow-composer.webp";
