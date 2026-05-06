@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
-import Logo from "../assets/mento_logo.svg";
+import Logo from "../assets/mento_logo.svg"; 
 import BurgerMenu from "../assets/burgerMenu.svg";
 
 const Navbar = () => {
@@ -81,11 +81,24 @@ const Navbar = () => {
                                 width="300"
                                 height="280"
                                 className='logo cursor-pointer h-[80px] lg:h-[115px] object-contain invert transition-all duration-300'
-/>
+                            />
                         </a>
                     </div>
 
                     <div className='hidden lg:flex space-x-[20px] xl:space-x-[32px] uppercase text-[16px] xl:text-lg font-light'>
+                        <Link to='/kosmetyki'>
+                            <p
+                                className={`cursor-pointer flex items-center transition-colors duration-300 hover:text-prime ${
+                                    location.pathname.includes("/kosmetyki")
+                                        ? "text-prime"
+                                        : "text-textPrimary"
+                                }`}>
+                                {location.pathname.includes("/kosmetyki") && (
+                                    <span className='w-2 h-2 bg-prime rounded-full mr-2'></span>
+                                )}
+                                kosmetyki
+                            </p>
+                        </Link>
                         <Link to='/blog'>
                             <p
                                 className={`cursor-pointer flex items-center transition-colors duration-300 hover:text-prime ${
@@ -179,6 +192,12 @@ const Navbar = () => {
                             <a href='#works' className='cursor-pointer'>
                                 nasze prace
                             </a>
+                        </li>
+                        {/* NOWA ZAKŁADKA SKLEP MOBILE */}
+                        <li>
+                            <Link to='/kosmetyki' onClick={() => setIsMobileMenuOpen(false)}>
+                                kosmetyki
+                            </Link>
                         </li>
                         <li>
                             <Link to='/blog' onClick={() => setIsMobileMenuOpen(false)}>

@@ -702,7 +702,7 @@ const HomePage = () => {
                 { src: galeria10, alt: "Precyzyjne wykończenie fryzury męskiej - fryzjer z Bochni" },
                 { src: galeria26, alt: "Zadbany zarost i modne cięcie - Mento Barber Bochnia i Nowy Wiśnicz" },
                 { src: galeria5, alt: "Idealnie ułożony french crop - fryzjer męski Bochnia" },
-                { src: galeria14, alt: "Strzyżenie męskie z wygolonymi bokami - Bochnia Fryzjer" },
+                { src: galeria14, alt: "Strzyżenie męskie z wygolonymi bokami - Bochnia Fryzpoojer" },
                 { src: galeria17, alt: "Klasyczna męska elegancja na fotelu barberskim - Mento" },
                 { src: galeria6, alt: "Trymowanie i modelowanie długiej brody - barber Bochnia" },
                 { src: galeria22, alt: "Stylizacja włosów pudrem i pomadą - fryzjer Bochnia opinie" },
