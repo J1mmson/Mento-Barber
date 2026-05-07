@@ -379,8 +379,8 @@ const Cosmetics = () => {
       ingredients: "Ekstrakt z oczaru wirginijskiego, olej arganowy, skrzyp polny",
       hold: "Lekki",
       finish: "Delikatny połysk / Naturalny",
-      price: "120/80 PLN",
-      capacity: "500/350 ml",
+      price: "80/120 PLN",
+      capacity: "350/500 ml",
       image: tonikReuzel,
     }
   ];
