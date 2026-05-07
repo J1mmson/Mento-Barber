@@ -54,13 +54,13 @@ const Navbar = () => {
             <nav className='fixed top-0 left-0 w-full md:w-[calc(100%-15px)] z-[60] px-4 lg:px-[40px] xl:px-[98px] py-5 md:py-6 bg-black/85 backdrop-blur-md shadow-lg'>
                 <div className='flex justify-between items-center relative w-full'>
                     
-                    <div className='hidden lg:flex space-x-[20px] xl:space-x-[32px] uppercase text-[16px] xl:text-lg font-light'>
+                    <div className='hidden lg:flex space-x-[10px] xl:space-x-[20px] uppercase text-[16px] xl:text-lg font-light'>
                         {menus.map((menu, i) => (
                             <a
                                 key={i}
                                 href={`#${menu.ids ? menu.ids[0] : menu.id}`}
                                 onClick={() => navigate(`/#${menu.ids ? menu.ids[0] : menu.id}`)}
-                                className={`cursor-pointer flex items-center transition-colors duration-300 hover:text-prime ${
+                                className={`cursor-pointer flex items-center px-3 py-2 transition-colors duration-300 hover:text-prime ${
                                     (menu.ids || [menu.id]).some(id => activeSection === id)
                                         ? "text-prime"
                                         : "text-textPrimary"
@@ -74,7 +74,7 @@ const Navbar = () => {
                     </div>
 
                     <div className='absolute left-1/2 transform -translate-x-1/2 z-20'>
-                        <a href='/#about'>
+                        <a href='/#about' className="inline-block p-2">
                             <img
                                 src={Logo}
                                 alt='Mento Barber Bochnia - Strona Główna'
@@ -85,64 +85,61 @@ const Navbar = () => {
                         </a>
                     </div>
 
-                    <div className='hidden lg:flex space-x-[20px] xl:space-x-[32px] uppercase text-[16px] xl:text-lg font-light'>
-                        <Link to='/cosmetics'>
-                            <p
-                                className={`cursor-pointer flex items-center transition-colors duration-300 hover:text-prime ${
-                                    location.pathname.includes("/cosmetics")
-                                        ? "text-prime"
-                                        : "text-textPrimary"
-                                }`}>
-                                {location.pathname.includes("/cosmetics") && (
-                                    <span className='w-2 h-2 bg-prime rounded-full mr-2'></span>
-                                )}
-                                kosmetyki
-                            </p>
+                    <div className='hidden lg:flex space-x-[10px] xl:space-x-[20px] uppercase text-[16px] xl:text-lg font-light'>
+                        <Link 
+                            to='/cosmetics'
+                            className={`cursor-pointer flex items-center px-3 py-2 transition-colors duration-300 hover:text-prime ${
+                                location.pathname.includes("/cosmetics")
+                                    ? "text-prime"
+                                    : "text-textPrimary"
+                            }`}>
+                            {location.pathname.includes("/cosmetics") && (
+                                <span className='w-2 h-2 bg-prime rounded-full mr-2'></span>
+                            )}
+                            kosmetyki
                         </Link>
-                        <Link to='/blog'>
-                            <p
-                                className={`cursor-pointer flex items-center transition-colors duration-300 hover:text-prime ${
-                                    location.pathname.includes("/blog")
-                                        ? "text-prime"
-                                        : "text-textPrimary"
-                                }`}>
-                                {location.pathname.includes("/blog") && (
-                                    <span className='w-2 h-2 bg-prime rounded-full mr-2'></span>
-                                )}
-                                blog
-                            </p>
+                        
+                        <Link 
+                            to='/blog'
+                            className={`cursor-pointer flex items-center px-3 py-2 transition-colors duration-300 hover:text-prime ${
+                                location.pathname.includes("/blog")
+                                    ? "text-prime"
+                                    : "text-textPrimary"
+                            }`}>
+                            {location.pathname.includes("/blog") && (
+                                <span className='w-2 h-2 bg-prime rounded-full mr-2'></span>
+                            )}
+                            blog
                         </Link>
-                        <Link to='/training'>
-                            <p
-                                className={`cursor-pointer flex items-center transition-colors duration-300 hover:text-prime ${
-                                    location.pathname === "/training"
-                                        ? "text-prime"
-                                        : "text-textPrimary"
-                                }`}>
-                                {location.pathname === "/training" && (
-                                    <span className='w-2 h-2 bg-prime rounded-full mr-2'></span>
-                                )}
-                                szkolenia
-                            </p>
+                        
+                        <Link 
+                            to='/training'
+                            className={`cursor-pointer flex items-center px-3 py-2 transition-colors duration-300 hover:text-prime ${
+                                location.pathname === "/training"
+                                    ? "text-prime"
+                                    : "text-textPrimary"
+                            }`}>
+                            {location.pathname === "/training" && (
+                                <span className='w-2 h-2 bg-prime rounded-full mr-2'></span>
+                            )}
+                            szkolenia
                         </Link>
-                        <p className='text-prime cursor-pointer flex items-center gap-2 hover:opacity-80 transition-opacity'>
+                        
+                        <a
+                            href='https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='text-prime cursor-pointer flex items-center gap-2 px-3 py-2 hover:opacity-80 transition-opacity'>
                             <span>{`>`}</span>
-                            <span>
-                                <a
-                                    href='https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo'
-                                    target='_blank'
-                                    rel='noopener noreferrer'>
-                                    zarezerwuj
-                                </a>
-                            </span>
+                            <span>zarezerwuj</span>
                             <span>{`<`}</span>
-                        </p>
+                        </a>
                     </div>
 
                     <div className='lg:hidden z-20 ml-auto'>
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className='text-3xl text-prime focus:outline-none'
+                            className='p-3 text-3xl text-prime focus:outline-none'
                             aria-label={isMobileMenuOpen ? "Zamknij menu" : "Otwórz menu nawigacji"}>
                             {isMobileMenuOpen ? (
                                 <AiOutlineClose style={{ color: "#FFFFFF" }} aria-hidden="true" />
@@ -156,71 +153,80 @@ const Navbar = () => {
 
             {isMobileMenuOpen && (
                 <div className='fixed inset-0 bg-[#0B0C0F]/95 backdrop-blur-lg flex flex-col justify-center items-center text-lg font-light uppercase z-[50]'>
-                    <ul className='flex flex-col gap-8 text-center text-white text-[18px] mt-16'>
-                        <li
-                            onClick={() => {
-                                setIsMobileMenuOpen(false);
-                                navigate("/#about");
-                            }}>
-                            <a href='#about' className='cursor-pointer'>
+                    <ul className='flex flex-col w-full px-6 gap-2 text-center text-white text-[18px] mt-16'>
+                        <li className="w-full">
+                            <a 
+                                href='#about' 
+                                className='block w-full py-4 cursor-pointer'
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setIsMobileMenuOpen(false);
+                                    navigate("/#about");
+                                }}>
                                 o nas
                             </a>
                         </li>
-                        <li
-                            onClick={() => {
-                                setIsMobileMenuOpen(false);
-                                navigate("/#pricing");
-                            }}>
-                            <a href='#pricing' className='cursor-pointer'>
+                        <li className="w-full">
+                            <a 
+                                href='#pricing' 
+                                className='block w-full py-4 cursor-pointer'
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setIsMobileMenuOpen(false);
+                                    navigate("/#pricing");
+                                }}>
                                 cennik
                             </a>
                         </li>
-                        <li
-                            onClick={() => {
-                                setIsMobileMenuOpen(false);
-                                navigate("/#barbers");
-                            }}>
-                            <a href='#barbers' className='cursor-pointer'>
+                        <li className="w-full">
+                            <a 
+                                href='#barbers' 
+                                className='block w-full py-4 cursor-pointer'
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setIsMobileMenuOpen(false);
+                                    navigate("/#barbers");
+                                }}>
                                 barberzy
                             </a>
                         </li>
-                        <li
-                            onClick={() => {
-                                setIsMobileMenuOpen(false);
-                                navigate("/#works");
-                            }}>
-                            <a href='#works' className='cursor-pointer'>
+                        <li className="w-full">
+                            <a 
+                                href='#works' 
+                                className='block w-full py-4 cursor-pointer'
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setIsMobileMenuOpen(false);
+                                    navigate("/#works");
+                                }}>
                                 nasze prace
                             </a>
                         </li>
-                        <li>
-                            <Link to='/cosmetics' onClick={() => setIsMobileMenuOpen(false)}>
+                        <li className="w-full">
+                            <Link to='/cosmetics' onClick={() => setIsMobileMenuOpen(false)} className='block w-full py-4 cursor-pointer'>
                                 kosmetyki
                             </Link>
                         </li>
-                        <li>
-                            <Link to='/blog' onClick={() => setIsMobileMenuOpen(false)}>
+                        <li className="w-full">
+                            <Link to='/blog' onClick={() => setIsMobileMenuOpen(false)} className='block w-full py-4 cursor-pointer'>
                                 blog
                             </Link>
                         </li>
-                        <li>
-                            <Link to='/training' onClick={() => setIsMobileMenuOpen(false)}>
+                        <li className="w-full">
+                            <Link to='/training' onClick={() => setIsMobileMenuOpen(false)} className='block w-full py-4 cursor-pointer'>
                                 szkolenia
                             </Link>
                         </li>
-                        <li>
-                            <p className='text-prime font-bold flex justify-center items-center gap-2'>
+                        <li className="w-full mt-4">
+                            <a
+                                href='https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='text-prime font-bold flex justify-center items-center gap-2 block w-full py-4 cursor-pointer'>
                                 <span>{`>`}</span>
-                                <span>
-                                    <a
-                                        href='https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo'
-                                        target='_blank'
-                                        rel='noopener noreferrer'>
-                                        zarezerwuj
-                                    </a>
-                                </span>
+                                <span>zarezerwuj</span>
                                 <span>{`<`}</span>
-                            </p>
+                            </a>
                         </li>
                     </ul>
                 </div>
