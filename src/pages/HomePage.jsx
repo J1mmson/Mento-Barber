@@ -263,7 +263,7 @@ const HomePage = () => {
         </Section>
       ) : (
         <Section index={1}>
-         <div
+        <div
             id="about"
             className="relative flex flex-col px-4 pb-8 snap-start z-10 overflow-hidden"
             style={{
@@ -271,12 +271,13 @@ const HomePage = () => {
               backgroundColor: "#090909"
             }}
           >
-            {/* Zdjęcie zablokowane na sztywno na górne 55% ekranu */}
+            {/* Zdjęcie wyśrodkowane i opuszczone o 85px (bezpiecznie pod nawigacją) */}
             <motion.img
               src="/page1photo.webp"
               alt="Barber Mento Barber Shop"
               fetchPriority="high"
-              className="absolute top-0 left-0 w-full h-[55vh] object-cover object-top pointer-events-none z-0"
+              className="absolute left-1/2 -translate-x-1/2 w-[130%] sm:w-[110%] max-w-none h-auto object-contain pointer-events-none z-0"
+              style={{ top: "85px" }}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -285,12 +286,12 @@ const HomePage = () => {
             
             {/* Gradient wtapiający ucięte zdjęcie prosto w czarne tło */}
             <div
-              className="absolute top-0 left-0 w-full h-[60vh] pointer-events-none z-10"
-              style={{ background: "linear-gradient(to bottom, transparent 40%, #090909 95%)" }}
+              className="absolute top-0 left-0 w-full h-[65vh] pointer-events-none z-10"
+              style={{ background: "linear-gradient(to bottom, transparent 45%, #090909 95%)" }}
             ></div>
 
             {/* Sztywny wypychacz - gwarantuje, że góra ekranu to czyste zdjęcie */}
-            <div className="w-full min-h-[50vh] flex-shrink-0 z-20 pointer-events-none"></div>
+            <div className="w-full min-h-[45vh] flex-shrink-0 z-20 pointer-events-none"></div>
 
             {/* Kontener na treść - bezpiecznie na samym dole */}
             <div className="relative z-20 flex flex-col items-center w-full mt-auto">
