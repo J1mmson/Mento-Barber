@@ -265,96 +265,90 @@ const HomePage = () => {
         <Section index={1}>
         <div
             id="about"
-            className="relative flex flex-col px-4 pb-8 snap-start z-10 overflow-hidden"
+            className="relative flex flex-col px-4 pb-4 snap-start z-10 overflow-hidden"
             style={{
               minHeight: "100svh",
               backgroundColor: "#090909"
             }}
           >
-            {/* Zdjęcie wyśrodkowane i opuszczone o 85px (bezpiecznie pod nawigacją) */}
+            {/* Zdjęcie zaczyna się równo pod nawigacją (top-20) i zajmuje górną połowę ekranu */}
             <motion.img
               src="/page1photo.webp"
               alt="Barber Mento Barber Shop"
               fetchPriority="high"
-              className="absolute left-1/2 -translate-x-1/2 w-[130%] sm:w-[110%] max-w-none h-auto object-contain pointer-events-none z-0"
-              style={{ top: "85px" }}
+              className="absolute top-[80px] left-0 w-full h-[45vh] object-cover object-top pointer-events-none z-0"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInFromRight}
             />
             
-            {/* Gradient wtapiający ucięte zdjęcie prosto w czarne tło */}
+            {/* Gradient ukrywający twarde odcięcie zdjęcia, dopasowany do wysokości */}
             <div
-              className="absolute top-0 left-0 w-full h-[65vh] pointer-events-none z-10"
-              style={{ background: "linear-gradient(to bottom, transparent 45%, #090909 95%)" }}
+              className="absolute top-[80px] left-0 w-full h-[50vh] pointer-events-none z-10"
+              style={{ background: "linear-gradient(to bottom, transparent 35%, #090909 90%)" }}
             ></div>
 
-            {/* Sztywny wypychacz - gwarantuje, że góra ekranu to czyste zdjęcie */}
-            <div className="w-full min-h-[45vh] flex-shrink-0 z-20 pointer-events-none"></div>
+            {/* Sprężyna - na dużych ekranach odepchnie tekst na dół, na małych skurczy się by wszystko pomieścić */}
+            <div className="relative z-20 flex-grow pointer-events-none"></div>
 
-            {/* Kontener na treść - bezpiecznie na samym dole */}
+            {/* Kontener na treść - zoptymalizowany pod najmniejsze ekrany */}
             <div className="relative z-20 flex flex-col items-center w-full mt-auto">
               
-              <h1
-                className="text-textPrimary uppercase text-titleOne font-bold text-center mb-0 text-[2.4rem] sm:text-[2.8rem]"
-              >
+              <h1 className="text-textPrimary uppercase text-titleOne font-bold text-center mb-0 text-[2.2rem] sm:text-[2.6rem] leading-none">
                 MENTO
               </h1>
-              <h2 className="uppercase font-bold text-[1.1rem] sm:text-[1.3rem] tracking-widest text-[#f97316] text-center leading-tight mb-3">
+              <h2 className="uppercase font-bold text-[1rem] sm:text-[1.2rem] tracking-widest text-[#f97316] text-center leading-tight mb-3">
                 BOCHNIA <span className="text-gray-400 font-light mx-1">|</span> SUŁKOWICE
               </h2>
               
-              <p
-                className="text-center text-[11px] sm:text-[12px] text-gray-200 mb-6 max-w-[95%]"
-                style={{ lineHeight: 1.5 }}
-              >
+              <p className="text-center text-[10px] sm:text-[11px] text-gray-200 mb-4 max-w-[95%] leading-relaxed">
                 Dwie lokalizacje. Jeden standard. MENTO to profesjonalny barbershop. W każdej lokalizacji dbamy o najwyższy standard usług, precyzję i detale. Wybierz salon najbliżej siebie i poczuj różnicę.
               </p>
 
-              {/* Karta z kontaktami - czysto, bez emotek */}
-              <div className="w-full max-w-[360px] bg-[#111111] border border-white/5 rounded-xl p-1 mb-6 flex flex-row shadow-2xl">
+              {/* Karta z kontaktami - kompaktowa, bez emotek, z niewidzialnymi strefami kliknięcia dla Lighthouse */}
+              <div className="w-full max-w-[360px] bg-[#111111] border border-white/5 rounded-xl p-1 mb-4 flex flex-row shadow-2xl">
                 {/* Bochnia */}
-                <div className="flex flex-col items-center justify-start w-1/2 border-r border-white/5">
-                  <span className="text-[#f97316] font-bold text-[10px] uppercase tracking-wider mt-3 mb-2">Bochnia</span>
+                <div className="flex flex-col items-center justify-center w-1/2 border-r border-white/5">
+                  <span className="text-[#f97316] font-bold text-[10px] uppercase tracking-wider mt-2 mb-1">Bochnia</span>
                   
                   <a href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26" target="_blank" rel="noopener noreferrer" 
-                     className="flex items-center justify-center w-full py-3 px-1 text-gray-300 text-[11px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
+                     className="flex items-center justify-center w-full min-h-[48px] px-1 text-gray-300 text-[11px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
                     Nad Babicą 2
                   </a>
                   
                   <a href="tel:+48798144399" 
-                     className="flex items-center justify-center w-full py-3 px-1 text-white font-bold text-[12px] hover:text-[#f97316] transition-colors rounded-lg active:bg-white/10 mb-2">
+                     className="flex items-center justify-center w-full min-h-[48px] px-1 text-white font-bold text-[12px] hover:text-[#f97316] transition-colors rounded-lg active:bg-white/10 mb-1">
                     798 144 399
                   </a>
                 </div>
                 
                 {/* Sułkowice */}
-                <div className="flex flex-col items-center justify-start w-1/2">
-                  <span className="text-[#f97316] font-bold text-[10px] uppercase tracking-wider mt-3 mb-2">Sułkowice</span>
+                <div className="flex flex-col items-center justify-center w-1/2">
+                  <span className="text-[#f97316] font-bold text-[10px] uppercase tracking-wider mt-2 mb-1">Sułkowice</span>
                   
                   <a href="LINK_DO_MAPY" target="_blank" rel="noopener noreferrer" 
-                     className="flex items-center justify-center w-full py-3 px-1 text-gray-300 text-[11px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
+                     className="flex items-center justify-center w-full min-h-[48px] px-1 text-gray-300 text-[11px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
                     Sportowa 133
                   </a>
                   
                   <a href="tel:+48735067757" 
-                     className="flex items-center justify-center w-full py-3 px-1 text-white font-bold text-[12px] hover:text-[#f97316] transition-colors rounded-lg active:bg-white/10 mb-2">
+                     className="flex items-center justify-center w-full min-h-[48px] px-1 text-white font-bold text-[12px] hover:text-[#f97316] transition-colors rounded-lg active:bg-white/10 mb-1">
                     735 067 757
                   </a>
                 </div>
               </div>
 
-              {/* Ikony Social Media */}
-              <div className="flex justify-center items-center gap-4">
-                <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer" className="p-2 opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={FacebookLogo} alt="facebook_logo" className="w-[20px] h-[20px] object-contain" />
+              {/* Ikony Social Media - niewidzialny obszar kliknięcia 48x48 */}
+              <div className="flex justify-center items-center gap-2">
+                <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
+                    <img src={FacebookLogo} alt="facebook_logo" className="w-[18px] h-[18px] object-contain" />
                 </a>
-                <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer" className="p-2 opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={InstagramLogo} alt="instagram_logo" className="w-[20px] h-[20px] object-contain" />
+                <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
+                    <img src={InstagramLogo} alt="instagram_logo" className="w-[18px] h-[18px] object-contain" />
                 </a>
-                <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer" className="p-2 opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={TikTokLogo} alt="tiktok_logo" className="w-[20px] h-[20px] object-contain" />
+                <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
+                    <img src={TikTokLogo} alt="tiktok_logo" className="w-[18px] h-[18px] object-contain" />
                 </a>
               </div>
             </div>
