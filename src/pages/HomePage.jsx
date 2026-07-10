@@ -332,7 +332,7 @@ const HomePage = () => {
                 {/* Sułkowice */}
                 <div className="flex flex-col items-center justify-center w-1/2 px-2 gap-1">
                   <span className="text-[#f97316] font-bold text-[11px] uppercase tracking-wider mb-1">Sułkowice</span>
-                  <a href="LINK_DO_MAPY" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-[11px] hover:text-white transition-colors">
+                  <a href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-[11px] hover:text-white transition-colors">
                     Sportowa 133
                   </a>
                   <a href="tel:+48735067757" className="text-white font-bold text-[12px] hover:text-[#f97316] transition-colors mt-1">

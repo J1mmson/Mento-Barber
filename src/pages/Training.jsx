@@ -584,79 +584,86 @@ const Training = () => {
           />
           {isDialogOpen && (
             <div
-              className="fixed inset-0 bg-[#00000088] backdrop-blur-sm flex justify-center items-center z-100"
+              className="fixed inset-0 bg-[#00000088] backdrop-blur-sm flex justify-center items-center pt-[90px] px-4 pb-4 z-[100]"
               onClick={closeDialog}
             >
               <div
-                className="px-[48px] py-[32px] bg-[#171D1F] text-white rounded-[10px] h-[100vh] overflow-y-auto relative shadow-xl"
+                className="bg-[#171D1F] text-white rounded-[16px] w-full max-h-full p-6 overflow-y-auto relative shadow-xl"
                 onClick={(e) => e.stopPropagation()}
               >
-                <p className="font-bold text-[12px]">PLAN DNIA I TERMINY</p>
+                <p className="font-bold text-[11px] text-gray-400 mb-2 tracking-wide uppercase">PLAN DNIA I TERMINY</p>
                 <div className="flex justify-between items-start gap-4">
-                  <p className="text-[20px] font-bold text-prime">
+                  <p className="text-[20px] font-bold text-prime leading-tight">
                     {dialogText}
                   </p>
-                  <button onClick={closeDialog} className="text-prime" aria-label="Zamknij okno">
+                  <button onClick={closeDialog} className="text-prime p-1 -mt-1 -mr-1" aria-label="Zamknij okno">
                     <IoClose size={30} />
                   </button>
                 </div>
-                <hr className="mt-[32px] mb-[16px]" />
-                <p>
-                  <span className="font-bold">Nadchodzące terminy: </span>
+                <hr className="border-white/10 my-4" />
+                <p className="text-sm">
+                  <span className="font-bold text-prime">Nadchodzące terminy: </span>
                   {data[activePanel].data}
                 </p>
-                <hr className="mt-[16px] mb-[24px]" />
-                {data[activePanel].plan}
+                <hr className="border-white/10 my-4" />
+                <div className="text-[13px] leading-relaxed">
+                  {data[activePanel].plan}
+                </div>
               </div>
             </div>
           )}
+
           {isReservationDialogOpen && (
             <div
-              className="fixed inset-0 bg-[#00000088] backdrop-blur-sm flex justify-center items-center z-100"
+              className="fixed inset-0 bg-[#00000088] backdrop-blur-sm flex justify-center items-center pt-[90px] px-4 pb-4 z-[100]"
               onClick={closeReservationDialog}
             >
               <div
-                className="px-[48px] py-[32px] bg-[#171D1F] text-white rounded-[10px] min-h-[30vh] overflow-y-auto relative shadow-xl"
+                className="bg-[#171D1F] text-white rounded-[16px] w-full max-h-full p-6 overflow-y-auto relative shadow-xl"
                 onClick={(e) => e.stopPropagation()}
               >
-                <p className="font-bold text-[12px]">UMÓW SZKOLENIE</p>
+                <p className="font-bold text-[11px] text-gray-400 mb-2 tracking-wide uppercase">UMÓW SZKOLENIE</p>
                 <div className="flex justify-between items-start gap-4">
-                  <p className="text-[20px] font-bold text-prime">
+                  <p className="text-[20px] font-bold text-prime leading-tight">
                     {reservationDialogText}
                   </p>
                   <button
                     onClick={closeReservationDialog}
-                    className="text-prime"
+                    className="text-prime p-1 -mt-1 -mr-1"
                     aria-label="Zamknij okno"
                   >
                     <IoClose size={30} />
                   </button>
                 </div>
-                <hr className="border-[white] opacity-5 mt-[32px] mb-[16px]" />
-                <p>
+                <hr className="border-white/10 my-4" />
+                <p className="text-[13px] text-gray-300 leading-relaxed mb-5">
                   Aby umówić szkolenie, skontaktuj się z nami telefonicznie lub
                   przez Instagram, podając nazwę szkolenia oraz interesujący Cię
                   termin.
                 </p>
-                <hr className="border-[white] opacity-5 mt-[16px] mb-[24px]" />
-                <p>
-                  <span className="font-bold">Telefon: </span>
-                  <a 
-                    href="tel:+48798144399" 
-                    className="hover:text-orange-500 transition-colors duration-300"
-                  >
-                    +48 798 144 399
-                  </a>
-                </p>
-                <p>
-                  <span className="font-bold">Instagram: </span>
-                  <a
-                    href="https://www.instagram.com/mento.barbershop/"
-                    target="_blank"
-                  >
-                    mento.barbershop
-                  </a>
-                </p>
+                
+                {/* Ładniejszy blok kontaktowy w okienku */}
+                <div className="bg-black/30 p-4 rounded-xl border border-white/5 space-y-3">
+                  <p className="text-[14px] flex items-center gap-3">
+                    <a 
+                      href="tel:+48798144399" 
+                      className="font-bold hover:text-orange-500 transition-colors duration-300"
+                    >
+                      +48 798 144 399
+                    </a>
+                  </p>
+                  <p className="text-[14px] flex items-center gap-3">
+                    <span>📸</span>
+                    <a
+                      href="https://www.instagram.com/mento.barbershop/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-bold text-prime hover:text-orange-500 transition-colors duration-300"
+                    >
+                      mento.barbershop
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           )}
