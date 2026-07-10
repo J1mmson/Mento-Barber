@@ -51,46 +51,37 @@ const Training = () => {
     {
       photo: ShortHair,
       alt: "Mężczyzna z krótką fryzurą typu fade, stworzony w MENTO BARBER Bochnia",
-      title: "Krótkie włosy + cieniowanie od zera (fade)",
+      title: "Pokaz LOOK & LEARN - ModCut i Mullet",
       description:
-        "Perfekcyjny fade to podstawa nowoczesnego barberingu. W tym panelu skupimy się na technice cieniowania od zera, precyzyjnym przejściu tonalnym i odpowiednim doborze długości do kształtu głowy. Pokażemy, jak pracować z maszynką, trymerem i shaverem, by uzyskać idealne wykończenie. Szkolenie obejmuje zarówno teorię, jak i praktykę na modelach, abyś mógł doszlifować swoje umiejętności i zyskać pewność w pracy z krótkimi fryzurami.",
-      tutorial: "KRÓTKIE FORMY + FADE - PLAN DNIA",
-      data: "25 stycznia 2026",
+        "To nie będzie zwykłe szkolenie. To będzie spotkanie ludzi, którzy chcą się rozwijać, inspirować i dobrze bawićć. Razem z Dawidem Sromkiem pokażemy dwie nowoczesne sylwetki , dużo pracy nożyczkami, modne formy, praktyczne wskazówki, analiza technik, pytania i rozmowy wokół stanowiska. Sama praktyka i konkretna wiedza. Gościem specjalnym będzie również Aga z Headcomet, która opowie o produktach i kosmetykach wykorzystywanych w codziennej pracy oraz pokaże, jak świadomie dobierać pielęgnację do klienta.",
+      data: "09 Sierpnia 2026",
       plan: (
         <>
           <div className="mb-[32px]">
-            <p className="font-bold">09:00 - 11:00</p>
-            <p>Teoria + prezentacja multimedialna</p>
-            <p>→ Proporcje w strzyżeniu i ich wpływ na finalny efekt</p>
-            <p>→ Kształt fryzury – budowanie formy i balansu</p>
-            <p>→ Analiza głowy oraz tekstury włosów</p>
-            <p>→ Dobór fryzury do typu klienta</p>
-            <p>
-              → Dobór i omówienie narzędzi pracy (maszynki, nasadki, trymery,
-              nożyczki)
-            </p>
+            <p className="font-bold">Start 9:00</p>
+            <p>Wykład o produktach</p>
           </div>
           <div className="mb-[32px]">
-            <p className="font-bold">11:00 - 13:30</p>
-            <p>Model pokazowy z opracowaniem</p>
+            <p className="font-bold">10:00</p>
+            <p>Pierwszy model pokazowy</p>
             <p>→ Pełne cięcie pokazowe</p>
             <p>→ Omówienie pracy krok po kroku</p>
-            <p>→ Budowanie kształtu w krótkich formach</p>
+            <p>→ Budowanie kształtu w dłuższych formach</p>
             <p>→ Detale i wykończenie fryzury</p>
-            <p>→ Praca maszynką i nożyczkami w praktyce</p>
+            <p>→ Praca nożyczkami w praktyce</p>
           </div>
           <div className="mb-[32px]">
-            <p className="font-bold">13:30 - 14:00</p>
-            <p>Przerwa / lunch – wliczony w koszt szkolenia</p>
+            <p className="font-bold">12:30</p>
+            <p>Przerwa </p>
           </div>
           <div className="mb-[32px]">
-            <p className="font-bold">14:00 - 18:00</p>
-            <p>Warsztaty – praca uczestników na modelach</p>
-            <p>→ Samodzielna praca kursantów</p>
-            <p>→ Praktyczne wykorzystanie wiedzy z części teoretycznej</p>
-            <p>→ Budowanie kształtu i poprawnych proporcji</p>
-            <p>→ Praca pod okiem szkoleniowca</p>
-            <p>→ Indywidualny feedback i korekta techniki</p>
+            <p className="font-bold">13:00 - 18:00</p>
+            <p>Drugi model pokazowy</p>
+            <p>→ Pełne cięcie pokazowe</p>
+            <p>→ Omówienie pracy krok po kroku</p>
+            <p>→ Budowanie kształtu w dłuższych formach</p>
+            <p>→ Detale i wykończenie fryzury</p>
+            <p>→ Praca nożyczkami i maszynką w praktyce</p>
           </div>
           <div>
             <p className="font-bold">Podsumowanie szkolenia</p>
@@ -102,56 +93,14 @@ const Training = () => {
     {
       photo: Beard,
       alt: "Mężczyzna z zadbaną brodą, obciętą w MENTO BARBER Bochnia",
-      title: "COMBO włosy + broda (2 dni)",
+      title: "Broda + Toner",
       description:
-        "Dwudniowe szkolenie COMBO włosy + broda to kompleksowy program dla barberów, którzy chcą pracować świadomie, technicznie i pewnie zarówno przy strzyżeniu włosów, jak i przy wykonywaniu brody. Podczas szkolenia uczestnicy poznają pełny proces pracy z klientem – od analizy głowy, proporcji i kształtu fryzury, po dobór odpowiedniej formy brody dopasowanej do twarzy i stylu klienta. Program łączy teorię, wykład oraz intensywną praktykę, dzięki czemu wiedza od razu przekładana jest na realną pracę przy fotelu.",
-      tutorial: "COMBO WŁOSY + BRODA - PLAN SZKOLENIA",
-      data: "14/15 marca 2026",
+        "Szkolenie broda + toner to kompleksowy program dla barberów, którzy chcą pracować świadomie, technicznie i pewnie zarówno przy strzyżeniu brody, jak i przy wykonywaniu koloryzacji brody. Podczas szkolenia uczestnicy poznają pełny proces pracy z klientem – od analizy głowy, proporcji i kształtu brody, po dobór odpowiedniego koloru do brody i stylu klienta. Program łączy teorię, wykład oraz intensywną praktykę, dzięki czemu wiedza od razu przekładana jest na realną pracę przy fotelu.",
+      tutorial: "Broda + Toner - PLAN SZKOLENIA",
+      data: "4 Października 2026",
       plan: (
         <>
-          <p className="text-[20px] font-bold text-prime mb-[16px]">
-            DZIEŃ 1 – WŁOSY
-          </p>
-          <div className="mb-[32px]">
-            <p className="font-bold">09:00 - 11:00</p>
-            <p>Teoria + prezentacja multimedialna</p>
-            <p>→ Proporcje w strzyżeniu i ich wpływ na finalny efekt</p>
-            <p>→ Kształt fryzury – budowanie formy i balansu</p>
-            <p>→ Analiza głowy oraz tekstury włosów</p>
-            <p>→ Dobór fryzury do typu klienta</p>
-            <p>
-              → Dobór i omówienie narzędzi pracy (maszynki, nasadki, trymery,
-              nożyczki)
-            </p>
-          </div>
-          <div className="mb-[32px]">
-            <p className="font-bold">11:00 - 13:30</p>
-            <p>Model pokazowy z opracowaniem</p>
-            <p>→ Pełne cięcie pokazowe</p>
-            <p>→ Omówienie pracy krok po kroku</p>
-            <p>→ Budowanie kształtu w krótkich formach</p>
-            <p>→ Detale i wykończenie fryzury</p>
-            <p>→ Praca maszynką i nożyczkami w praktyce</p>
-          </div>
-          <div className="mb-[32px]">
-            <p className="font-bold">13:30 - 14:00</p>
-            <p>Przerwa / lunch – wliczony w koszt szkolenia</p>
-          </div>
-          <div className="mb-[32px]">
-            <p className="font-bold">14:00 - 18:00</p>
-            <p>Warsztaty – praca uczestników na modelach</p>
-            <p>→ Samodzielna praca kursantów</p>
-            <p>→ Praktyczne wykorzystanie wiedzy z części teoretycznej</p>
-            <p>→ Budowanie kształtu i poprawnych proporcji</p>
-            <p>→ Praca pod okiem szkoleniowca</p>
-            <p>→ Indywidualny feedback i korekta techniki</p>
-          </div>
-
-          <hr className="border-[white] opacity-20 my-[32px]" />
-
-          <p className="text-[20px] font-bold text-prime mb-[16px]">
-            DZIEŃ 2 – BRODY
-          </p>
+          
           <div className="mb-[32px]">
             <p className="font-bold">09:00 - 10:30</p>
             <p>Teoria + prezentacja</p>
@@ -162,7 +111,7 @@ const Training = () => {
           </div>
           <div className="mb-[32px]">
             <p className="font-bold">10:30 - 12:30</p>
-            <p>Pierwszy model pokazowy – krótka broda</p>
+            <p>Pierwszy model pokazowy – broda + toner</p>
             <p>→ Opracowanie krok po kroku z pełnym omówieniem</p>
             <p>→ Praca z konturem, cieniowaniem i tonowaniem</p>
           </div>
@@ -175,10 +124,10 @@ const Training = () => {
           <div className="mb-[32px]">
             <p className="font-bold">15:00 - 18:00</p>
             <p>Praca uczestników na modelach</p>
-            <p>→ Każdy kursant wykonuje pełną stylizację brody</p>
+            <p>→ Każdy kursant wykonuje pełne stryżenie i stylizację brody</p>
             <p>
               → Szkoleniowcy aktywnie pomagają w opracowaniu brody – od
-              planowania, przez wykonanie, aż po finalne wykończenie
+              planowania, przez wykonanie, koloryzacje aż po finalne wykończenie
             </p>
           </div>
           <div>
@@ -191,30 +140,37 @@ const Training = () => {
     {
       photo: Panel3Image,
       alt: "Mężczyzna z elgecanką fryzurą i zadbaną brodą, obciętą w MENTO BARBER Bochnia",
-      title: "Brody krótke i długie",
+      title: "Krótkie formy + fade",
       description:
-        "Idealnie przycięta broda to nie tylko estetyka, ale i komfort klienta. W tym panelu nauczysz się cieniowania brody, jej konturowania i odpowiedniego skracania, by dopasować kształt do rysów twarzy. Skupimy się także na tonowaniu i pielęgnacji zarostu, aby uzyskać naturalny, zdrowy wygląd. Podczas praktycznej części dowiesz się, jak pracować maszynka , trymerem, brzytwą i nożyczkami, by broda wyglądała perfekcyjnie i była dopasowana do stylu klienta.",
-      tutorial: "BRODY: CIENIOWANIE • MODELOWANIE • TONOWANIE - PLAN DNIA",
-      data: "22 lutego 2026",
+        "Perfekcyjny fade to podstawa nowoczesnego barberingu. W tym panelu skupimy się na technice cieniowania od zera, precyzyjnym przejściu tonalnym i odpowiednim doborze długości do kształtu głowy. Pokażemy, jak pracować z maszynką, trymerem i shaverem, by uzyskać idealne wykończenie. Szkolenie obejmuje zarówno teorię, jak i praktykę na modelach, abyś mógł doszlifować swoje umiejętności i zyskać pewność w pracy z krótkimi fryzurami.",
+      tutorial: "Krótkie formy + fade - PLAN DNIA",
+      data: "29 Listopada 2026",
       plan: (
         <>
           <div className="mb-[32px]">
-            <p className="font-bold">09:00 - 10:30</p>
+            <p className="font-bold">09:00 - 11:00</p>
             <p>Teoria + prezentacja</p>
-            <p>→ Różne typy brody i ich dopasowanie do kształtu twarzy</p>
-            <p>→ Linie naturalne vs geometryczne</p>
-            <p>→ Cieniowanie, konturowanie, wykończenie</p>
-            <p>→ Narzędzia, techniki, produkty i tonery</p>
+            <p>→ Kształt fryzury – budowanie formy i balansu</p>
+            <p>→ Analiza głowy oraz tekstury włosów</p>
+            <p>→ Dobór fryzury do typu klienta</p>
+            <p>→ Dobór i omówienie narzędzi pracy (maszynki, nasadki, trymery, nożyczki)</p>
           </div>
           <div className="mb-[32px]">
-            <p className="font-bold">10:30 - 12:30</p>
-            <p>Pierwszy model pokazowy – krótka broda</p>
-            <p>→ Opracowanie krok po kroku z pełnym omówieniem</p>
-            <p>→ Praca z konturem, cieniowaniem i tonowaniem</p>
+            <p className="font-bold">11:00 - 13:30</p>
+            <p>Model pokazowy z opracowaniem</p>
+            <p>→ Pełne cięcie pokazowe</p>
+            <p>→ Omówienie pracy krok po kroku</p>
+            <p>→ Budowanie kształtu w krótkich formach</p>
+            <p>→ Detale i wykończenie fryzury</p>
+            <p>→ Praca maszynką i nożyczkami w praktyce</p>
+          </div>
+          <div className="mb-[32px]">
+            <p className="font-bold">13:30 - 14:00</p>
+            <p>Przerwa obiadowa – wliczona w cenę szkolenia</p>
           </div>
           <div className="mb-[32px]">
             <p className="font-bold">12:30 - 15:00</p>
-            <p>Drugi model pokazowy – długa broda</p>
+            <p>Drugi model pokazowy z opracowaniem</p>
             <p>→ Inne podejście, narzędzia i prowadzenie linii</p>
             <p>→ Stylizacja, tekstura, objętość i pielęgnacja</p>
           </div>
@@ -270,37 +226,11 @@ const Training = () => {
             <p className="font-bold">14:00 - 18:00</p>
             <p>Warsztaty praktyczne</p>
             <p>→ Praca uczestników na modelu</p>
+            <p>→ Budowanie kształtu i poprawnych proporcji</p>
+            <p>→ Praca pod okiem szkoleniowca</p>
             <p>→ Indywidualne wskazówki i korekty</p>
             <p>→ Wdrażanie poznanych technik w praktyce</p>
-          </div>
-
-          <hr className="border-[white] opacity-20 my-[32px]" />
-
-          <p className="text-[20px] font-bold text-prime mb-[16px]">DZIEŃ 2</p>
-          <div className="mb-[32px]">
-            <p className="font-bold">09:00 - 10:30</p>
-            <p>Prezentacja + krótki test</p>
-            <p>→ Utrwalenie wiedzy z dnia pierwszego</p>
-            <p>→ Uporządkowanie schematów pracy</p>
-            <p>→ Przygotowanie do dalszej części praktycznej</p>
-          </div>
-          <div className="mb-[32px]">
-            <p className="font-bold">10:30 - 14:00</p>
-            <p>Model dla uczestników szkolenia</p>
-            <p>→ Wykonanie pełnej fryzury</p>
-            <p>→ Skupienie na powtarzalności i precyzji</p>
-            <p>→ Praca nad detalami i czystym wykończeniem</p>
-          </div>
-          <div className="mb-[32px]">
-            <p className="font-bold">14:00 - 14:30</p>
-            <p>Przerwa obiadowa – wliczona w cenę szkolenia</p>
-          </div>
-          <div className="mb-[32px]">
-            <p className="font-bold">14:30 - 18:00</p>
-            <p>Drugi model dla uczestników</p>
-            <p>→ Kolejne pełne wykonanie fryzury</p>
-            <p>→ Utrwalenie techniki fade i krótkich form</p>
-            <p>→ Doskonalenie ergonomii i tempa pracy</p>
+            <p>→ Indywidualny feedback i korekta techniki</p>
           </div>
           <div>
             <p className="font-bold">18:00</p>
