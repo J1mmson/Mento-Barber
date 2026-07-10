@@ -154,17 +154,20 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={fadeInFromLeft}
             >
-              <h1 className="text-textPrimary uppercase text-titleOne font-bold text-7xl mb-[-15px]">
-              MENTO
-            </h1>
-              <h2 className="text-gray-400 uppercase tracking-[0.2em] text-2xl mb-6">
-                BOCHNIA | SUŁKOWICE
+              <h1 className="text-textPrimary uppercase font-bold text-7xl mb-[-10px]">
+                MENTO
+              </h1>
+              <h2
+                className="uppercase font-bold text-6xl tracking-widest text-orange-500"
+                style={{ textShadow: "0 0 15px #ff6600" }}
+              >
+                BOCHNIA <span className="text-gray-600">|</span> SUŁKOWICE
               </h2>
               <p
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
                 style={{ lineHeight: 2 }}
               >
-                MENTO to profesjonalne salony fryzjerskie w Bochni i Sułkowicach, w których rzemiosło spotyka się z pasją. Tworzymy przestrzeń bez sztucznych barier, gdzie priorytetem jest genialna atmosfera i dbałość o detale. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
+                MENTO to od teraz DWA salony fryzjerskie - Bochnia oraz Sułkowice, postanowiliśmy stowrzyć dla was kolejne miejsce na mapie Małopolski. Tworzymy przestrzeń bez sztucznych barier, gdzie priorytetem jest genialna atmosfera i dbałość o detale. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
             </motion.div>
 
