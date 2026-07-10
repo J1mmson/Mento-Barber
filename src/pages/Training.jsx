@@ -190,7 +190,7 @@ const Training = () => {
         </>
       ),
     },
-    {
+    /* {
       photo: Panel4Image,
       alt: "Mężczyzna z krótką fryzurą typu fade, stworzony w MENTO BARBER Bochnia",
       title: "Krótkie formy + fade + więcej praktyki (2 dni)",
@@ -240,7 +240,7 @@ const Training = () => {
           </div>
         </>
       ),
-    },
+    },*/
     {
       photo: Panel5Image,
       alt: "Salon MENTO BARBER Bochnia w czasie szkolenia, z uczestnikami pracującymi przy fotelach",
