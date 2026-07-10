@@ -263,12 +263,11 @@ const HomePage = () => {
         </Section>
       ) : (
         <Section index={1}>
-          <div
+         <div
             id="about"
-            className="relative flex flex-col justify-end px-6 pb-5 snap-start z-10 overflow-hidden"
+            className="relative flex flex-col justify-end px-4 pb-8 snap-start z-10 overflow-hidden"
             style={{
               minHeight: "100svh",
-              paddingBottom: "max(1.25rem, env(safe-area-inset-bottom))",
               background: `linear-gradient(90deg, #090909, #091E23), url(${Texture})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -276,99 +275,7 @@ const HomePage = () => {
               backgroundBlendMode: "multiply",
             }}
           >
-            <div className="flex flex-col items-center mt-[25%] leading-none z-20">
-              <div
-                className="flex space-x-4 items-center gap-[32px]"
-                style={{ marginBottom: windowSize.height < 700 ? "12px" : "24px" }}
-              >
-                <a href="https://www.facebook.com/MentoBarberShop" aria-label="Nasz profil na Facebooku" target="_blank" rel="noopener noreferrer">
-                  <img src={FacebookLogo} alt="facebook_logo" style={{ height: "48px", width: "auto" }} />
-                </a>
-                <a href="https://www.instagram.com/mento.barbershop/" aria-label="Nasz profil na Instagramie" target="_blank" rel="noopener noreferrer">
-                  <img src={InstagramLogo} alt="instagram_logo" style={{ height: "38px", width: "auto" }} />
-                </a>
-                <a href="https://www.tiktok.com/@mento_barbershop" aria-label="Nasz profil na TikToku" target="_blank" rel="noopener noreferrer">
-                  <img src={TikTokLogo} alt="tiktok_logo" style={{ height: "38px", width: "auto" }} />
-                </a>
-              </div>
-              <h1
-                className="text-textPrimary uppercase text-titleOne font-bold text-center"
-                style={{ fontSize: windowSize.height < 700 ? "2.65rem" : "2.95rem" }}
-              >
-                mento
-              </h1>
-              <h1
-                className="uppercase font-bold text-center"
-                style={{
-                  fontFamily: '"Arial", "Helvetica", sans-serif',
-                  fontSize: windowSize.height < 700 ? "3.2rem" : "3.5rem", 
-                  fontWeight: "bold",
-                  textTransform: "uppercase",
-                  color: "transparent",
-                  WebkitTextStroke: "2px #ff6600",
-                  textShadow: "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
-                }}
-              >
-                barbershop
-              </h1>
-              <p
-                className="text-center text-[14px] text-gray-300"
-                style={{
-                  lineHeight: 1.8,
-                  width: "100%",
-                  maxWidth: "500px",
-                  margin: "0 auto",
-                  marginBottom: windowSize.height < 700 ? "24px" : "36px",
-                  marginTop: "12px"
-                }}
-              >
-                Dwie lokalizacje. Jeden standard.
-
-                Mento Barber Shop to dwa salony : Bochnia i Sułkowice. połączone tą samą pasją do męskiego fryzjerstwa. W każdej lokalizacji dbamy o najwyższy standard usług, precyzję, profesjonalizm i każdy detal, aby każda wizyta była wyjątkowym doświadczeniem.
-
-                Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
-              </p>
-              
-              {/* Zaktualizowany układ podwójnych kontaktów dla Mobile */}
-              <div className="grid grid-cols-2 gap-4 w-full text-[11px] max-w-[500px]">
-                <div className="flex flex-col space-y-3">
-                  <div className="text-orange-500 font-bold uppercase text-center mb-1">Bochnia</div>
-                  <a 
-                    href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-                  >
-                    Nad Babicą 2
-                  </a>
-                  <a 
-                    href="tel:+48798144399" 
-                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-                  >
-                    798 144 399
-                  </a>
-                </div>
-                
-                <div className="flex flex-col space-y-3">
-                  <div className="text-orange-500 font-bold uppercase text-center mb-1">Sułkowice</div>
-                  <a 
-                    href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-                  >
-                    Sportowa 133
-                  </a>
-                  <a 
-                    href="tel:+48000000000" 
-                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-                  >
-                    735 067 757
-                  </a>
-                </div>
-              </div>
-            </div>
-            
+            {/* Zdjęcie modela lekko obniżone, żeby nawigacja nie ucinała głowy */}
             <motion.img
               src="/page1photo.webp"
               alt="Barber Mento Barber Shop"
@@ -376,23 +283,75 @@ const HomePage = () => {
               width="897"   
               height="983"
               className="absolute inset-0 mx-auto w-[150%] h-auto object-contain pointer-events-none z-10"
-              style={{ top: windowSize.height < 700 ? 100 : 140 }}
+              style={{ top: windowSize.height < 700 ? 80 : 120 }}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInFromRight}
             />
-            <img
-              src={Gradient}
-              alt=""
-              aria-hidden="true"
-              className="absolute top-0 z-0 w-[800px] max-w-none"
-              style={{ right: "-200px", top: "-200px" }}
-            />
+            
+            {/* Ciemny gradient od dołu dla czytelności tekstu */}
             <div
-              className="absolute bottom-0 left-0 w-full h-[60%] pointer-events-none z-10"
-              style={{ background: "linear-gradient(180deg, #0B0C0F00 0%, #0B0C0F80 24%, #0B0C0FBF 35%, #0B0C0F 100%)" }}
+              className="absolute bottom-0 left-0 w-full h-[70%] pointer-events-none z-10"
+              style={{ background: "linear-gradient(180deg, #0B0C0F00 0%, #0B0C0F90 30%, #0B0C0F 100%)" }}
             ></div>
+
+            {/* Cały kontent zgrupowany na dole */}
+            <div className="flex flex-col items-center leading-none z-20 w-full relative mt-auto">
+              <h1
+                className="text-textPrimary uppercase text-titleOne font-bold text-center mb-0"
+                style={{ fontSize: "2.8rem", textShadow: "0 4px 10px rgba(0,0,0,0.5)" }}
+              >
+                MENTO
+              </h1>
+              <h2 className="uppercase font-bold text-[1.4rem] tracking-wide text-[#f97316] text-center leading-tight mb-4" style={{ textShadow: "0 2px 5px rgba(0,0,0,0.8)" }}>
+                BOCHNIA <span className="text-gray-400 font-light mx-1">|</span> SUŁKOWICE
+              </h2>
+              
+              <p
+                className="text-center text-[12px] text-gray-200 mb-5 max-w-[90%]"
+                style={{ lineHeight: 1.6, textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}
+              >
+                Dwa salony, jeden standard. MENTO to profesjonalny barbershop. Tworzymy przestrzeń bez sztucznych barier, gdzie priorytetem jest genialna atmosfera i dbałość o detale. Wpadnij i pozwól nam zrobić to, na czym znamy się najlepiej.
+              </p>
+
+              {/* Kompaktowa, półprzezroczysta karta kontaktowa dla obu salonów */}
+              <div className="w-full max-w-[360px] bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-4 mb-5 flex flex-row shadow-xl">
+                {/* Bochnia */}
+                <div className="flex flex-col items-center justify-center w-1/2 border-r border-white/10 px-2 gap-1">
+                  <span className="text-[#f97316] font-bold text-[11px] uppercase tracking-wider mb-1">Bochnia</span>
+                  <a href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-[11px] hover:text-white transition-colors">
+                    Nad Babicą 2
+                  </a>
+                  <a href="tel:+48798144399" className="text-white font-bold text-[12px] hover:text-[#f97316] transition-colors mt-1">
+                    798 144 399
+                  </a>
+                </div>
+                {/* Sułkowice */}
+                <div className="flex flex-col items-center justify-center w-1/2 px-2 gap-1">
+                  <span className="text-[#f97316] font-bold text-[11px] uppercase tracking-wider mb-1">Sułkowice</span>
+                  <a href="LINK_DO_MAPY" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-[11px] hover:text-white transition-colors">
+                    Sportowa 133
+                  </a>
+                  <a href="tel:+48735067757" className="text-white font-bold text-[12px] hover:text-[#f97316] transition-colors mt-1">
+                    735 067 757
+                  </a>
+                </div>
+              </div>
+
+              {/* Małe Ikony Social Media na samym dole */}
+              <div className="flex space-x-6 items-center">
+                <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer">
+                    <img src={FacebookLogo} alt="facebook_logo" className="h-[24px] w-auto opacity-80 hover:opacity-100 transition-opacity" />
+                </a>
+                <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer">
+                    <img src={InstagramLogo} alt="instagram_logo" className="h-[24px] w-auto opacity-80 hover:opacity-100 transition-opacity" />
+                </a>
+                <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer">
+                    <img src={TikTokLogo} alt="tiktok_logo" className="h-[24px] w-auto opacity-80 hover:opacity-100 transition-opacity" />
+                </a>
+              </div>
+            </div>
           </div>
         </Section>
       )}
