@@ -148,20 +148,20 @@ const HomePage = () => {
             }}
           >
             <motion.div
-              className="flex flex-col items-start mt-[20%] leading-none max-w-screen-sm z-20"
+              className="flex flex-col items-start mt-[18%] leading-none max-w-screen-sm z-20"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInFromLeft}
             >
-              <h1 className="text-textPrimary uppercase text-titleOne font-bold text-7xl mb-[-20px]">
-                mento barber
+              <h1 className="text-textPrimary uppercase text-titleOne font-bold text-7xl mb-[-15px]">
+                mento
               </h1>
               <h1
-                className="uppercase font-bold text-9xl ml-[-4px]"
+                className="uppercase font-bold ml-[-4px]"
                 style={{
                   fontFamily: '"Arial", "Helvetica", sans-serif',
-                  fontSize: "7.85rem",
+                  fontSize: "5.5rem", 
                   fontWeight: "bold",
                   textTransform: "uppercase",
                   color: "transparent",
@@ -169,14 +169,13 @@ const HomePage = () => {
                   textShadow: "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
                 }}
               >
-                bochnia
+                barbershop
               </h1>
               <p
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
                 style={{ lineHeight: 2 }}
               >
-                MENTO BARBER SHOP Bochnia to profesjonalny salon fryzjerski w Bochni, w którym rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier, 
-                w której każdy buduje świetną atmosferę. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
+                MENTO to profesjonalne salony fryzjerskie w Bochni i Sułkowicach, w których rzemiosło spotyka się z pasją. Tworzymy przestrzeń bez sztucznych barier, gdzie priorytetem jest genialna atmosfera i dbałość o detale. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
             </motion.div>
 
@@ -187,22 +186,42 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={fadeInFromBottom}
             >
-              <div className="flex gap-4">
-                <a 
-                  href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-                >
-                  Nad Babicą 2, Bochnia
-                </a>
+              <div className="flex gap-6">
+                {/* Kolumna BOCHNIA */}
+                <div className="flex flex-col gap-3">
+                  <a 
+                    href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
+                  >
+                    📍 Nad Babicą 2, Bochnia
+                  </a>
+                  <a 
+                    href="tel:+48798144399" 
+                    className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
+                  >
+                    📞 +48 798 144 399
+                  </a>
+                </div>
 
-                <a 
-                  href="tel:+48798144399" 
-                  className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-                >
-                  +48 798 144 399
-                </a>
+                {/* Kolumna SUŁKOWICE */}
+                <div className="flex flex-col gap-3">
+                  <a 
+                    href="LINK_DO_MAPY_SULKOWICE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
+                  >
+                    📍 Sportowa 133, Sułkowice
+                  </a>
+                  <a 
+                    href="tel:+48XXXXXXXXX" 
+                    className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
+                  >
+                    📞 +48 XXX XXX XXX
+                  </a>
+                </div>
               </div>
 
               <div className="flex space-x-4 text-textPrimary items-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
@@ -220,7 +239,7 @@ const HomePage = () => {
             
             <motion.img
               src="/page1photo.webp"
-              alt="Tło z barberem po Strzyżenie Męskie w Mento Barber Shop Bochnia - Salon Fryzjerski Bochnia"
+              alt="Barber Mento Barber Shop"
               fetchPriority="high"
               width="897"   
               height="983"
@@ -280,13 +299,13 @@ const HomePage = () => {
                 className="text-textPrimary uppercase text-titleOne font-bold text-center"
                 style={{ fontSize: windowSize.height < 700 ? "2.65rem" : "2.95rem" }}
               >
-                mento barber
+                mento
               </h1>
               <h1
                 className="uppercase font-bold text-center"
                 style={{
                   fontFamily: '"Arial", "Helvetica", sans-serif',
-                  fontSize: windowSize.height < 700 ? "4.5rem" : "5rem",
+                  fontSize: windowSize.height < 700 ? "3.2rem" : "3.5rem", 
                   fontWeight: "bold",
                   textTransform: "uppercase",
                   color: "transparent",
@@ -294,41 +313,65 @@ const HomePage = () => {
                   textShadow: "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
                 }}
               >
-                bochnia
+                barbershop
               </h1>
               <p
                 className="text-center text-[14px] text-gray-300"
                 style={{
-                  lineHeight: 2,
+                  lineHeight: 1.8,
                   width: "100%",
                   maxWidth: "500px",
                   margin: "0 auto",
-                  marginBottom: windowSize.height < 700 ? "24px" : "48px",
+                  marginBottom: windowSize.height < 700 ? "24px" : "36px",
+                  marginTop: "12px"
                 }}
               >
-                MENTO BARBER SHOP Bochnia to profesjonalny salon fryzjerski w Bochni, w którym rzemiosło spotyka się z pasją i profesjonalizmem. Tworzymy przestrzeń bez sztucznych barier, 
-                w której każdy buduje świetną atmosferę. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
+                MENTO to profesjonalne salony fryzjerskie w Bochni i Sułkowicach. Dwie lokalizacje, ten sam niezrównany styl. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
-              <div className="flex flex-col items-center space-y-[12px] w-full text-[12px]">
-                <a 
-                  href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-                >
-                  Nad Babicą 2, Bochnia
-                </a>
-                <a 
-                  href="tel:+48798144399" 
-                  className="border-2 border-gray-400 rounded-full w-full py-[12px] px-5 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 block"
-                >
-                  +48 798 144 399
-                </a>
+              
+              {/* Zaktualizowany układ podwójnych kontaktów dla Mobile */}
+              <div className="grid grid-cols-2 gap-4 w-full text-[11px] max-w-[500px]">
+                <div className="flex flex-col space-y-3">
+                  <div className="text-orange-500 font-bold uppercase text-center mb-1">Bochnia</div>
+                  <a 
+                    href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
+                  >
+                    📍 Nad Babicą 2
+                  </a>
+                  <a 
+                    href="tel:+48798144399" 
+                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
+                  >
+                    📞 798 144 399
+                  </a>
+                </div>
+                
+                <div className="flex flex-col space-y-3">
+                  <div className="text-orange-500 font-bold uppercase text-center mb-1">Sułkowice</div>
+                  <a 
+                    href="LINK_DO_MAPY_SULKOWICE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
+                  >
+                    📍 Sportowa 133
+                  </a>
+                  <a 
+                    href="tel:+48000000000" 
+                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
+                  >
+                    📞 XXX XXX XXX
+                  </a>
+                </div>
               </div>
             </div>
+            
             <motion.img
               src="/page1photo.webp"
-              alt="Tło z barberem po Strzyżenie Męskie w Mento Barber Shop Bochnia - Salon Fryzjerski Bochnia"
+              alt="Barber Mento Barber Shop"
               fetchPriority="high"
               width="897"   
               height="983"
@@ -354,6 +397,7 @@ const HomePage = () => {
         </Section>
       )}
 
+      {/* SECKJA CENNIKA */}
       {!isMobile ? (
         <Section index={2}>
           <div
@@ -399,9 +443,9 @@ const HomePage = () => {
                 </div>
               ))}
             </motion.div>
-            <div className="absolute bottom-0 right-0 pr-[98px] pb-[60px] text-[10px] text-center">
+            <div className="absolute bottom-0 right-0 pr-[98px] pb-[60px] text-[10px] text-center z-20">
               <p className="text-textPrimary">
-                Podane ceny tyczą się barberów zaawansowanych, ceny szczegółowe rozpisane są na booksy.
+                Podane ceny tyczą się barberów zaawansowanych. Ceny w lokalizacjach Bochnia i Sułkowice mogą się różnić w zależności od poziomu barbera.
               </p>
             </div>
             <img
@@ -413,7 +457,7 @@ const HomePage = () => {
             />
             <img
               src={Photo2}
-              alt="Tło z barberem po Strzyżenie Męskie w Mento Barber Shop Bochnia - Salon Fryzjerski Bochnia"
+              alt="Mento Barber Shop"
               className="absolute bottom-0 left-0 top-10 w-1/3 h-auto pointer-events-none"
             />
           </div>
@@ -479,6 +523,7 @@ const HomePage = () => {
           </div>
         </Section>
       )}
+
 
       {!isMobile ? (
         <Section index={3}>
@@ -554,7 +599,7 @@ const HomePage = () => {
             />
             <img
               src={PhotoJimmy}
-              alt="Barber Jimmy z Mento Barber Shop Bochnia - Fryzjer Męski Bochnia"
+              alt="Barber Jimmy z Mento Barber Shop"
               loading="lazy"
               className="absolute bottom-0 right-0 w-1/2 h-auto pointer-events-none"
               style={{ bottom: -240, right: -95, zIndex: 1 }}
@@ -600,7 +645,7 @@ const HomePage = () => {
             </div>
             <motion.img
               src={PhotoJimmy}
-              alt="Barber Jimmy z Mento Barber Shop Bochnia - Fryzjer Męski Bochnia"
+              alt="Barber Jimmy z Mento Barber Shop"
               loading="lazy"
               className="absolute top-0 w-[700px] max-w-none z-10"
               style={{ right: "-125px", top: "-200px" }}
@@ -666,18 +711,18 @@ const HomePage = () => {
           <div className="w-full">
             <Slider {...settings} className="space-x-4">
               {[
-                { src: galeria4, alt: "Klasyczne strzyżenie męskie z cieniowaniem - fryzjer Bochnia" },
-                { src: galeria18, alt: "Nowoczesna fryzura męska skin fade - barber Bochnia" },
+                { src: galeria4, alt: "Klasyczne strzyżenie męskie z cieniowaniem - Mento Barber" },
+                { src: galeria18, alt: "Nowoczesna fryzura męska skin fade - Mento" },
                 { src: galeria7, alt: "Profesjonalne strzyżenie i trymowanie brody - Mento Barber Shop" },
-                { src: galeria21, alt: "Krótkie strzyżenie męskie układane do tyłu - najlepszy fryzjer Bochnia" },
-                { src: galeria1, alt: "Modna fryzura młodzieżowa - zakład fryzjerski Bochnia" },
-                { src: galeria13, alt: "Usługa combo strzyżenie włosów i konturowanie zarostu - barber Bochnia" },
-                { src: galeria25, alt: "Stylowa fryzura dla chłopca - Mento Barber Shop Bochnia" },
-                { src: galeria9, alt: "Precyzyjne strzyżenie męskie - fryzjer Nowy Wiśnicz i Bochnia" },
+                { src: galeria21, alt: "Krótkie strzyżenie męskie układane do tyłu - najlepszy fryzjer" },
+                { src: galeria1, alt: "Modna fryzura młodzieżowa - zakład fryzjerski" },
+                { src: galeria13, alt: "Usługa combo strzyżenie włosów i konturowanie zarostu" },
+                { src: galeria25, alt: "Stylowa fryzura dla chłopca - Mento Barber Shop" },
+                { src: galeria9, alt: "Precyzyjne strzyżenie męskie - fryzjer" },
                 { src: galeria20, alt: "Pielęgnacja i odsiwianie brody - profesjonalny barber" },
-                { src: galeria3, alt: "Wystylizowane włosy w tył bez zarostu - fryzjer męski Bochnia" },
+                { src: galeria3, alt: "Wystylizowane włosy w tył bez zarostu - fryzjer męski" },
                 { src: galeria11, alt: "Klasyczny pompadour z idealnym przejściem - Mento Barber" },
-                { src: galeria24, alt: "Ostre linie i konturowanie zarostu brzytwą - barber shop Bochnia" },
+                { src: galeria24, alt: "Ostre linie i konturowanie zarostu brzytwą - barber shop" },
               ].map((item, index) => (
   <div key={index} className="p-3">
     <div className="p-2 border-[3px] border-prime rounded-md shadow-[0_0_7px_rgba(255,120,0,0.8),inset_0_0_7px_rgba(255,120,0,0.8)]">
@@ -695,18 +740,18 @@ const HomePage = () => {
           <div className={`w-full ${isMobile ? "mt-[0px]" : "mt-[-5px]"}`}>
             <Slider {...reverseSettings} className="space-x-4">
               {[
-                { src: galeria8, alt: "Cieniowanie typu taper fade - polecany barber Bochnia" },
+                { src: galeria8, alt: "Cieniowanie typu taper fade - polecany barber" },
                 { src: galeria23, alt: "Męska stylizacja włosów na gładko - Mento Barber" },
-                { src: galeria2, alt: "Strzyżenie maszynką i nożyczkami - dobry fryzjer Bochnia" },
-                { src: galeria19, alt: "Długa broda i krótkie włosy - profesjonalny barber shop Bochnia" },
-                { src: galeria10, alt: "Precyzyjne wykończenie fryzury męskiej - fryzjer z Bochni" },
-                { src: galeria26, alt: "Zadbany zarost i modne cięcie - Mento Barber Bochnia i Nowy Wiśnicz" },
-                { src: galeria5, alt: "Idealnie ułożony french crop - fryzjer męski Bochnia" },
-                { src: galeria14, alt: "Strzyżenie męskie z wygolonymi bokami - Bochnia Fryzpoojer" },
+                { src: galeria2, alt: "Strzyżenie maszynką i nożyczkami - dobry fryzjer" },
+                { src: galeria19, alt: "Długa broda i krótkie włosy - profesjonalny barber shop" },
+                { src: galeria10, alt: "Precyzyjne wykończenie fryzury męskiej - fryzjer" },
+                { src: galeria26, alt: "Zadbany zarost i modne cięcie - Mento Barber" },
+                { src: galeria5, alt: "Idealnie ułożony french crop - fryzjer męski" },
+                { src: galeria14, alt: "Strzyżenie męskie z wygolonymi bokami - Fryzjer" },
                 { src: galeria17, alt: "Klasyczna męska elegancja na fotelu barberskim - Mento" },
-                { src: galeria6, alt: "Trymowanie i modelowanie długiej brody - barber Bochnia" },
-                { src: galeria22, alt: "Stylizacja włosów pudrem i pomadą - fryzjer Bochnia opinie" },
-                { src: galeria12, alt: "Wizyta u profesjonalnego barbera - zakład fryzjerski Bochnia" },
+                { src: galeria6, alt: "Trymowanie i modelowanie długiej brody - barber" },
+                { src: galeria22, alt: "Stylizacja włosów pudrem i pomadą - fryzjer" },
+                { src: galeria12, alt: "Wizyta u profesjonalnego barbera - zakład fryzjerski" },
               ].map((item, index) => (
 
                 <div key={index} className="p-3">
