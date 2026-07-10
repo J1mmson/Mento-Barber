@@ -318,39 +318,48 @@ const HomePage = () => {
               </p>
 
               {/* Kompaktowa, półprzezroczysta karta kontaktowa dla obu salonów */}
-              <div className="w-full max-w-[360px] bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-4 mb-5 flex flex-row shadow-xl">
+              <div className="w-full max-w-[360px] bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-2 mb-5 flex flex-row shadow-xl">
                 {/* Bochnia */}
-                <div className="flex flex-col items-center justify-center w-1/2 border-r border-white/10 px-2 gap-1">
-                  <span className="text-[#f97316] font-bold text-[11px] uppercase tracking-wider mb-1">Bochnia</span>
-                  <a href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-[11px] hover:text-white transition-colors">
+                <div className="flex flex-col items-center justify-start w-1/2 border-r border-white/10">
+                  <span className="text-[#f97316] font-bold text-[11px] uppercase tracking-wider mt-2 mb-1">Bochnia</span>
+                  
+                  <a href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26" target="_blank" rel="noopener noreferrer" 
+                     className="flex items-center justify-center w-full py-3 px-2 text-gray-300 text-[12px] hover:text-white transition-colors rounded-lg active:bg-white/10">
                     Nad Babicą 2
                   </a>
-                  <a href="tel:+48798144399" className="text-white font-bold text-[12px] hover:text-[#f97316] transition-colors mt-1">
+                  
+                  <a href="tel:+48798144399" 
+                     className="flex items-center justify-center w-full py-3 px-2 text-white font-bold text-[13px] hover:text-[#f97316] transition-colors rounded-lg active:bg-white/10 mb-1">
                     798 144 399
                   </a>
                 </div>
+                
                 {/* Sułkowice */}
-                <div className="flex flex-col items-center justify-center w-1/2 px-2 gap-1">
-                  <span className="text-[#f97316] font-bold text-[11px] uppercase tracking-wider mb-1">Sułkowice</span>
-                  <a href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-[11px] hover:text-white transition-colors">
+                <div className="flex flex-col items-center justify-start w-1/2">
+                  <span className="text-[#f97316] font-bold text-[11px] uppercase tracking-wider mt-2 mb-1">Sułkowice</span>
+                  
+                  <a href="LINK_DO_MAPY" target="_blank" rel="noopener noreferrer" 
+                     className="flex items-center justify-center w-full py-3 px-2 text-gray-300 text-[12px] hover:text-white transition-colors rounded-lg active:bg-white/10">
                     Sportowa 133
                   </a>
-                  <a href="tel:+48735067757" className="text-white font-bold text-[12px] hover:text-[#f97316] transition-colors mt-1">
+                  
+                  <a href="tel:+48735067757" 
+                     className="flex items-center justify-center w-full py-3 px-2 text-white font-bold text-[13px] hover:text-[#f97316] transition-colors rounded-lg active:bg-white/10 mb-1">
                     735 067 757
                   </a>
                 </div>
               </div>
 
-              {/* Małe Ikony Social Media na samym dole */}
-              <div className="flex space-x-6 items-center">
-                <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer">
-                    <img src={FacebookLogo} alt="facebook_logo" className="h-[24px] w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              {/* Małe Ikony Social Media na samym dole - powiększony obszar kliknięcia */}
+              <div className="flex justify-center items-center gap-2">
+                <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer" className="p-3 opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
+                    <img src={FacebookLogo} alt="facebook_logo" className="h-[24px] w-auto" />
                 </a>
-                <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer">
-                    <img src={InstagramLogo} alt="instagram_logo" className="h-[24px] w-auto opacity-80 hover:opacity-100 transition-opacity" />
+                <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer" className="p-3 opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
+                    <img src={InstagramLogo} alt="instagram_logo" className="h-[24px] w-auto" />
                 </a>
-                <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer">
-                    <img src={TikTokLogo} alt="tiktok_logo" className="h-[24px] w-auto opacity-80 hover:opacity-100 transition-opacity" />
+                <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer" className="p-3 opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
+                    <img src={TikTokLogo} alt="tiktok_logo" className="h-[24px] w-auto" />
                 </a>
               </div>
             </div>
