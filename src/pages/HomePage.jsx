@@ -161,7 +161,7 @@ const HomePage = () => {
                 className="uppercase font-bold text-6xl tracking-widest text-orange-500"
                 style={{ textShadow: "0 0 15px #ff6600" }}
               >
-                BOCHNIA <span className="text-gray-600">|</span> SUŁKOWICE
+                BOCHNIA <span></span> SUŁKOWICE
               </h2>
               <p
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
