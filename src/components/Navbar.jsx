@@ -5,6 +5,7 @@ import Logo from "../assets/mento_logo.svg";
 import BurgerMenu from "../assets/burgerMenu.svg";
 
 const Navbar = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const [activeSection, setActiveSection] = useState(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -125,15 +126,14 @@ const Navbar = () => {
                             szkolenia
                         </Link>
                         
-                        <a
-                            href='https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='text-prime cursor-pointer flex items-center gap-2 px-3 py-2 hover:opacity-80 transition-opacity'>
+                        {/* ZMIENIONY PRZYCISK DLA DESKTOPU */}
+                        <button
+                            onClick={() => setIsModalOpen(true)}
+                            className='text-prime bg-transparent border-none uppercase text-[16px] xl:text-lg font-light cursor-pointer flex items-center gap-2 px-3 py-2 hover:opacity-80 transition-opacity'>
                             <span>{`>`}</span>
                             <span>zarezerwuj</span>
                             <span>{`<`}</span>
-                        </a>
+                        </button>
                     </div>
 
                     <div className='lg:hidden z-20 ml-auto'>
@@ -218,17 +218,69 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className="w-full mt-4">
-                            <a
-                                href='https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo'
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                className='text-prime font-bold flex justify-center items-center gap-2 block w-full py-4 cursor-pointer'>
+                            {/* ZMIENIONY PRZYCISK DLA MOBILE */}
+                            <button
+                                onClick={() => {
+                                    setIsMobileMenuOpen(false);
+                                    setIsModalOpen(true);
+                                }}
+                                className='text-prime bg-transparent border-none uppercase font-bold text-[18px] flex justify-center items-center gap-2 block w-full py-4 cursor-pointer'>
                                 <span>{`>`}</span>
                                 <span>zarezerwuj</span>
                                 <span>{`<`}</span>
-                            </a>
+                            </button>
                         </li>
                     </ul>
+                </div>
+            )}
+
+
+            {isModalOpen && (
+                <div
+                    className="fixed inset-0 w-full h-full bg-black/85 z-[99999] backdrop-blur-md flex items-center justify-center transition-opacity duration-300"
+                    onClick={() => setIsModalOpen(false)}
+                >
+                    <div
+                        className="bg-[#111] border border-[#333] p-6 md:p-10 rounded-xl max-w-2xl w-[90%] text-center relative shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
+                        onClick={(e) => e.stopPropagation()} 
+                    >
+                        <button
+                            onClick={() => setIsModalOpen(false)}
+                            className="absolute top-4 right-5 text-3xl text-gray-500 hover:text-white transition-colors bg-transparent border-none cursor-pointer"
+                        >
+                            &times;
+                        </button>
+                        
+                        <h2 className="text-white mt-0 mb-8 text-xl md:text-2xl uppercase tracking-wider font-bold">
+                            Wybierz lokalizację
+                        </h2>
+                        
+                        <div className="flex flex-col md:flex-row gap-5 justify-center">
+                            {/* KAFELEK BOCHNIA */}
+                            <a
+                                href="https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-1 min-w-[200px] bg-[#1a1a1a] border-2 border-[#222] p-8 rounded-lg transition-all duration-300 text-white flex flex-col items-center cursor-pointer hover:border-[#f97316] hover:-translate-y-1 no-underline"
+                            >
+                                <div className="text-4xl mb-4">📍</div>
+                                <h3 className="m-0 mb-2 text-[#f97316] text-xl uppercase font-bold">Bochnia</h3>
+                                <p className="m-0 text-sm text-gray-400">Rezerwacja przez Booksy</p>
+                            </a>
+
+                            {/* KAFELEK SUŁKOWICE */}
+                            <a
+                                href="TUTAJ_WKLEJ_LINK_DO_NOWEGO_SYSTEMU"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-1 min-w-[200px] bg-[#1a1a1a] border-2 border-[#222] p-8 rounded-lg transition-all duration-300 text-white flex flex-col items-center cursor-pointer hover:border-[#f97316] hover:-translate-y-1 no-underline"
+                            >
+                                <div className="text-4xl mb-4">📍</div>
+                                <h3 className="m-0 mb-2 text-[#f97316] text-xl uppercase font-bold">Sułkowice</h3>
+                                <p className="m-0 text-sm text-gray-400">Nasz autorski system</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             )}
         </>
