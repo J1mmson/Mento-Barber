@@ -155,22 +155,11 @@ const HomePage = () => {
               variants={fadeInFromLeft}
             >
               <h1 className="text-textPrimary uppercase text-titleOne font-bold text-7xl mb-[-15px]">
-                mento
-              </h1>
-              <h1
-                className="uppercase font-bold ml-[-4px]"
-                style={{
-                  fontFamily: '"Arial", "Helvetica", sans-serif',
-                  fontSize: "5.5rem", 
-                  fontWeight: "bold",
-                  textTransform: "uppercase",
-                  color: "transparent",
-                  WebkitTextStroke: "2px #ff6600",
-                  textShadow: "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
-                }}
-              >
-                barbershop
-              </h1>
+              MENTO
+            </h1>
+              <h2 className="text-gray-400 uppercase tracking-[0.2em] text-2xl mb-6">
+                BOCHNIA | SUŁKOWICE
+              </h2>
               <p
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
                 style={{ lineHeight: 2 }}
