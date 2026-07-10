@@ -167,7 +167,11 @@ const HomePage = () => {
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
                 style={{ lineHeight: 2 }}
               >
-                MENTO to od teraz DWA salony fryzjerskie - Bochnia oraz Sułkowice, postanowiliśmy stowrzyć dla was kolejne miejsce na mapie Małopolski. Tworzymy przestrzeń bez sztucznych barier, gdzie priorytetem jest genialna atmosfera i dbałość o detale. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
+              Dwie lokalizacje. Jeden standard.
+
+              Mento Barber Shop to dwa salony : Bochnia i Sułkowice. połączone tą samą pasją do męskiego fryzjerstwa. W każdej lokalizacji dbamy o najwyższy standard usług, precyzję, profesjonalizm i każdy detal, aby każda wizyta była wyjątkowym doświadczeniem.
+
+              Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
             </motion.div>
 
@@ -318,7 +322,11 @@ const HomePage = () => {
                   marginTop: "12px"
                 }}
               >
-                MENTO to profesjonalne salony fryzjerskie w Bochni i Sułkowicach. Dwie lokalizacje, ten sam niezrównany styl. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
+                Dwie lokalizacje. Jeden standard.
+
+                Mento Barber Shop to dwa salony : Bochnia i Sułkowice. połączone tą samą pasją do męskiego fryzjerstwa. W każdej lokalizacji dbamy o najwyższy standard usług, precyzję, profesjonalizm i każdy detal, aby każda wizyta była wyjątkowym doświadczeniem.
+
+                Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
               
               {/* Zaktualizowany układ podwójnych kontaktów dla Mobile */}
