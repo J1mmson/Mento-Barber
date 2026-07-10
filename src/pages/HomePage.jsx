@@ -200,7 +200,7 @@ const HomePage = () => {
                 {/* Kolumna SUŁKOWICE */}
                 <div className="flex flex-col gap-3">
                   <a 
-                    href="https://maps.app.goo.gl/6tq9MRAPLe7F8YB46"
+                    href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
@@ -344,7 +344,7 @@ const HomePage = () => {
                 <div className="flex flex-col space-y-3">
                   <div className="text-orange-500 font-bold uppercase text-center mb-1">Sułkowice</div>
                   <a 
-                    href="https://maps.app.goo.gl/6tq9MRAPLe7F8YB46"
+                    href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
