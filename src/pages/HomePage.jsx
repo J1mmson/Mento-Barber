@@ -187,13 +187,13 @@ const HomePage = () => {
                     rel="noopener noreferrer"
                     className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
                   >
-                    📍 Nad Babicą 2, Bochnia
+                    Nad Babicą 2, Bochnia
                   </a>
                   <a 
                     href="tel:+48798144399" 
                     className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
                   >
-                    📞 +48 798 144 399
+                    +48 798 144 399
                   </a>
                 </div>
 
@@ -205,13 +205,13 @@ const HomePage = () => {
                     rel="noopener noreferrer"
                     className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
                   >
-                    📍 Sportowa 133, Sułkowice
+                    Sportowa 133, Sułkowice
                   </a>
                   <a 
                     href="tel:+48XXXXXXXXX" 
                     className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
                   >
-                    📞 +48 735 067 757
+                    +48 735 067 757
                   </a>
                 </div>
               </div>
@@ -331,13 +331,13 @@ const HomePage = () => {
                     rel="noopener noreferrer"
                     className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
                   >
-                    📍 Nad Babicą 2
+                    Nad Babicą 2
                   </a>
                   <a 
                     href="tel:+48798144399" 
                     className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
                   >
-                    📞 798 144 399
+                    798 144 399
                   </a>
                 </div>
                 
@@ -349,13 +349,13 @@ const HomePage = () => {
                     rel="noopener noreferrer"
                     className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
                   >
-                    📍 Sportowa 133
+                    Sportowa 133
                   </a>
                   <a 
                     href="tel:+48000000000" 
                     className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
                   >
-                    📞 735 067 757
+                    735 067 757
                   </a>
                 </div>
               </div>

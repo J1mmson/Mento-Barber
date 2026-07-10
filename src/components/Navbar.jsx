@@ -263,7 +263,6 @@ const Navbar = () => {
                                 rel="noopener noreferrer"
                                 className="flex-1 min-w-[200px] bg-[#1a1a1a] border-2 border-[#222] p-8 rounded-lg transition-all duration-300 text-white flex flex-col items-center cursor-pointer hover:border-[#f97316] hover:-translate-y-1 no-underline"
                             >
-                                <div className="text-4xl mb-4">📍</div>
                                 <h3 className="m-0 mb-2 text-[#f97316] text-xl uppercase font-bold">Bochnia</h3>
                                 <p className="m-0 text-sm text-gray-400">Rezerwacja przez Booksy</p>
                             </a>
@@ -275,7 +274,6 @@ const Navbar = () => {
                                 rel="noopener noreferrer"
                                 className="flex-1 min-w-[200px] bg-[#1a1a1a] border-2 border-[#222] p-8 rounded-lg transition-all duration-300 text-white flex flex-col items-center cursor-pointer hover:border-[#f97316] hover:-translate-y-1 no-underline"
                             >
-                                <div className="text-4xl mb-4">📍</div>
                                 <h3 className="m-0 mb-2 text-[#f97316] text-xl uppercase font-bold">Sułkowice</h3>
                                 <p className="m-0 text-sm text-gray-400">Nasz autorski system</p>
                             </a>
