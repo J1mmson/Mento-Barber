@@ -303,7 +303,9 @@ const HomePage = () => {
               </h2>
               
               <p className="text-center text-[10px] sm:text-[11px] text-gray-200 mb-4 max-w-[95%] leading-relaxed">
-                Dwie lokalizacje. Jeden standard. MENTO to profesjonalny barbershop. W każdej lokalizacji dbamy o najwyższy standard usług, precyzję i detale. Wybierz salon najbliżej siebie i poczuj różnicę.
+                  Dwie lokalizacje. Jeden standard.
+                  Mento Barber Shop to dwa salony : Bochnia i Sułkowice. połączone tą samą pasją do męskiego fryzjerstwa. W każdej lokalizacji dbamy o najwyższy standard usług, precyzję, profesjonalizm i każdy detal, aby każda wizyta była wyjątkowym doświadczeniem.
+                  Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
 
               {/* Karta z kontaktami - kompaktowa, bez emotek, z niewidzialnymi strefami kliknięcia dla Lighthouse */}
