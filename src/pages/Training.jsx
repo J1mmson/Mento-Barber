@@ -533,7 +533,7 @@ const Training = () => {
             {data.map((panel, index) => (
               <div
                 key={index}
-                className="bg-[#171D1F] rounded-lg shadow-lg p-4 flex flex-col z-10"
+                className="bg-[#171D1F] rounded-lg shadow-lg p-4 flex flex-col z-100"
               >
                 <div className="relative bg-white rounded-[6px] overflow-hidden mb-4">
                   <img

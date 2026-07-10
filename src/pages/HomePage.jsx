@@ -276,7 +276,7 @@ const HomePage = () => {
               backgroundBlendMode: "multiply",
             }}
           >
-            <div className="flex flex-col items-center mt-[10%] leading-none z-20">
+            <div className="flex flex-col items-center mt-[25%] leading-none z-20">
               <div
                 className="flex space-x-4 items-center gap-[32px]"
                 style={{ marginBottom: windowSize.height < 700 ? "12px" : "24px" }}
@@ -376,7 +376,7 @@ const HomePage = () => {
               width="897"   
               height="983"
               className="absolute inset-0 mx-auto w-[150%] h-auto object-contain pointer-events-none z-10"
-              style={{ top: windowSize.height < 700 ? 40 : 80 }}
+              style={{ top: windowSize.height < 700 ? 100 : 140 }}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
