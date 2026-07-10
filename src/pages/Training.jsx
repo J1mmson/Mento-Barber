@@ -579,12 +579,12 @@ const Training = () => {
           <img
             src={Gradient}
             alt="" aria-hidden="true"
-            className="absolute top-0 z-0 w-[800px] max-w-none"
-            style={{ right: "-200px", top: "-200px" }}
+            className="absolute top-0 z-0 w-[800px] max-w-none opacity-20 pointer-events-none"
+            style={{ right: "-300px", top: "-100px" }}
           />
           {isDialogOpen && (
             <div
-              className="fixed inset-0 bg-[#00000088] backdrop-blur-sm flex justify-center items-center z-50"
+              className="fixed inset-0 bg-[#00000088] backdrop-blur-sm flex justify-center items-center z-100"
               onClick={closeDialog}
             >
               <div
@@ -612,7 +612,7 @@ const Training = () => {
           )}
           {isReservationDialogOpen && (
             <div
-              className="fixed inset-0 bg-[#00000088] backdrop-blur-sm flex justify-center items-center z-50"
+              className="fixed inset-0 bg-[#00000088] backdrop-blur-sm flex justify-center items-center z-100"
               onClick={closeReservationDialog}
             >
               <div

@@ -263,12 +263,12 @@ const HomePage = () => {
         </Section>
       ) : (
         <Section index={1}>
-          <div
+         <div
             id="about"
             className="relative flex flex-col justify-end px-6 pb-5 snap-start z-10 overflow-hidden"
             style={{
               minHeight: "100svh",
-              paddingBottom: "max(1.25rem, env(safe-area-inset-bottom))",
+              paddingBottom: "max(1.25rem, env(safe-area-bottom))",
               background: `linear-gradient(90deg, #090909, #091E23), url(${Texture})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -276,97 +276,28 @@ const HomePage = () => {
               backgroundBlendMode: "multiply",
             }}
           >
-            <div className="flex flex-col items-center mt-[25%] leading-none z-20">
-              <div
-                className="flex space-x-4 items-center gap-[32px]"
-                style={{ marginBottom: windowSize.height < 700 ? "12px" : "24px" }}
-              >
-                <a href="https://www.facebook.com/MentoBarberShop" aria-label="Nasz profil na Facebooku" target="_blank" rel="noopener noreferrer">
-                  <img src={FacebookLogo} alt="facebook_logo" style={{ height: "48px", width: "auto" }} />
-                </a>
-                <a href="https://www.instagram.com/mento.barbershop/" aria-label="Nasz profil na Instagramie" target="_blank" rel="noopener noreferrer">
-                  <img src={InstagramLogo} alt="instagram_logo" style={{ height: "38px", width: "auto" }} />
-                </a>
-                <a href="https://www.tiktok.com/@mento_barbershop" aria-label="Nasz profil na TikToku" target="_blank" rel="noopener noreferrer">
-                  <img src={TikTokLogo} alt="tiktok_logo" style={{ height: "38px", width: "auto" }} />
-                </a>
-              </div>
+            <div className="flex flex-col items-center pt-[90px] leading-none z-20">
               <h1
-                className="text-textPrimary uppercase text-titleOne font-bold text-center"
+                className="text-textPrimary uppercase text-titleOne font-bold text-center mb-1"
                 style={{ fontSize: windowSize.height < 700 ? "2.65rem" : "2.95rem" }}
               >
-                mento
+                MENTO
               </h1>
-              <h1
-                className="uppercase font-bold text-center"
-                style={{
-                  fontFamily: '"Arial", "Helvetica", sans-serif',
-                  fontSize: windowSize.height < 700 ? "3.2rem" : "3.5rem", 
-                  fontWeight: "bold",
-                  textTransform: "uppercase",
-                  color: "transparent",
-                  WebkitTextStroke: "2px #ff6600",
-                  textShadow: "0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
-                }}
-              >
-                barbershop
-              </h1>
+              <h2 className="uppercase font-bold text-3xl tracking-wide text-[#f97316] text-center leading-tight mb-4">
+                BOCHNIA <br /> SUŁKOWICE
+              </h2>
               <p
-                className="text-center text-[14px] text-gray-300"
+                className="text-center text-[13px] text-gray-300"
                 style={{
                   lineHeight: 1.8,
                   width: "100%",
                   maxWidth: "500px",
                   margin: "0 auto",
                   marginBottom: windowSize.height < 700 ? "24px" : "36px",
-                  marginTop: "12px"
                 }}
               >
-                Dwie lokalizacje. Jeden standard.
-
-                Mento Barber Shop to dwa salony : Bochnia i Sułkowice. połączone tą samą pasją do męskiego fryzjerstwa. W każdej lokalizacji dbamy o najwyższy standard usług, precyzję, profesjonalizm i każdy detal, aby każda wizyta była wyjątkowym doświadczeniem.
-
-                Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
+                Dwa salony, jeden standard. Tworzymy męską przestrzeń bez sztucznych barier, gdzie priorytetem jest genialna atmosfera i dbałość o detale. Wpadnij, odetchnij i pozwól nam zrobić to, na czym znamy się najlepiej.
               </p>
-              
-              {/* Zaktualizowany układ podwójnych kontaktów dla Mobile */}
-              <div className="grid grid-cols-2 gap-4 w-full text-[11px] max-w-[500px]">
-                <div className="flex flex-col space-y-3">
-                  <div className="text-orange-500 font-bold uppercase text-center mb-1">Bochnia</div>
-                  <a 
-                    href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-                  >
-                    Nad Babicą 2
-                  </a>
-                  <a 
-                    href="tel:+48798144399" 
-                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-                  >
-                    798 144 399
-                  </a>
-                </div>
-                
-                <div className="flex flex-col space-y-3">
-                  <div className="text-orange-500 font-bold uppercase text-center mb-1">Sułkowice</div>
-                  <a 
-                    href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-                  >
-                    Sportowa 133
-                  </a>
-                  <a 
-                    href="tel:+48000000000" 
-                    className="border-2 border-gray-400 rounded-full py-2 px-2 text-textPrimary text-center hover:border-orange-500 hover:text-orange-500 transition-colors duration-300"
-                  >
-                    735 067 757
-                  </a>
-                </div>
-              </div>
             </div>
             
             <motion.img
@@ -382,13 +313,7 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={fadeInFromRight}
             />
-            <img
-              src={Gradient}
-              alt=""
-              aria-hidden="true"
-              className="absolute top-0 z-0 w-[800px] max-w-none"
-              style={{ right: "-200px", top: "-200px" }}
-            />
+            
             <div
               className="absolute bottom-0 left-0 w-full h-[60%] pointer-events-none z-10"
               style={{ background: "linear-gradient(180deg, #0B0C0F00 0%, #0B0C0F80 24%, #0B0C0FBF 35%, #0B0C0F 100%)" }}
