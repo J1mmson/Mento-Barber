@@ -341,17 +341,14 @@ const HomePage = () => {
                 </div>
               </div>
 
-              <div className="flex justify-center items-center gap-4">
-                <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer" className="p-2 opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10 flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="w-[22px] h-[22px]">
-                      <circle cx="12" cy="12" r="11"></circle>
-                      <path d="M14 9h-1.5a1.5 1.5 0 0 0-1.5 1.5V12h3l-.5 3h-2.5v6h-3v-6H7v-3h1.5v-1.5A4.5 4.5 0 0 1 12.5 6H15v3z"></path>
-                    </svg>
+              <div className="flex justify-center items-center gap-2 mt-2">
+                <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
+                    <img src={FacebookLogo} alt="facebook_logo" className="w-[32px] h-[32px] object-contain" />
                 </a>
-                <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer" className="p-2 opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10 flex items-center justify-center">
+                <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
                     <img src={InstagramLogo} alt="instagram_logo" className="w-[22px] h-[22px] object-contain" />
                 </a>
-                <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer" className="p-2 opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10 flex items-center justify-center">
+                <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
                     <img src={TikTokLogo} alt="tiktok_logo" className="w-[22px] h-[22px] object-contain" />
                 </a>
               </div>
