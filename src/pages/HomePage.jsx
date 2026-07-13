@@ -343,7 +343,7 @@ const HomePage = () => {
 
               <div className="flex justify-center items-center gap-2 mt-2">
                 <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={FacebookLogo} alt="facebook_logo" className="w-[34px] h-[34px] object-contain" />
+                    <img src={FacebookLogo} alt="facebook_logo" className="w-[32px] h-[32px] object-contain" />
                 </a>
                 <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
                     <img src={InstagramLogo} alt="instagram_logo" className="w-[22px] h-[22px] object-contain" />
