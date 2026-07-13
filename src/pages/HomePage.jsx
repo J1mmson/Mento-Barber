@@ -183,7 +183,6 @@ const HomePage = () => {
               variants={fadeInFromBottom}
             >
               <div className="flex gap-6">
-                {/* Kolumna BOCHNIA */}
                 <div className="flex flex-col gap-3">
                   <a 
                     href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
@@ -201,7 +200,6 @@ const HomePage = () => {
                   </a>
                 </div>
 
-                {/* Kolumna SUŁKOWICE */}
                 <div className="flex flex-col gap-3">
                   <a 
                     href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6"
@@ -265,91 +263,84 @@ const HomePage = () => {
         <Section index={1}>
         <div
             id="about"
-            className="relative flex flex-col px-4 pb-4 snap-start z-10 overflow-hidden"
+            className="relative flex flex-col px-4 pb-2 snap-start z-10 overflow-hidden"
             style={{
               minHeight: "100svh",
               backgroundColor: "#090909"
             }}
           >
-            {/* Zdjęcie zaczyna się równo pod nawigacją (top-20) i zajmuje górną połowę ekranu */}
             <motion.img
               src="/page1photo.webp"
               alt="Barber Mento Barber Shop"
               fetchPriority="high"
-              className="absolute top-[80px] left-0 w-full h-[45vh] object-cover object-top pointer-events-none z-0"
+              className="absolute top-[70px] left-0 w-full h-[35vh] object-cover object-top pointer-events-none z-0"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInFromRight}
             />
             
-            {/* Gradient ukrywający twarde odcięcie zdjęcia, dopasowany do wysokości */}
             <div
-              className="absolute top-[80px] left-0 w-full h-[50vh] pointer-events-none z-10"
-              style={{ background: "linear-gradient(to bottom, transparent 35%, #090909 90%)" }}
+              className="absolute top-[70px] left-0 w-full h-[40vh] pointer-events-none z-10"
+              style={{ background: "linear-gradient(to bottom, transparent 30%, #090909 95%)" }}
             ></div>
 
-            {/* Sprężyna - na dużych ekranach odepchnie tekst na dół, na małych skurczy się by wszystko pomieścić */}
             <div className="relative z-20 flex-grow pointer-events-none"></div>
 
-            {/* Kontener na treść - zoptymalizowany pod najmniejsze ekrany */}
-            <div className="relative z-20 flex flex-col items-center w-full mt-auto">
+            <div className="relative z-20 flex flex-col items-center w-full mt-auto pb-1">
               
-              <h1 className="text-textPrimary uppercase text-titleOne font-bold text-center mb-0 text-[2.2rem] sm:text-[2.6rem] leading-none">
+              <h1 className="text-textPrimary uppercase text-titleOne font-bold text-center mb-0 text-[2.2rem] leading-none">
                 MENTO
               </h1>
-              <h2 className="uppercase font-bold text-[1rem] sm:text-[1.2rem] tracking-widest text-[#f97316] text-center leading-tight mb-3">
+              <h2 className="uppercase font-bold text-[1rem] tracking-widest text-[#f97316] text-center leading-tight mb-2">
                 BOCHNIA <span className="text-gray-400 font-light mx-1">|</span> SUŁKOWICE
               </h2>
               
-              <p className="text-center text-[10px] sm:text-[11px] text-gray-200 mb-4 max-w-[95%] leading-relaxed">
+              <p className="text-center text-[9.5px] sm:text-[10.5px] text-gray-300 mb-3 max-w-[98%] leading-[1.35]">
                   Dwie lokalizacje. Jeden standard.
                   Mento Barber Shop to dwa salony : Bochnia i Sułkowice. połączone tą samą pasją do męskiego fryzjerstwa. W każdej lokalizacji dbamy o najwyższy standard usług, precyzję, profesjonalizm i każdy detal, aby każda wizyta była wyjątkowym doświadczeniem.
                   Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
 
-              {/* Karta z kontaktami - kompaktowa, bez emotek, z niewidzialnymi strefami kliknięcia dla Lighthouse */}
-              <div className="w-full max-w-[360px] bg-[#111111] border border-white/5 rounded-xl p-1 mb-4 flex flex-row shadow-2xl">
-                {/* Bochnia */}
-                <div className="flex flex-col items-center justify-center w-1/2 border-r border-white/5">
-                  <span className="text-[#f97316] font-bold text-[10px] uppercase tracking-wider mt-2 mb-1">Bochnia</span>
+              <div className="w-full max-w-[360px] bg-[#111111] border border-white/5 rounded-xl p-1 mb-3 flex flex-row shadow-2xl">
+                <div className="flex flex-col items-center justify-center w-1/2 border-r border-white/5 py-1">
+                  <span className="text-[#f97316] font-bold text-[9px] uppercase tracking-wider mb-1">Bochnia</span>
                   
                   <a href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26" target="_blank" rel="noopener noreferrer" 
-                     className="flex items-center justify-center w-full min-h-[48px] px-1 text-gray-300 text-[11px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
+                     className="flex items-center justify-center w-full min-h-[36px] px-1 text-gray-300 text-[10px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
                     Nad Babicą 2
                   </a>
                   
                   <a href="tel:+48798144399" 
-                     className="flex items-center justify-center w-full min-h-[48px] px-1 text-white font-bold text-[12px] hover:text-[#f97316] transition-colors rounded-lg active:bg-white/10 mb-1">
+                     className="flex items-center justify-center w-full min-h-[36px] px-1 text-white font-bold text-[11px] hover:text-[#f97316] transition-colors rounded-lg active:bg-white/10">
                     798 144 399
                   </a>
                 </div>
                 
-                {/* Sułkowice */}
-                <div className="flex flex-col items-center justify-center w-1/2">
-                  <span className="text-[#f97316] font-bold text-[10px] uppercase tracking-wider mt-2 mb-1">Sułkowice</span>
+                <div className="flex flex-col items-center justify-center w-1/2 py-1">
+                  <span className="text-[#f97316] font-bold text-[9px] uppercase tracking-wider mb-1">Sułkowice</span>
                   
                   <a href="LINK_DO_MAPY" target="_blank" rel="noopener noreferrer" 
-                     className="flex items-center justify-center w-full min-h-[48px] px-1 text-gray-300 text-[11px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
+                     className="flex items-center justify-center w-full min-h-[36px] px-1 text-gray-300 text-[10px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
                     Sportowa 133
                   </a>
                   
                   <a href="tel:+48735067757" 
-                     className="flex items-center justify-center w-full min-h-[48px] px-1 text-white font-bold text-[12px] hover:text-[#f97316] transition-colors rounded-lg active:bg-white/10 mb-1">
+                     className="flex items-center justify-center w-full min-h-[36px] px-1 text-white font-bold text-[11px] hover:text-[#f97316] transition-colors rounded-lg active:bg-white/10">
                     735 067 757
                   </a>
                 </div>
               </div>
 
-              <div className="flex justify-center items-center gap-2 mt-2">
-                <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={FacebookLogo} alt="facebook_logo" className="w-[30px] h-[30px] object-contain" />
+              <div className="flex justify-center items-center gap-3">
+                <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[36px] min-h-[36px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
+                    <img src={FacebookLogo} alt="facebook_logo" className="w-[24px] h-[24px] object-contain" />
                 </a>
-                <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={InstagramLogo} alt="instagram_logo" className="w-[22px] h-[22px] object-contain" />
+                <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[36px] min-h-[36px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
+                    <img src={InstagramLogo} alt="instagram_logo" className="w-[18px] h-[18px] object-contain" />
                 </a>
-                <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={TikTokLogo} alt="tiktok_logo" className="w-[22px] h-[22px] object-contain" />
+                <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[36px] min-h-[36px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
+                    <img src={TikTokLogo} alt="tiktok_logo" className="w-[18px] h-[18px] object-contain" />
                 </a>
               </div>
             </div>
@@ -357,7 +348,6 @@ const HomePage = () => {
         </Section>
       )}
 
-      {/* SECKJA CENNIKA */}
       {!isMobile ? (
         <Section index={2}>
           <div
