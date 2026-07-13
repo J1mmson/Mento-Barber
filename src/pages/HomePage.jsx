@@ -220,15 +220,15 @@ const HomePage = () => {
                 </div>
               </div>
 
-              <div className="flex justify-center items-center gap-2">
-                <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={FacebookLogo} alt="facebook_logo" className="w-[18px] h-[18px] object-contain scale-[1.25]" />
+              <div className="flex space-x-6 text-textPrimary items-center">
+                <a href="https://www.facebook.com/MentoBarberShop" aria-label="Nasz profil na Facebooku" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                  <img src={FacebookLogo} alt="facebook_logo" className="h-[46px] w-auto object-contain" />
                 </a>
-                <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={InstagramLogo} alt="instagram_logo" className="w-[18px] h-[18px] object-contain" />
+                <a href="https://www.instagram.com/mento.barbershop/" aria-label="Nasz profil na Instagramie" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                  <img src={InstagramLogo} alt="instagram_logo" className="h-[38px] w-auto object-contain" />
                 </a>
-                <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={TikTokLogo} alt="tiktok_logo" className="w-[18px] h-[18px] object-contain" />
+                <a href="https://www.tiktok.com/@mento_barbershop" aria-label="Nasz profil na TikToku" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                  <img src={TikTokLogo} alt="tiktok_logo" className="h-[38px] w-auto object-contain" />
                 </a>
               </div>
             </motion.div>
@@ -341,16 +341,15 @@ const HomePage = () => {
                 </div>
               </div>
 
-              {/* Ikony Social Media - niewidzialny obszar kliknięcia 48x48 */}
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-2">
                 <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={FacebookLogo} alt="facebook_logo" className="w-[18px] h-[18px] object-contain scale-[1.25]" />
+                    <img src={FacebookLogo} alt="facebook_logo" className="h-[26px] w-auto object-contain" />
                 </a>
                 <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={InstagramLogo} alt="instagram_logo" className="w-[18px] h-[18px] object-contain" />
+                    <img src={InstagramLogo} alt="instagram_logo" className="h-[20px] w-auto object-contain" />
                 </a>
                 <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[48px] min-h-[48px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={TikTokLogo} alt="tiktok_logo" className="w-[18px] h-[18px] object-contain" />
+                    <img src={TikTokLogo} alt="tiktok_logo" className="h-[20px] w-auto object-contain" />
                 </a>
               </div>
             </div>
