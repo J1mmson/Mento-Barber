@@ -153,13 +153,12 @@ const Navbar = () => {
 
             {isMobileMenuOpen && (
                 <div className='fixed inset-0 bg-[#0B0C0F]/95 backdrop-blur-lg flex flex-col justify-center items-center text-lg font-light uppercase z-[50]'>
-                    <ul className='flex flex-col w-full px-6 gap-2 text-center text-white text-[18px] mt-16'>
+                   <ul className='flex flex-col w-full px-6 gap-2 text-center text-white text-[18px] mt-16'>
                         <li className="w-full">
                             <a 
                                 href='#about' 
                                 className='block w-full py-4 cursor-pointer'
-                                onClick={(e) => {
-                                    e.preventDefault();
+                                onClick={() => {
                                     setIsMobileMenuOpen(false);
                                     navigate("/#about");
                                 }}>
@@ -170,8 +169,7 @@ const Navbar = () => {
                             <a 
                                 href='#pricing' 
                                 className='block w-full py-4 cursor-pointer'
-                                onClick={(e) => {
-                                    e.preventDefault();
+                                onClick={() => {
                                     setIsMobileMenuOpen(false);
                                     navigate("/#pricing");
                                 }}>
@@ -182,8 +180,7 @@ const Navbar = () => {
                             <a 
                                 href='#barbers' 
                                 className='block w-full py-4 cursor-pointer'
-                                onClick={(e) => {
-                                    e.preventDefault();
+                                onClick={() => {
                                     setIsMobileMenuOpen(false);
                                     navigate("/#barbers");
                                 }}>
@@ -194,8 +191,7 @@ const Navbar = () => {
                             <a 
                                 href='#works' 
                                 className='block w-full py-4 cursor-pointer'
-                                onClick={(e) => {
-                                    e.preventDefault();
+                                onClick={() => {
                                     setIsMobileMenuOpen(false);
                                     navigate("/#works");
                                 }}>
@@ -218,7 +214,6 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className="w-full mt-4">
-                            {/* ZMIENIONY PRZYCISK DLA MOBILE */}
                             <button
                                 onClick={() => {
                                     setIsMobileMenuOpen(false);
