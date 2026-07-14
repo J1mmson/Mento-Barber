@@ -320,7 +320,7 @@ const HomePage = () => {
                 <div className="flex flex-col items-center justify-center w-1/2 py-1">
                   <span className="text-[#f97316] font-bold text-[9px] uppercase tracking-wider mb-1">Sułkowice</span>
                   
-                  <a href="LINK_DO_MAPY" target="_blank" rel="noopener noreferrer" 
+                  <a href="https://maps.app.goo.gl/iGQP3oe4pLDeMiSi8" target="_blank" rel="noopener noreferrer" 
                      className="flex items-center justify-center w-full min-h-[36px] px-1 text-gray-300 text-[10px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
                     Sportowa 133
                   </a>
