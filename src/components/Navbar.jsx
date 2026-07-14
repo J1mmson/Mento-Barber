@@ -264,7 +264,7 @@ const Navbar = () => {
 
                             {/* KAFELEK SUŁKOWICE */}
                             <a
-                                href="TUTAJ_WKLEJ_LINK_DO_NOWEGO_SYSTEMU"
+                                href="https://app.mentobarber.pl"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex-1 min-w-[200px] bg-[#1a1a1a] border-2 border-[#222] p-8 rounded-lg transition-all duration-300 text-white flex flex-col items-center cursor-pointer hover:border-[#f97316] hover:-translate-y-1 no-underline"
