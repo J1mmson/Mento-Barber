@@ -175,14 +175,6 @@ const HomePage = () => {
               Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
 
-              <div className="flex gap-4 mt-8 ml-[4px]">
-                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border-2 border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white px-8 py-3 rounded-full font-bold uppercase transition-colors duration-300 tracking-wider">
-                      Bochnia
-                  </button>
-                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border-2 border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white px-8 py-3 rounded-full font-bold uppercase transition-colors duration-300 tracking-wider">
-                      Sułkowice
-                  </button>
-              </div>
             </motion.div>
 
             <motion.div
@@ -193,36 +185,28 @@ const HomePage = () => {
               variants={fadeInFromBottom}
             >
               <div className="flex gap-6">
-                <div className="flex flex-col gap-3">
-                  <a 
-                    href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
-                  >
+                {/* Kolumna BOCHNIA */}
+                <div className="flex flex-col gap-3 w-[220px]">
+                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border-2 border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white py-2 px-5 rounded-full font-bold uppercase transition-colors duration-300 text-sm tracking-wider text-center w-full">
+                      REZERWUJ
+                  </button>
+                  <a href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
                     Nad Babicą 2, Bochnia
                   </a>
-                  <a 
-                    href="tel:+48798144399" 
-                    className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
-                  >
+                  <a href="tel:+48798144399" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
                     +48 798 144 399
                   </a>
                 </div>
 
-                <div className="flex flex-col gap-3">
-                  <a 
-                    href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
-                  >
+                {/* Kolumna SUŁKOWICE */}
+                <div className="flex flex-col gap-3 w-[220px]">
+                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border-2 border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white py-2 px-5 rounded-full font-bold uppercase transition-colors duration-300 text-sm tracking-wider text-center w-full">
+                      REZERWUJ
+                  </button>
+                  <a href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
                     Sportowa 133, Sułkowice
                   </a>
-                  <a 
-                    href="tel:+48735067757" 
-                    className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
-                  >
+                  <a href="tel:+48735067757" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
                     +48 735 067 757
                   </a>
                 </div>
@@ -312,18 +296,12 @@ const HomePage = () => {
                   Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
 
-              <div className="flex gap-3 mb-5 w-full justify-center">
-                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border border-[#f97316] text-[#f97316] active:bg-[#f97316] active:text-white px-6 py-2 rounded-full font-bold uppercase transition-colors duration-300 text-[11px] tracking-wider">
+              <div className="w-full max-w-[360px] bg-[#111111] border border-white/5 rounded-xl p-2 mb-3 flex flex-row shadow-2xl">
+                {/* Bochnia */}
+                <div className="flex flex-col items-center justify-center w-1/2 border-r border-white/5 py-1 px-1">
+                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="w-full mb-2 bg-transparent border border-[#f97316] text-[#f97316] active:bg-[#f97316] active:text-white py-1.5 rounded-lg font-bold uppercase transition-colors duration-300 text-[10px] tracking-wider">
                       Bochnia
                   </button>
-                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border border-[#f97316] text-[#f97316] active:bg-[#f97316] active:text-white px-6 py-2 rounded-full font-bold uppercase transition-colors duration-300 text-[11px] tracking-wider">
-                      Sułkowice
-                  </button>
-              </div>
-
-              <div className="w-full max-w-[360px] bg-[#111111] border border-white/5 rounded-xl p-1 mb-3 flex flex-row shadow-2xl">
-                <div className="flex flex-col items-center justify-center w-1/2 border-r border-white/5 py-1">
-                  <span className="text-[#f97316] font-bold text-[9px] uppercase tracking-wider mb-1">Bochnia</span>
                   
                   <a href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26" target="_blank" rel="noopener noreferrer" 
                      className="flex items-center justify-center w-full min-h-[36px] px-1 text-gray-300 text-[10px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
@@ -336,8 +314,11 @@ const HomePage = () => {
                   </a>
                 </div>
                 
-                <div className="flex flex-col items-center justify-center w-1/2 py-1">
-                  <span className="text-[#f97316] font-bold text-[9px] uppercase tracking-wider mb-1">Sułkowice</span>
+                {/* Sułkowice */}
+                <div className="flex flex-col items-center justify-center w-1/2 py-1 px-1">
+                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="w-full mb-2 bg-transparent border border-[#f97316] text-[#f97316] active:bg-[#f97316] active:text-white py-1.5 rounded-lg font-bold uppercase transition-colors duration-300 text-[10px] tracking-wider">
+                      Sułkowice
+                  </button>
                   
                   <a href="https://maps.app.goo.gl/iGQP3oe4pLDeMiSi8" target="_blank" rel="noopener noreferrer" 
                      className="flex items-center justify-center w-full min-h-[36px] px-1 text-gray-300 text-[10px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
@@ -349,18 +330,6 @@ const HomePage = () => {
                     735 067 757
                   </a>
                 </div>
-              </div>
-
-              <div className="flex justify-center items-center gap-3">
-                <a href="https://www.facebook.com/MentoBarberShop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[36px] min-h-[36px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={FacebookLogo} alt="facebook_logo" className="w-[24px] h-[24px] object-contain" />
-                </a>
-                <a href="https://www.instagram.com/mento.barbershop/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[36px] min-h-[36px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={InstagramLogo} alt="instagram_logo" className="w-[18px] h-[18px] object-contain" />
-                </a>
-                <a href="https://www.tiktok.com/@mento_barbershop" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center min-w-[36px] min-h-[36px] opacity-80 hover:opacity-100 transition-opacity rounded-full active:bg-white/10">
-                    <img src={TikTokLogo} alt="tiktok_logo" className="w-[18px] h-[18px] object-contain" />
-                </a>
               </div>
             </div>
           </div>
