@@ -134,6 +134,7 @@ const HomePage = () => {
     <main className="h-screen overflow-y-scroll snap-y snap-mandatory">
       <Navbar />
       
+      {/* SEKCJA 1: HERO (O NAS) */}
       {!isMobile ? (
         <Section index={1}>
           <div
@@ -173,6 +174,15 @@ const HomePage = () => {
 
               Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
+
+              <div className="flex gap-4 mt-8 ml-[4px]">
+                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border-2 border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white px-8 py-3 rounded-full font-bold uppercase transition-colors duration-300 tracking-wider">
+                      Bochnia
+                  </button>
+                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border-2 border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white px-8 py-3 rounded-full font-bold uppercase transition-colors duration-300 tracking-wider">
+                      Sułkowice
+                  </button>
+              </div>
             </motion.div>
 
             <motion.div
@@ -210,7 +220,7 @@ const HomePage = () => {
                     Sportowa 133, Sułkowice
                   </a>
                   <a 
-                    href="tel:+48XXXXXXXXX" 
+                    href="tel:+48735067757" 
                     className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center"
                   >
                     +48 735 067 757
@@ -302,6 +312,15 @@ const HomePage = () => {
                   Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
 
+              <div className="flex gap-3 mb-5 w-full justify-center">
+                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border border-[#f97316] text-[#f97316] active:bg-[#f97316] active:text-white px-6 py-2 rounded-full font-bold uppercase transition-colors duration-300 text-[11px] tracking-wider">
+                      Bochnia
+                  </button>
+                  <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border border-[#f97316] text-[#f97316] active:bg-[#f97316] active:text-white px-6 py-2 rounded-full font-bold uppercase transition-colors duration-300 text-[11px] tracking-wider">
+                      Sułkowice
+                  </button>
+              </div>
+
               <div className="w-full max-w-[360px] bg-[#111111] border border-white/5 rounded-xl p-1 mb-3 flex flex-row shadow-2xl">
                 <div className="flex flex-col items-center justify-center w-1/2 border-r border-white/5 py-1">
                   <span className="text-[#f97316] font-bold text-[9px] uppercase tracking-wider mb-1">Bochnia</span>
@@ -348,10 +367,11 @@ const HomePage = () => {
         </Section>
       )}
 
+      {/* SEKCJA 2: LOKALIZACJE I REZERWACJA */}
       {!isMobile ? (
         <Section index={2}>
           <div
-            id="pricing"
+            id="lokalizacje"
             className="relative h-screen flex items-center justify-end pt-[50px] text-prime snap-start overflow-hidden"
             style={{
               background: `linear-gradient(90deg, #091E23, #090909), url(${Texture})`,
@@ -362,61 +382,50 @@ const HomePage = () => {
             }}
           >
             <motion.div
-              className="grid grid-cols-2 gap-6 pr-[98px]"
+              className="grid grid-cols-2 gap-8 pr-[98px] w-full max-w-[1000px] z-10"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInFromLeft}
             >
-              {[
-                { name: "STRZYŻENIE MĘSKIE", price: "90 PLN", time: "45 min" },
-                { name: "STRZYŻENIE BRODY", price: "80 PLN", time: "30 min" },
-                { name: "COMBO (WŁOSY + BRODA)", price: "150 PLN", time: "90 min" },
-                { name: "STRZYŻENIE DŁUGIE WŁOSY", price: ">120 PLN", time: ">60 min" },
-                { name: "BRODA + ODSIWIANIE", price: "160 PLN", time: "60 min" },
-                { name: "COMBO + ODSIWIANIE", price: "230 PLN", time: "90 min" },
-                { name: "GŁOWA ZERO + BRODA", price: "110 PLN", time: "45 min" },
-                { name: "ODSIWIANIE WŁOSÓW", price: "80 PLN", time: "30 min" },
-                { name: "PREMIUM BRODA", price: "140 PLN", time: "45 min" },
-                { name: "PREMIUM COMBO", price: "230 PLN", time: "90 min" },
-              ].map((item, index) => (
-                <div key={index} style={{ boxShadow: "0px 8px 10px #00000066" }}>
-                  <div
-                    className="p-4 text-start w-96 text-prime rounded-md transition-all duration-300 hover:border-prime hover:shadow-[0_0_7px_rgba(255,120,0,1),inset_0_0_5px_rgba(255,120,0,1)] cursor-pointer"
-                    style={{ backgroundColor: "#171D1F", opacity: 1 }}
-                  >
-                    <h2 className="font-bold">{item.name}</h2>
-                    <p className="text-gray-300">
-                      {item.price} | {item.time}
-                    </p>
-                  </div>
+              {/* Karta Bochnia */}
+              <div className="flex flex-col justify-between p-10 rounded-2xl border border-gray-800 transition-all duration-300 hover:border-[#f97316] hover:shadow-[0_0_25px_rgba(249,115,22,0.15)] bg-[#111111] bg-opacity-90 backdrop-blur-sm">
+                <div>
+                  <h3 className="text-3xl font-bold text-white mb-2 tracking-wider">MENTO <span className="text-[#f97316]">BOCHNIA</span></h3>
+                  <p className="text-gray-400 text-sm mb-6 flex items-center gap-2">Nad Babicą 2, 32-700 Bochnia</p>
+                  <p className="text-gray-300 mb-8 leading-relaxed text-sm">
+                    Nasz pierwszy salon, w którym wszystko się zaczęło. Zarezerwuj wizytę wygodnie przez aplikację Booksy i sprawdź dostępne terminy u naszych barberów.
+                  </p>
                 </div>
-              ))}
+                <a href="https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo" target="_blank" rel="noopener noreferrer" className="text-center bg-[#f97316] text-white py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-orange-600 transition-colors">
+                  Rezerwacja (Booksy)
+                </a>
+              </div>
+
+              {/* Karta Sułkowice */}
+              <div className="flex flex-col justify-between p-10 rounded-2xl border border-gray-800 transition-all duration-300 hover:border-[#f97316] hover:shadow-[0_0_25px_rgba(249,115,22,0.15)] bg-[#111111] bg-opacity-90 backdrop-blur-sm">
+                <div>
+                  <h3 className="text-3xl font-bold text-white mb-2 tracking-wider">MENTO <span className="text-[#f97316]">SUŁKOWICE</span></h3>
+                  <p className="text-gray-400 text-sm mb-6 flex items-center gap-2">ul. Sportowa 133, Sułkowice</p>
+                  <p className="text-gray-300 mb-8 leading-relaxed text-sm">
+                    Nasz najnowszy salon. Skorzystaj z autorskiego systemu rezerwacji, aby umówić się na wizytę i zarządzać swoimi terminami - Zalecamy pobrać aplikacje na swój telefon dla większego komfortu.
+                  </p>
+                </div>
+                <a href="https://app.mentobarber.pl" className="text-center bg-transparent border-2 border-[#f97316] text-[#f97316] py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-[#f97316] hover:text-white transition-colors">
+                  Rezerwuj Online
+                </a>
+              </div>
             </motion.div>
-            <div className="absolute bottom-0 right-0 pr-[98px] pb-[60px] text-[10px] text-center z-20">
-              <p className="text-textPrimary">
-                Podane ceny tyczą się barberów zaawansowanych. Ceny w lokalizacjach Bochnia i Sułkowice mogą się różnić w zależności od poziomu barbera.
-              </p>
-            </div>
-            <img
-              src={Gradient}
-              alt=""
-              aria-hidden="true"
-              className="absolute top-0 left-0 w-1/1 h-auto pointer-events-none z-0"
-              style={{ top: -300, left: -600 }}
-            />
-            <img
-              src={Photo2}
-              alt="Mento Barber Shop"
-              className="absolute bottom-0 left-0 top-10 w-1/3 h-auto pointer-events-none"
-            />
+            
+            <img src={Gradient} alt="" aria-hidden="true" className="absolute top-0 left-0 w-1/1 h-auto pointer-events-none z-0" style={{ top: -300, left: -600 }} />
+            <img src={Photo2} alt="Mento Barber Shop" className="absolute bottom-0 left-0 top-10 w-1/3 h-auto pointer-events-none" />
           </div>
         </Section>
       ) : (
         <Section index={2}>
           <div
-            id="pricing"
-            className="relative h-[100dvh] flex flex-col items-center justify-end pt-[20px] text-prime snap-start overflow-hidden"
+            id="lokalizacje"
+            className="relative h-[100dvh] flex flex-col items-center justify-center pt-[50px] text-prime snap-start overflow-hidden px-5"
             style={{
               background: `linear-gradient(90deg, #091E23, #090909), url(${Texture})`,
               backgroundSize: "cover",
@@ -426,55 +435,43 @@ const HomePage = () => {
             }}
           >
             <motion.div
-              className="grid grid-cols-1 gap-2 w-full px-4 mb-[5%] z-10"
-              style={{ height: "83dvh" }}
+              className="grid grid-cols-1 gap-5 w-full max-w-[400px] z-10"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInFromLeft}
             >
-              {[
-                { name: "STRZYŻENIE MĘSKIE", price: "90 PLN", time: "45 min" },
-                { name: "STRZYŻENIE BRODY", price: "80 PLN", time: "30 min" },
-                { name: "COMBO (WŁOSY + BRODA)", price: "150 PLN", time: "90 min" },
-                { name: "STRZYŻENIE DŁUGIE WŁOSY", price: ">120 PLN", time: ">60 min" },
-                { name: "BRODA + ODSIWIANIE", price: "160 PLN", time: "60 min" },
-                { name: "COMBO + ODSIWIANIE", price: "230 PLN", time: "90 min" },
-                { name: "GŁOWA ZERO + BRODA", price: "110 PLN", time: "45 min" },
-                { name: "ODSIWIANIE WŁOSÓW", price: "80 PLN", time: "30 min" },
-                { name: "PREMIUM BRODA", price: "140 PLN", time: "45 min" },
-                { name: "PREMIUM COMBO", price: "230 PLN", time: "90 min" },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="p-2 flex flex-col justify-center items-center text-center text-prime rounded-md transition-all duration-300 hover:border-prime hover:shadow-[0_0_7px_rgba(255,120,0,1),inset_0_0_5px_rgba(255,120,0,1)] cursor-pointer"
-                  style={{
-                    backgroundColor: "#171D1F",
-                    boxShadow: "0px 8px 10px #00000066",
-                    opacity: 1,
-                  }}
-                >
-                  <h2 className="font-bold" style={{ fontSize: "12px" }}>
-                    {item.name}
-                  </h2>
-                  <p className="text-gray-300" style={{ fontSize: "10px" }}>
-                    {item.price} | {item.time}
-                  </p>
-                </div>
-              ))}
+              {/* Karta Bochnia Mobile */}
+              <div className="flex flex-col p-6 rounded-2xl border border-gray-800 transition-all duration-300 active:border-[#f97316] bg-[#111111] bg-opacity-95 shadow-2xl">
+                <h3 className="text-2xl font-bold text-white mb-1 tracking-wider text-center">MENTO <span className="text-[#f97316]">BOCHNIA</span></h3>
+                <p className="text-gray-400 text-[11px] mb-4 text-center">Nad Babicą 2, Bochnia</p>
+                <p className="text-gray-300 text-xs mb-5 text-center leading-relaxed">
+                  Zarezerwuj wizytę wygodnie przez aplikację Booksy i sprawdź dostępne terminy u naszych barberów.
+                </p>
+                <a href="https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo" target="_blank" rel="noopener noreferrer" className="text-center bg-[#f97316] text-white py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider active:bg-orange-600 transition-colors">
+                  Rezerwacja (Booksy)
+                </a>
+              </div>
+
+              {/* Karta Sułkowice Mobile */}
+              <div className="flex flex-col p-6 rounded-2xl border border-gray-800 transition-all duration-300 active:border-[#f97316] bg-[#111111] bg-opacity-95 shadow-2xl">
+                <h3 className="text-2xl font-bold text-white mb-1 tracking-wider text-center">MENTO <span className="text-[#f97316]">SUŁKOWICE</span></h3>
+                <p className="text-gray-400 text-[11px] mb-4 text-center">ul. Sportowa 133, Sułkowice</p>
+                <p className="text-gray-300 text-xs mb-5 text-center leading-relaxed">
+                  Skorzystaj z naszego nowego, autorskiego systemu, aby umówić się na wizytę - Zalecamy pobrać aplikacje na swój telefon.
+                </p>
+                <a href="https://app.mentobarber.pl" className="text-center bg-transparent border-2 border-[#f97316] text-[#f97316] py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider active:bg-[#f97316] active:text-white transition-colors">
+                  Rezerwuj Online
+                </a>
+              </div>
             </motion.div>
-            <img
-              src={Gradient}
-              alt=""
-              aria-hidden="true"
-              className="absolute top-0 right-0 w-1/2 h-auto pointer-events-none z-0"
-              style={{ top: -350, right: -350 }}
-            />
+            
+            <img src={Gradient} alt="" aria-hidden="true" className="absolute top-0 right-0 w-1/2 h-auto pointer-events-none z-0" style={{ top: -350, right: -350 }} />
           </div>
         </Section>
       )}
 
-
+      {/* SEKCJA 3: BARBERZY */}
       {!isMobile ? (
         <Section index={3}>
           <div
@@ -557,7 +554,7 @@ const HomePage = () => {
           </div>
         </Section>
       ) : (
-        <Section index={1}>
+        <Section index={3}>
           <div
             id="barbers"
             className="relative flex flex-col justify-end min-h-screen px-6 pb-5 snap-start z-10 overflow-hidden"
@@ -619,6 +616,7 @@ const HomePage = () => {
         </Section>
       )}
 
+      {/* POZOSTALI BARBERZY */}
       <Barber2 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
       <Barber3 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
       <Barber4 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
@@ -634,6 +632,7 @@ const HomePage = () => {
         <Barber9 slideInFromRight={slideInFromRight} fadeInFromLeft={fadeInFromLeft} />
       </div>
 
+      {/* SEKCJA 4: NASZE PRACE (GALERIA) */}
       <div
         id="works"
         className="relative h-screen flex items-center justify-center text-white snap-start overflow-hidden z-10"

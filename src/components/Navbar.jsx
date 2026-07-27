@@ -5,7 +5,6 @@ import Logo from "../assets/mento_logo.svg";
 import BurgerMenu from "../assets/burgerMenu.svg";
 
 const Navbar = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
     const [activeSection, setActiveSection] = useState(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -14,7 +13,7 @@ const Navbar = () => {
 
     const menus = [
         { name: "o nas", id: "about" },
-        { name: "cennik", id: "pricing" },
+        { name: "lokalizacje", id: "lokalizacje" },
         { name: "barberzy", ids: ["barbers", "barbers-end"] },
         { name: "nasze prace", id: "works" },
     ];
@@ -50,9 +49,18 @@ const Navbar = () => {
         return () => observer.disconnect();
     }, [menus, location.pathname]);
 
+    const scrollToLokalizacje = (e) => {
+        e.preventDefault();
+        setIsMobileMenuOpen(false);
+        navigate("/#lokalizacje");
+        setTimeout(() => {
+            document.getElementById('lokalizacje')?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+    };
+
     return (
         <>
-<nav className='fixed top-0 left-0 w-full md:w-[calc(100%-15px)] z-[60] px-4 lg:px-[40px] xl:px-[98px] py-4 md:py-6 bg-[#090909]/80 backdrop-blur-md shadow-lg'>
+            <nav className='fixed top-0 left-0 w-full md:w-[calc(100%-15px)] z-[60] px-4 lg:px-[40px] xl:px-[98px] py-4 md:py-6 bg-[#090909]/80 backdrop-blur-md shadow-lg'>
                 <div className='flex justify-between items-center relative w-full'>
                     
                     <div className='hidden lg:flex space-x-[10px] xl:space-x-[20px] uppercase text-[16px] xl:text-lg font-light'>
@@ -127,13 +135,14 @@ const Navbar = () => {
                         </Link>
                         
                         {/* ZMIENIONY PRZYCISK DLA DESKTOPU */}
-                        <button
-                            onClick={() => setIsModalOpen(true)}
-                            className='text-prime bg-transparent border-none uppercase text-[16px] xl:text-lg font-light cursor-pointer flex items-center gap-2 px-3 py-2 hover:opacity-80 transition-opacity'>
+                        <a
+                            href="#lokalizacje"
+                            onClick={scrollToLokalizacje}
+                            className='text-prime bg-transparent border-none uppercase text-[16px] xl:text-lg font-light cursor-pointer flex items-center gap-2 px-3 py-2 hover:opacity-80 transition-opacity no-underline'>
                             <span>{`>`}</span>
                             <span>zarezerwuj</span>
                             <span>{`<`}</span>
-                        </button>
+                        </a>
                     </div>
 
                     <div className='lg:hidden z-20 ml-auto'>
@@ -167,13 +176,13 @@ const Navbar = () => {
                         </li>
                         <li className="w-full">
                             <a 
-                                href='#pricing' 
+                                href='#lokalizacje' 
                                 className='block w-full py-4 cursor-pointer'
                                 onClick={() => {
                                     setIsMobileMenuOpen(false);
-                                    navigate("/#pricing");
+                                    navigate("/#lokalizacje");
                                 }}>
-                                cennik
+                                lokalizacje
                             </a>
                         </li>
                         <li className="w-full">
@@ -214,66 +223,16 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className="w-full mt-4">
-                            <button
-                                onClick={() => {
-                                    setIsMobileMenuOpen(false);
-                                    setIsModalOpen(true);
-                                }}
-                                className='text-prime bg-transparent border-none uppercase font-bold text-[18px] flex justify-center items-center gap-2 block w-full py-4 cursor-pointer'>
+                            <a
+                                href="#lokalizacje"
+                                onClick={scrollToLokalizacje}
+                                className='text-prime bg-transparent border-none uppercase font-bold text-[18px] flex justify-center items-center gap-2 block w-full py-4 cursor-pointer no-underline'>
                                 <span>{`>`}</span>
                                 <span>zarezerwuj</span>
                                 <span>{`<`}</span>
-                            </button>
+                            </a>
                         </li>
                     </ul>
-                </div>
-            )}
-
-
-            {isModalOpen && (
-                <div
-                    className="fixed inset-0 w-full h-full bg-black/85 z-[99999] backdrop-blur-md flex items-center justify-center transition-opacity duration-300"
-                    onClick={() => setIsModalOpen(false)}
-                >
-                    <div
-                        className="bg-[#111] border border-[#333] p-6 md:p-10 rounded-xl max-w-2xl w-[90%] text-center relative shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
-                        onClick={(e) => e.stopPropagation()} 
-                    >
-                        <button
-                            onClick={() => setIsModalOpen(false)}
-                            className="absolute top-4 right-5 text-3xl text-gray-500 hover:text-white transition-colors bg-transparent border-none cursor-pointer"
-                        >
-                            &times;
-                        </button>
-                        
-                        <h2 className="text-white mt-0 mb-8 text-xl md:text-2xl uppercase tracking-wider font-bold">
-                            Wybierz lokalizację
-                        </h2>
-                        
-                        <div className="flex flex-col md:flex-row gap-5 justify-center">
-                            {/* KAFELEK BOCHNIA */}
-                            <a
-                                href="https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex-1 min-w-[200px] bg-[#1a1a1a] border-2 border-[#222] p-8 rounded-lg transition-all duration-300 text-white flex flex-col items-center cursor-pointer hover:border-[#f97316] hover:-translate-y-1 no-underline"
-                            >
-                                <h3 className="m-0 mb-2 text-[#f97316] text-xl uppercase font-bold">Bochnia</h3>
-                                <p className="m-0 text-sm text-gray-400">Rezerwacja przez Booksy</p>
-                            </a>
-
-                            {/* KAFELEK SUŁKOWICE */}
-                            <a
-                                href="https://app.mentobarber.pl"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex-1 min-w-[200px] bg-[#1a1a1a] border-2 border-[#222] p-8 rounded-lg transition-all duration-300 text-white flex flex-col items-center cursor-pointer hover:border-[#f97316] hover:-translate-y-1 no-underline"
-                            >
-                                <h3 className="m-0 mb-2 text-[#f97316] text-xl uppercase font-bold">Sułkowice</h3>
-                                <p className="m-0 text-sm text-gray-400">Nasz autorski system</p>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             )}
         </>
