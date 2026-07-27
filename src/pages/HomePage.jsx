@@ -188,7 +188,7 @@ const HomePage = () => {
                 {/* Kolumna BOCHNIA */}
                 <div className="flex flex-col gap-3 w-[220px]">
                   <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border-2 border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white py-2 px-5 rounded-full font-bold uppercase transition-colors duration-300 text-sm tracking-wider text-center w-full">
-                      REZERWUJ BOCHNIA
+                    BOCHNIA
                   </button>
                   <a href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
                     Nad Babicą 2, Bochnia
@@ -201,7 +201,7 @@ const HomePage = () => {
                 {/* Kolumna SUŁKOWICE */}
                 <div className="flex flex-col gap-3 w-[220px]">
                   <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border-2 border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white py-2 px-5 rounded-full font-bold uppercase transition-colors duration-300 text-sm tracking-wider text-center w-full">
-                      REZERWUJ SUŁKOWICE
+                    SUŁKOWICE
                   </button>
                   <a href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
                     Sportowa 133, Sułkowice
