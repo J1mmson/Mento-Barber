@@ -191,7 +191,7 @@ const HomePage = () => {
                     BOCHNIA
                   </button>
                   <a href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
-                    Nad Babicą 2, Bochnia
+                    Nad Babicą 2
                   </a>
                   <a href="tel:+48798144399" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
                     +48 798 144 399
@@ -204,7 +204,7 @@ const HomePage = () => {
                     SUŁKOWICE
                   </button>
                   <a href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
-                    Sportowa 133, Sułkowice
+                    Sportowa 133
                   </a>
                   <a href="tel:+48735067757" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
                     +48 735 067 757
@@ -361,9 +361,9 @@ const HomePage = () => {
               <div className="flex flex-col justify-between p-10 rounded-2xl border border-gray-800 transition-all duration-300 hover:border-[#f97316] hover:shadow-[0_0_25px_rgba(249,115,22,0.15)] bg-[#111111] bg-opacity-90 backdrop-blur-sm">
                 <div>
                   <h3 className="text-3xl font-bold text-white mb-2 tracking-wider">MENTO <span className="text-[#f97316]">BOCHNIA</span></h3>
-                  <p className="text-gray-400 text-sm mb-6 flex items-center gap-2">Nad Babicą 2, 32-700 Bochnia</p>
+                  <p className="text-gray-400 text-sm mb-6 flex items-center gap-2">Bochnia ul. Nad Babicą 2</p>
                   <p className="text-gray-300 mb-8 leading-relaxed text-sm">
-                    Nasz pierwszy salon, w którym wszystko się zaczęło. Zarezerwuj wizytę wygodnie przez aplikację Booksy i sprawdź dostępne terminy u naszych barberów.
+                    To tutaj narodziło się MENTO. Miejsce z doświadczeniem, wyjątkową atmosferą i zespołem barberów, którym zaufały setki klientów. Zarezerwuj wizytę wygodnie przez aplikację Booksy i sprawdź dostępne terminy u naszych barberów.
                   </p>
                 </div>
                 <a href="https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo" target="_blank" rel="noopener noreferrer" className="text-center bg-[#f97316] text-white py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-orange-600 transition-colors">
@@ -375,13 +375,13 @@ const HomePage = () => {
               <div className="flex flex-col justify-between p-10 rounded-2xl border border-gray-800 transition-all duration-300 hover:border-[#f97316] hover:shadow-[0_0_25px_rgba(249,115,22,0.15)] bg-[#111111] bg-opacity-90 backdrop-blur-sm">
                 <div>
                   <h3 className="text-3xl font-bold text-white mb-2 tracking-wider">MENTO <span className="text-[#f97316]">SUŁKOWICE</span></h3>
-                  <p className="text-gray-400 text-sm mb-6 flex items-center gap-2">ul. Sportowa 133, Sułkowice</p>
+                  <p className="text-gray-400 text-sm mb-6 flex items-center gap-2">Sułkowice ul. Sportowa 133</p>
                   <p className="text-gray-300 mb-8 leading-relaxed text-sm">
-                    Nasz najnowszy salon. Skorzystaj z autorskiego systemu rezerwacji, aby umówić się na wizytę i zarządzać swoimi terminami - Zalecamy pobrać aplikacje na swój telefon dla większego komfortu.
+                    Mowoczesna odłona MENTO. Ten sam standard i wygodna lokalizacja dla klientów z Sułkowic. Skorzystaj z autorskiego systemu rezerwacji, aby umówić się na wizytę i zarządzać swoimi terminami - Zalecamy pobrać aplikacje na swój telefon dla większego komfortu.
                   </p>
                 </div>
                 <a href="https://app.mentobarber.pl" className="text-center bg-transparent border-2 border-[#f97316] text-[#f97316] py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-[#f97316] hover:text-white transition-colors">
-                  Rezerwuj Online
+                  Rezerwacja MENTO APP
                 </a>
               </div>
             </motion.div>
