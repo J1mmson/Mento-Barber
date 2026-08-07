@@ -381,7 +381,7 @@ const HomePage = () => {
                   </p>
                 </div>
                 <a href="https://app.mentobarber.pl" className="text-center bg-transparent border-2 border-[#f97316] text-[#f97316] py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-[#f97316] hover:text-white transition-colors">
-                  Rezerwacja MENTO APP
+                  Rezerwacja (MENTO APP)
                 </a>
               </div>
             </motion.div>
