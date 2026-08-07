@@ -363,7 +363,7 @@ const HomePage = () => {
                   <h3 className="text-3xl font-bold text-white mb-2 tracking-wider">MENTO <span className="text-[#f97316]">BOCHNIA</span></h3>
                   <p className="text-gray-400 text-sm mb-6 flex items-center gap-2">Bochnia ul. Nad Babicą 2</p>
                   <p className="text-gray-300 mb-8 leading-relaxed text-sm">
-                    To tutaj narodziło się MENTO. Miejsce z doświadczeniem, wyjątkową atmosferą i zespołem barberów, którym zaufały setki klientów. Zarezerwuj wizytę wygodnie przez aplikację Booksy i sprawdź dostępne terminy u naszych barberów.
+                    To tutaj narodziło się MENTO. Miejsce z doświadczeniem, wyjątkową atmosferą i zespołem barberów, którym zaufały tysiące klientów. Zarezerwuj wizytę wygodnie przez aplikację Booksy i sprawdź dostępne terminy u naszych barberów.
                   </p>
                 </div>
                 <a href="https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo" target="_blank" rel="noopener noreferrer" className="text-center bg-[#f97316] text-white py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-orange-600 transition-colors">
@@ -377,7 +377,7 @@ const HomePage = () => {
                   <h3 className="text-3xl font-bold text-white mb-2 tracking-wider">MENTO <span className="text-[#f97316]">SUŁKOWICE</span></h3>
                   <p className="text-gray-400 text-sm mb-6 flex items-center gap-2">Sułkowice ul. Sportowa 133</p>
                   <p className="text-gray-300 mb-8 leading-relaxed text-sm">
-                    Mowoczesna odłona MENTO. Ten sam standard i wygodna lokalizacja dla klientów z Sułkowic. Skorzystaj z autorskiego systemu rezerwacji, aby umówić się na wizytę i zarządzać swoimi terminami - Zalecamy pobrać aplikacje na swój telefon dla większego komfortu.
+                    Nowoczesna odsłona MENTO. Ten sam standard i wygodna lokalizacja dla klientów z Sułkowic. Skorzystaj z autorskiego systemu rezerwacji, aby umówić się na wizytę i zarządzać swoimi terminami - Zalecamy pobrać aplikacje na swój telefon dla większego komfortu.
                   </p>
                 </div>
                 <a href="https://app.mentobarber.pl" className="text-center bg-transparent border-2 border-[#f97316] text-[#f97316] py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-[#f97316] hover:text-white transition-colors">
@@ -413,7 +413,7 @@ const HomePage = () => {
               {/* Karta Bochnia Mobile */}
               <div className="flex flex-col p-6 rounded-2xl border border-gray-800 transition-all duration-300 active:border-[#f97316] bg-[#111111] bg-opacity-95 shadow-2xl">
                 <h3 className="text-2xl font-bold text-white mb-1 tracking-wider text-center">MENTO <span className="text-[#f97316]">BOCHNIA</span></h3>
-                <p className="text-gray-400 text-[11px] mb-4 text-center">Nad Babicą 2, Bochnia</p>
+                <p className="text-gray-400 text-[11px] mb-4 text-center">Bochnia ul. Nad Babicą 2</p>
                 <p className="text-gray-300 text-xs mb-5 text-center leading-relaxed">
                   Zarezerwuj wizytę wygodnie przez aplikację Booksy i sprawdź dostępne terminy u naszych barberów.
                 </p>
@@ -425,12 +425,12 @@ const HomePage = () => {
               {/* Karta Sułkowice Mobile */}
               <div className="flex flex-col p-6 rounded-2xl border border-gray-800 transition-all duration-300 active:border-[#f97316] bg-[#111111] bg-opacity-95 shadow-2xl">
                 <h3 className="text-2xl font-bold text-white mb-1 tracking-wider text-center">MENTO <span className="text-[#f97316]">SUŁKOWICE</span></h3>
-                <p className="text-gray-400 text-[11px] mb-4 text-center">ul. Sportowa 133, Sułkowice</p>
+                <p className="text-gray-400 text-[11px] mb-4 text-center">Sułkowice ul. Sportowa 133</p>
                 <p className="text-gray-300 text-xs mb-5 text-center leading-relaxed">
-                  Skorzystaj z naszego nowego, autorskiego systemu, aby umówić się na wizytę - Zalecamy pobrać aplikacje na swój telefon.
+                  Skorzystaj z naszego, autorskiego systemu, aby umówić się na wizytę - Zalecamy pobrać aplikacje na swój telefon.
                 </p>
                 <a href="https://app.mentobarber.pl" className="text-center bg-transparent border-2 border-[#f97316] text-[#f97316] py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider active:bg-[#f97316] active:text-white transition-colors">
-                  Rezerwuj Online
+                  Rezerwuj (MENTO APP)
                 </a>
               </div>
             </motion.div>
