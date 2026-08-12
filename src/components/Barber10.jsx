@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 import Gradient from "../assets/gradient.svg";
-import BarberKasia from "../assets/baber10.webp"; 
+import BarberKasia from "../assets/barber10.webp"; 
 import Texture from "../assets/texture.webp";
 import { motion } from "framer-motion";
 
