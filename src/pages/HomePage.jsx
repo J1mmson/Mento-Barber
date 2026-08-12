@@ -168,11 +168,7 @@ const HomePage = () => {
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
                 style={{ lineHeight: 2 }}
               >
-              Dwie lokalizacje. Jeden standard.
-
-              Mento Barber Shop to dwa salony : Bochnia i Sułkowice. połączone tą samą pasją do męskiego fryzjerstwa. W każdej lokalizacji dbamy o najwyższy standard usług, precyzję, profesjonalizm i każdy detal, aby każda wizyta była wyjątkowym doświadczeniem.
-
-              Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
+              Dwie lokalizacje. Jeden standard. Mento Barber Shop to dwa salony : Bochnia i Sułkowice. W każdej lokalizacji dbamy o najwyższy standard usług i precyzję. Nasz salon w Sułkowicach to również świetny dojazd dla klientów z okolicznych miast, takich jak Myślenice. Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
 
             </motion.div>
@@ -291,9 +287,7 @@ const HomePage = () => {
               </h2>
               
               <p className="text-center text-[9.5px] sm:text-[10.5px] text-gray-300 mb-3 max-w-[98%] leading-[1.35]">
-                  Dwie lokalizacje. Jeden standard.
-                  Mento Barber Shop to dwa salony : Bochnia i Sułkowice. połączone tą samą pasją do męskiego fryzjerstwa. W każdej lokalizacji dbamy o najwyższy standard usług, precyzję, profesjonalizm i każdy detal, aby każda wizyta była wyjątkowym doświadczeniem.
-                  Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
+                  Dwie lokalizacje. Jeden standard. Mento Barber Shop to dwa salony : Bochnia i Sułkowice. W każdej lokalizacji dbamy o najwyższy standard usług i precyzję. Nasz salon w Sułkowicach to również świetny dojazd dla klientów z okolicznych miast, takich jak Myślenice. Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
 
               <div className="w-full max-w-[360px] bg-[#111111] border border-white/5 rounded-xl p-2 mb-3 flex flex-row shadow-2xl">
@@ -377,7 +371,7 @@ const HomePage = () => {
                   <h3 className="text-3xl font-bold text-white mb-2 tracking-wider">MENTO <span className="text-[#f97316]">SUŁKOWICE</span></h3>
                   <p className="text-gray-400 text-sm mb-6 flex items-center gap-2">Sułkowice ul. Sportowa 133</p>
                   <p className="text-gray-300 mb-8 leading-relaxed text-sm">
-                    Nowoczesna odsłona MENTO. Ten sam standard i wygodna lokalizacja dla klientów z Sułkowic. Skorzystaj z autorskiego systemu rezerwacji, aby umówić się na wizytę i zarządzać swoimi terminami - Zalecamy pobrać aplikacje na swój telefon dla większego komfortu.
+                   Nowoczesna odsłona MENTO. Ten sam standard, darmowy parking i bardzo wygodna lokalizacja dla klientów z Sułkowic, Myślenic i okolic. Skorzystaj z autorskiego systemu rezerwacji, aby umówić się na wizytę i zarządzać swoimi terminami - Zalecamy pobrać aplikacje na swój telefon dla większego komfortu.
                   </p>
                 </div>
                 <a href="https://app.mentobarber.pl" className="text-center bg-transparent border-2 border-[#f97316] text-[#f97316] py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-[#f97316] hover:text-white transition-colors">
