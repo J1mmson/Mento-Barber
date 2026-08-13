@@ -224,7 +224,7 @@ const HomePage = () => {
             
             <motion.img
               src="/page1photo.webp"
-              alt="Barber Mento Barber Shop"
+              alt="Strzyżenie w Mento Barber Shop"
               fetchPriority="high"
               width="897"   
               height="983"
@@ -262,7 +262,7 @@ const HomePage = () => {
           >
             <motion.img
               src="/page1photo.webp"
-              alt="Barber Mento Barber Shop"
+              alt="Strzyżenie w Mento Barber Shop"
               fetchPriority="high"
               className="absolute top-[70px] left-0 w-full h-[35vh] object-cover object-top pointer-events-none z-0"
               initial="hidden"

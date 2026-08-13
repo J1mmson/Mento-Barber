@@ -78,7 +78,7 @@ const Barber4 = ({ slideInFromRight, fadeInFromLeft }) => {
 					/>
 					<img
 						src={Barber}
-						alt="Barber Anna - Mento Barber Bochnia"
+						alt="Barber Anna - Mento Barber Shop Bochnia"
 						loading="lazy"
 						className='absolute bottom-0 right-0 w-2/3 h-auto pointer-events-none'
 						style={{ bottom: -530, right: -200, zIndex: 1 }}
@@ -118,7 +118,7 @@ const Barber4 = ({ slideInFromRight, fadeInFromLeft }) => {
 					</div>
 					<img
 						src={Barber}
-						alt="Barber Anna - Mento Barber Bochnia"
+						alt="Barber Anna - Mento Barber Shop Bochnia"
 						loading="lazy"
 						className='absolute top-0 w-[700px] max-w-none z-10' // Added maxWidth constraint
 						style={{ right: "-150px", top: "-150px" }}
