@@ -361,8 +361,8 @@ const HomePage = () => {
                     To tutaj narodziło się MENTO. Miejsce z doświadczeniem, wyjątkową atmosferą i zespołem barberów, którym zaufały tysiące klientów. Zarezerwuj wizytę wygodnie przez aplikację Booksy i sprawdź dostępne terminy u naszych barberów.
                   </p>
                 </div>
-                <a href="https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo" target="_blank" rel="noopener noreferrer" className="text-center bg-[#f97316] text-white py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-orange-600 transition-colors">
-                  Rezerwacja (Booksy)
+                <a href="https://app.mentobarber.pl" target="_blank" rel="noopener noreferrer" className="text-center bg-[#f97316] text-white py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-orange-600 transition-colors">
+                  Rezerwacja (MENTO APP)
                 </a>
               </div>
 
@@ -410,10 +410,10 @@ const HomePage = () => {
                 <h3 className="text-2xl font-bold text-white mb-1 tracking-wider text-center">MENTO <span className="text-[#f97316]">BOCHNIA</span></h3>
                 <p className="text-gray-400 text-[11px] mb-4 text-center">Bochnia ul. Nad Babicą 2</p>
                 <p className="text-gray-300 text-xs mb-5 text-center leading-relaxed">
-                  Zarezerwuj wizytę wygodnie przez aplikację Booksy i sprawdź dostępne terminy u naszych barberów.
+                  Zarezerwuj wizytę wygodnie przez aplikację MENTO i sprawdź dostępne terminy u naszych barberów.
                 </p>
-                <a href="https://booksy.com/pl-pl/118318_mento-barber-shop_barber-shop_10189_bochnia#ba_s=seo" target="_blank" rel="noopener noreferrer" className="text-center bg-[#f97316] text-white py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider active:bg-orange-600 transition-colors">
-                  Rezerwacja (Booksy)
+                <a href="https://app.mentobarber.pl" target="_blank" rel="noopener noreferrer" className="text-center bg-[#f97316] text-white py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider active:bg-orange-600 transition-colors">
+                  Rezerwacja (MENTO APP)
                 </a>
               </div>
 
