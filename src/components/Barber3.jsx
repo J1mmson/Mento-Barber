@@ -28,7 +28,7 @@ const Barber3 = ({ slideInFromRight, fadeInFromLeft }) => {
 						whileInView='visible'
 						viewport={{ once: true }}
 						variants={fadeInFromLeft}>
-						<h1
+						<h2
 							className='text-9xl font-bold text-orange-500'
 							style={{
 								fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -41,7 +41,7 @@ const Barber3 = ({ slideInFromRight, fadeInFromLeft }) => {
 									"0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
 							}}>
 							DAWID
-						</h1>
+						</h2>
 						<p className='mt-4 max-w-[430px] text-[15px] font-light'>
 							Jestem Dawid, właściciel Mento Barber Shop. Nasz salon to więcej
 							niż fryzury i brody – to styl i klimat, który tworzymy każdego
@@ -55,7 +55,8 @@ const Barber3 = ({ slideInFromRight, fadeInFromLeft }) => {
 						whileInView='visible'
 						viewport={{ once: true }}
 						variants={slideInFromRight}>
-						<h1
+						<div
+							aria-hidden="true"
 							className='font-bold uppercase text-center'
 							style={{
 								fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -67,7 +68,7 @@ const Barber3 = ({ slideInFromRight, fadeInFromLeft }) => {
 								whiteSpace: "nowrap",
 							}}>
 							DAWID
-						</h1>
+						</div>
 					</motion.div>
 					<img
 						src={Gradient}
@@ -86,7 +87,6 @@ const Barber3 = ({ slideInFromRight, fadeInFromLeft }) => {
 				</div>
 			) : (
 				<div
-					id='about'
 					className='relative flex flex-col justify-end min-h-screen px-6 pb-5 snap-start z-10 overflow-hidden'
 					style={{
 						background: `linear-gradient(90deg, #090909, #091E23), url(${Texture})`,
@@ -96,7 +96,7 @@ const Barber3 = ({ slideInFromRight, fadeInFromLeft }) => {
 						backgroundBlendMode: "multiply",
 					}}>
 					<div className='flex flex-col items-center  mt-[10%] leading-none z-20 '>
-						<h1
+						<h2
 							className='font-bold uppercase text-center'
 							style={{
 								fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -108,7 +108,7 @@ const Barber3 = ({ slideInFromRight, fadeInFromLeft }) => {
 								whiteSpace: "nowrap",
 							}}>
 							DAWID
-						</h1>
+						</h2>
 						<p className='mt-4 mb-[25%] max-w-[430px] text-[14px] font-light text-white text-center'>
 							Cześć, jestem Dawid, właściciel Mento Barber Shop. Nasz salon to więcej
 							niż fryzury i brody – to styl i klimat, który tworzymy każdego

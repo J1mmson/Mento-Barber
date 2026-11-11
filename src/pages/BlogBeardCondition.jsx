@@ -54,9 +54,9 @@ const BlogBeardCondition = () => {
 
             <hr className="border-[white] opacity-10 my-[32px] shrink-0" />
 
-            <h1 className="text-[28px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[10px]">
               1. Mycie – podstawa pielęgnacji
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Wielu mężczyzn wciąż myje brodę zwykłym szamponem do włosów lub,
               co gorsza, żelem pod prysznic. To błąd! Skóra pod brodą jest
@@ -67,9 +67,9 @@ const BlogBeardCondition = () => {
               twarzy, które oczyszczą, ale nie przesuszą.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               2. Nawilżanie i odżywianie
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Sucha broda = łupież, swędzenie i nieestetyczny wygląd. Codziennie stosuj <b className="text-prime">olejek do brody</b>, który:
             </p>
@@ -84,9 +84,9 @@ const BlogBeardCondition = () => {
               ujarzmiają niesforne włoski.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               3. Regularne przycinanie i kontury
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Broda rośnie nierówno – dlatego tak ważne są wizyty u barbera. To
               właśnie on wyrówna kształt, nada jej formę i zadba o linie, które
@@ -96,9 +96,9 @@ const BlogBeardCondition = () => {
               Odwiedzaj barbera <b className="text-prime">co 2–3 tygodnie</b>, żeby utrzymać schludny wygląd.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               4. Codzienna stylizacja i czesanie
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Szczotka do brody (kartacz) z naturalnego włosia lub grzebień to
               must-have. Regularne czesanie:
@@ -110,9 +110,9 @@ const BlogBeardCondition = () => {
               <li>sprawia, że broda układa się naturalnie.</li>
             </ul>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               5. Zdrowy styl życia
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Gęsta broda to także efekt tego, co dzieje się w środku organizmu. Zadbaj o:
             </p>
@@ -125,9 +125,9 @@ const BlogBeardCondition = () => {
               To wszystko wspiera wzrost włosów i ich kondycję.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               6. Peeling – sekret zdrowej skóry pod brodą
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Często zapominamy, że pod brodą też jest skóra, która potrzebuje
               oczyszczenia. Resztki kosmetyków, martwy naskórek i sebum mogą
@@ -146,9 +146,9 @@ const BlogBeardCondition = () => {
             </p>
 
             <div className="bg-[#1f2629] p-[24px] rounded-[8px] mt-[40px] mb-[20px] shrink-0 border border-gray-700">
-              <h1 className="text-[24px] text-prime font-bold flex items-center gap-2">
+              <h2 className="text-[24px] text-prime font-bold flex items-center gap-2">
                 <span>💡</span> Pro Tip od barbera:
-              </h1>
+              </h2>
               <p className="text-[16px] text-white font-light mt-4 leading-relaxed">
                 Jeśli masz <b className="text-prime">brodę twardą i suchą</b>, potraktuj ją tak samo jak
                 włosy na głowie. Użyj <b className="text-prime">nawilżającej odżywki lub maski do włosów</b> – to świetny
@@ -210,9 +210,9 @@ const BlogBeardCondition = () => {
             
             <hr className="border-[white] opacity-10 my-[32px]" />
             
-            <h1 className="text-[22px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[10px]">
               1. Mycie – podstawa pielęgnacji
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Wielu mężczyzn wciąż myje brodę zwykłym szamponem do włosów lub,
               co gorsza, żelem pod prysznic. To błąd! Skóra pod brodą jest
@@ -223,9 +223,9 @@ const BlogBeardCondition = () => {
               twarzy, które oczyszczą, ale nie przesuszą.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               2. Nawilżanie i odżywianie
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Sucha broda = łupież, swędzenie i nieestetyczny wygląd. Codziennie stosuj <b className="text-prime">olejek do brody</b>, który:
             </p>
@@ -239,9 +239,9 @@ const BlogBeardCondition = () => {
               Dłuższe brody polubią również <b className="text-prime">balsamy</b>, które dodatkowo ujarzmiają niesforne włoski.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               3. Regularne przycinanie i kontury
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Broda rośnie nierówno – dlatego tak ważne są wizyty u barbera. To
               właśnie on wyrówna kształt, nada jej formę i zadba o linie, które
@@ -251,9 +251,9 @@ const BlogBeardCondition = () => {
               Odwiedzaj barbera <b className="text-prime">co 2–3 tygodnie</b>, żeby utrzymać schludny wygląd.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               4. Codzienna stylizacja i czesanie
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Szczotka do brody (kartacz) z naturalnego włosia lub grzebień to
               must-have. Regularne czesanie:
@@ -265,9 +265,9 @@ const BlogBeardCondition = () => {
               <li>sprawia, że broda układa się naturalnie.</li>
             </ul>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               5. Zdrowy styl życia
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Gęsta broda to także efekt tego, co dzieje się w środku organizmu. Zadbaj o:
             </p>
@@ -280,9 +280,9 @@ const BlogBeardCondition = () => {
               To wszystko wspiera wzrost włosów i ich kondycję.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               6. Peeling – sekret zdrowej skóry pod brodą
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Często zapominamy, że pod brodą też jest skóra, która potrzebuje
               oczyszczenia. Resztki kosmetyków, martwy naskórek i sebum mogą
@@ -301,9 +301,9 @@ const BlogBeardCondition = () => {
             </p>
 
             <div className="bg-[#1f2629] p-[20px] rounded-[8px] mt-[32px] mb-[20px] border border-gray-700">
-              <h1 className="text-[20px] text-prime font-bold flex items-center gap-2">
+              <h2 className="text-[20px] text-prime font-bold flex items-center gap-2">
                 <span>💡</span> Pro Tip od barbera:
-              </h1>
+              </h2>
               <p className="text-[15px] text-white font-light mt-4 leading-relaxed">
                 Jeśli masz <b className="text-prime">brodę twardą i suchą</b>, potraktuj ją tak samo jak
                 włosy na głowie. Użyj <b className="text-prime">nawilżającej odżywki lub maski do włosów</b> – to świetny

@@ -64,7 +64,7 @@ const BlogRecedingHairlineHairstyle = () => {
 							propozycji, które mogą Ci pomóc:
 						</p>
 						<hr className='border-[white] opacity-5 my-[32px]' />
-						<h1 className='text-[32px] text-prime font-bold'>1. Quiff</h1>
+						<h2 className='text-[32px] text-prime font-bold'>1. Quiff</h2>
 						<p className='text-[16px] text-white mt-[12px] font-light'>
 							Fryzura <b>Quiff</b> to doskonały sposób na ukrycie zakoli.
 							Charakteryzuje się dłuższym włosiem na górze głowy, które jest
@@ -81,9 +81,9 @@ const BlogRecedingHairlineHairstyle = () => {
 								/>
 							</div>
 						</div>
-						<h1 className='text-[32px] text-prime font-bold'>
+						<h2 className='text-[32px] text-prime font-bold'>
 							2. French Crop
-						</h1>
+						</h2>
 						<p className='text-[16px] text-white mt-[12px] font-light'>
 							<b>French Crop</b>, to modernistyczna i
 							uniwersalna fryzura, która działa świetnie na zakola. Włosy z
@@ -100,9 +100,9 @@ const BlogRecedingHairlineHairstyle = () => {
 								/>
 							</div>
 						</div>
-						<h1 className='text-[32px] text-prime font-bold'>
+						<h2 className='text-[32px] text-prime font-bold'>
 							3. Middle Part
-						</h1>
+						</h2>
 						<p className='text-[16px] text-white mt-[12px] font-light'>
 							<b>Middle Part</b> to kolejna opcja, która
 							może pomóc ukryć zakola. Włosy są równomiernie rozdzielone na dwie
@@ -118,9 +118,9 @@ const BlogRecedingHairlineHairstyle = () => {
 								/>
 							</div>
 						</div>
-						<h1 className='text-[32px] text-prime font-bold'>
+						<h2 className='text-[32px] text-prime font-bold'>
 							4. Side Part
-						</h1>
+						</h2>
 						<p className='text-[16px] text-white mt-[12px] font-light'>
 							<b>Side Part</b> to klasyczna fryzura, w której włosy są starannie
 							zaczesane na bok. Ten wygląd jest nie tylko modny, ale także
@@ -136,9 +136,9 @@ const BlogRecedingHairlineHairstyle = () => {
 								/>
 							</div>
 						</div>
-						<h1 className='text-[32px] text-prime font-bold'>
+						<h2 className='text-[32px] text-prime font-bold'>
 							5. Buzz Cut (Krótki zerowany)
-						</h1>
+						</h2>
 						<p className='text-[16px] text-white mt-[12px] font-light'>
 							<b>Buzz Cut</b> to krótka fryzura, która doskonale nadaje się do
 							ukrywania zakoli. Ta prostota nie tylko optycznie zmniejsza
@@ -154,9 +154,9 @@ const BlogRecedingHairlineHairstyle = () => {
 								/>
 							</div>
 						</div>
-						<h1 className='text-[32px] text-prime font-bold'>
+						<h2 className='text-[32px] text-prime font-bold'>
 							7. Na Łyso (Bald)
-						</h1>
+						</h2>
 						<p className='text-[16px] text-white mt-[12px] font-light'>
 							Dla tych, którzy lubią minimalizm i niski poziom konserwacji,
 							ogolona głowa jest wspaniałym wyborem. To odważne i pewne siebie
@@ -266,7 +266,7 @@ const BlogRecedingHairlineHairstyle = () => {
 							propozycji, które mogą Ci pomóc:
 						</p>
 						<hr className='border-[white] opacity-5 my-[32px]' />
-						<h1 className='text-[24px] text-prime font-bold'>1. Quiff</h1>
+						<h2 className='text-[24px] text-prime font-bold'>1. Quiff</h2>
 						<p className='text-[14px] text-white mt-[12px] font-light'>
 							Fryzura <b>Quiff</b> to doskonały sposób na ukrycie zakoli.
 							Charakteryzuje się dłuższym włosiem na górze głowy, które jest
@@ -283,9 +283,9 @@ const BlogRecedingHairlineHairstyle = () => {
 								/>
 							</div>
 						</div>
-						<h1 className='text-[24px] text-prime font-bold'>
+						<h2 className='text-[24px] text-prime font-bold'>
 							2. French Crop
-						</h1>
+						</h2>
 						<p className='text-[14px] text-white mt-[12px] font-light'>
 							<b>French Crop</b>, to modernistyczna i
 							uniwersalna fryzura, która działa świetnie na zakola. Włosy z
@@ -302,9 +302,9 @@ const BlogRecedingHairlineHairstyle = () => {
 								/>
 							</div>
 						</div>
-						<h1 className='text-[24px] text-prime font-bold'>
+						<h2 className='text-[24px] text-prime font-bold'>
 							3. Middle Part
-						</h1>
+						</h2>
 						<p className='text-[14px] text-white mt-[12px] font-light'>
 							<b>Middle Part</b> to kolejna opcja, która
 							może pomóc ukryć zakola. Włosy są równomiernie rozdzielone na dwie
@@ -320,9 +320,9 @@ const BlogRecedingHairlineHairstyle = () => {
 								/>
 							</div>
 						</div>
-						<h1 className='text-[24px] text-prime font-bold'>
+						<h2 className='text-[24px] text-prime font-bold'>
 							4. Side Part
-						</h1>
+						</h2>
 						<p className='text-[14px] text-white mt-[12px] font-light'>
 							<b>Side Part</b> to klasyczna fryzura, w której włosy są starannie
 							zaczesane na bok. Ten wygląd jest nie tylko modny, ale także
@@ -338,9 +338,9 @@ const BlogRecedingHairlineHairstyle = () => {
 								/>
 							</div>
 						</div>
-						<h1 className='text-[24px] text-prime font-bold'>
+						<h2 className='text-[24px] text-prime font-bold'>
 							5. Buzz Cut (Krótki zerowany)
-						</h1>
+						</h2>
 						<p className='text-[14px] text-white mt-[12px] font-light'>
 							<b>Buzz Cut</b> to krótka fryzura, która doskonale nadaje się do
 							ukrywania zakoli. Ta prostota nie tylko optycznie zmniejsza
@@ -356,9 +356,9 @@ const BlogRecedingHairlineHairstyle = () => {
 								/>
 							</div>
 						</div>
-						<h1 className='text-[24px] text-prime font-bold'>
+						<h2 className='text-[24px] text-prime font-bold'>
 							7. Na Łyso (Bald)
-						</h1>
+						</h2>
 						<p className='text-[14px] text-white mt-[12px] font-light'>
 							Dla tych, którzy lubią minimalizm i niski poziom konserwacji,
 							ogolona głowa jest wspaniałym wyborem. To odważne i pewne siebie

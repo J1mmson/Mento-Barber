@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -156,20 +157,23 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={fadeInFromLeft}
             >
-              <h1 className="text-textPrimary uppercase font-bold text-7xl mb-[-10px]">
-                MENTO
+              <h1 className="flex flex-col items-start">
+                <span className="text-textPrimary uppercase font-bold text-7xl mb-[-10px]">
+                  MENTO
+                </span>
+                <span className="sr-only"> Barber Shop – barber i fryzjer męski: </span>
+                <span
+                  className="uppercase font-bold text-6xl tracking-widest text-orange-500"
+                  style={{ textShadow: "0 0 15px #ff6600" }}
+                >
+                  BOCHNIA <span></span> SUŁKOWICE
+                </span>
               </h1>
-              <h2
-                className="uppercase font-bold text-6xl tracking-widest text-orange-500"
-                style={{ textShadow: "0 0 15px #ff6600" }}
-              >
-                BOCHNIA <span></span> SUŁKOWICE
-              </h2>
               <p
                 className="mt-4 max-w-xl text-[15px] text-gray-300 ml-[4px]"
                 style={{ lineHeight: 2 }}
               >
-              Dwie lokalizacje. Jeden standard. Mento Barber Shop to dwa salony : Bochnia i Sułkowice. W każdej lokalizacji dbamy o najwyższy standard usług i precyzję. Nasz salon w Sułkowicach to również świetny dojazd dla klientów z okolicznych miast, takich jak Myślenice. Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
+              Dwie lokalizacje. Jeden standard. Mento Barber Shop to dwa salony : Bochnia i Sułkowice. W każdej lokalizacji dbamy o najwyższy standard usług i precyzję. Nasz salon w Sułkowicach to również świetny dojazd dla klientów z Myślenic, Skawiny, Mogilan i południa Krakowa. Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
 
             </motion.div>
@@ -187,7 +191,7 @@ const HomePage = () => {
                   <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border-2 border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white py-2 px-5 rounded-full font-bold uppercase transition-colors duration-300 text-sm tracking-wider text-center w-full">
                     BOCHNIA
                   </button>
-                  <a href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
+                  <a href="https://maps.app.goo.gl/VbPsZzhGmUHndtjV6" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
                     Nad Babicą 2
                   </a>
                   <a href="tel:+48798144399" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
@@ -200,7 +204,7 @@ const HomePage = () => {
                   <button onClick={() => document.getElementById('lokalizacje').scrollIntoView({ behavior: 'smooth' })} className="border-2 border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white py-2 px-5 rounded-full font-bold uppercase transition-colors duration-300 text-sm tracking-wider text-center w-full">
                     SUŁKOWICE
                   </button>
-                  <a href="https://maps.app.goo.gl/zUHqkEJwWaffcr3u6" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
+                  <a href="https://maps.app.goo.gl/8kdjDuNQPuEFKkMs5" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
                     Sportowa 133
                   </a>
                   <a href="tel:+48735067757" className="border-2 border-gray-400 rounded-full py-2 px-5 text-textPrimary inline-block hover:border-orange-500 hover:text-orange-500 transition-colors duration-300 text-sm text-center">
@@ -280,15 +284,18 @@ const HomePage = () => {
 
             <div className="relative z-20 flex flex-col items-center w-full mt-auto pb-1">
               
-              <h1 className="text-textPrimary uppercase text-titleOne font-bold text-center mb-0 text-[2.2rem] leading-none">
-                MENTO
+              <h1 className="flex flex-col items-center">
+                <span className="text-textPrimary uppercase text-titleOne font-bold text-center mb-0 text-[2.2rem] leading-none">
+                  MENTO
+                </span>
+                <span className="sr-only"> Barber Shop – barber i fryzjer męski: </span>
+                <span className="uppercase font-bold text-[1rem] tracking-widest text-[#f97316] text-center leading-tight mb-2">
+                  BOCHNIA <span className="text-gray-400 font-light mx-1">|</span> SUŁKOWICE
+                </span>
               </h1>
-              <h2 className="uppercase font-bold text-[1rem] tracking-widest text-[#f97316] text-center leading-tight mb-2">
-                BOCHNIA <span className="text-gray-400 font-light mx-1">|</span> SUŁKOWICE
-              </h2>
               
               <p className="text-center text-[9.5px] sm:text-[10.5px] text-gray-300 mb-3 max-w-[98%] leading-[1.35]">
-                  Dwie lokalizacje. Jeden standard. Mento Barber Shop to dwa salony : Bochnia i Sułkowice. W każdej lokalizacji dbamy o najwyższy standard usług i precyzję. Nasz salon w Sułkowicach to również świetny dojazd dla klientów z okolicznych miast, takich jak Myślenice. Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
+                  Dwie lokalizacje. Jeden standard. Mento Barber Shop to dwa salony : Bochnia i Sułkowice. W każdej lokalizacji dbamy o najwyższy standard usług i precyzję. Nasz salon w Sułkowicach to również świetny dojazd dla klientów z Myślenic, Skawiny, Mogilan i południa Krakowa. Wybierz salon najbliżej siebie i przekonaj się, czym jest jakość Mento Barber Shop.
               </p>
 
               <div className="w-full max-w-[360px] bg-[#111111] border border-white/5 rounded-xl p-2 mb-3 flex flex-row shadow-2xl">
@@ -298,7 +305,7 @@ const HomePage = () => {
                       Bochnia
                   </button>
                   
-                  <a href="https://maps.app.goo.gl/uSSXr8UStWhPBTF26" target="_blank" rel="noopener noreferrer" 
+                  <a href="https://maps.app.goo.gl/VbPsZzhGmUHndtjV6" target="_blank" rel="noopener noreferrer" 
                      className="flex items-center justify-center w-full min-h-[36px] px-1 text-gray-300 text-[10px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
                     Nad Babicą 2
                   </a>
@@ -315,7 +322,7 @@ const HomePage = () => {
                       Sułkowice
                   </button>
                   
-                  <a href="https://maps.app.goo.gl/iGQP3oe4pLDeMiSi8" target="_blank" rel="noopener noreferrer" 
+                  <a href="https://maps.app.goo.gl/8kdjDuNQPuEFKkMs5" target="_blank" rel="noopener noreferrer" 
                      className="flex items-center justify-center w-full min-h-[36px] px-1 text-gray-300 text-[10px] hover:text-white transition-colors rounded-lg active:bg-white/10 text-center">
                     Sportowa 133
                   </a>
@@ -355,10 +362,11 @@ const HomePage = () => {
               {/* Karta Bochnia */}
               <div className="flex flex-col justify-between p-10 rounded-2xl border border-gray-800 transition-all duration-300 hover:border-[#f97316] hover:shadow-[0_0_25px_rgba(249,115,22,0.15)] bg-[#111111] bg-opacity-90 backdrop-blur-sm">
                 <div>
-                  <h3 className="text-3xl font-bold text-white mb-2 tracking-wider">MENTO <span className="text-[#f97316]">BOCHNIA</span></h3>
-                  <p className="text-gray-400 text-sm mb-6 flex items-center gap-2">Bochnia ul. Nad Babicą 2</p>
+                  <h2 className="text-3xl font-bold text-white mb-2 tracking-wider">MENTO <span className="text-[#f97316]">BOCHNIA</span></h2>
+                  <p className="text-gray-400 text-sm mb-1 flex items-center gap-2">Bochnia ul. Nad Babicą 2</p>
+                  <Link to="/barber-bochnia" className="inline-block text-sm text-[#f97316] hover:underline mb-6">Barber Bochnia – więcej o salonie →</Link>
                   <p className="text-gray-300 mb-8 leading-relaxed text-sm">
-                    To tutaj narodziło się MENTO. Miejsce z doświadczeniem, wyjątkową atmosferą i zespołem barberów, którym zaufały tysiące klientów. Zarezerwuj wizytę wygodnie przez aplikację Booksy i sprawdź dostępne terminy u naszych barberów.
+                    To tutaj narodziło się MENTO. Barbershop w Bochni z doświadczeniem, wyjątkową atmosferą i zespołem barberów, którym zaufały tysiące klientów – także z Nowego Wiśnicza, Rzezawy, Łapanowa i Brzeska. Zarezerwuj wizytę przez aplikację MENTO i sprawdź wolne terminy.
                   </p>
                 </div>
                 <a href="https://app.mentobarber.pl" target="_blank" rel="noopener noreferrer" className="text-center bg-[#f97316] text-white py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-orange-600 transition-colors">
@@ -369,10 +377,11 @@ const HomePage = () => {
               {/* Karta Sułkowice */}
               <div className="flex flex-col justify-between p-10 rounded-2xl border border-gray-800 transition-all duration-300 hover:border-[#f97316] hover:shadow-[0_0_25px_rgba(249,115,22,0.15)] bg-[#111111] bg-opacity-90 backdrop-blur-sm">
                 <div>
-                  <h3 className="text-3xl font-bold text-white mb-2 tracking-wider">MENTO <span className="text-[#f97316]">SUŁKOWICE</span></h3>
-                  <p className="text-gray-400 text-sm mb-6 flex items-center gap-2">Sułkowice ul. Sportowa 133</p>
+                  <h2 className="text-3xl font-bold text-white mb-2 tracking-wider">MENTO <span className="text-[#f97316]">SUŁKOWICE</span></h2>
+                  <p className="text-gray-400 text-sm mb-1 flex items-center gap-2">Sułkowice ul. Sportowa 133</p>
+                  <Link to="/barber-sulkowice" className="inline-block text-sm text-[#f97316] hover:underline mb-6">Barber Sułkowice – więcej o salonie →</Link>
                   <p className="text-gray-300 mb-8 leading-relaxed text-sm">
-                   Nowoczesna odsłona MENTO. Ten sam standard, darmowy parking i bardzo wygodna lokalizacja dla klientów z Sułkowic, Myślenic i okolic. Skorzystaj z autorskiego systemu rezerwacji, aby umówić się na wizytę i zarządzać swoimi terminami - Zalecamy pobrać aplikacje na swój telefon dla większego komfortu.
+                   Nowoczesna odsłona MENTO. Ten sam standard, darmowy parking i wygodny dojazd dla klientów z Sułkowic, Myślenic, Krzywaczki, Biertowic, Harbutowic, Rudnika i Głogoczowa. Umów wizytę w naszym systemie rezerwacji – zalecamy pobrać aplikację na telefon dla większej wygody.
                   </p>
                 </div>
                 <a href="https://app.mentobarber.pl" className="text-center bg-transparent border-2 border-[#f97316] text-[#f97316] py-4 rounded-lg font-bold uppercase tracking-wider hover:bg-[#f97316] hover:text-white transition-colors">
@@ -407,10 +416,10 @@ const HomePage = () => {
             >
               {/* Karta Bochnia Mobile */}
               <div className="flex flex-col p-6 rounded-2xl border border-gray-800 transition-all duration-300 active:border-[#f97316] bg-[#111111] bg-opacity-95 shadow-2xl">
-                <h3 className="text-2xl font-bold text-white mb-1 tracking-wider text-center">MENTO <span className="text-[#f97316]">BOCHNIA</span></h3>
-                <p className="text-gray-400 text-[11px] mb-4 text-center">Bochnia ul. Nad Babicą 2</p>
+                <h2 className="text-2xl font-bold text-white mb-1 tracking-wider text-center">MENTO <span className="text-[#f97316]">BOCHNIA</span></h2>
+                <p className="text-gray-400 text-[11px] mb-4 text-center">Bochnia ul. Nad Babicą 2 · <Link to="/barber-bochnia" className="text-[#f97316] underline">więcej o salonie</Link></p>
                 <p className="text-gray-300 text-xs mb-5 text-center leading-relaxed">
-                  Zarezerwuj wizytę wygodnie przez aplikację MENTO i sprawdź dostępne terminy u naszych barberów.
+                  Barbershop w Bochni – wygodny dojazd z Nowego Wiśnicza, Rzezawy i Łapanowa. Zarezerwuj wizytę przez aplikację MENTO.
                 </p>
                 <a href="https://app.mentobarber.pl" target="_blank" rel="noopener noreferrer" className="text-center bg-[#f97316] text-white py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider active:bg-orange-600 transition-colors">
                   Rezerwacja (MENTO APP)
@@ -419,10 +428,10 @@ const HomePage = () => {
 
               {/* Karta Sułkowice Mobile */}
               <div className="flex flex-col p-6 rounded-2xl border border-gray-800 transition-all duration-300 active:border-[#f97316] bg-[#111111] bg-opacity-95 shadow-2xl">
-                <h3 className="text-2xl font-bold text-white mb-1 tracking-wider text-center">MENTO <span className="text-[#f97316]">SUŁKOWICE</span></h3>
-                <p className="text-gray-400 text-[11px] mb-4 text-center">Sułkowice ul. Sportowa 133</p>
+                <h2 className="text-2xl font-bold text-white mb-1 tracking-wider text-center">MENTO <span className="text-[#f97316]">SUŁKOWICE</span></h2>
+                <p className="text-gray-400 text-[11px] mb-4 text-center">Sułkowice ul. Sportowa 133 · <Link to="/barber-sulkowice" className="text-[#f97316] underline">więcej o salonie</Link></p>
                 <p className="text-gray-300 text-xs mb-5 text-center leading-relaxed">
-                  Skorzystaj z naszego, autorskiego systemu, aby umówić się na wizytę - Zalecamy pobrać aplikacje na swój telefon.
+                  Barber blisko Myślenic, z darmowym parkingiem. Umów wizytę w aplikacji MENTO – zalecamy pobrać ją na telefon.
                 </p>
                 <a href="https://app.mentobarber.pl" className="text-center bg-transparent border-2 border-[#f97316] text-[#f97316] py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider active:bg-[#f97316] active:text-white transition-colors">
                   Rezerwuj (MENTO APP)
@@ -486,7 +495,8 @@ const HomePage = () => {
               viewport={{ once: true }}
               variants={slideInFromRight}
             >
-              <h2
+              <div
+                aria-hidden="true"
                 className="font-bold uppercase text-center"
                 style={{
                   fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -499,7 +509,7 @@ const HomePage = () => {
                 }}
               >
                 JIMMY
-              </h2>
+              </div>
             </motion.div>
             <img
               src={Gradient}

@@ -30,7 +30,7 @@ const Barber7 = ({ slideInFromRight, fadeInFromLeft }) => {
             viewport={{ once: true }}
             variants={fadeInFromLeft}
           >
-            <h1
+            <h2
               className="text-9xl font-bold text-orange-500"
               style={{
                 fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -44,7 +44,7 @@ const Barber7 = ({ slideInFromRight, fadeInFromLeft }) => {
               }}
             >
               GABI
-            </h1>
+            </h2>
             <p className="mt-4 max-w-[430px] text-[15px] font-light">
               Lubię pracować nad fryzurami modernistycznymi, z teksturą, tak by
               finalny efekt wyglądał świeżo i ciekawie. Tak by fryzura mogła
@@ -60,7 +60,8 @@ const Barber7 = ({ slideInFromRight, fadeInFromLeft }) => {
             viewport={{ once: true }}
             variants={slideInFromRight}
           >
-            <h1
+            <div
+							aria-hidden="true"
               className="font-bold uppercase text-center"
               style={{
                 fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -73,7 +74,7 @@ const Barber7 = ({ slideInFromRight, fadeInFromLeft }) => {
               }}
             >
               GABI
-            </h1>
+            </div>
           </motion.div>
           <img
             src={Gradient}
@@ -102,7 +103,7 @@ const Barber7 = ({ slideInFromRight, fadeInFromLeft }) => {
           }}
         >
           <div className="flex flex-col items-center  mt-[10%] leading-none z-20 ">
-            <h1
+            <h2
               className="font-bold uppercase text-center"
               style={{
                 fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -115,7 +116,7 @@ const Barber7 = ({ slideInFromRight, fadeInFromLeft }) => {
               }}
             >
               GABI
-            </h1>
+            </h2>
             <p className="mt-4 mb-[25%] max-w-[430px] text-[14px] font-light text-white text-center">
               Hej, jestem Gabi! Lubię pracować nad fryzurami modernistycznymi z teksturą,
               tak aby fryzura mogła wyglądać dobrze z układaniem jak i bez.

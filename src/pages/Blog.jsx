@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 // Project imports
@@ -17,7 +17,6 @@ import Blog6 from "../assets/blog6.webp";
 import Blog7 from "../assets/blog7.webp";
 import Blog8 from "../assets/shortHair.webp";
 const Blog = () => {
-  const navigate = useNavigate();
   const isMobile = useIsMobile();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
@@ -130,6 +129,15 @@ const Blog = () => {
     <div className="h-screen overflow-hidden" onWheel={handleScroll}>
       {/* Desktop View */}
       <Navbar />
+      <nav aria-label="Wszystkie artykuły" className="sr-only">
+        <ul>
+          {content.map((post) => (
+            <li key={post.id}>
+              <Link to={`/blog/${post.path}`}>{post.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
       <div
         id="about"
         className="relative flex flex-col justify-end items-center min-h-screen px-[96px] z-10 overflow-hidden"
@@ -153,12 +161,12 @@ const Blog = () => {
             >
               {content[currentIndex].description}
             </p>
-            <button
-              className="button p-[12px] border-2 w-full border-prime rounded-[16px] text-prime mb-[96px] mt-[24px]"
-              onClick={() => navigate(`/blog/${content[currentIndex].path}`)}
+            <Link
+              to={`/blog/${content[currentIndex].path}`}
+              className="button block text-center p-[12px] border-2 w-full border-prime rounded-[16px] text-prime mb-[96px] mt-[24px]"
             >
               Kliknij aby przeczytać
-            </button>
+            </Link>
           </div>
 
           <div className="flex flex-col items-center space-y-3 mb-[96px]">
@@ -206,6 +214,15 @@ const Blog = () => {
       onTouchMove={handleTouchMove}
     >
       <Navbar />
+      <nav aria-label="Wszystkie artykuły" className="sr-only">
+        <ul>
+          {content.map((post) => (
+            <li key={post.id}>
+              <Link to={`/blog/${post.path}`}>{post.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
       <div
         id="about"
@@ -257,12 +274,12 @@ const Blog = () => {
               >
                 {content[currentIndex].description}
               </p>
-              <button
-                className="button p-[12px] border-2 w-full border-prime rounded-[16px] text-prime mb-[30px] mt-[24px]"
-                onClick={() => navigate(`/blog/${content[currentIndex].path}`)}
+              <Link
+                to={`/blog/${content[currentIndex].path}`}
+                className="button block text-center p-[12px] border-2 w-full border-prime rounded-[16px] text-prime mb-[30px] mt-[24px]"
               >
                 Kliknij aby przeczytać
-              </button>
+              </Link>
             </div>
           </div>
         </div>

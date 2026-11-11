@@ -55,9 +55,9 @@ const BlogBangs = () => {
 
             <hr className="border-[white] opacity-10 my-[32px] shrink-0" />
 
-            <h1 className="text-[28px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[10px]">
               1. Zadbaj o skórę głowy
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Wypadanie włosów często zaczyna się właśnie od problemów ze skórą głowy.
             </p>
@@ -74,9 +74,9 @@ const BlogBangs = () => {
               jest świetnym pierwszym krokiem w walce z wypadaniem włosów.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               2. Odpowiednia pielęgnacja
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Nie każdy szampon działa tak samo – źle dobrany kosmetyk może
               przesuszać skórę lub zatykać mieszki włosowe.
@@ -86,9 +86,9 @@ const BlogBangs = () => {
               wzmacniające cebulki włosów.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               3. Dieta i styl życia
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Włosy to odbicie tego, co dzieje się w organizmie. Postaw na dietę bogatą w:
             </p>
@@ -102,9 +102,9 @@ const BlogBangs = () => {
               ogromny wpływ na kondycję włosów.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               4. Profesjonalna konsultacja
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Jeśli zauważasz, że problem się nasila, nie działaj na własną rękę.
             </p>
@@ -115,9 +115,9 @@ const BlogBangs = () => {
               jeśli problem wymaga szerszej diagnostyki.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               5. Regularne masaże skóry głowy
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Masaż to prosta, ale skuteczna metoda – poprawia krążenie,
               dotlenia skórę i wspiera cebulki włosów. Możesz wykonywać go sam w
@@ -125,9 +125,9 @@ const BlogBangs = () => {
             </p>
 
             <div className="bg-[#1f2629] p-[24px] rounded-[8px] mt-[40px] mb-[20px] shrink-0 border border-gray-700">
-              <h1 className="text-[24px] text-prime font-bold flex items-center gap-2">
+              <h2 className="text-[24px] text-prime font-bold flex items-center gap-2">
                Podsumowanie:
-              </h1>
+              </h2>
               <p className="text-[16px] text-white font-light mt-4 leading-relaxed">
                 Wypadanie włosów to problem, któremu można zapobiegać, jeśli
                 zadziała się odpowiednio wcześnie. Kluczowe są: oczyszczanie skóry
@@ -193,9 +193,9 @@ const BlogBangs = () => {
             
             <hr className="border-[white] opacity-10 my-[32px]" />
             
-            <h1 className="text-[22px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[10px]">
               1. Zadbaj o skórę głowy
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Wypadanie włosów często zaczyna się właśnie od problemów ze skórą głowy.
             </p>
@@ -212,9 +212,9 @@ const BlogBangs = () => {
               jest świetnym pierwszym krokiem w walce z wypadaniem włosów.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               2. Odpowiednia pielęgnacja
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Nie każdy szampon działa tak samo – źle dobrany kosmetyk może
               przesuszać skórę lub zatykać mieszki włosowe.
@@ -224,9 +224,9 @@ const BlogBangs = () => {
               wzmacniające cebulki włosów.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               3. Dieta i styl życia
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Włosy to odbicie tego, co dzieje się w organizmie. Postaw na dietę bogatą w:
             </p>
@@ -240,9 +240,9 @@ const BlogBangs = () => {
               ogromny wpływ na kondycję włosów.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               4. Profesjonalna konsultacja
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Jeśli zauważasz, że problem się nasila, nie działaj na własną rękę.
             </p>
@@ -253,9 +253,9 @@ const BlogBangs = () => {
               jeśli problem wymaga szerszej diagnostyki.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               5. Regularne masaże skóry głowy
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Masaż to prosta, ale skuteczna metoda – poprawia krążenie,
               dotlenia skórę i wspiera cebulki włosów. Możesz wykonywać go sam w
@@ -263,9 +263,9 @@ const BlogBangs = () => {
             </p>
 
             <div className="bg-[#1f2629] p-[20px] rounded-[8px] mt-[32px] mb-[20px] border border-gray-700">
-              <h1 className="text-[20px] text-prime font-bold flex items-center gap-2">
+              <h2 className="text-[20px] text-prime font-bold flex items-center gap-2">
                 Podsumowanie:
-              </h1>
+              </h2>
               <p className="text-[15px] text-white font-light mt-4 leading-relaxed">
                 Wypadanie włosów to problem, któremu można zapobiegać, jeśli
                 zadziała się odpowiednio wcześnie. Kluczowe są: oczyszczanie skóry

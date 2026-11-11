@@ -344,6 +344,7 @@ const Training = () => {
       {!isMobile ? (
         <main className="h-screen ">
           <Navbar />
+          <h1 className="sr-only">Szkolenia barberskie – Mento Barber Shop Bochnia</h1>
           <div
             className="relative min-h-screen h-screen overflow-hidden"
             style={{
@@ -529,6 +530,7 @@ const Training = () => {
           }}
         >
           <Navbar />
+          <h1 className="sr-only">Szkolenia barberskie – Mento Barber Shop Bochnia</h1>
           <div className="flex flex-col gap-6 mt-[80px]">
             {data.map((panel, index) => (
               <div

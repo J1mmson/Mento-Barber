@@ -11,12 +11,17 @@ import BlogFrequency from "./pages/BlogFrequency";
 import BlogBalding from "./pages/BlogBalding";
 import BlogRecedingHairlineHairstyle from "./pages/BlogRecedingHairlineHairstyle";
 import BlogHairStyling from "./pages/BlogHairStyling";
+import Seo from "./components/Seo";
+import LocationPage from "./pages/LocationPage";
 
 function App() {
   return (
     <BrowserRouter>
+      <Seo />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/barber-sulkowice" element={<LocationPage locationKey="sulkowice" />} />
+        <Route path="/barber-bochnia" element={<LocationPage locationKey="bochnia" />} />
         <Route path="/cosmetics" element={<Cosmetics />} />
         <Route path="/training" element={<Training />} />
         <Route path="/blog" element={<Blog />} />

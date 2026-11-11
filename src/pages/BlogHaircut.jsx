@@ -53,9 +53,9 @@ const BlogHaircut = () => {
 
             <hr className="border-[white] opacity-10 my-[32px] shrink-0" />
 
-            <h1 className="text-[28px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[10px]">
               Dlaczego fryzura jest tak ważna?
-            </h1>
+            </h2>
             <ul className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-disc leading-relaxed">
               <li>
                 <b className="text-prime">Podkreśla Twój styl</b> – dobrze dobrane cięcie pasuje do
@@ -71,9 +71,9 @@ const BlogHaircut = () => {
               </li>
             </ul>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               W pracy – liczy się profesjonalizm
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Nawet jeśli masz świetne kompetencje, zaniedbany wygląd może
               podświadomie obniżać zaufanie do Ciebie. Z kolei{" "}
@@ -81,9 +81,9 @@ const BlogHaircut = () => {
               postrzegają Cię jako osobę poukładaną i pewną siebie.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               W codziennym życiu – pierwsze wrażenie robi różnicę
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Wyobraź sobie randkę, spotkanie ze znajomymi albo nawet zwykłą
               rozmowę w urzędzie. Czasem łatwiej jest coś załatwić czy przekonać
@@ -93,9 +93,9 @@ const BlogHaircut = () => {
               To sygnał, że dbasz o siebie – a skoro potrafisz zadbać o siebie, potrafisz też zadbać o inne sprawy.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               Dobra fryzura to inwestycja w siebie
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Czasem wystarczy kilka minut u barbera i codzienna stylizacja,
               żeby zrobić ogromną różnicę w tym, jak jesteś postrzegany. To
@@ -104,9 +104,9 @@ const BlogHaircut = () => {
             </p>
 
             <div className="bg-[#1f2629] p-[24px] rounded-[8px] mt-[40px] mb-[20px] shrink-0 border border-gray-700">
-              <h1 className="text-[24px] text-prime font-bold flex items-center gap-2">
+              <h2 className="text-[24px] text-prime font-bold flex items-center gap-2">
                Podsumowanie:
-              </h1>
+              </h2>
               <p className="text-[16px] text-white font-light mt-4 leading-relaxed">
                 Dobra fryzura to nie tylko kwestia wyglądu. To narzędzie, które
                 pomaga Ci budować wizerunek, dodaje pewności siebie i sprawia, że
@@ -168,9 +168,9 @@ const BlogHaircut = () => {
             
             <hr className="border-[white] opacity-10 my-[32px]" />
             
-            <h1 className="text-[22px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[10px]">
               Dlaczego fryzura jest tak ważna?
-            </h1>
+            </h2>
             <ul className="text-[15px] text-white mt-[12px] font-light ml-[20px] list-disc leading-relaxed">
               <li>
                 <b className="text-prime">Podkreśla Twój styl</b> – dobrze dobrane cięcie pasuje do
@@ -186,9 +186,9 @@ const BlogHaircut = () => {
               </li>
             </ul>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               W pracy – liczy się profesjonalizm
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Nawet jeśli masz świetne kompetencje, zaniedbany wygląd może
               podświadomie obniżać zaufanie do Ciebie. Z kolei{" "}
@@ -196,9 +196,9 @@ const BlogHaircut = () => {
               postrzegają Cię jako osobę poukładaną i pewną siebie.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               W codziennym życiu – pierwsze wrażenie robi różnicę
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Wyobraź sobie randkę, spotkanie ze znajomymi albo nawet zwykłą
               rozmowę w urzędzie. Czasem łatwiej jest coś załatwić czy przekonać
@@ -208,9 +208,9 @@ const BlogHaircut = () => {
               To sygnał, że dbasz o siebie – a skoro potrafisz zadbać o siebie, potrafisz też zadbać o inne sprawy.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               Dobra fryzura to inwestycja w siebie
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Czasem wystarczy kilka minut u barbera i codzienna stylizacja,
               żeby zrobić ogromną różnicę w tym, jak jesteś postrzegany. To
@@ -219,9 +219,9 @@ const BlogHaircut = () => {
             </p>
 
             <div className="bg-[#1f2629] p-[20px] rounded-[8px] mt-[32px] mb-[20px] border border-gray-700">
-              <h1 className="text-[20px] text-prime font-bold flex items-center gap-2">
+              <h2 className="text-[20px] text-prime font-bold flex items-center gap-2">
                Podsumowanie:
-              </h1>
+              </h2>
               <p className="text-[15px] text-white font-light mt-4 leading-relaxed">
                 Dobra fryzura to nie tylko kwestia wyglądu. To narzędzie, które
                 pomaga Ci budować wizerunek, dodaje pewności siebie i sprawia, że

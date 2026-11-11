@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 import Gradient from "../assets/gradient.svg";
-import Barber from "../assets/barber9.webp";
+import BarberAdrian from "../assets/barber-adrian.webp";
 import Texture from "../assets/texture.webp";
 import { motion } from "framer-motion";
 
@@ -28,7 +28,7 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 						whileInView='visible'
 						viewport={{ once: true }}
 						variants={fadeInFromLeft}>
-						<h1
+						<h2
 							className='text-9xl font-bold text-orange-500'
 							style={{
 								fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -40,13 +40,14 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 								textShadow:
 									"0 0 0px #0B0C0F, 0 0 0px #0B0C0F, 0 0 10px #E67543",
 							}}>
-							NATALIA
-						</h1>
+							ADRIAN
+						</h2>
 						<p className='mt-4 max-w-[430px] text-[15px] font-light'>
-							Cześć! Tu Natalia – barberka z okiem do detali i wielką zajawką do męskich cięć.
-                            Uwielbiam klasyczne formy, więc z mojego fotela zejdziesz dopracowany w każdym calu.
-                            Poza pracą kręci mnie historia oraz podróże, a uśmiech to mój znak rozpoznawczy.
-                            Wpadaj na fotel, ogarniemy świeży look i przy okazji świetnie pogadamy!
+							Siema! Tu Adrian – barber z naszego salonu w Sułkowicach. Jako junior
+							do każdego cięcia podchodzę z pełnym zaangażowaniem i głodem nauki.
+							Po godzinach trenuję boks i żyję sportem, więc energii i pozytywnego
+							vibe&apos;u nigdy mi nie brakuje. Szukasz barbera w Sułkowicach lub pod
+							Myślenicami? Wskakuj na fotel – zrobimy świeży look i pogadamy o treningach!
 						</p>
 					</motion.div>
 					<motion.div
@@ -55,7 +56,8 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 						whileInView='visible'
 						viewport={{ once: true }}
 						variants={slideInFromRight}>
-						<h1
+						<div
+							aria-hidden='true'
 							className='font-bold uppercase text-center'
 							style={{
 								fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -66,31 +68,32 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 								width: "100%",
 								whiteSpace: "nowrap",
 							}}>
-							NATALIA
-						</h1>
+							ADRIAN
+						</div>
 					</motion.div>
 					<img
 						src={Gradient}
-						 alt=""  
-    					aria-hidden="true"
-  						loading="lazy"
+						alt=''
+						aria-hidden='true'
+						loading='lazy'
 						className='absolute top-0 right-0 w-1/2 h-auto pointer-events-none z-0'
 						style={{ top: -350, right: -350 }}
 					/>
 					<img
-    src={Barber}
-    alt="Barber Natalia - Mento Barber Bochnia"
-    loading="lazy"
-    className="absolute bottom-0 right-0 w-[50%] h-auto object-contain pointer-events-none z-10"
-    style={{
-        bottom: -20,
-        right: 50,
-    }}
-/>
+						src={BarberAdrian}
+						alt='Adrian – barber w Mento Barber Shop Sułkowice, fryzjer męski koło Myślenic'
+						loading='lazy'
+						width='900'
+						height='1200'
+						className='absolute bottom-0 right-0 w-[50%] h-auto object-contain pointer-events-none z-10'
+						style={{
+							bottom: -20,
+							right: 50,
+						}}
+					/>
 				</div>
 			) : (
 				<div
-					id='about'
 					className='relative flex flex-col justify-end min-h-screen px-6 pb-5 snap-start z-10 overflow-hidden'
 					style={{
 						background: `linear-gradient(90deg, #090909, #091E23), url(${Texture})`,
@@ -99,38 +102,41 @@ const Barber9 = ({ slideInFromRight, fadeInFromLeft }) => {
 						backgroundPosition: "center",
 						backgroundBlendMode: "multiply",
 					}}>
-					<div className='flex flex-col items-center  mt-[10%] leading-none z-20 '>
-						<h1
+					<div className='flex flex-col items-center mt-[10%] leading-none z-20'>
+						<h2
 							className='font-bold uppercase text-center'
 							style={{
 								fontFamily: '"Arial", "Helvetica", sans-serif',
-								fontSize: "19vw", // Zmieniono na jednostkę vw, aby dopasować do szerokości ekranu
+								fontSize: "21vw",
 								fontWeight: "bold",
 								textTransform: "uppercase",
 								color: "transparent",
 								WebkitTextStroke: "2px #ff6600",
 								whiteSpace: "nowrap",
 							}}>
-							Natalia
-						</h1>
+							ADRIAN
+						</h2>
 						<p className='mt-4 mb-[25%] max-w-[430px] text-[14px] font-light text-white text-center'>
-							Cześć! Tu Natalia – barberka z okiem do detali i wielką zajawką do męskich cięć.
-                            Uwielbiam klasyczne formy, więc z mojego fotela zejdziesz dopracowany w każdym calu.
-                            Poza pracą kręci mnie historia oraz podróże, a uśmiech to mój znak rozpoznawczy.
-                            Wpadaj na fotel, ogarniemy świeży look i przy okazji świetnie pogadamy!
-                        </p>        
+							Siema! Tu Adrian – barber z naszego salonu w Sułkowicach. Jako junior
+							do każdego cięcia podchodzę z pełnym zaangażowaniem i głodem nauki.
+							Po godzinach trenuję boks i żyję sportem, więc energii i pozytywnego
+							vibe&apos;u nigdy mi nie brakuje. Szukasz barbera w Sułkowicach lub pod
+							Myślenicami? Wskakuj na fotel – zrobimy świeży look i pogadamy o treningach!
+						</p>
 					</div>
 					<img
-                    src={Barber}
-                    alt="Barber Natalia - Mento Barber Bochnia"
-                    loading="lazy"
-					className='absolute top-0 w-[700px] max-w-none z-10' 
-					style={{ right: "-150px", top: "-150px" }}
-/>
+						src={BarberAdrian}
+						alt='Barber Adrian – fryzjer męski Sułkowice i Myślenice | Mento Barber Shop'
+						loading='lazy'
+						width='900'
+						height='1200'
+						className='absolute top-0 w-[700px] max-w-none z-10'
+						style={{ right: "-150px", top: "-150px" }}
+					/>
 					<img
 						src={Gradient}
-						alt=""
-						aria-hidden="true"
+						alt=''
+						aria-hidden='true'
 						className='absolute top-0 z-0 w-[800px] max-w-none'
 						style={{ right: "-200px", top: "-200px" }}
 					/>

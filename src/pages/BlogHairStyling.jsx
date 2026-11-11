@@ -54,9 +54,9 @@ const BlogHairStyling = () => {
 
             <hr className="border-[white] opacity-10 my-[32px] shrink-0" />
 
-            <h1 className="text-[28px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[10px]">
               Co będzie Ci potrzebne?
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               <b className="text-prime">1. Tonik do włosów</b> – np. Reuzel Grooming Tonic, który daje
               lekkie utrwalenie, chroni włosy przed ciepłem suszarki i ułatwia
@@ -80,9 +80,9 @@ const BlogHairStyling = () => {
               <b className="text-prime">3. Suszarka</b> – nie musi być profesjonalna, ale ważne, żeby używać średniego nawiewu.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               Krok po kroku – szybka stylizacja
-            </h1>
+            </h2>
             <ol className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-decimal leading-relaxed">
               <li>
                 <b className="text-prime">Na mokre włosy</b> nałóż niewielką ilość toniku.
@@ -98,9 +98,9 @@ const BlogHairStyling = () => {
               </li>
             </ol>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               Dlaczego warto poświęcić te 5 minut?
-            </h1>
+            </h2>
             <ul className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-disc leading-relaxed">
               <li>fryzura wygląda świeżo i schludnie przez cały dzień,</li>
               <li>włosy są łatwiejsze w kontrolowaniu,</li>
@@ -109,9 +109,9 @@ const BlogHairStyling = () => {
             </ul>
 
             <div className="bg-[#1f2629] p-[24px] rounded-[8px] mt-[40px] mb-[20px] shrink-0 border border-gray-700">
-              <h1 className="text-[24px] text-prime font-bold">
+              <h2 className="text-[24px] text-prime font-bold">
                 Podsumowanie:
-              </h1>
+              </h2>
               <p className="text-[16px] text-white font-light mt-4 leading-relaxed">
                 Stylizacja włosów to nie magia ani strata czasu. Wystarczy <b className="text-prime">tonik, suszarka i dobrze dobrana pomada albo puder</b>, żeby w kilka minut stworzyć fryzurę, która podkreśli Twój styl. A jeśli nie wiesz, który produkt będzie najlepszy dla Ciebie – w Mento dobierzemy kosmetyki i pokażemy, jak ich używać.
               </p>
@@ -171,9 +171,9 @@ const BlogHairStyling = () => {
             
             <hr className="border-[white] opacity-10 my-[32px]" />
             
-            <h1 className="text-[22px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[10px]">
               Co będzie Ci potrzebne?
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               <b className="text-prime">1. Tonik do włosów</b> – np. Reuzel Grooming Tonic, który daje
               lekkie utrwalenie, chroni włosy przed ciepłem suszarki i ułatwia
@@ -197,9 +197,9 @@ const BlogHairStyling = () => {
               <b className="text-prime">3. Suszarka</b> – nie musi być profesjonalna, ale ważne, żeby używać średniego nawiewu.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               Krok po kroku – szybka stylizacja
-            </h1>
+            </h2>
             <ol className="text-[15px] text-white mt-[12px] font-light ml-[20px] list-decimal leading-relaxed">
               <li>
                 <b className="text-prime">Na mokre włosy</b> nałóż niewielką ilość toniku.
@@ -215,9 +215,9 @@ const BlogHairStyling = () => {
               </li>
             </ol>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               Dlaczego warto poświęcić te 5 minut?
-            </h1>
+            </h2>
             <ul className="text-[15px] text-white mt-[12px] font-light ml-[20px] list-disc leading-relaxed">
               <li>fryzura wygląda świeżo i schludnie przez cały dzień,</li>
               <li>włosy są łatwiejsze w kontrolowaniu,</li>
@@ -226,9 +226,9 @@ const BlogHairStyling = () => {
             </ul>
 
             <div className="bg-[#1f2629] p-[20px] rounded-[8px] mt-[32px] mb-[20px] border border-gray-700">
-              <h1 className="text-[20px] text-prime font-bold">
+              <h2 className="text-[20px] text-prime font-bold">
                 Podsumowanie:
-              </h1>
+              </h2>
               <p className="text-[15px] text-white font-light mt-4 leading-relaxed">
                 Stylizacja włosów to nie magia ani strata czasu. Wystarczy <b className="text-prime">tonik, suszarka i dobrze dobrana pomada albo puder</b>, żeby w kilka minut stworzyć fryzurę, która podkreśli Twój styl. A jeśli nie wiesz, który produkt będzie najlepszy dla Ciebie – w Mento dobierzemy kosmetyki i pokażemy, jak ich używać.
               </p>

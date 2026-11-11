@@ -54,9 +54,9 @@ const BlogBalding = () => {
 
             <hr className="border-[white] opacity-10 my-[32px] shrink-0" />
 
-            <h1 className="text-[28px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[10px]">
               Mezoterapia igłowa Dr.CYJ – co to właściwie jest?
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Brzmi skomplikowanie, ale zasada jest prosta:
             </p>
@@ -79,9 +79,9 @@ const BlogBalding = () => {
               wzrostu i dłużej utrzymują swoją siłę.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               Mikronakłuwanie z egzosomami – regeneracja na poziomie komórkowym
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Tutaj zamiast wstrzykiwania używa się specjalnego urządzenia z
               mikroigiełkami, które robią w skórze bardzo drobne nakłucia.
@@ -101,9 +101,9 @@ const BlogBalding = () => {
               ją, a ona zaczyna pracować lepiej.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               Dlaczego warto zacząć wcześniej?
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Jeśli wiesz, że masz &quot;gen do łysienia&quot;, nie czekaj, aż
               włosy zaczną wypadać garściami. Profilaktyka działa tylko wtedy,
@@ -119,9 +119,9 @@ const BlogBalding = () => {
             </p>
 
             <div className="bg-[#1f2629] p-[24px] rounded-[8px] mt-[40px] mb-[20px] shrink-0 border border-gray-700">
-              <h1 className="text-[24px] text-prime font-bold flex items-center gap-2">
+              <h2 className="text-[24px] text-prime font-bold flex items-center gap-2">
                 <span>💡</span> Pro Tip:
-              </h1>
+              </h2>
               <p className="text-[16px] text-white font-light mt-2">
                 Im szybciej zaczniesz działać, tym większe masz
                 szanse, żeby zachować gęste włosy na długie lata. To inwestycja w
@@ -194,9 +194,9 @@ const BlogBalding = () => {
             
             <hr className="border-[white] opacity-10 my-[32px]" />
             
-            <h1 className="text-[22px] text-prime font-bold">
+            <h2 className="text-[22px] text-prime font-bold">
               Mezoterapia igłowa Dr.CYJ – co to właściwie jest?
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Brzmi skomplikowanie, ale zasada jest prosta:
             </p>
@@ -219,9 +219,9 @@ const BlogBalding = () => {
               wzrostu i dłużej utrzymują swoją siłę.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               Mikronakłuwanie z egzosomami – regeneracja na poziomie komórkowym
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Tutaj zamiast wstrzykiwania używa się specjalnego urządzenia z
               mikroigiełkami, które robią w skórze bardzo drobne nakłucia.
@@ -241,9 +241,9 @@ const BlogBalding = () => {
               ją, a ona zaczyna pracować lepiej.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               Dlaczego warto zacząć wcześniej?
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Jeśli wiesz, że masz &quot;gen do łysienia&quot;, nie czekaj, aż
               włosy zaczną wypadać garściami. Profilaktyka działa tylko wtedy,
@@ -259,9 +259,9 @@ const BlogBalding = () => {
             </p>
 
             <div className="bg-[#1f2629] p-[20px] rounded-[8px] mt-[32px] mb-[20px] border border-gray-700">
-              <h1 className="text-[20px] text-prime font-bold flex items-center gap-2">
+              <h2 className="text-[20px] text-prime font-bold flex items-center gap-2">
                 <span>💡</span> Pro Tip:
-              </h1>
+              </h2>
               <p className="text-[15px] text-white font-light mt-2">
                 Im szybciej zaczniesz działać, tym większe masz
                 szanse, żeby zachować gęste włosy na długie lata. To inwestycja w

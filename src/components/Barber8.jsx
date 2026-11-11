@@ -29,7 +29,7 @@ const Barber8 = ({ slideInFromRight, fadeInFromLeft }) => {
             viewport={{ once: true }}
             variants={fadeInFromLeft}
           >
-            <h1
+            <h2
               className="text-9xl font-bold text-orange-500"
               style={{
                 fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -43,7 +43,7 @@ const Barber8 = ({ slideInFromRight, fadeInFromLeft }) => {
               }}
             >
               KRYSTIAN
-            </h1>
+            </h2>
             <p className="mt-4 max-w-[430px] text-[15px] font-light">
               Cześć! Mam na imię Krystian i jestem młodym barberem w Mento. To
               tutaj rozwijam swoje umiejętności i pasję do fryzjerstwa męskiego.
@@ -59,7 +59,8 @@ const Barber8 = ({ slideInFromRight, fadeInFromLeft }) => {
             viewport={{ once: true }}
             variants={slideInFromRight}
           >
-            <h1
+            <div
+							aria-hidden="true"
               className="font-bold uppercase text-center"
               style={{
                 fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -72,7 +73,7 @@ const Barber8 = ({ slideInFromRight, fadeInFromLeft }) => {
               }}
             >
               KRYSTIAN
-            </h1>
+            </div>
           </motion.div>
           <img
             src={Gradient}
@@ -107,7 +108,7 @@ const Barber8 = ({ slideInFromRight, fadeInFromLeft }) => {
           }}
         >
           <div className="flex flex-col items-center  mt-[10%] leading-none z-20 ">
-            <h1
+            <h2
               className="font-bold uppercase text-center"
               style={{
                 fontFamily: '"Arial", "Helvetica", sans-serif',
@@ -120,7 +121,7 @@ const Barber8 = ({ slideInFromRight, fadeInFromLeft }) => {
               }}
             >
               KRYSTIAN
-            </h1>
+            </h2>
             <p className="mt-4 mb-[25%] max-w-[430px] text-[14px] font-light text-white text-center">
               Cześć! Mam na imię Krystian i jestem młodym barberem w Mento. To
               tutaj rozwijam swoje umiejętności i pasję do fryzjerstwa męskiego.

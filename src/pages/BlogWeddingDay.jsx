@@ -54,9 +54,9 @@ const BlogWeddingDay = () => {
 
             <hr className="border-[white] opacity-10 my-[32px] shrink-0" />
 
-            <h1 className="text-[28px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[10px]">
               Minimum 6 tygodni przed ślubem – pierwsza wizyta w Mento Barbershop Bochnia
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Nie odkładaj przygotowań na ostatnią chwilę.{" "}
               <b className="text-prime">
@@ -75,9 +75,9 @@ const BlogWeddingDay = () => {
               Dzięki temu będziemy mieć czas, żeby wypracować idealny efekt na dzień ślubu.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               Zadbaj o skórę – Mento Care w Bochni
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Twój wygląd to nie tylko fryzura i broda. Skóra również potrzebuje
               uwagi. Dlatego polecamy wizytę w <b className="text-prime">Mento Care Bochnia</b>, gdzie Faustyna
@@ -89,9 +89,9 @@ const BlogWeddingDay = () => {
               <li>przygotuje skórę do tego, by wyglądała zdrowo i promiennie w dniu ślubu.</li>
             </ul>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               Dzień przed weselem – finałowe przygotowania
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Na dzień przed tym wielkim wydarzeniem zaplanuj wizytę w Mento Barber Shop Bochnia:
             </p>
@@ -104,9 +104,9 @@ const BlogWeddingDay = () => {
               To moment, w którym dopieszczamy każdy detal – Ty możesz się zrelaksować, a my zadbamy o perfekcyjny efekt.
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               W dniu ślubu – tylko stylizacja
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               W dzień ceremonii nie ma czasu na długie zabiegi. Wystarczy, że:
             </p>
@@ -120,9 +120,9 @@ const BlogWeddingDay = () => {
             </p>
 
             <div className="bg-[#1f2629] p-[24px] rounded-[8px] mt-[40px] mb-[20px] shrink-0 border border-gray-700">
-              <h1 className="text-[24px] text-prime font-bold">
+              <h2 className="text-[24px] text-prime font-bold">
                 Podsumowanie:
-              </h1>
+              </h2>
               <p className="text-[16px] text-white font-light mt-4 leading-relaxed">
                 Przygotowania pana młodego do ślubu to nie tylko garnitur i spinki
                 do mankietów. To także plan pielęgnacyjny, który zaczyna się
@@ -186,9 +186,9 @@ const BlogWeddingDay = () => {
             
             <hr className="border-[white] opacity-10 my-[32px]" />
             
-            <h1 className="text-[22px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[10px]">
               Minimum 6 tygodni przed ślubem – pierwsza wizyta w Mento Barbershop Bochnia
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Nie odkładaj przygotowań na ostatnią chwilę.{" "}
               <b className="text-prime">
@@ -207,9 +207,9 @@ const BlogWeddingDay = () => {
               Dzięki temu będziemy mieć czas, żeby wypracować idealny efekt na dzień ślubu.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               Zadbaj o skórę – Mento Care w Bochni
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Twój wygląd to nie tylko fryzura i broda. Skóra również potrzebuje
               uwagi. Dlatego polecamy wizytę w <b className="text-prime">Mento Care Bochnia</b>, gdzie Faustyna
@@ -221,9 +221,9 @@ const BlogWeddingDay = () => {
               <li>przygotuje skórę do tego, by wyglądała zdrowo i promiennie w dniu ślubu.</li>
             </ul>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               Dzień przed weselem – finałowe przygotowania
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Na dzień przed tym wielkim wydarzeniem zaplanuj wizytę w Mento Barber Shop Bochnia:
             </p>
@@ -236,9 +236,9 @@ const BlogWeddingDay = () => {
               To moment, w którym dopieszczamy każdy detal – Ty możesz się zrelaksować, a my zadbamy o perfekcyjny efekt.
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               W dniu ślubu – tylko stylizacja
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               W dzień ceremonii nie ma czasu na długie zabiegi. Wystarczy, że:
             </p>
@@ -252,9 +252,9 @@ const BlogWeddingDay = () => {
             </p>
 
             <div className="bg-[#1f2629] p-[20px] rounded-[8px] mt-[32px] mb-[20px] border border-gray-700">
-              <h1 className="text-[20px] text-prime font-bold">
+              <h2 className="text-[20px] text-prime font-bold">
                 Podsumowanie:
-              </h1>
+              </h2>
               <p className="text-[15px] text-white font-light mt-4 leading-relaxed">
                 Przygotowania pana młodego do ślubu to nie tylko garnitur i spinki
                 do mankietów. To także plan pielęgnacyjny, który zaczyna się

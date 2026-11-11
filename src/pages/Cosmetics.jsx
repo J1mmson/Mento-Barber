@@ -436,6 +436,7 @@ const Cosmetics = () => {
             }}
           >
             Kosmetyki
+            <span className="sr-only"> do włosów i brody – Mento Barber Shop Bochnia</span>
           </h1>
           <p className="text-gray-300 mt-4 max-w-2xl text-[15px] leading-relaxed mx-auto md:mx-0">
             Pracujemy wyłącznie na sprawdzonych markach premium. Poznaj produkty,

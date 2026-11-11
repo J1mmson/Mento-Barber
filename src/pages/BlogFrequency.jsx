@@ -53,9 +53,9 @@ const BlogFrequency = () => {
 
             <hr className="border-[white] opacity-10 my-[32px] shrink-0" />
 
-            <h1 className="text-[28px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[10px]">
               1. Krótkie fryzury (fade, buzz cut, crew cut)
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Jeśli wybierasz krótkie cięcia, szczególnie z cieniowaniem od
               zera, to włosy zaczynają tracić kształt już po 2 tygodniach.
@@ -64,9 +64,9 @@ const BlogFrequency = () => {
               Optymalna częstotliwość: <b className="text-prime">co 2–3 tygodnie.</b>
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               2. Średnie długości (side part, french crop, klasyki)
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Przy średniej długości włosów fryzura jest bardziej wyrozumiała.
               Możesz chodzić rzadziej, ale wciąż warto dbać o linie i kontury.
@@ -75,9 +75,9 @@ const BlogFrequency = () => {
               Optymalna częstotliwość: <b className="text-prime">co 3–4 tygodnie.</b>
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               3. Długie włosy
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Dłuższe fryzury wymagają mniej częstych wizyt, ale trzeba je
               regularnie podcinać, aby zachować zdrowe końcówki i kształt.
@@ -86,9 +86,9 @@ const BlogFrequency = () => {
               Optymalna częstotliwość: <b className="text-prime">co 6–8 tygodni.</b>
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               4. Broda – nie zapominaj o niej!
-            </h1>
+            </h2>
             <p className="text-[16px] text-white mt-[12px] font-light leading-relaxed">
               Jeśli nosisz brodę, to tak samo jak fryzura potrzebuje regularnego
               korygowania. Nierówne linie psują cały efekt.
@@ -97,9 +97,9 @@ const BlogFrequency = () => {
               Optymalna częstotliwość: <b className="text-prime">co 2–3 tygodnie</b> (w zależności od tempa wzrostu).
             </p>
 
-            <h1 className="text-[28px] text-prime font-bold mt-[40px]">
+            <h2 className="text-[28px] text-prime font-bold mt-[40px]">
               Dlaczego warto trzymać się regularności?
-            </h1>
+            </h2>
             <ul className="text-[16px] text-white mt-[12px] font-light ml-[24px] list-disc leading-relaxed">
               <li>fryzura zawsze wygląda świeżo,</li>
               <li>włosy i broda są łatwiejsze w codziennej stylizacji,</li>
@@ -108,9 +108,9 @@ const BlogFrequency = () => {
             </ul>
 
             <div className="bg-[#1f2629] p-[24px] rounded-[8px] mt-[40px] mb-[20px] shrink-0 border border-gray-700">
-              <h1 className="text-[24px] text-prime font-bold flex items-center gap-2">
+              <h2 className="text-[24px] text-prime font-bold flex items-center gap-2">
                Podsumowanie:
-              </h1>
+              </h2>
               <p className="text-[16px] text-white font-light mt-4 leading-relaxed">
                 Nie ma jednej złotej zasady dla wszystkich. Najprościej zapamiętać:
                 <br /><br />
@@ -175,9 +175,9 @@ const BlogFrequency = () => {
             
             <hr className="border-[white] opacity-10 my-[32px]" />
             
-            <h1 className="text-[22px] text-prime font-bold mt-[10px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[10px]">
               1. Krótkie fryzury (fade, buzz cut, crew cut)
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Jeśli wybierasz krótkie cięcia, szczególnie z cieniowaniem od
               zera, to włosy zaczynają tracić kształt już po 2 tygodniach.
@@ -186,9 +186,9 @@ const BlogFrequency = () => {
               Optymalna częstotliwość: <b className="text-prime">co 2–3 tygodnie.</b>
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               2. Średnie długości (side part, french crop, klasyki)
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Przy średniej długości włosów fryzura jest bardziej wyrozumiała.
               Możesz chodzić rzadziej, ale wciąż warto dbać o linie i kontury.
@@ -197,9 +197,9 @@ const BlogFrequency = () => {
               Optymalna częstotliwość: <b className="text-prime">co 3–4 tygodnie.</b>
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               3. Długie włosy
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Dłuższe fryzury wymagają mniej częstych wizyt, ale trzeba je
               regularnie podcinać, aby zachować zdrowe końcówki i kształt.
@@ -208,9 +208,9 @@ const BlogFrequency = () => {
               Optymalna częstotliwość: <b className="text-prime">co 6–8 tygodni.</b>
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               4. Broda – nie zapominaj o niej!
-            </h1>
+            </h2>
             <p className="text-[15px] text-white mt-[12px] font-light leading-relaxed">
               Jeśli nosisz brodę, to tak samo jak fryzura potrzebuje regularnego
               korygowania. Nierówne linie psują cały efekt.
@@ -219,9 +219,9 @@ const BlogFrequency = () => {
               Optymalna częstotliwość: <b className="text-prime">co 2–3 tygodnie</b> (w zależności od tempa wzrostu).
             </p>
 
-            <h1 className="text-[22px] text-prime font-bold mt-[32px]">
+            <h2 className="text-[22px] text-prime font-bold mt-[32px]">
               Dlaczego warto trzymać się regularności?
-            </h1>
+            </h2>
             <ul className="text-[15px] text-white mt-[12px] font-light ml-[20px] list-disc leading-relaxed">
               <li>fryzura zawsze wygląda świeżo,</li>
               <li>włosy i broda są łatwiejsze w codziennej stylizacji,</li>
@@ -230,9 +230,9 @@ const BlogFrequency = () => {
             </ul>
 
             <div className="bg-[#1f2629] p-[20px] rounded-[8px] mt-[32px] mb-[20px] border border-gray-700">
-              <h1 className="text-[20px] text-prime font-bold flex items-center gap-2">
+              <h2 className="text-[20px] text-prime font-bold flex items-center gap-2">
                Podsumowanie:
-              </h1>
+              </h2>
               <p className="text-[15px] text-white font-light mt-4 leading-relaxed">
                 Nie ma jednej złotej zasady dla wszystkich. Najprościej zapamiętać:
                 <br /><br />
